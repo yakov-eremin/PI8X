@@ -133,6 +133,8 @@ namespace DummyPhotoshop.Windows
 
         private void CanvasMouseUp(object sender, MouseEventArgs e)
         {
+            if (!_cropManager.IsCropping) return;
+
             if (_cropManager.IsNothingSelected && Photo is PhotoCrop photoCrop)
             {
                 //Is Click
