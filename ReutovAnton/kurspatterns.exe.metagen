@@ -1,0 +1,223 @@
+  kurspatterns.AddIce.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.AddSnow.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.browse.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.Fields.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.IceForm.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.MyForm.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.MyForm1.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.MyForm2.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.MyForm3.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.MyForm4.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.MyForm5.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.SnowyForm.resources - Embedded, ContainedInManifestFile, 
+  kurspatterns.WeatherForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly kurspatterns, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class kurspatterns.AddIce: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown1 : Public
+    System.Windows.Forms.Label label6 : Public
+    System.Windows.Forms.Label label5 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown3 : Public
+    System.Windows.Forms.Label label10 : Public
+    System.Windows.Forms.Label label12 : Public
+    System.Windows.Forms.TextBox textBox3 : Public
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown2 : Public
+    System.Windows.Forms.Label label7 : Public
+    System.Windows.Forms.Label label8 : Public
+Class kurspatterns.AddSnow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label8 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.Label label3 : Public
+    System.Windows.Forms.TextBox textBox1 : Public
+    System.Windows.Forms.Label label10 : Public
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.Label label5 : Public
+    System.Windows.Forms.Label label6 : Public
+    System.Windows.Forms.Label label7 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown2 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown3 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown4 : Public
+    System.Windows.Forms.Label label11 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown5 : Public
+    System.Windows.Forms.Label label9 : Public
+    System.Windows.Forms.Label label12 : Public
+    System.Windows.Forms.Label label13 : Public
+Class kurspatterns.browse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class kurspatterns.Fields: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.Label label3 : Public
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown1 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown2 : Public
+    System.Windows.Forms.Label label5 : Public
+    System.Windows.Forms.Label label6 : Public
+    System.Windows.Forms.Label label7 : Public
+    System.Windows.Forms.Label label8 : Public
+    System.Windows.Forms.TextBox textBox1 : Public
+    System.Windows.Forms.TextBox textBox2 : Public
+    System.Windows.Forms.Label label9 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown3 : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.Label label10 : Public
+    System.Windows.Forms.TextBox textBox3 : Public
+    System.Windows.Forms.TextBox textBox4 : Public
+Class kurspatterns.IceForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label8 : Public
+    System.Windows.Forms.Label label7 : Public
+    System.Windows.Forms.TextBox textBox2 : Public
+    System.Windows.Forms.TextBox textBox1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown1 : Public
+    System.Windows.Forms.Label label3 : Public
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.TextBox textBox3 : Public
+    System.Windows.Forms.Label label5 : Public
+Class kurspatterns.MyForm1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.Label label3 : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.Button countb : Public
+    System.Windows.Forms.Label label5 : Public
+    System.Windows.Forms.Label label6 : Public
+    System.Windows.Forms.Label label7 : Public
+    System.Windows.Forms.Label label8 : Public
+    System.Windows.Forms.Label label9 : Public
+    System.Windows.Forms.TextBox consResult : Public
+    System.Windows.Forms.CheckBox checkBox2 : Public
+    System.Windows.Forms.TextBox riverSpeed : Public
+    System.Windows.Forms.TextBox timeDays : Public
+    System.Windows.Forms.TextBox timeHours : Public
+    System.Windows.Forms.Button graphics : Public
+    System.Windows.Forms.TrackBar trackBar3 : Public
+    System.Windows.Forms.TrackBar trackBar1 : Public
+    System.Windows.Forms.TrackBar trackBar4 : Public
+    System.Windows.Forms.NumericUpDown squareSech : Public
+    System.Windows.Forms.Label label10 : Public
+Class kurspatterns.MyForm2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.RichTextBox namePlace : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.ListBox listPlace : Public
+    System.Windows.Forms.Label label5 : Public
+    System.Windows.Forms.ComboBox typePlace : Public
+    System.Windows.Forms.Label label6 : Public
+    System.Windows.Forms.Button checker : Public
+    System.Windows.Forms.Label label3 : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.TrackBar trackBar1 : Public
+    System.Windows.Forms.TrackBar trackBar2 : Public
+    System.Windows.Forms.RichTextBox richTemp : Public
+    System.Windows.Forms.RichTextBox richPress : Public
+Class kurspatterns.MyForm3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Button snowButton : Public
+    System.Windows.Forms.Button iceButton : Public
+    System.Windows.Forms.Button weatherButton : Public
+    System.Windows.Forms.Button allButton : Public
+    System.Windows.Forms.Button button5 : Public
+    System.Windows.Forms.Button deleteCount : Public
+    System.Windows.Forms.Button createNewCont : Public
+    System.Windows.Forms.DataGridView dataGridView1 : Public
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.Button button2 : Public
+Class kurspatterns.MyForm4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+Class kurspatterns.MyForm5: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.DataVisualization.Charting.Chart chart1 : Public
+Class kurspatterns.SnowyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label8 : Public
+    System.Windows.Forms.Label label7 : Public
+    System.Windows.Forms.TextBox textBox2 : Public
+    System.Windows.Forms.TextBox textBox1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.Label label3 : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.Label label5 : Public
+    System.Windows.Forms.Label label6 : Public
+    System.Windows.Forms.Label label9 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown1 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown2 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown3 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown4 : Public
+    System.Windows.Forms.Label label11 : Public
+    System.Windows.Forms.Label label10 : Public
+    System.Windows.Forms.Label label12 : Public
+    System.Windows.Forms.TextBox textBox3 : Public
+    System.Windows.Forms.Button button1 : Public
+Class kurspatterns.WeatherForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.TextBox textBox1 : Public
+Class kurspatterns.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    checker_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    countb_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    snowButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    iceButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    weatherButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    allButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    createNewCont_Click(Object, EventArgs): PrivateScope, Public, HideBySig
