@@ -1,0 +1,7 @@
+1. Скачать и установить Open Server
+2. Запустить Open Server
+3. Зайти в phpMyAdmin и создать бд с названием "artix_bonus"
+4. Импортировать в ранее созданную бд файл "artix_bonus.sql"
+5. Загрузить в ./OSPanel/domains папку "ArtixBonus"
+6. Перезапустить Open Server
+7. Во вкладке Open Server > Мои сайты открыть появившийся ArtixBonus
