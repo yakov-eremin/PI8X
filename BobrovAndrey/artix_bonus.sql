@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 18 2020 г., 07:33
--- Версия сервера: 5.6.43
--- Версия PHP: 7.3.9
+-- Время создания: Фев 10 2022 г., 10:31
+-- Версия сервера: 10.3.13-MariaDB-log
+-- Версия PHP: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -90,8 +90,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `password`, `firstname`, `lastname`, `address`, `email`, `points`, `privilege_id`) VALUES
-(6, 'user', '$2y$10$KwGrZxdCiirl.nt19hOT3eqBvo86xKPK9Nvu0CcdzcRkwOtrEa6.G', 'Андрей', 'Бобров', 'г. Барнаул ул. Попова 42 кв. 6', 'upndrey@yandex.ru', 2378, 2),
-(7, 'user2', '$2y$10$8u79tmNC34vxjHo0y/pj5eKo1xL8riUvbn4mjSkkjCwa87H.TRVTC', 'Андрей', 'Бобров', 'г. Барнаул ул. Попова 42 кв. 6', 'upndrey@yandex.ru', 250, 1);
+(6, 'user', '$2y$10$CrggzDhHss5qkgg4Y90ahurAOwDl9G3aksVE7xwExpK.AqlNcRpAG', 'Ондрей', 'Бобров', 'г. Барнаул ул. Попова 42 кв. 6', 'upndrey@yandex.ru', 2378, 2),
+(7, 'user2', '$2y$10$CrggzDhHss5qkgg4Y90ahurAOwDl9G3aksVE7xwExpK.AqlNcRpAG', 'Андрей', 'Бобров', 'г. Барнаул ул. Попова 42 кв. 6', 'upndrey@yandex.ru', 250, 1);
 
 -- --------------------------------------------------------
 
