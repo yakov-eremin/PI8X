@@ -1,0 +1,394 @@
+/* Глобальные значения */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 1120px;
+    min-height: 350px;
+
+    margin: 100px auto;
+    padding: 10px;
+
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    color: black;
+}
+
+.wrapper__header {
+    width: 100%;
+
+    margin-bottom: 50px;
+
+    box-sizing: border-box;
+}
+
+.title {
+    display: block;
+
+    width: 100%;
+
+    margin: auto;
+    padding: 25px;
+
+    background: #5e5f6a;
+    box-sizing: border-box;
+
+    font-size: 42px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/*  Авторизация  */
+.wrapper__login-form {
+    margin: 0 auto;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.login-form {
+    width: 600px;
+}
+
+.login-form__enter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.enter__submit {
+    width: 100%;
+    height: 76px;
+
+    margin-left: 10px;
+
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-transition: background-color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
+
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.enter__submit:hover {
+    background: black;
+    cursor: pointer;
+
+    color: white;
+}
+
+
+.login-form__wrong-password_hidden {
+    display: none;
+}
+
+.login-form__text {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin-bottom: 25px;
+    padding: 15px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+}
+
+
+.wrapper__login-link {
+    width: 600px;
+
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: 1px solid #000;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+}
+
+/* header */
+.header>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.header__menu>a {
+    padding: 5px;
+}
+
+.short-info {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px;
+}
+
+.short-info a {
+    margin: 5px;
+}
+
+/* Личный кабинет */
+
+.content {
+    padding: 25px;
+}
+
+.content input[type="submit"] {
+    padding: 5px 10px;
+}
+
+.content_profile {
+    display: flex;
+}
+
+.content__title {
+    margin-bottom: 25px;
+
+    font-size: 28px;
+    text-align: center;
+}
+
+.content__info {
+    margin-bottom: 25px;
+}
+
+.content__transaction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.content__transaction>select {
+    margin-bottom: 10px;
+}
+
+.content__transaction>h2 {
+    margin-bottom: 25px;
+}
+
+.content__edit {
+    display: block;
+
+    margin: 10px auto;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.content__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__links .content__edit {
+    display: inline-block;
+    margin: 10px;
+}
+
+.info__block {
+    display: flex;
+
+    width: 600px;
+
+    margin: auto;
+}
+
+.info__block>* {
+    display: inline-block;
+
+    width: 100%;
+
+    margin: 2px;
+    padding: 10px 25px;
+
+    border: 1px solid #000;
+}
+
+
+/* admin */
+.admin {
+    display: flex;
+}
+
+.admin>* {
+    width: 100%;
+}
+
+.admin h2 {
+    margin-bottom: 25px;
+}
+
+
+.points {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.points>select, .points>input {
+    margin-bottom: 10px;
+}
+
+.admin__transactions {
+    display: flex;
+    flex-direction: column;
+}
+
+.transactions>* {
+    margin-bottom: 5px;
+}
+
+.transactions>input[type="submit"] {
+    margin-bottom: 15px;
+}
+
+.transactions__list, .transactions__header{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    max-height: 250px;
+
+    padding: 10px;
+
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.transactions__header {
+    overflow: hidden;
+    padding-right: 25px;
+    margin: 0;
+}
+
+.transactions__add {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.transactions__add>* {
+    margin: 5px 10px;
+}
+
+.list__row {
+    display: flex;
+
+}
+
+.list__row>div {
+    width: 100%;
+
+    padding: 10px;
+    margin: 1px;
+
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.js-transaction_checkbox {
+    width: 0;
+    height: 0;
+}
+
+.js-transaction_checkbox:checked + label>* {
+    background: red;
+    border: 1px solid transparent;
+    color: white;
+}
+
+/* История */
+
+.content__transaction-list {
+    width: 800px;
+    height: auto;
+
+    margin: auto;
+}
+
+.js-transaction-list {
+    display: flex;
+    flex-direction: column;
+
+    height: 500px;
+}
+
+.transaction-list__row {
+    display: flex;
+    border: 1px solid #000;
+}
+
+.transaction-list__row .row__elem {
+    width: 25%;
+
+    margin: 5px;
+    padding: 5px;
+
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.transaction-header>.row{
+    border: 1px solid transparent;
+}
+
+.transaction-header .row__elem{
+    border: 1px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
