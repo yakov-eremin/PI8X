@@ -17,11 +17,11 @@ namespace OtdelZasel
             "User Id={2};" +
             "Password={3};" +
             "Database={4};",
-            "rds-postgresql-otdel-zasel.cguxtch14lq2.eu-west-2.rds.amazonaws.com",
+            "192.168.100.228",
             5432,
-            "Nikolai",
-            "kkjBB334HE3#4bh",
-            "Check_In_Department");
+            "postgres",
+            "123",
+            "boop");
 
         public NpgsqlConnection connection;
 
