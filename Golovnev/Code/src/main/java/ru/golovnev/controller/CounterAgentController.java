@@ -14,6 +14,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.validation.ObjectError;
 import ru.golovnev.model.CounterAgent;
 import ru.golovnev.service.CounterAgentCrudService;
 import ru.golovnev.service.CounterAgentFinderService;
@@ -80,7 +81,7 @@ public class CounterAgentController {
                                  Model model) {
         if (bindingResult.hasErrors()){
             log.error("[POST /counteragents/new]\tBindingResult: errors of validation CounterAgent");
-            for (var err: bindingResult.getAllErrors()) {
+            for (ObjectError err: bindingResult.getAllErrors()) {
                 log.error(err.toString());
             }
             model.addAttribute("agentForm", agentForm);
@@ -146,7 +147,7 @@ public class CounterAgentController {
         catch (Exception ignored) { }
         if (bindingResult.hasErrors()) {
             log.error("[POST /counteragents/update]\tBindingResult: errors of validation CounterAgent");
-            for (var err: bindingResult.getAllErrors()) {
+            for (ObjectError err: bindingResult.getAllErrors()) {
                 log.error(err.toString());
             }
             model.addAttribute("updateAgent", agent);

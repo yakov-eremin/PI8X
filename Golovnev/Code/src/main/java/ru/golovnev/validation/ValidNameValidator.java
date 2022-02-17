@@ -23,7 +23,7 @@ public class ValidNameValidator implements ConstraintValidator<ValidName, String
     public boolean isValid(String value, ConstraintValidatorContext context) {
         List<CounterAgent> agentList = finder.findAll();
         List<String> agentNames = new ArrayList<>();
-        for (var agent: agentList) {
+        for (CounterAgent agent: agentList) {
             agentNames.add(agent.getName());
         }
         if (!agentNames.contains(value)){
