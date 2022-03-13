@@ -34,8 +34,9 @@ namespace DummyPhotoshop.Windows
         {
             this.histogramBox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.canvas = new System.Windows.Forms.PictureBox();
+            this.canvas = new DummyPhotoshop.Helpers.PictureBoxWithInterpolationMode();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.saveButton = new System.Windows.Forms.ToolStripMenuItem();
             this.loadButton = new System.Windows.Forms.ToolStripMenuItem();
             this.restoreButton = new System.Windows.Forms.ToolStripMenuItem();
             this.коррекцияИзображенияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,15 +80,19 @@ namespace DummyPhotoshop.Windows
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1316, 753);
+            this.panel1.Size = new System.Drawing.Size(1243, 753);
             this.panel1.TabIndex = 4;
             // 
             // canvas
             // 
+            this.canvas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.canvas.BackColor = System.Drawing.Color.White;
+            this.canvas.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;
             this.canvas.Location = new System.Drawing.Point(41, 60);
             this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(786, 574);
+            this.canvas.Size = new System.Drawing.Size(713, 574);
             this.canvas.TabIndex = 10;
             this.canvas.TabStop = false;
             this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.CanvasPaint);
@@ -99,27 +104,35 @@ namespace DummyPhotoshop.Windows
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveButton,
             this.loadButton,
             this.restoreButton,
             this.коррекцияИзображенияToolStripMenuItem,
             this.фильтрыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1316, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1243, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // saveButton
+            // 
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(195, 24);
+            this.saveButton.Text = "Сохранить изображение";
+            this.saveButton.Click += new System.EventHandler(this.SaveButtonClick);
             // 
             // loadButton
             // 
             this.loadButton.Name = "loadButton";
-            this.loadButton.Size = new System.Drawing.Size(191, 24);
+            this.loadButton.Size = new System.Drawing.Size(189, 24);
             this.loadButton.Text = "Загрузить изображение";
-            this.loadButton.Click += new System.EventHandler(this.LoadButtonClicked);
+            this.loadButton.Click += new System.EventHandler(this.LoadButtonClick);
             // 
             // restoreButton
             // 
             this.restoreButton.Name = "restoreButton";
-            this.restoreButton.Size = new System.Drawing.Size(218, 24);
+            this.restoreButton.Size = new System.Drawing.Size(216, 24);
             this.restoreButton.Text = "Восстановить изображение";
             this.restoreButton.Click += new System.EventHandler(this.RestoreButtonClick);
             // 
@@ -131,34 +144,34 @@ namespace DummyPhotoshop.Windows
             this.negativeButton,
             this.binarizationButton});
             this.коррекцияИзображенияToolStripMenuItem.Name = "коррекцияИзображенияToolStripMenuItem";
-            this.коррекцияИзображенияToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
+            this.коррекцияИзображенияToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
             this.коррекцияИзображенияToolStripMenuItem.Text = "Коррекция изображения";
             // 
             // brightnessContrastButton
             // 
             this.brightnessContrastButton.Name = "brightnessContrastButton";
-            this.brightnessContrastButton.Size = new System.Drawing.Size(258, 26);
+            this.brightnessContrastButton.Size = new System.Drawing.Size(244, 24);
             this.brightnessContrastButton.Text = "Яркость/Контрасность...";
             this.brightnessContrastButton.Click += new System.EventHandler(this.BrightnessContrastButtonClick);
             // 
             // blackWhiteButton
             // 
             this.blackWhiteButton.Name = "blackWhiteButton";
-            this.blackWhiteButton.Size = new System.Drawing.Size(258, 26);
+            this.blackWhiteButton.Size = new System.Drawing.Size(244, 24);
             this.blackWhiteButton.Text = "Черное-белое";
             this.blackWhiteButton.Click += new System.EventHandler(this.BlackWhiteButtonClick);
             // 
             // negativeButton
             // 
             this.negativeButton.Name = "negativeButton";
-            this.negativeButton.Size = new System.Drawing.Size(258, 26);
+            this.negativeButton.Size = new System.Drawing.Size(244, 24);
             this.negativeButton.Text = "Инверсия";
             this.negativeButton.Click += new System.EventHandler(this.NegativeButtonClick);
             // 
             // binarizationButton
             // 
             this.binarizationButton.Name = "binarizationButton";
-            this.binarizationButton.Size = new System.Drawing.Size(258, 26);
+            this.binarizationButton.Size = new System.Drawing.Size(244, 24);
             this.binarizationButton.Text = "Бинаризация...";
             this.binarizationButton.Click += new System.EventHandler(this.BinarizationButtonClick);
             // 
@@ -170,7 +183,7 @@ namespace DummyPhotoshop.Windows
             this.sharpeningButton,
             this.embossingButton});
             this.фильтрыToolStripMenuItem.Name = "фильтрыToolStripMenuItem";
-            this.фильтрыToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.фильтрыToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.фильтрыToolStripMenuItem.Text = "Фильтры";
             // 
             // toolStripMenuItem1
@@ -180,48 +193,48 @@ namespace DummyPhotoshop.Windows
             this.uniformDenoiseButton,
             this.medianDenoiseButton});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(251, 26);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(237, 24);
             this.toolStripMenuItem1.Text = "Шумоподавление";
             // 
             // gaussianDenoiseButton
             // 
             this.gaussianDenoiseButton.Name = "gaussianDenoiseButton";
-            this.gaussianDenoiseButton.Size = new System.Drawing.Size(197, 26);
+            this.gaussianDenoiseButton.Size = new System.Drawing.Size(183, 24);
             this.gaussianDenoiseButton.Text = "По Гауссу...";
             this.gaussianDenoiseButton.Click += new System.EventHandler(this.GaussianDenoiseButtonClick);
             // 
             // uniformDenoiseButton
             // 
             this.uniformDenoiseButton.Name = "uniformDenoiseButton";
-            this.uniformDenoiseButton.Size = new System.Drawing.Size(197, 26);
+            this.uniformDenoiseButton.Size = new System.Drawing.Size(183, 24);
             this.uniformDenoiseButton.Text = "Равномерное...";
             this.uniformDenoiseButton.Click += new System.EventHandler(this.UniformDenoiseButtonClick);
             // 
             // medianDenoiseButton
             // 
             this.medianDenoiseButton.Name = "medianDenoiseButton";
-            this.medianDenoiseButton.Size = new System.Drawing.Size(197, 26);
+            this.medianDenoiseButton.Size = new System.Drawing.Size(183, 24);
             this.medianDenoiseButton.Text = "Медиана...";
             this.medianDenoiseButton.Click += new System.EventHandler(this.MedianDenoiseButtonClick);
             // 
             // noiseButton
             // 
             this.noiseButton.Name = "noiseButton";
-            this.noiseButton.Size = new System.Drawing.Size(251, 26);
+            this.noiseButton.Size = new System.Drawing.Size(237, 24);
             this.noiseButton.Text = "Добавить шум...";
             this.noiseButton.Click += new System.EventHandler(this.NoiseButtonClick);
             // 
             // sharpeningButton
             // 
             this.sharpeningButton.Name = "sharpeningButton";
-            this.sharpeningButton.Size = new System.Drawing.Size(251, 26);
+            this.sharpeningButton.Size = new System.Drawing.Size(237, 24);
             this.sharpeningButton.Text = "Увеличение резкости...";
             this.sharpeningButton.Click += new System.EventHandler(this.sharpeningButton_Click);
             // 
             // embossingButton
             // 
             this.embossingButton.Name = "embossingButton";
-            this.embossingButton.Size = new System.Drawing.Size(251, 26);
+            this.embossingButton.Size = new System.Drawing.Size(237, 24);
             this.embossingButton.Text = "Тиснение";
             this.embossingButton.Click += new System.EventHandler(this.embossingButton_Click);
             // 
@@ -230,7 +243,7 @@ namespace DummyPhotoshop.Windows
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
             this.panel2.Controls.Add(this.histogramBox);
-            this.panel2.Location = new System.Drawing.Point(885, 28);
+            this.panel2.Location = new System.Drawing.Point(812, 28);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(5);
@@ -242,7 +255,7 @@ namespace DummyPhotoshop.Windows
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1316, 753);
+            this.ClientSize = new System.Drawing.Size(1243, 753);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
@@ -281,7 +294,8 @@ namespace DummyPhotoshop.Windows
         private System.Windows.Forms.ToolStripMenuItem restoreButton;
         private System.Windows.Forms.ToolStripMenuItem sharpeningButton;
         private System.Windows.Forms.ToolStripMenuItem embossingButton;
-        private System.Windows.Forms.PictureBox canvas;
+        private PictureBoxWithInterpolationMode canvas;
+        private System.Windows.Forms.ToolStripMenuItem saveButton;
     }
 }
 

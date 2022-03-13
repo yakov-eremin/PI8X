@@ -69,16 +69,25 @@ namespace DummyPhotoshop.Windows
             histogramBox.Refresh();
         }
 
-        private void LoadButtonClicked(object sender, EventArgs e)
+        private void LoadButtonClick(object sender, EventArgs e)
         {
-            var diag = new OpenFileDialog();
-            diag.Filter = @"Files|*.jpg;*.jpeg;*.png";
-            if (diag.ShowDialog() != DialogResult.OK) return;
+            var dialog = new OpenFileDialog();
+            dialog.Filter = @"Files|*.jpg;*.jpeg;*.png";
+            if (dialog.ShowDialog() != DialogResult.OK) return;
 
             UndoStack.Clear();
-            UndoStack.Push(new Photo(new Bitmap(diag.FileName)));
+            UndoStack.Push(new Photo(new Bitmap(dialog.FileName)));
             SetPhoto(UndoStack.Peek());
 
+        }
+
+        private void SaveButtonClick(object sender, EventArgs e)
+        {
+            var dialog = new SaveFileDialog();
+            dialog.Filter = @"Files|*.jpg;*.jpeg;*.png";
+            if (dialog.ShowDialog() != DialogResult.OK) return;
+            var path = dialog.FileName;
+            Photo.Bitmap.Save(path);
         }
 
         private void OpenFilterWindow(Form window)
@@ -160,6 +169,8 @@ namespace DummyPhotoshop.Windows
         }
 
         private void HistogramBoxPaint(object sender, PaintEventArgs e) => _brightnessHistogram.Draw(Photo, e.Graphics);
+
+     
 
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
