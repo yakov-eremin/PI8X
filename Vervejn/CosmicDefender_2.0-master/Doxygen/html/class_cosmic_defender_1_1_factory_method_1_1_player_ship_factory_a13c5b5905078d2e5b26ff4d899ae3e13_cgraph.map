@@ -1,9 +1,0 @@
-<map id="CosmicDefender.FactoryMethod.PlayerShipFactory.CreateShip1" name="CosmicDefender.FactoryMethod.PlayerShipFactory.CreateShip1">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,217,145"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_content.html#a81967090ca29e1e6dafc517d5deb6364" title=" " alt="" coords="276,5,467,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_content.html#a3a78d0f50ded99d56d94fd92781353b0" title=" " alt="" coords="277,71,465,112"/>
-<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_content.html#a61e8118b4f42278c41f32266581164ff" title=" " alt="" coords="276,136,467,177"/>
-<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_factory_method_1_1_abstract_factory.html#ae1c77b23ec25fd3c6e2b2173413a9d51" title=" " alt="" coords="265,201,477,243"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_content.html#a7313601ee09a3b9ca394ee839528c066" title=" " alt="" coords="525,78,740,105"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_content.html#a4508aaa788ee7b67a55279939ecee340" title=" " alt="" coords="788,78,987,105"/>
-</map>

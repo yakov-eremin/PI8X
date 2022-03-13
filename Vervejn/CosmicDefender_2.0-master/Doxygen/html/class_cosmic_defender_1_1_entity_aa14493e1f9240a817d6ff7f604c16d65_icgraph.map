@@ -1,5 +1,0 @@
-<map id="CosmicDefender.Entity.EnableCollide" name="CosmicDefender.Entity.EnableCollide">
-<area shape="rect" id="node1" title="Включить коллизию для объекта" alt="" coords="268,23,467,65"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#ac82d96ecf7a43cd9acade783880b7412" title="Конструктор" alt="" coords="16,5,209,32"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_single_shot.html#a0b78ed2167a1ab520922e600506bba28" title=" " alt="" coords="5,56,220,83"/>
-</map>

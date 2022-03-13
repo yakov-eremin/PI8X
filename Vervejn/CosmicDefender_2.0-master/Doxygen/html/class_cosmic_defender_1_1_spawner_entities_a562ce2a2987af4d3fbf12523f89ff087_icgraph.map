@@ -1,8 +1,0 @@
-<map id="CosmicDefender.SpawnerEntities.Spawn" name="CosmicDefender.SpawnerEntities.Spawn">
-<area shape="rect" id="node1" title=" " alt="" coords="272,136,491,177"/>
-<area shape="rect" id="node2" href="$class_n_unit_tests_1_1_entities_tests.html#afbebd68da87aaa5b5f6b492ac6ee1a38" title=" " alt="" coords="29,5,200,47"/>
-<area shape="rect" id="node3" href="$class_n_unit_tests_1_1_entities_tests.html#a55e6780bfd179d833348eab5f84d54af" title=" " alt="" coords="29,71,200,112"/>
-<area shape="rect" id="node4" href="$class_n_unit_tests_1_1_entities_tests.html#ac82fd057bffae29d98dc2747a7b8448e" title=" " alt="" coords="29,136,200,177"/>
-<area shape="rect" id="node5" href="$class_n_unit_tests_1_1_entities_tests.html#a8380d48deec802d562038b75eb2de6ee" title=" " alt="" coords="29,201,200,243"/>
-<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_spawner_entities.html#a14dd1463220d570f5d28db17b2962e3d" title=" " alt="" coords="5,267,224,308"/>
-</map>

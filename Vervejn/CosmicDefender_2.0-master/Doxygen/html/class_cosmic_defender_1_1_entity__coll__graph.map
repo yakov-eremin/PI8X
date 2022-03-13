@@ -1,6 +1,0 @@
-<map id="CosmicDefender.Entity" name="CosmicDefender.Entity">
-<area shape="rect" id="node1" title="Абстрактный объект" alt="" coords="93,80,248,107"/>
-<area shape="rect" id="node2" href="$interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="5,5,101,32"/>
-<area shape="rect" id="node3" href="$interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="125,5,216,32"/>
-<area shape="rect" id="node4" href="$interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="240,5,363,32"/>
-</map>

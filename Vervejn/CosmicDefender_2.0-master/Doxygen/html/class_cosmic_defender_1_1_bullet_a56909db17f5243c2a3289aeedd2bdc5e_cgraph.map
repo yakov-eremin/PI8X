@@ -1,9 +1,0 @@
-<map id="CosmicDefender.Bullet.CheckPostitions" name="CosmicDefender.Bullet.CheckPostitions">
-<area shape="rect" id="node1" title="Проверить позицию объекта в области игры" alt="" coords="5,71,200,112"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811" title=" " alt="" coords="256,5,443,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_entity.html#a48b4ddcb6b16eefd65e7f1e1460a5c3f" title="Отключить коллизию для объекта" alt="" coords="248,71,451,112"/>
-<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="256,136,443,177"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_entity.html#a568e186532b30d53e54712c56c236969" title="Проверить коллизию между 2 объектами" alt="" coords="501,19,699,46"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_collider.html#a159c2e3664401053d7017c57343c244a" title=" " alt="" coords="507,71,693,112"/>
-<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="499,136,701,177"/>
-</map>

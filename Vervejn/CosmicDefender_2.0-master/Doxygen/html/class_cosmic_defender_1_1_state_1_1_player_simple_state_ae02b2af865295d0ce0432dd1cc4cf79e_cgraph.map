@@ -1,8 +1,0 @@
-<map id="CosmicDefender.State.PlayerSimpleState.UpdateState" name="CosmicDefender.State.PlayerSimpleState.UpdateState">
-<area shape="rect" id="node1" title=" " alt="" coords="5,40,199,81"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#a37c640a2e971d226229bd4cfda5b5fe4" title="Применить к объету силу(ускорение)" alt="" coords="247,17,439,43"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_state_1_1_player_state_manager.html#a73811f306267e5735f0759d23db7b290" title=" " alt="" coords="247,71,440,112"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_entity.html#a2e53677d03c15874333253521d3a8918" title="Длина вектора" alt="" coords="488,5,687,47"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_state_1_1_player_base_state.html#adbdd9149143734526d2ae5a2011ada33" title=" " alt="" coords="491,71,684,112"/>
-<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_state_1_1_player_base_state.html#ae900a3c96a64a201661774b11bf78805" title=" " alt="" coords="491,136,684,177"/>
-</map>

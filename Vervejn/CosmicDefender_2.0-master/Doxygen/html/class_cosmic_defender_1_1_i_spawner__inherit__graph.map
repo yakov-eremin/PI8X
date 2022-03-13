@@ -1,5 +1,0 @@
-<map id="CosmicDefender.ISpawner" name="CosmicDefender.ISpawner">
-<area shape="rect" id="node1" title=" " alt="" coords="25,80,200,107"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_spawner_entities.html" title=" " alt="" coords="5,155,220,181"/>
-<area shape="rect" id="node2" href="$interface_cosmic_defender_1_1_handlers.html" title=" " alt="" coords="76,5,149,32"/>
-</map>

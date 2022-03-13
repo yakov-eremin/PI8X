@@ -1,7 +1,0 @@
-<map id="CosmicDefender.GameManager.GetInstance" name="CosmicDefender.GameManager.GetInstance">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,216,76"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_game_manager.html#a397da5fe57161561f235ea7ec962818a" title=" " alt="" coords="264,35,475,76"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="529,5,715,47"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_content.html#a4508aaa788ee7b67a55279939ecee340" title=" " alt="" coords="523,71,721,98"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="769,5,972,47"/>
-</map>

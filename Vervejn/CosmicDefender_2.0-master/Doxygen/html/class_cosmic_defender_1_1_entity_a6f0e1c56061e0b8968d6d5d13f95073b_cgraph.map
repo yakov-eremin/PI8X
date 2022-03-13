@@ -1,5 +1,0 @@
-<map id="CosmicDefender.Entity.Draw" name="CosmicDefender.Entity.Draw">
-<area shape="rect" id="node1" title="Прорисовка объекта" alt="" coords="5,46,193,73"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_window.html#ae38d0d0bf8146d3057c7b2fe6172ce03" title=" " alt="" coords="241,5,431,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_window.html#a1f51e7afcaccd2419ce9c274a1c34eb2" title=" " alt="" coords="241,71,431,112"/>
-</map>

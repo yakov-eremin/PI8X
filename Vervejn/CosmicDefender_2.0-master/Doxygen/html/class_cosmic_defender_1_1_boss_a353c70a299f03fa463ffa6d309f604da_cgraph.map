@@ -1,8 +1,0 @@
-<map id="CosmicDefender.Boss.Update" name="CosmicDefender.Boss.Update">
-<area shape="rect" id="node1" title="Обновление объекта" alt="" coords="5,71,201,98"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_ship.html#accaeda4a6820983d0bca4bc0287a7b11" title="Проверить, позволяет ли таймер скорострельности выстрелить?" alt="" coords="251,5,439,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_entity.html#a37c640a2e971d226229bd4cfda5b5fe4" title="Применить к объету силу(ускорение)" alt="" coords="249,71,441,98"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_gun.html#ac3107e6f3f14b2ac35a3e0269e10e25d" title=" " alt="" coords="257,123,433,150"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_entity.html#a2e53677d03c15874333253521d3a8918" title="Длина вектора" alt="" coords="493,61,692,103"/>
-<area shape="rect" id="node6" href="$interface_cosmic_defender_1_1_i_gun_shot.html#ada04e266dffeaf8e472388b65a8e0bdb" title=" " alt="" coords="489,127,696,154"/>
-</map>

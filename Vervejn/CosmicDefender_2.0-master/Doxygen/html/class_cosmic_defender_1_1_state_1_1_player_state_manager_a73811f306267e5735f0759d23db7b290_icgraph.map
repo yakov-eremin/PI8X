@@ -1,7 +1,0 @@
-<map id="CosmicDefender.State.PlayerStateManager.SwitchState" name="CosmicDefender.State.PlayerStateManager.SwitchState">
-<area shape="rect" id="node1" title=" " alt="" coords="269,104,463,145"/>
-<area shape="rect" id="node2" href="$class_n_unit_tests_1_1_tests.html#a94fe60d9fa6496b13c1ecfe6b44111af" title=" " alt="" coords="5,5,221,47"/>
-<area shape="rect" id="node3" href="$class_n_unit_tests_1_1_tests.html#ab17a4b288acdf8b58ce85a942ddd3b1a" title=" " alt="" coords="5,71,221,112"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_state_1_1_player_fast_state.html#a5db5b7e4475438cd5356db13ec3ea7e2" title=" " alt="" coords="17,136,210,177"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_state_1_1_player_simple_state.html#ae02b2af865295d0ce0432dd1cc4cf79e" title=" " alt="" coords="17,201,210,243"/>
-</map>

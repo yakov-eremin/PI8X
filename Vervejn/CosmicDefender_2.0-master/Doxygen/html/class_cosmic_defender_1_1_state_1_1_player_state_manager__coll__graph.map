@@ -1,6 +1,0 @@
-<map id="CosmicDefender.State.PlayerStateManager" name="CosmicDefender.State.PlayerStateManager">
-<area shape="rect" id="node1" title=" " alt="" coords="83,185,276,227"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_state_1_1_player_fast_state.html" title=" " alt="" coords="5,81,199,123"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_state_1_1_player_base_state.html" title=" " alt="" coords="173,5,293,32"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_state_1_1_player_simple_state.html" title=" " alt="" coords="223,81,416,123"/>
-</map>

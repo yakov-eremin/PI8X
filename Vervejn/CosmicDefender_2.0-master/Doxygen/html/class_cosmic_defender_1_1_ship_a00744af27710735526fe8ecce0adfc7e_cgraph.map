@@ -1,5 +1,0 @@
-<map id="CosmicDefender.Ship.Update" name="CosmicDefender.Ship.Update">
-<area shape="rect" id="node1" title="Обновление объекта" alt="" coords="5,35,197,61"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_gun.html#a5075bac09dace77b5b5333334589e5a9" title=" " alt="" coords="246,5,437,32"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_ship.html#a0f8fd57b4b023dcfc48bbc03b5dbbdb5" title="Обновить направление корабля" alt="" coords="245,57,437,98"/>
-</map>

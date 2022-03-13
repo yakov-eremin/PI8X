@@ -1,6 +1,0 @@
-<map id="CosmicDefender.Collider.IsCollide" name="CosmicDefender.Collider.IsCollide">
-<area shape="rect" id="node1" title=" " alt="" coords="483,39,651,80"/>
-<area shape="rect" id="node2" href="$class_n_unit_tests_1_1_entities_tests.html#afbebd68da87aaa5b5f6b492ac6ee1a38" title=" " alt="" coords="264,5,435,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_collider.html#a1cf83abfc6725460238fea7becb81cc3" title=" " alt="" coords="265,71,433,112"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_game_manager.html#af460e878dd72b6fdd9df1e9beb622c4a" title=" " alt="" coords="5,71,216,112"/>
-</map>
