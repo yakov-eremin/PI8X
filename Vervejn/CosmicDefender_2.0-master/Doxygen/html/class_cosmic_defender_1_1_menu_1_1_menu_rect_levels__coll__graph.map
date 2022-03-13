@@ -1,0 +1,12 @@
+<map id="CosmicDefender.Menu.MenuRectLevels" name="CosmicDefender.Menu.MenuRectLevels">
+<area shape="rect" id="node1" title=" " alt="" coords="983,67,1172,109"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_game_level.html" title=" " alt="" coords="716,75,901,101"/>
+<area shape="rect" id="node3" href="$interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_entity.html" title="Абстрактный объект" alt="" coords="177,64,233,91"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_boss.html" title="Вражеский корабль (босс)" alt="" coords="411,48,561,75"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="283,64,331,91"/>
+<area shape="rect" id="node9" href="$class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока" alt="" coords="394,99,578,125"/>
+<area shape="rect" id="node7" href="$interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="19,64,115,91"/>
+<area shape="rect" id="node8" href="$interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="21,115,112,141"/>
+<area shape="rect" id="node10" href="$class_cosmic_defender_1_1_factory_method_1_1_abstract_factory.html" title=" " alt="" coords="380,150,592,191"/>
+</map>

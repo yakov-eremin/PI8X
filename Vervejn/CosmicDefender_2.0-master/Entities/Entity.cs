@@ -8,6 +8,9 @@ using SFML.System;
 
 namespace CosmicDefender
 {
+    /// <summary>
+    /// Абстрактный объект
+    /// </summary>
     public abstract class Entity : IEntityVisitor, IEntityStats, IDrawableObjects
     {
         #region Fields
@@ -28,6 +31,14 @@ namespace CosmicDefender
         #endregion
         
         #region Constructors
+        /// <summary>
+        /// Конструктор
+        /// </summary>
+        /// <param name="sprite">Спрайт</param>
+        /// <param name="maxSpeed">Максимальная скорость</param>
+        /// <param name="acceleration">Ускорение</param>
+        /// <param name="name">Название</param>
+        /// <param name="health">Здоровье</param>
         public Entity(Sprite sprite, float maxSpeed, float acceleration, string name, float health)
         {
             _sprite = new Sprite(sprite);
@@ -40,12 +51,19 @@ namespace CosmicDefender
             this.EnableCollide();
             this.Coords = new Vector2f(0, 0);
         }
+        /// <summary>
+        /// Пустой конструктор
+        /// </summary>
+        /// <remarks></remarks>
         public Entity()
-        {
-        }
+        { }
         #endregion
         
         #region Clone
+        /// <summary>
+        /// Глубокое копирование
+        /// </summary>
+        /// <returns>Полный клон объекта</returns>
         public virtual Entity DeepCopy()
         {
             Entity clone = (Entity) this.MemberwiseClone();
@@ -60,6 +78,10 @@ namespace CosmicDefender
             clone.IsActive = false;
             return clone;
         }
+        /// <summary>
+        /// Поверхностное копирование
+        /// </summary>
+        /// <returns>Поверхностный клон объекта</returns>
         public Entity ShallowCopy()
         {
             return (Entity) this.MemberwiseClone();
@@ -86,6 +108,9 @@ namespace CosmicDefender
             //Проверить позиции объектов
             CheckPostitions();
         }
+        /// <summary>
+        /// Проверить позицию объекта в области игры
+        /// </summary>
         public virtual void CheckPostitions()
         {
             if (Coords.X > 1280)
@@ -105,10 +130,17 @@ namespace CosmicDefender
                 Coords = new Vector2f(Coords.X, 720);
             }
         }
+        /// <summary>
+        /// Обновить позицию объекта
+        /// </summary>
+        /// <param name="time">Delta Time</param>
         public void UpdatePosition(float time)
         {
             this.Coords += Speed * time;
         }
+        /// <summary>
+        /// Применить к объету силу(ускорение)
+        /// </summary>
         public void Force()
         {
             //Наращиваем скорость
@@ -125,6 +157,11 @@ namespace CosmicDefender
                 Speed = Speed2;
             }
         }
+        /// <summary>
+        /// Нормализация вектора
+        /// </summary>
+        /// <param name="vec">Вектор</param>
+        /// <returns>Нормализованный вектор</returns>
         private Vector2f Normalization(Vector2f vec)
         {
             float length = LengthVector(vec);
@@ -137,6 +174,11 @@ namespace CosmicDefender
                 return vec;
             }
         }
+        /// <summary>
+        /// Длина вектора
+        /// </summary>
+        /// <param name="vec">Вектора</param>
+        /// <returns>Длина вектора</returns>
         public float LengthVector(Vector2f vec)
         {
             float length = (float)Math.Sqrt((vec.X) * (vec.X) + (vec.Y) * (vec.Y));
@@ -148,27 +190,41 @@ namespace CosmicDefender
         }
         #endregion
 
-        public virtual void Damage(Entity Object1)
+        /// <summary>
+        /// Нанести урон объекту Object
+        /// </summary>
+        /// <param name="Object">Объект, который должен быть надамажен</param>
+        public virtual void Damage(Entity Object)
         {
-            Object1.Health -= this.Dmg;
+            Object.Health -= this.Dmg;
         }
         
         #region Реакции на другие объекты (Visiter)
-
         public virtual void Visit(Bullet bullet) { }
         public virtual void Visit(EnemyShip enemyShip) { }
         public virtual void Visit(PlayerShip playerShip) { }
         public virtual void Visit(Asteroid asteroid) { }
         public virtual void Visit(Entity entity) { }
+        /// <summary>
+        /// Проверить коллизию между 2 объектами
+        /// </summary>
+        /// <param name="ent1">Объект 1</param>
+        /// <param name="ent2">Объект 2</param>
         public abstract void Collide(Entity ent1, Entity ent2);
         
         #endregion
 
         #region Observer
+        /// <summary>
+        /// Включить коллизию для объекта
+        /// </summary>
         public void EnableCollide()
         {
             Collider.getInstance().OnCollide += Collide;
         }
+        /// <summary>
+        /// Отключить коллизию для объекта
+        /// </summary>
         public void DisableCollide()
         {
             Collider.getInstance().OnCollide -= Collide;

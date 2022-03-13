@@ -32,12 +32,10 @@ namespace CosmicDefender
             this._allCountEntities = allCountEntities;
             this.EnemyBoss = boss;
         }
-        
         public void Update(float time)
         {
             Draw();
         }
-
         public void Draw()
         {
             Window.getInstance().getWindow().Draw(_sprite);

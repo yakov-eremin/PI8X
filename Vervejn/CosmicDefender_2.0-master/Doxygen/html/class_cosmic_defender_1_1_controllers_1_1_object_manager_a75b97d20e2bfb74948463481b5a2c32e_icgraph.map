@@ -1,0 +1,5 @@
+<map id="CosmicDefender.Controllers.ObjectManager.GetPlayer" name="CosmicDefender.Controllers.ObjectManager.GetPlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="249,39,436,80"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_boss.html#ace9e3b4adc7ce8c39b85b2920e680c62" title="Обновить направление корабля" alt="" coords="5,5,201,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_enemy_ship.html#acfe45be1aa31719390ee9e7685654ed2" title="Обновить направление корабля" alt="" coords="7,71,199,112"/>
+</map>

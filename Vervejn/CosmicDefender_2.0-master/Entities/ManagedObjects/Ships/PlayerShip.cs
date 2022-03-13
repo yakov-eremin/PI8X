@@ -11,10 +11,29 @@ using SFML.Window;
 
 namespace CosmicDefender
 {
+    /// <summary>
+    /// Корабль игрока
+    /// </summary>
     public class PlayerShip : Ship
     {
+        /// <summary>
+        /// Состояние объекта
+        /// </summary>
         public PlayerStateManager _stateManager { get; }
+        /// <summary>
+        /// Пустой конструктор
+        /// </summary>
         public PlayerShip() { }
+        /// <summary>
+        /// Конструктор PlayerShip
+        /// </summary>
+        /// <param name="sprite">Спрайт</param>
+        /// <param name="maxSpeed">Максимальная скорость</param>
+        /// <param name="acceleration">Ускорение</param>
+        /// <param name="name">Название</param>
+        /// <param name="health">Здоровье</param>
+        /// <param name="weapon">Пушка</param>
+        /// <param name="firingRate">Скорострельность</param>
         public PlayerShip(Sprite sprite, float maxSpeed, float acceleration, string name, float health, 
             Gun weapon, float firingRate) 
             : base(sprite, maxSpeed, acceleration, name, health, weapon, firingRate)

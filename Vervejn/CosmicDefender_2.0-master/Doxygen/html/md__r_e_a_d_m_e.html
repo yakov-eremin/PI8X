@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CosmicDefender: ComicDefender</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">CosmicDefender
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title"><a class="el" href="namespace_comic_defender.html">ComicDefender</a> </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >Данная работа была выполнена, как курсовая, для предмета ООП. Движок игры был построен с помощью библиотеки SFML С++ / SFML C#.</p>
+<p ><a class="el" href="namespace_cosmic_defender.html">CosmicDefender</a> - это идея, которая была взята из игры Asteroids 1972 года. В этой игре используются различные боссы, астероиды и корабли. В <a class="el" href="namespace_cosmic_defender.html">CosmicDefender</a> я очень часто пользовался векторной математикой, в итоге получилось некая левитация в космосе, так же была разработана система двигателей, с помощью которых вектора переходили в обратные, чтобы преодолеть левитацию.</p>
+<p >Необходимые Доработки: В игре была разработана гравитация, которая планировалась будет использоваться в уровне с чёрной дырой, но данный уровень находится в разработке. Так же в игре была разработана система здоровья, которая активно использовалась на боссах и на самом герое, её необходимо доработать, чтобы создать баланс игры. В начальном интерфейсе была сделана заготовка, которая должна отражать здоровье, урон и т.д. твоего корабля. Так же в была идея на разработку прокачки, чтобы последующие корабли открывались после какого-нибудь события. Есть небольшой баг, при появлении объектов в точке (0,0), например при спавне босса, его хитбокс почему-то закрывает весь экран и пули взрываются сразу при выстреле.</p>
+<p >Баланс: Необходимо сбалансировать кол-во врагов, нужно чётко установить кол-во врагов которые будут спавниться на каждом уровне. Спавн босса происходит сразу после того, как будут убиты 90% кораблей.</p>
+<p >Вывод: -Игра требует небольших доработок, но впринципе ядро готово, что-то ввести/удалить не составит большого труда. -<a class="el" href="namespace_cosmic_defender.html">CosmicDefender</a> написана в 2 экземплярах С# и С++, но в С++ есть небольшие проблемы, так как основной проект был написан на C#, а на С++ я портировал.</p>
+<p >Обзор игры: <a href="https://youtu.be/14DeaKXbjQs">https://youtu.be/14DeaKXbjQs</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

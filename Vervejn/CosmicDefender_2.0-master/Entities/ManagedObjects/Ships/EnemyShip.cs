@@ -9,9 +9,25 @@ using SFML.Window;
 
 namespace CosmicDefender
 {
+    /// <summary>
+    /// Вражеский корабль
+    /// </summary>
     public class EnemyShip : Ship
     {
+        /// <summary>
+        /// Дистанция, с которой вражеский корабль начинает стрелять
+        /// </summary>
         public float DistantShot = 500;
+        /// <summary>
+        /// Конструктор EnemyShip
+        /// </summary>
+        /// <param name="sprite">Спрайт</param>
+        /// <param name="maxSpeed">Максимальная скорость</param>
+        /// <param name="acceleration">Ускорение</param>
+        /// <param name="name">Название</param>
+        /// <param name="health">Здоровте</param>
+        /// <param name="weapon">Пушка</param>
+        /// <param name="firingRate">Скорострельность</param>
         public EnemyShip(Sprite sprite, float maxSpeed, float acceleration, string name, float health, Gun weapon, float firingRate) 
             : base(sprite, maxSpeed, acceleration, name, health, weapon, firingRate)
         {
@@ -27,7 +43,10 @@ namespace CosmicDefender
             }
             base.Update(time);
         }
-
+        /// <summary>
+        /// Проверить дистанцию от вражеского корабля до корабля игрока
+        /// </summary>
+        /// <returns></returns>
         private float CheckDistant()
         {
             //Находим игрока
@@ -45,15 +64,12 @@ namespace CosmicDefender
             //Находим вектор между мышью и кораблём
             Vector2f Rotate = target.Coords - Coords;
             //Преобразуем
-            float rotat = (float)((Math.Atan2(Rotate.Y, Rotate.X) * 180 / Math.PI) + 90);
+            float rotat = (float) ((Math.Atan2(Rotate.Y, Rotate.X) * 180 / Math.PI) + 90);
             //Поворачиваем спрайт
             _sprite.Rotation = rotat;
             //Обновляем поворот корабля
             Rotation = Rotate;
         }
-        
-        
-        
         #region Visiter
         public override void Visit(EnemyShip enemyShip)
         {

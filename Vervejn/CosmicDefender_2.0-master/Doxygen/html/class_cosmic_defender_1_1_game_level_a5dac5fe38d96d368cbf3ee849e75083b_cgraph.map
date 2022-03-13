@@ -1,0 +1,5 @@
+<map id="CosmicDefender.GameLevel.Draw" name="CosmicDefender.GameLevel.Draw">
+<area shape="rect" id="node1" title="Прорисовка объекта" alt="" coords="5,46,224,73"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_window.html#ae38d0d0bf8146d3057c7b2fe6172ce03" title=" " alt="" coords="272,5,461,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_window.html#a1f51e7afcaccd2419ce9c274a1c34eb2" title=" " alt="" coords="272,71,461,112"/>
+</map>

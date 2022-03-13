@@ -1,0 +1,7 @@
+<map id="CosmicDefender.ActiveObjects.Damage" name="CosmicDefender.ActiveObjects.Damage">
+<area shape="rect" id="node1" title="Нанести урон объекту Object" alt="" coords="245,100,451,141"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_player_ship.html#ad414cd6400ad0c1aec8ec9828a7b974a" title="Метод взаимодействия с объектом Asteroid" alt="" coords="7,5,195,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_asteroid.html#a95367dfaff716cc858311a0e3d44d738" title="Метод взаимодействия с объектом Bullet" alt="" coords="15,71,188,112"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_boss.html#ac0ab6e332b3f097baf0960639b6ec41a" title="Метод взаимодействия с объектом Bullet" alt="" coords="11,137,192,163"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_enemy_ship.html#a53099e767dfe66c8fead5cfc6b92ef2f" title="Метод взаимодействия с объектом Bullet" alt="" coords="5,188,197,229"/>
+</map>

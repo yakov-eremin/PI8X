@@ -1,0 +1,10 @@
+<map id="CosmicDefender.ActiveObjects" name="CosmicDefender.ActiveObjects">
+<area shape="rect" id="node1" title=" " alt="" coords="207,155,408,181"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_adapter_dmg_objects.html" title=" " alt="" coords="5,229,199,271"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_asteroid.html" title=" " alt="" coords="223,237,392,263"/>
+<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_bullet.html" title=" " alt="" coords="417,237,571,263"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html" title="Абстрактный объект" alt="" coords="279,80,335,107"/>
+<area shape="rect" id="node3" href="$interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="142,5,238,32"/>
+<area shape="rect" id="node4" href="$interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="262,5,353,32"/>
+<area shape="rect" id="node5" href="$interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="377,5,499,32"/>
+</map>

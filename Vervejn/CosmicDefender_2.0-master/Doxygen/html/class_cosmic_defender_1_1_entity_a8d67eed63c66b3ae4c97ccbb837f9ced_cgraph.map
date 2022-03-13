@@ -1,0 +1,9 @@
+<map id="CosmicDefender.Entity.Update" name="CosmicDefender.Entity.Update">
+<area shape="rect" id="node1" title="Обновление объекта" alt="" coords="5,143,205,170"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#acfbacab6e15051ec293d383cc21354ad" title="Проверить позицию объекта в области игры" alt="" coords="255,5,451,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a187328d39790fd44ce49978247eb4c18" title=" " alt="" coords="260,71,447,112"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811" title=" " alt="" coords="260,136,447,177"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="260,201,447,243"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_entity.html#ac3628480f4b2b300ec23f4bd7d7a68c7" title="Обновить позицию объекта" alt="" coords="253,267,453,308"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="501,201,704,243"/>
+</map>

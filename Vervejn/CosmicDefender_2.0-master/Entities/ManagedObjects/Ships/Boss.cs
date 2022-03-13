@@ -5,9 +5,25 @@ using SFML.System;
 
 namespace CosmicDefender
 {
+    /// <summary>
+    /// Вражеский корабль (босс)
+    /// </summary>
     public class Boss : Ship
     {
+        /// <summary>
+        /// Дистанция, с которой вражеский корабль начинает стрелять
+        /// </summary>
         public float DistantShot = 500;
+        /// <summary>
+        /// Конструктор Boss
+        /// </summary>
+        /// <param name="sprite">Спрайт</param>
+        /// <param name="maxSpeed">Максимальная скорость</param>
+        /// <param name="acceleration">Ускорение</param>
+        /// <param name="name">Название</param>
+        /// <param name="health">Здоровте</param>
+        /// <param name="weapon">Пушка</param>
+        /// <param name="firingRate">Скорострельность</param>
         public Boss(Sprite sprite, float maxSpeed, float acceleration, string name, float health, Gun weapon, float firingRate) 
             : base(sprite, maxSpeed, acceleration, name, health, weapon, firingRate)
         {

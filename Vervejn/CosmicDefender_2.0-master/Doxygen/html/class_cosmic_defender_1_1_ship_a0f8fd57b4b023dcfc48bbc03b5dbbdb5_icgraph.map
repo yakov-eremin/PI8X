@@ -1,0 +1,4 @@
+<map id="CosmicDefender.Ship.UpdateRotation" name="CosmicDefender.Ship.UpdateRotation">
+<area shape="rect" id="node1" title="Обновить направление корабля" alt="" coords="245,5,437,47"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_ship.html#a00744af27710735526fe8ecce0adfc7e" title="Обновление объекта" alt="" coords="5,13,197,39"/>
+</map>

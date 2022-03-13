@@ -1,0 +1,4 @@
+<map id="CosmicDefender.Asteroid.Visit" name="CosmicDefender.Asteroid.Visit">
+<area shape="rect" id="node1" title="Метод взаимодействия с объектом PlayerShip" alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#ac1a0acbfc6c603a3857cc3e3f7e22971" title="Нанести урон объекту Object" alt="" coords="227,13,433,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CosmicDefender.EnemyShip.Collide" name="CosmicDefender.EnemyShip.Collide">
+<area shape="rect" id="node1" title="Проверить коллизию между 2 объектами" alt="" coords="5,5,197,47"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#a5e687f4f6714f3baed9ed743947b8fe9" title="Метод взаимодействия с объектом Bullet" alt="" coords="245,13,431,39"/>
+</map>

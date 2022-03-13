@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CosmicDefender: Класс CosmicDefender.Bullet</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">CosmicDefender
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_cosmic_defender_1_1_bullet.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_cosmic_defender_1_1_bullet-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс CosmicDefender.Bullet</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Граф наследования:CosmicDefender.Bullet:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet__inherit__graph.png" border="0" usemap="#a_cosmic_defender_8_bullet_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_cosmic_defender_8_bullet_inherit__map" id="a_cosmic_defender_8_bullet_inherit__map">
+<area shape="rect" title=" " alt="" coords="93,229,248,256"/>
+<area shape="rect" href="class_cosmic_defender_1_1_active_objects.html" title=" " alt="" coords="119,155,222,181"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html" title="Абстрактный объект" alt="" coords="143,80,199,107"/>
+<area shape="rect" href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="5,5,101,32"/>
+<area shape="rect" href="interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="125,5,216,32"/>
+<area shape="rect" href="interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="240,5,363,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса CosmicDefender.Bullet:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet__coll__graph.png" border="0" usemap="#a_cosmic_defender_8_bullet_coll__map" alt="Collaboration graph"/></div>
+<map name="a_cosmic_defender_8_bullet_coll__map" id="a_cosmic_defender_8_bullet_coll__map">
+<area shape="rect" title=" " alt="" coords="93,229,248,256"/>
+<area shape="rect" href="class_cosmic_defender_1_1_active_objects.html" title=" " alt="" coords="119,155,222,181"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html" title="Абстрактный объект" alt="" coords="143,80,199,107"/>
+<area shape="rect" href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="5,5,101,32"/>
+<area shape="rect" href="interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="125,5,216,32"/>
+<area shape="rect" href="interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="240,5,363,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a47d48a5afb12000d800b1796f4e26e6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#a47d48a5afb12000d800b1796f4e26e6d">Bullet</a> ()</td></tr>
+<tr class="separator:a47d48a5afb12000d800b1796f4e26e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8630b789bd74953857bf636ffb3a8678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#a8630b789bd74953857bf636ffb3a8678">Bullet</a> (Sprite sprite, float maxSpeed, float acceleration, string name, float health, float dmg)</td></tr>
+<tr class="separator:a8630b789bd74953857bf636ffb3a8678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02b238f672789dc8573c1b677679b61"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#af02b238f672789dc8573c1b677679b61">Update</a> (float time)</td></tr>
+<tr class="memdesc:af02b238f672789dc8573c1b677679b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление объекта  <a href="class_cosmic_defender_1_1_bullet.html#af02b238f672789dc8573c1b677679b61">Подробнее...</a><br /></td></tr>
+<tr class="separator:af02b238f672789dc8573c1b677679b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56909db17f5243c2a3289aeedd2bdc5e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#a56909db17f5243c2a3289aeedd2bdc5e">CheckPostitions</a> ()</td></tr>
+<tr class="memdesc:a56909db17f5243c2a3289aeedd2bdc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить позицию объекта в области игры  <a href="class_cosmic_defender_1_1_bullet.html#a56909db17f5243c2a3289aeedd2bdc5e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56909db17f5243c2a3289aeedd2bdc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a376ab4dc10c75970a585d9478e8781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#a8a376ab4dc10c75970a585d9478e8781">DeepCopy</a> ()</td></tr>
+<tr class="memdesc:a8a376ab4dc10c75970a585d9478e8781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глубокое копирование  <a href="class_cosmic_defender_1_1_bullet.html#a8a376ab4dc10c75970a585d9478e8781">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8a376ab4dc10c75970a585d9478e8781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed14bf591021ae637ce2900348d1a33b"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#aed14bf591021ae637ce2900348d1a33b">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a> bullet)</td></tr>
+<tr class="memdesc:aed14bf591021ae637ce2900348d1a33b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a>  <a href="class_cosmic_defender_1_1_bullet.html#aed14bf591021ae637ce2900348d1a33b">Подробнее...</a><br /></td></tr>
+<tr class="separator:aed14bf591021ae637ce2900348d1a33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627c6415c0dd48099af65b1ac6bcd0bf"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#a627c6415c0dd48099af65b1ac6bcd0bf">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_enemy_ship.html">EnemyShip</a> enemyShip)</td></tr>
+<tr class="memdesc:a627c6415c0dd48099af65b1ac6bcd0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_enemy_ship.html" title="Вражеский корабль">EnemyShip</a>  <a href="class_cosmic_defender_1_1_bullet.html#a627c6415c0dd48099af65b1ac6bcd0bf">Подробнее...</a><br /></td></tr>
+<tr class="separator:a627c6415c0dd48099af65b1ac6bcd0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e1b642617ad40957a0f09448d94dbb"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#ac4e1b642617ad40957a0f09448d94dbb">Collide</a> (<a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> ent1, <a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> ent2)</td></tr>
+<tr class="memdesc:ac4e1b642617ad40957a0f09448d94dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить коллизию между 2 объектами  <a href="class_cosmic_defender_1_1_bullet.html#ac4e1b642617ad40957a0f09448d94dbb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac4e1b642617ad40957a0f09448d94dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_cosmic_defender_1_1_active_objects"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_cosmic_defender_1_1_active_objects')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_cosmic_defender_1_1_active_objects.html">CosmicDefender.ActiveObjects</a></td></tr>
+<tr class="memitem:a4260cd847c7eaa752c8266007ab14b44 inherit pub_methods_class_cosmic_defender_1_1_active_objects"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_active_objects.html#a4260cd847c7eaa752c8266007ab14b44">ActiveObjects</a> ()</td></tr>
+<tr class="separator:a4260cd847c7eaa752c8266007ab14b44 inherit pub_methods_class_cosmic_defender_1_1_active_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001618dac9f52a168ab15a94381a6d4c inherit pub_methods_class_cosmic_defender_1_1_active_objects"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_active_objects.html#a001618dac9f52a168ab15a94381a6d4c">ActiveObjects</a> (Sprite sprite, float maxSpeed, float acceleration, string name, float health)</td></tr>
+<tr class="separator:a001618dac9f52a168ab15a94381a6d4c inherit pub_methods_class_cosmic_defender_1_1_active_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd75359eb812a272a1c778b0fcf1ec56 inherit pub_methods_class_cosmic_defender_1_1_active_objects"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_active_objects.html#acd75359eb812a272a1c778b0fcf1ec56">Damage</a> (<a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> Object1)</td></tr>
+<tr class="memdesc:acd75359eb812a272a1c778b0fcf1ec56 inherit pub_methods_class_cosmic_defender_1_1_active_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нанести урон объекту Object  <a href="class_cosmic_defender_1_1_active_objects.html#acd75359eb812a272a1c778b0fcf1ec56">Подробнее...</a><br /></td></tr>
+<tr class="separator:acd75359eb812a272a1c778b0fcf1ec56 inherit pub_methods_class_cosmic_defender_1_1_active_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_cosmic_defender_1_1_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_cosmic_defender_1_1_entity')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_cosmic_defender_1_1_entity.html">CosmicDefender.Entity</a></td></tr>
+<tr class="memitem:ac82d96ecf7a43cd9acade783880b7412 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#ac82d96ecf7a43cd9acade783880b7412">Entity</a> (Sprite sprite, float maxSpeed, float acceleration, string name, float health)</td></tr>
+<tr class="memdesc:ac82d96ecf7a43cd9acade783880b7412 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <a href="class_cosmic_defender_1_1_entity.html#ac82d96ecf7a43cd9acade783880b7412">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac82d96ecf7a43cd9acade783880b7412 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be4a04bd40556f57221e675b53807f2 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a1be4a04bd40556f57221e675b53807f2">Entity</a> ()</td></tr>
+<tr class="memdesc:a1be4a04bd40556f57221e675b53807f2 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой конструктор  <a href="class_cosmic_defender_1_1_entity.html#a1be4a04bd40556f57221e675b53807f2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1be4a04bd40556f57221e675b53807f2 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9816cc081bf95bd9ce803007847b1a inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#abd9816cc081bf95bd9ce803007847b1a">DeepCopy</a> ()</td></tr>
+<tr class="memdesc:abd9816cc081bf95bd9ce803007847b1a inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глубокое копирование  <a href="class_cosmic_defender_1_1_entity.html#abd9816cc081bf95bd9ce803007847b1a">Подробнее...</a><br /></td></tr>
+<tr class="separator:abd9816cc081bf95bd9ce803007847b1a inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f543ef927512b21debfc695d225b564 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a5f543ef927512b21debfc695d225b564">ShallowCopy</a> ()</td></tr>
+<tr class="memdesc:a5f543ef927512b21debfc695d225b564 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поверхностное копирование  <a href="class_cosmic_defender_1_1_entity.html#a5f543ef927512b21debfc695d225b564">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5f543ef927512b21debfc695d225b564 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d67eed63c66b3ae4c97ccbb837f9ced inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a8d67eed63c66b3ae4c97ccbb837f9ced">Update</a> (float time)</td></tr>
+<tr class="memdesc:a8d67eed63c66b3ae4c97ccbb837f9ced inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление объекта  <a href="class_cosmic_defender_1_1_entity.html#a8d67eed63c66b3ae4c97ccbb837f9ced">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8d67eed63c66b3ae4c97ccbb837f9ced inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbacab6e15051ec293d383cc21354ad inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#acfbacab6e15051ec293d383cc21354ad">CheckPostitions</a> ()</td></tr>
+<tr class="memdesc:acfbacab6e15051ec293d383cc21354ad inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить позицию объекта в области игры  <a href="class_cosmic_defender_1_1_entity.html#acfbacab6e15051ec293d383cc21354ad">Подробнее...</a><br /></td></tr>
+<tr class="separator:acfbacab6e15051ec293d383cc21354ad inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3628480f4b2b300ec23f4bd7d7a68c7 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#ac3628480f4b2b300ec23f4bd7d7a68c7">UpdatePosition</a> (float time)</td></tr>
+<tr class="memdesc:ac3628480f4b2b300ec23f4bd7d7a68c7 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить позицию объекта  <a href="class_cosmic_defender_1_1_entity.html#ac3628480f4b2b300ec23f4bd7d7a68c7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac3628480f4b2b300ec23f4bd7d7a68c7 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c640a2e971d226229bd4cfda5b5fe4 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a37c640a2e971d226229bd4cfda5b5fe4">Force</a> ()</td></tr>
+<tr class="memdesc:a37c640a2e971d226229bd4cfda5b5fe4 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применить к объету силу(ускорение)  <a href="class_cosmic_defender_1_1_entity.html#a37c640a2e971d226229bd4cfda5b5fe4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a37c640a2e971d226229bd4cfda5b5fe4 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e53677d03c15874333253521d3a8918 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a2e53677d03c15874333253521d3a8918">LengthVector</a> (Vector2f vec)</td></tr>
+<tr class="memdesc:a2e53677d03c15874333253521d3a8918 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина вектора  <a href="class_cosmic_defender_1_1_entity.html#a2e53677d03c15874333253521d3a8918">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2e53677d03c15874333253521d3a8918 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0e1c56061e0b8968d6d5d13f95073b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a6f0e1c56061e0b8968d6d5d13f95073b">Draw</a> ()</td></tr>
+<tr class="memdesc:a6f0e1c56061e0b8968d6d5d13f95073b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прорисовка объекта  <a href="class_cosmic_defender_1_1_entity.html#a6f0e1c56061e0b8968d6d5d13f95073b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6f0e1c56061e0b8968d6d5d13f95073b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a0acbfc6c603a3857cc3e3f7e22971 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#ac1a0acbfc6c603a3857cc3e3f7e22971">Damage</a> (<a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> Object)</td></tr>
+<tr class="memdesc:ac1a0acbfc6c603a3857cc3e3f7e22971 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нанести урон объекту Object  <a href="class_cosmic_defender_1_1_entity.html#ac1a0acbfc6c603a3857cc3e3f7e22971">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac1a0acbfc6c603a3857cc3e3f7e22971 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e687f4f6714f3baed9ed743947b8fe9 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a5e687f4f6714f3baed9ed743947b8fe9">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a> bullet)</td></tr>
+<tr class="memdesc:a5e687f4f6714f3baed9ed743947b8fe9 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a>  <a href="class_cosmic_defender_1_1_entity.html#a5e687f4f6714f3baed9ed743947b8fe9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5e687f4f6714f3baed9ed743947b8fe9 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421666ad2d82874111a27bd20eea6387 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a421666ad2d82874111a27bd20eea6387">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_enemy_ship.html">EnemyShip</a> enemyShip)</td></tr>
+<tr class="memdesc:a421666ad2d82874111a27bd20eea6387 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_enemy_ship.html" title="Вражеский корабль">EnemyShip</a>  <a href="class_cosmic_defender_1_1_entity.html#a421666ad2d82874111a27bd20eea6387">Подробнее...</a><br /></td></tr>
+<tr class="separator:a421666ad2d82874111a27bd20eea6387 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38f8f5340396db966c0590d198a558b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#aa38f8f5340396db966c0590d198a558b">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_player_ship.html">PlayerShip</a> playerShip)</td></tr>
+<tr class="memdesc:aa38f8f5340396db966c0590d198a558b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока">PlayerShip</a>  <a href="class_cosmic_defender_1_1_entity.html#aa38f8f5340396db966c0590d198a558b">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa38f8f5340396db966c0590d198a558b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a681aca2f106987394cd9305a805e84 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a1a681aca2f106987394cd9305a805e84">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_asteroid.html">Asteroid</a> asteroid)</td></tr>
+<tr class="memdesc:a1a681aca2f106987394cd9305a805e84 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_asteroid.html">Asteroid</a>  <a href="class_cosmic_defender_1_1_entity.html#a1a681aca2f106987394cd9305a805e84">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1a681aca2f106987394cd9305a805e84 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2ede90050a86444ad35ecb2de9637b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#afb2ede90050a86444ad35ecb2de9637b">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memdesc:afb2ede90050a86444ad35ecb2de9637b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_entity.html" title="Абстрактный объект">Entity</a>  <a href="class_cosmic_defender_1_1_entity.html#afb2ede90050a86444ad35ecb2de9637b">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb2ede90050a86444ad35ecb2de9637b inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568e186532b30d53e54712c56c236969 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a568e186532b30d53e54712c56c236969">Collide</a> (<a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> ent1, <a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> ent2)</td></tr>
+<tr class="memdesc:a568e186532b30d53e54712c56c236969 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить коллизию между 2 объектами  <a href="class_cosmic_defender_1_1_entity.html#a568e186532b30d53e54712c56c236969">Подробнее...</a><br /></td></tr>
+<tr class="separator:a568e186532b30d53e54712c56c236969 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14493e1f9240a817d6ff7f604c16d65 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#aa14493e1f9240a817d6ff7f604c16d65">EnableCollide</a> ()</td></tr>
+<tr class="memdesc:aa14493e1f9240a817d6ff7f604c16d65 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить коллизию для объекта  <a href="class_cosmic_defender_1_1_entity.html#aa14493e1f9240a817d6ff7f604c16d65">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa14493e1f9240a817d6ff7f604c16d65 inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b4ddcb6b16eefd65e7f1e1460a5c3f inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a48b4ddcb6b16eefd65e7f1e1460a5c3f">DisableCollide</a> ()</td></tr>
+<tr class="memdesc:a48b4ddcb6b16eefd65e7f1e1460a5c3f inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отключить коллизию для объекта  <a href="class_cosmic_defender_1_1_entity.html#a48b4ddcb6b16eefd65e7f1e1460a5c3f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a48b4ddcb6b16eefd65e7f1e1460a5c3f inherit pub_methods_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2806de02d7860b48f85234ad9736d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#add2806de02d7860b48f85234ad9736d0">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a> bullet)</td></tr>
+<tr class="memdesc:add2806de02d7860b48f85234ad9736d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a>  <a href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#add2806de02d7860b48f85234ad9736d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:add2806de02d7860b48f85234ad9736d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4292767dfb0a965e65156b352aeea44a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a4292767dfb0a965e65156b352aeea44a">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_enemy_ship.html">EnemyShip</a> enemyShip)</td></tr>
+<tr class="memdesc:a4292767dfb0a965e65156b352aeea44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_enemy_ship.html" title="Вражеский корабль">EnemyShip</a>  <a href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a4292767dfb0a965e65156b352aeea44a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4292767dfb0a965e65156b352aeea44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77304ef424e55b813b4367663b05167e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a77304ef424e55b813b4367663b05167e">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_player_ship.html">PlayerShip</a> playerShip)</td></tr>
+<tr class="memdesc:a77304ef424e55b813b4367663b05167e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока">PlayerShip</a>  <a href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a77304ef424e55b813b4367663b05167e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a77304ef424e55b813b4367663b05167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2021bce456808abc67302df46b6f0d5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a2021bce456808abc67302df46b6f0d5c">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_asteroid.html">Asteroid</a> asteroid)</td></tr>
+<tr class="memdesc:a2021bce456808abc67302df46b6f0d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_asteroid.html">Asteroid</a>  <a href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a2021bce456808abc67302df46b6f0d5c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2021bce456808abc67302df46b6f0d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363e471c7431e860d2c24ebf243ea2f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a363e471c7431e860d2c24ebf243ea2f7">Visit</a> (<a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memdesc:a363e471c7431e860d2c24ebf243ea2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_entity.html" title="Абстрактный объект">Entity</a>  <a href="interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html#a363e471c7431e860d2c24ebf243ea2f7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a363e471c7431e860d2c24ebf243ea2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cc67d42b3cc38372bdc924b361cde8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_drawable_objects.html#ae0cc67d42b3cc38372bdc924b361cde8">Update</a> (float time)</td></tr>
+<tr class="memdesc:ae0cc67d42b3cc38372bdc924b361cde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление объекта  <a href="interface_cosmic_defender_1_1_i_drawable_objects.html#ae0cc67d42b3cc38372bdc924b361cde8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae0cc67d42b3cc38372bdc924b361cde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6520bcf9d4ee053e2c2dcff461cd57b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_drawable_objects.html#a6520bcf9d4ee053e2c2dcff461cd57b8">Draw</a> ()</td></tr>
+<tr class="memdesc:a6520bcf9d4ee053e2c2dcff461cd57b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прорисовка объекта  <a href="interface_cosmic_defender_1_1_i_drawable_objects.html#a6520bcf9d4ee053e2c2dcff461cd57b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6520bcf9d4ee053e2c2dcff461cd57b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:aeb3c8a4e9b01db8bdf6e9b12a04526fc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_bullet.html#aeb3c8a4e9b01db8bdf6e9b12a04526fc">DefaultMaxSpeed</a></td></tr>
+<tr class="separator:aeb3c8a4e9b01db8bdf6e9b12a04526fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header properties_class_cosmic_defender_1_1_entity"><td colspan="2" onclick="javascript:toggleInherit('properties_class_cosmic_defender_1_1_entity')"><img src="closed.png" alt="-"/>&#160;Свойства унаследованные от <a class="el" href="class_cosmic_defender_1_1_entity.html">CosmicDefender.Entity</a></td></tr>
+<tr class="memitem:aafc716dedf60ad507b5b111e68584f4c inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#aafc716dedf60ad507b5b111e68584f4c">_sprite</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aafc716dedf60ad507b5b111e68584f4c inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Спрайт  <a href="class_cosmic_defender_1_1_entity.html#aafc716dedf60ad507b5b111e68584f4c">Подробнее...</a><br /></td></tr>
+<tr class="separator:aafc716dedf60ad507b5b111e68584f4c inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9863fda92d99b11b28b88d19a38f0cb6 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a9863fda92d99b11b28b88d19a38f0cb6">Coords</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9863fda92d99b11b28b88d19a38f0cb6 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координаты  <a href="class_cosmic_defender_1_1_entity.html#a9863fda92d99b11b28b88d19a38f0cb6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9863fda92d99b11b28b88d19a38f0cb6 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06135d48b2e3b48e1c13d3eaaa7f24b4 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a06135d48b2e3b48e1c13d3eaaa7f24b4">Speed</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a06135d48b2e3b48e1c13d3eaaa7f24b4 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скорость  <a href="class_cosmic_defender_1_1_entity.html#a06135d48b2e3b48e1c13d3eaaa7f24b4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a06135d48b2e3b48e1c13d3eaaa7f24b4 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e265233a0645471f78601e22fbb2b4 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a05e265233a0645471f78601e22fbb2b4">Rotation</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a05e265233a0645471f78601e22fbb2b4 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворот  <a href="class_cosmic_defender_1_1_entity.html#a05e265233a0645471f78601e22fbb2b4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a05e265233a0645471f78601e22fbb2b4 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bb239fbb1313effaf9bfcc070882c4 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a33bb239fbb1313effaf9bfcc070882c4">MaxSpeed</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a33bb239fbb1313effaf9bfcc070882c4 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная скорость  <a href="class_cosmic_defender_1_1_entity.html#a33bb239fbb1313effaf9bfcc070882c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a33bb239fbb1313effaf9bfcc070882c4 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2f67a41c40e64c75b85d6787bf43dd inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a8f2f67a41c40e64c75b85d6787bf43dd">Acceleration</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8f2f67a41c40e64c75b85d6787bf43dd inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ускорение  <a href="class_cosmic_defender_1_1_entity.html#a8f2f67a41c40e64c75b85d6787bf43dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8f2f67a41c40e64c75b85d6787bf43dd inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379654504357d8788de9bc5af5aab202 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a379654504357d8788de9bc5af5aab202">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a379654504357d8788de9bc5af5aab202 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название  <a href="class_cosmic_defender_1_1_entity.html#a379654504357d8788de9bc5af5aab202">Подробнее...</a><br /></td></tr>
+<tr class="separator:a379654504357d8788de9bc5af5aab202 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929d4e7d6c82c4685b74d3ba62021f28 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a929d4e7d6c82c4685b74d3ba62021f28">Health</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a929d4e7d6c82c4685b74d3ba62021f28 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Здоровье  <a href="class_cosmic_defender_1_1_entity.html#a929d4e7d6c82c4685b74d3ba62021f28">Подробнее...</a><br /></td></tr>
+<tr class="separator:a929d4e7d6c82c4685b74d3ba62021f28 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af297a7402fea16ca4f8387adcad328cf inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#af297a7402fea16ca4f8387adcad328cf">IsActive</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af297a7402fea16ca4f8387adcad328cf inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Активен ли  <a href="class_cosmic_defender_1_1_entity.html#af297a7402fea16ca4f8387adcad328cf">Подробнее...</a><br /></td></tr>
+<tr class="separator:af297a7402fea16ca4f8387adcad328cf inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4f37737f8c21151de7d42291830204 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#aff4f37737f8c21151de7d42291830204">Dmg</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aff4f37737f8c21151de7d42291830204 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Урон  <a href="class_cosmic_defender_1_1_entity.html#aff4f37737f8c21151de7d42291830204">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff4f37737f8c21151de7d42291830204 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c79c2ecd4e206be13e69c03292fcc10 inherit properties_class_cosmic_defender_1_1_entity"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_entity.html#a6c79c2ecd4e206be13e69c03292fcc10">Direction</a><code> [get]</code></td></tr>
+<tr class="memdesc:a6c79c2ecd4e206be13e69c03292fcc10 inherit properties_class_cosmic_defender_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализованный вектор направления  <a href="class_cosmic_defender_1_1_entity.html#a6c79c2ecd4e206be13e69c03292fcc10">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6c79c2ecd4e206be13e69c03292fcc10 inherit properties_class_cosmic_defender_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_cosmic_defender_1_1_i_entity_stats"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_cosmic_defender_1_1_i_entity_stats')"><img src="closed.png" alt="-"/>&#160;Свойства унаследованные от <a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html">CosmicDefender.IEntityStats</a></td></tr>
+<tr class="memitem:afd4409c86114167928ec8e5490bcb517 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#afd4409c86114167928ec8e5490bcb517">Coords</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afd4409c86114167928ec8e5490bcb517 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координаты  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#afd4409c86114167928ec8e5490bcb517">Подробнее...</a><br /></td></tr>
+<tr class="separator:afd4409c86114167928ec8e5490bcb517 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1238349c27caf798233f4d3215e0e45f inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a1238349c27caf798233f4d3215e0e45f">Speed</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1238349c27caf798233f4d3215e0e45f inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скорость  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a1238349c27caf798233f4d3215e0e45f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1238349c27caf798233f4d3215e0e45f inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78de4ff298683734448aef856c7dbe1c inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a78de4ff298683734448aef856c7dbe1c">Rotation</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a78de4ff298683734448aef856c7dbe1c inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворот  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a78de4ff298683734448aef856c7dbe1c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a78de4ff298683734448aef856c7dbe1c inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e602f25021da83db6e3a3a74c2ff72 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a01e602f25021da83db6e3a3a74c2ff72">MaxSpeed</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a01e602f25021da83db6e3a3a74c2ff72 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная скорость  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a01e602f25021da83db6e3a3a74c2ff72">Подробнее...</a><br /></td></tr>
+<tr class="separator:a01e602f25021da83db6e3a3a74c2ff72 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299e6edecd1a1e8f4b2a4e10e787ab81 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a299e6edecd1a1e8f4b2a4e10e787ab81">Acceleration</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a299e6edecd1a1e8f4b2a4e10e787ab81 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ускорение  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a299e6edecd1a1e8f4b2a4e10e787ab81">Подробнее...</a><br /></td></tr>
+<tr class="separator:a299e6edecd1a1e8f4b2a4e10e787ab81 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c020b64d5e9a33902f92eccadc5f1d5 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a6c020b64d5e9a33902f92eccadc5f1d5">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6c020b64d5e9a33902f92eccadc5f1d5 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a6c020b64d5e9a33902f92eccadc5f1d5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6c020b64d5e9a33902f92eccadc5f1d5 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c637f8425c5ddcf4252ae8540910c30 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a1c637f8425c5ddcf4252ae8540910c30">Health</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1c637f8425c5ddcf4252ae8540910c30 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Здоровье  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a1c637f8425c5ddcf4252ae8540910c30">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1c637f8425c5ddcf4252ae8540910c30 inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b180cfef836e44bd2fa63668ea6565f inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a5b180cfef836e44bd2fa63668ea6565f">IsActive</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a5b180cfef836e44bd2fa63668ea6565f inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Активен ли  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a5b180cfef836e44bd2fa63668ea6565f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5b180cfef836e44bd2fa63668ea6565f inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6541ddd58e0d0a5daf03353e53b8dc1b inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a6541ddd58e0d0a5daf03353e53b8dc1b">Dmg</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6541ddd58e0d0a5daf03353e53b8dc1b inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Урон  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a6541ddd58e0d0a5daf03353e53b8dc1b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6541ddd58e0d0a5daf03353e53b8dc1b inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808cb589c88c76bdf07a39c0d4a0ce5d inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memItemLeft" align="right" valign="top">Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_entity_stats.html#a808cb589c88c76bdf07a39c0d4a0ce5d">Direction</a><code> [get]</code></td></tr>
+<tr class="memdesc:a808cb589c88c76bdf07a39c0d4a0ce5d inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализованный вектор направления  <a href="interface_cosmic_defender_1_1_i_entity_stats.html#a808cb589c88c76bdf07a39c0d4a0ce5d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a808cb589c88c76bdf07a39c0d4a0ce5d inherit properties_interface_cosmic_defender_1_1_i_entity_stats"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_cosmic_defender_1_1_i_drawable_objects"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_cosmic_defender_1_1_i_drawable_objects')"><img src="closed.png" alt="-"/>&#160;Свойства унаследованные от <a class="el" href="interface_cosmic_defender_1_1_i_drawable_objects.html">CosmicDefender.IDrawableObjects</a></td></tr>
+<tr class="memitem:af471d3ea22c6eb2b6fcec190ff29dd48 inherit properties_interface_cosmic_defender_1_1_i_drawable_objects"><td class="memItemLeft" align="right" valign="top">Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_cosmic_defender_1_1_i_drawable_objects.html#af471d3ea22c6eb2b6fcec190ff29dd48">_sprite</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af471d3ea22c6eb2b6fcec190ff29dd48 inherit properties_interface_cosmic_defender_1_1_i_drawable_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Спрайт  <a href="interface_cosmic_defender_1_1_i_drawable_objects.html#af471d3ea22c6eb2b6fcec190ff29dd48">Подробнее...</a><br /></td></tr>
+<tr class="separator:af471d3ea22c6eb2b6fcec190ff29dd48 inherit properties_interface_cosmic_defender_1_1_i_drawable_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a47d48a5afb12000d800b1796f4e26e6d" name="a47d48a5afb12000d800b1796f4e26e6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d48a5afb12000d800b1796f4e26e6d">&#9670;&nbsp;</a></span>Bullet() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CosmicDefender.Bullet.Bullet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet_a47d48a5afb12000d800b1796f4e26e6d_icgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_bullet_a47d48a5afb12000d800b1796f4e26e6d_icgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_bullet_a47d48a5afb12000d800b1796f4e26e6d_icgraph" id="aclass_cosmic_defender_1_1_bullet_a47d48a5afb12000d800b1796f4e26e6d_icgraph">
+<area shape="rect" title=" " alt="" coords="272,5,463,32"/>
+<area shape="rect" href="class_cosmic_defender_1_1_bullet.html#a8a376ab4dc10c75970a585d9478e8781" title="Глубокое копирование" alt="" coords="5,5,224,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8630b789bd74953857bf636ffb3a8678" name="a8630b789bd74953857bf636ffb3a8678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8630b789bd74953857bf636ffb3a8678">&#9670;&nbsp;</a></span>Bullet() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CosmicDefender.Bullet.Bullet </td>
+          <td>(</td>
+          <td class="paramtype">Sprite&#160;</td>
+          <td class="paramname"><em>sprite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxSpeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>acceleration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>health</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dmg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a56909db17f5243c2a3289aeedd2bdc5e" name="a56909db17f5243c2a3289aeedd2bdc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56909db17f5243c2a3289aeedd2bdc5e">&#9670;&nbsp;</a></span>CheckPostitions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CosmicDefender.Bullet.CheckPostitions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить позицию объекта в области игры </p>
+
+<p>Переопределяет метод предка <a class="el" href="class_cosmic_defender_1_1_entity.html#acfbacab6e15051ec293d383cc21354ad">CosmicDefender.Entity</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet_a56909db17f5243c2a3289aeedd2bdc5e_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_bullet_a56909db17f5243c2a3289aeedd2bdc5e_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_bullet_a56909db17f5243c2a3289aeedd2bdc5e_cgraph" id="aclass_cosmic_defender_1_1_bullet_a56909db17f5243c2a3289aeedd2bdc5e_cgraph">
+<area shape="rect" title="Проверить позицию объекта в области игры" alt="" coords="5,71,200,112"/>
+<area shape="rect" href="class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811" title=" " alt="" coords="256,5,443,47"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html#a48b4ddcb6b16eefd65e7f1e1460a5c3f" title="Отключить коллизию для объекта" alt="" coords="248,71,451,112"/>
+<area shape="rect" href="class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="256,136,443,177"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html#a568e186532b30d53e54712c56c236969" title="Проверить коллизию между 2 объектами" alt="" coords="501,19,699,46"/>
+<area shape="rect" href="class_cosmic_defender_1_1_collider.html#a159c2e3664401053d7017c57343c244a" title=" " alt="" coords="507,71,693,112"/>
+<area shape="rect" href="class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="499,136,701,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4e1b642617ad40957a0f09448d94dbb" name="ac4e1b642617ad40957a0f09448d94dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e1b642617ad40957a0f09448d94dbb">&#9670;&nbsp;</a></span>Collide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CosmicDefender.Bullet.Collide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a>&#160;</td>
+          <td class="paramname"><em>ent1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_cosmic_defender_1_1_entity.html">Entity</a>&#160;</td>
+          <td class="paramname"><em>ent2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить коллизию между 2 объектами </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ent1</td><td>Объект 1</td></tr>
+    <tr><td class="paramname">ent2</td><td>Объект 2</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_cosmic_defender_1_1_entity.html#a568e186532b30d53e54712c56c236969">CosmicDefender.Entity</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet_ac4e1b642617ad40957a0f09448d94dbb_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_bullet_ac4e1b642617ad40957a0f09448d94dbb_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_bullet_ac4e1b642617ad40957a0f09448d94dbb_cgraph" id="aclass_cosmic_defender_1_1_bullet_ac4e1b642617ad40957a0f09448d94dbb_cgraph">
+<area shape="rect" title="Проверить коллизию между 2 объектами" alt="" coords="5,5,203,32"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html#a5e687f4f6714f3baed9ed743947b8fe9" title="Метод взаимодействия с объектом Bullet" alt="" coords="251,5,436,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a376ab4dc10c75970a585d9478e8781" name="a8a376ab4dc10c75970a585d9478e8781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a376ab4dc10c75970a585d9478e8781">&#9670;&nbsp;</a></span>DeepCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a> CosmicDefender.Bullet.DeepCopy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Глубокое копирование </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Полный клон объекта</dd></dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_cosmic_defender_1_1_entity.html#abd9816cc081bf95bd9ce803007847b1a">CosmicDefender.Entity</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet_a8a376ab4dc10c75970a585d9478e8781_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_bullet_a8a376ab4dc10c75970a585d9478e8781_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_bullet_a8a376ab4dc10c75970a585d9478e8781_cgraph" id="aclass_cosmic_defender_1_1_bullet_a8a376ab4dc10c75970a585d9478e8781_cgraph">
+<area shape="rect" title="Глубокое копирование" alt="" coords="5,5,224,32"/>
+<area shape="rect" href="class_cosmic_defender_1_1_bullet.html#a47d48a5afb12000d800b1796f4e26e6d" title=" " alt="" coords="272,5,463,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af02b238f672789dc8573c1b677679b61" name="af02b238f672789dc8573c1b677679b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02b238f672789dc8573c1b677679b61">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CosmicDefender.Bullet.Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновление объекта </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>Время(DeltaTime)</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_cosmic_defender_1_1_entity.html#a8d67eed63c66b3ae4c97ccbb837f9ced">CosmicDefender.Entity</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet_af02b238f672789dc8573c1b677679b61_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_bullet_af02b238f672789dc8573c1b677679b61_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_bullet_af02b238f672789dc8573c1b677679b61_cgraph" id="aclass_cosmic_defender_1_1_bullet_af02b238f672789dc8573c1b677679b61_cgraph">
+<area shape="rect" title="Обновление объекта" alt="" coords="5,13,204,39"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html#a37c640a2e971d226229bd4cfda5b5fe4" title="Применить к объету силу(ускорение)" alt="" coords="252,13,444,39"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html#a2e53677d03c15874333253521d3a8918" title="Длина вектора" alt="" coords="492,5,691,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed14bf591021ae637ce2900348d1a33b" name="aed14bf591021ae637ce2900348d1a33b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed14bf591021ae637ce2900348d1a33b">&#9670;&nbsp;</a></span>Visit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CosmicDefender.Bullet.Visit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a>&#160;</td>
+          <td class="paramname"><em>bullet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a> </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bullet</td><td>Пуля(Bullet)</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_cosmic_defender_1_1_entity.html#a5e687f4f6714f3baed9ed743947b8fe9">CosmicDefender.Entity</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_bullet_aed14bf591021ae637ce2900348d1a33b_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_bullet_aed14bf591021ae637ce2900348d1a33b_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_bullet_aed14bf591021ae637ce2900348d1a33b_cgraph" id="aclass_cosmic_defender_1_1_bullet_aed14bf591021ae637ce2900348d1a33b_cgraph">
+<area shape="rect" title="Метод взаимодействия с объектом Bullet" alt="" coords="5,173,189,199"/>
+<area shape="rect" href="class_cosmic_defender_1_1_controllers_1_1_object_manager.html#af2f86557f366f5b4e59210545f44fc5a" title=" " alt="" coords="245,5,432,47"/>
+<area shape="rect" href="class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811" title=" " alt="" coords="245,71,432,112"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html#a48b4ddcb6b16eefd65e7f1e1460a5c3f" title="Отключить коллизию для объекта" alt="" coords="237,136,440,177"/>
+<area shape="rect" href="class_cosmic_defender_1_1_content.html#ac961f90aa2e22f579e798db6e2b3cddd" title=" " alt="" coords="243,260,434,301"/>
+<area shape="rect" href="class_cosmic_defender_1_1_content.html#a3a78d0f50ded99d56d94fd92781353b0" title=" " alt="" coords="495,195,683,236"/>
+<area shape="rect" href="class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="245,391,432,432"/>
+<area shape="rect" href="class_cosmic_defender_1_1_entity.html#a568e186532b30d53e54712c56c236969" title="Проверить коллизию между 2 объектами" alt="" coords="490,78,689,105"/>
+<area shape="rect" href="class_cosmic_defender_1_1_collider.html#a159c2e3664401053d7017c57343c244a" title=" " alt="" coords="496,129,683,171"/>
+<area shape="rect" href="class_cosmic_defender_1_1_content.html#ae594597fd69b6e4689bcd9775c3015b0" title=" " alt="" coords="494,260,685,301"/>
+<area shape="rect" href="class_cosmic_defender_1_1_content.html#a5c764138c7a7673c7a44f07efe7e441f" title=" " alt="" coords="494,325,685,367"/>
+<area shape="rect" href="class_cosmic_defender_1_1_content.html#aaf4a69e3b46bbf8bc4a2b9f620cb1ce7" title=" " alt="" coords="494,391,685,432"/>
+<area shape="rect" href="class_cosmic_defender_1_1_content.html#a7313601ee09a3b9ca394ee839528c066" title=" " alt="" coords="739,202,953,229"/>
+<area shape="rect" href="class_cosmic_defender_1_1_content.html#a4508aaa788ee7b67a55279939ecee340" title=" " alt="" coords="1001,202,1200,229"/>
+<area shape="rect" href="class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="488,456,691,497"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a627c6415c0dd48099af65b1ac6bcd0bf" name="a627c6415c0dd48099af65b1ac6bcd0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627c6415c0dd48099af65b1ac6bcd0bf">&#9670;&nbsp;</a></span>Visit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CosmicDefender.Bullet.Visit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cosmic_defender_1_1_enemy_ship.html">EnemyShip</a>&#160;</td>
+          <td class="paramname"><em>enemyShip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод взаимодействия с объектом <a class="el" href="class_cosmic_defender_1_1_enemy_ship.html" title="Вражеский корабль">EnemyShip</a> </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemyShip</td><td>Вражеский Корабль(EnemyShip)</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_cosmic_defender_1_1_entity.html#a421666ad2d82874111a27bd20eea6387">CosmicDefender.Entity</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="aeb3c8a4e9b01db8bdf6e9b12a04526fc" name="aeb3c8a4e9b01db8bdf6e9b12a04526fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3c8a4e9b01db8bdf6e9b12a04526fc">&#9670;&nbsp;</a></span>DefaultMaxSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CosmicDefender.Bullet.DefaultMaxSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Entities/ActiveObjects/<a class="el" href="_bullet_8cs.html">Bullet.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_cosmic_defender.html">CosmicDefender</a></li><li class="navelem"><a class="el" href="class_cosmic_defender_1_1_bullet.html">Bullet</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

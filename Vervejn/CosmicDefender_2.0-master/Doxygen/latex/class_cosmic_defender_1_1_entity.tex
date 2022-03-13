@@ -1,0 +1,709 @@
+\hypertarget{class_cosmic_defender_1_1_entity}{}\doxysection{Класс Cosmic\+Defender.\+Entity}
+\label{class_cosmic_defender_1_1_entity}\index{CosmicDefender.Entity@{CosmicDefender.Entity}}
+
+
+Абстрактный объект  
+
+
+
+
+Граф наследования\+:Cosmic\+Defender.\+Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Cosmic\+Defender.\+Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_cosmic_defender_1_1_entity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cosmic_defender_1_1_entity_ac82d96ecf7a43cd9acade783880b7412}{Entity}} (Sprite sprite, float max\+Speed, float acceleration, string name, float health)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cosmic_defender_1_1_entity_a1be4a04bd40556f57221e675b53807f2}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Пустой конструктор \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} \mbox{\hyperlink{class_cosmic_defender_1_1_entity_abd9816cc081bf95bd9ce803007847b1a}{Deep\+Copy}} ()
+\begin{DoxyCompactList}\small\item\em Глубокое копирование \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a5f543ef927512b21debfc695d225b564}{Shallow\+Copy}} ()
+\begin{DoxyCompactList}\small\item\em Поверхностное копирование \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a8d67eed63c66b3ae4c97ccbb837f9ced}{Update}} (float time)
+\begin{DoxyCompactList}\small\item\em Обновление объекта \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_acfbacab6e15051ec293d383cc21354ad}{Check\+Postitions}} ()
+\begin{DoxyCompactList}\small\item\em Проверить позицию объекта в области игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_ac3628480f4b2b300ec23f4bd7d7a68c7}{Update\+Position}} (float time)
+\begin{DoxyCompactList}\small\item\em Обновить позицию объекта \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a37c640a2e971d226229bd4cfda5b5fe4}{Force}} ()
+\begin{DoxyCompactList}\small\item\em Применить к объету силу(ускорение) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a2e53677d03c15874333253521d3a8918}{Length\+Vector}} (Vector2f vec)
+\begin{DoxyCompactList}\small\item\em Длина вектора \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a6f0e1c56061e0b8968d6d5d13f95073b}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Прорисовка объекта \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_ac1a0acbfc6c603a3857cc3e3f7e22971}{Damage}} (\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} Object)
+\begin{DoxyCompactList}\small\item\em Нанести урон объекту Object \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a5e687f4f6714f3baed9ed743947b8fe9}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}} bullet)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a421666ad2d82874111a27bd20eea6387}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} enemy\+Ship)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_aa38f8f5340396db966c0590d198a558b}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}} player\+Ship)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a1a681aca2f106987394cd9305a805e84}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}} asteroid)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_afb2ede90050a86444ad35ecb2de9637b}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a568e186532b30d53e54712c56c236969}{Collide}} (\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} ent1, \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} ent2)
+\begin{DoxyCompactList}\small\item\em Проверить коллизию между 2 объектами \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_aa14493e1f9240a817d6ff7f604c16d65}{Enable\+Collide}} ()
+\begin{DoxyCompactList}\small\item\em Включить коллизию для объекта \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a48b4ddcb6b16eefd65e7f1e1460a5c3f}{Disable\+Collide}} ()
+\begin{DoxyCompactList}\small\item\em Отключить коллизию для объекта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+Sprite \mbox{\hyperlink{class_cosmic_defender_1_1_entity_aafc716dedf60ad507b5b111e68584f4c}{\+\_\+sprite}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Спрайт \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a9863fda92d99b11b28b88d19a38f0cb6}{Coords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Координаты \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a06135d48b2e3b48e1c13d3eaaa7f24b4}{Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Скорость \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a05e265233a0645471f78601e22fbb2b4}{Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Поворот \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a33bb239fbb1313effaf9bfcc070882c4}{Max\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Максимальная скорость \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a8f2f67a41c40e64c75b85d6787bf43dd}{Acceleration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Ускорение \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a379654504357d8788de9bc5af5aab202}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Название \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a929d4e7d6c82c4685b74d3ba62021f28}{Health}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Здоровье \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cosmic_defender_1_1_entity_af297a7402fea16ca4f8387adcad328cf}{Is\+Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Активен ли \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_cosmic_defender_1_1_entity_aff4f37737f8c21151de7d42291830204}{Dmg}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Урон \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a6c79c2ecd4e206be13e69c03292fcc10}{Direction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Нормализованный вектор направления \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Абстрактный объект 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_ac82d96ecf7a43cd9acade783880b7412}\label{class_cosmic_defender_1_1_entity_ac82d96ecf7a43cd9acade783880b7412}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cosmic\+Defender.\+Entity.\+Entity (\begin{DoxyParamCaption}\item[{Sprite}]{sprite,  }\item[{float}]{max\+Speed,  }\item[{float}]{acceleration,  }\item[{string}]{name,  }\item[{float}]{health }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sprite} & Спрайт\\
+\hline
+{\em max\+Speed} & Максимальная скорость\\
+\hline
+{\em acceleration} & Ускорение\\
+\hline
+{\em name} & Название\\
+\hline
+{\em health} & Здоровье\\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_ac82d96ecf7a43cd9acade783880b7412_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a1be4a04bd40556f57221e675b53807f2}\label{class_cosmic_defender_1_1_entity_a1be4a04bd40556f57221e675b53807f2}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cosmic\+Defender.\+Entity.\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Пустой конструктор 
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a1be4a04bd40556f57221e675b53807f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_acfbacab6e15051ec293d383cc21354ad}\label{class_cosmic_defender_1_1_entity_acfbacab6e15051ec293d383cc21354ad}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!CheckPostitions@{CheckPostitions}}
+\index{CheckPostitions@{CheckPostitions}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{CheckPostitions()}{CheckPostitions()}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Check\+Postitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Проверить позицию объекта в области игры 
+
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_a56909db17f5243c2a3289aeedd2bdc5e}{Cosmic\+Defender.\+Bullet}}.
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_acfbacab6e15051ec293d383cc21354ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a568e186532b30d53e54712c56c236969}\label{class_cosmic_defender_1_1_entity_a568e186532b30d53e54712c56c236969}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Collide@{Collide}}
+\index{Collide@{Collide}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Collide()}{Collide()}}
+{\footnotesize\ttfamily abstract void Cosmic\+Defender.\+Entity.\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}}}]{ent1,  }\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}}}]{ent2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Проверить коллизию между 2 объектами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ent1} & Объект 1\\
+\hline
+{\em ent2} & Объект 2\\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_cosmic_defender_1_1_adapter_dmg_objects_ac1b3d6f71cb5e993bdde1841eaff3587}{Cosmic\+Defender.\+Adapter\+Dmg\+Objects}}, \mbox{\hyperlink{class_cosmic_defender_1_1_animation_1_1_animation_ae31656d081e1cd22a6a284af7721d2df}{Cosmic\+Defender.\+Animation.\+Animation}}, \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid_a25a59d8a4968afd754d546e258f1c1dc}{Cosmic\+Defender.\+Asteroid}}, \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_ac4e1b642617ad40957a0f09448d94dbb}{Cosmic\+Defender.\+Bullet}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_aa410b761c19d14f6de8f9c0778594664}{Cosmic\+Defender.\+Boss}}, \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_ae9c78eced14a43270d8f8a3a0dd85b00}{Cosmic\+Defender.\+Enemy\+Ship}} и \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_a5d826dcf084388e6744e972bab9bba47}{Cosmic\+Defender.\+Player\+Ship}}.
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a568e186532b30d53e54712c56c236969_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_ac1a0acbfc6c603a3857cc3e3f7e22971}\label{class_cosmic_defender_1_1_entity_ac1a0acbfc6c603a3857cc3e3f7e22971}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Damage@{Damage}}
+\index{Damage@{Damage}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Damage()}{Damage()}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}}}]{Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Нанести урон объекту Object 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Object} & Объект, который должен быть надамажен\\
+\hline
+\end{DoxyParams}
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_active_objects_acd75359eb812a272a1c778b0fcf1ec56}{Cosmic\+Defender.\+Active\+Objects}}.
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_ac1a0acbfc6c603a3857cc3e3f7e22971_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_abd9816cc081bf95bd9ce803007847b1a}\label{class_cosmic_defender_1_1_entity_abd9816cc081bf95bd9ce803007847b1a}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!DeepCopy@{DeepCopy}}
+\index{DeepCopy@{DeepCopy}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{DeepCopy()}{DeepCopy()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} Cosmic\+Defender.\+Entity.\+Deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Глубокое копирование 
+
+\begin{DoxyReturn}{Возвращает}
+Полный клон объекта
+\end{DoxyReturn}
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_a8a376ab4dc10c75970a585d9478e8781}{Cosmic\+Defender.\+Bullet}}.
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_abd9816cc081bf95bd9ce803007847b1a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a48b4ddcb6b16eefd65e7f1e1460a5c3f}\label{class_cosmic_defender_1_1_entity_a48b4ddcb6b16eefd65e7f1e1460a5c3f}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!DisableCollide@{DisableCollide}}
+\index{DisableCollide@{DisableCollide}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{DisableCollide()}{DisableCollide()}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Entity.\+Disable\+Collide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Отключить коллизию для объекта 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a48b4ddcb6b16eefd65e7f1e1460a5c3f_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a48b4ddcb6b16eefd65e7f1e1460a5c3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a6f0e1c56061e0b8968d6d5d13f95073b}\label{class_cosmic_defender_1_1_entity_a6f0e1c56061e0b8968d6d5d13f95073b}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Draw@{Draw}}
+\index{Draw@{Draw}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Прорисовка объекта 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_drawable_objects_a6520bcf9d4ee053e2c2dcff461cd57b8}{Cosmic\+Defender.\+IDrawable\+Objects}}.
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a6f0e1c56061e0b8968d6d5d13f95073b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_aa14493e1f9240a817d6ff7f604c16d65}\label{class_cosmic_defender_1_1_entity_aa14493e1f9240a817d6ff7f604c16d65}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!EnableCollide@{EnableCollide}}
+\index{EnableCollide@{EnableCollide}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{EnableCollide()}{EnableCollide()}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Entity.\+Enable\+Collide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Включить коллизию для объекта 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_aa14493e1f9240a817d6ff7f604c16d65_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_aa14493e1f9240a817d6ff7f604c16d65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a37c640a2e971d226229bd4cfda5b5fe4}\label{class_cosmic_defender_1_1_entity_a37c640a2e971d226229bd4cfda5b5fe4}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Force@{Force}}
+\index{Force@{Force}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Force()}{Force()}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Entity.\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Применить к объету силу(ускорение) 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a37c640a2e971d226229bd4cfda5b5fe4_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a37c640a2e971d226229bd4cfda5b5fe4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a2e53677d03c15874333253521d3a8918}\label{class_cosmic_defender_1_1_entity_a2e53677d03c15874333253521d3a8918}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!LengthVector@{LengthVector}}
+\index{LengthVector@{LengthVector}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{LengthVector()}{LengthVector()}}
+{\footnotesize\ttfamily float Cosmic\+Defender.\+Entity.\+Length\+Vector (\begin{DoxyParamCaption}\item[{Vector2f}]{vec }\end{DoxyParamCaption})}
+
+
+
+Длина вектора 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em vec} & Вектора\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Длина вектора
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a2e53677d03c15874333253521d3a8918_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a5f543ef927512b21debfc695d225b564}\label{class_cosmic_defender_1_1_entity_a5f543ef927512b21debfc695d225b564}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!ShallowCopy@{ShallowCopy}}
+\index{ShallowCopy@{ShallowCopy}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{ShallowCopy()}{ShallowCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} Cosmic\+Defender.\+Entity.\+Shallow\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Поверхностное копирование 
+
+\begin{DoxyReturn}{Возвращает}
+Поверхностный клон объекта
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a8d67eed63c66b3ae4c97ccbb837f9ced}\label{class_cosmic_defender_1_1_entity_a8d67eed63c66b3ae4c97ccbb837f9ced}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Update@{Update}}
+\index{Update@{Update}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Обновление объекта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em time} & Время(\+Delta\+Time)\\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_drawable_objects_ae0cc67d42b3cc38372bdc924b361cde8}{Cosmic\+Defender.\+IDrawable\+Objects}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_adapter_dmg_objects_a6556bf29258933e2416fd3efab9f0e3b}{Cosmic\+Defender.\+Adapter\+Dmg\+Objects}}, \mbox{\hyperlink{class_cosmic_defender_1_1_animation_1_1_animation_a078ce0d8252bd8b5d01a100ce4a855bc}{Cosmic\+Defender.\+Animation.\+Animation}}, \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid_acb7fce24f6bb6005c917ebfc29825734}{Cosmic\+Defender.\+Asteroid}}, \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_af02b238f672789dc8573c1b677679b61}{Cosmic\+Defender.\+Bullet}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_a353c70a299f03fa463ffa6d309f604da}{Cosmic\+Defender.\+Boss}}, \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a0e1d76db38cf2a19e1aab1d42ebd26f4}{Cosmic\+Defender.\+Enemy\+Ship}}, \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_a91d2c86a7c9908941b6e3aefdfda7f34}{Cosmic\+Defender.\+Player\+Ship}} и \mbox{\hyperlink{class_cosmic_defender_1_1_ship_a00744af27710735526fe8ecce0adfc7e}{Cosmic\+Defender.\+Ship}}.
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a8d67eed63c66b3ae4c97ccbb837f9ced_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_ac3628480f4b2b300ec23f4bd7d7a68c7}\label{class_cosmic_defender_1_1_entity_ac3628480f4b2b300ec23f4bd7d7a68c7}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Entity.\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Обновить позицию объекта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em time} & Delta Time\\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_ac3628480f4b2b300ec23f4bd7d7a68c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a1a681aca2f106987394cd9305a805e84}\label{class_cosmic_defender_1_1_entity_a1a681aca2f106987394cd9305a805e84}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}}}]{asteroid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em asteroid} & Астероид(\+Asteroid)\\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a2021bce456808abc67302df46b6f0d5c}{Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_ad414cd6400ad0c1aec8ec9828a7b974a}{Cosmic\+Defender.\+Player\+Ship}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a5e687f4f6714f3baed9ed743947b8fe9}\label{class_cosmic_defender_1_1_entity_a5e687f4f6714f3baed9ed743947b8fe9}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}}}]{bullet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em bullet} & Пуля(\+Bullet)\\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_add2806de02d7860b48f85234ad9736d0}{Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid_a95367dfaff716cc858311a0e3d44d738}{Cosmic\+Defender.\+Asteroid}}, \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_aed14bf591021ae637ce2900348d1a33b}{Cosmic\+Defender.\+Bullet}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_ac0ab6e332b3f097baf0960639b6ec41a}{Cosmic\+Defender.\+Boss}}, \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a53099e767dfe66c8fead5cfc6b92ef2f}{Cosmic\+Defender.\+Enemy\+Ship}} и \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_a1b4965f9e483a37856b681b09a0ad23b}{Cosmic\+Defender.\+Player\+Ship}}.
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_entity_a5e687f4f6714f3baed9ed743947b8fe9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a421666ad2d82874111a27bd20eea6387}\label{class_cosmic_defender_1_1_entity_a421666ad2d82874111a27bd20eea6387}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}}}]{enemy\+Ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em enemy\+Ship} & Вражеский Корабль(\+Enemy\+Ship)\\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a4292767dfb0a965e65156b352aeea44a}{Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_a627c6415c0dd48099af65b1ac6bcd0bf}{Cosmic\+Defender.\+Bullet}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_a5597e5bb7368a7479f585a174cc781dd}{Cosmic\+Defender.\+Boss}}, \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a2114de57e1bdc07bf8ac94dd0e3ebfa8}{Cosmic\+Defender.\+Enemy\+Ship}} и \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_a61fa8b9823617f3b32130d45525c1e5f}{Cosmic\+Defender.\+Player\+Ship}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_afb2ede90050a86444ad35ecb2de9637b}\label{class_cosmic_defender_1_1_entity_afb2ede90050a86444ad35ecb2de9637b}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em entity} & Объект(\+Entity)\\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a363e471c7431e860d2c24ebf243ea2f7}{Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_aa38f8f5340396db966c0590d198a558b}\label{class_cosmic_defender_1_1_entity_aa38f8f5340396db966c0590d198a558b}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily virtual void Cosmic\+Defender.\+Entity.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}}}]{player\+Ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em player\+Ship} & Корабль Игрока(\+Player\+Ship)\\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a77304ef424e55b813b4367663b05167e}{Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid_a53b47c29bc0363c981077f201c5e3856}{Cosmic\+Defender.\+Asteroid}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_a83a376181fd2939a6d86c1ff67a9252f}{Cosmic\+Defender.\+Boss}} и \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_aa06935cad0303aaa4dfac11f4eb7b8a1}{Cosmic\+Defender.\+Enemy\+Ship}}.
+
+
+
+\doxysubsection{Полный список свойств}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_aafc716dedf60ad507b5b111e68584f4c}\label{class_cosmic_defender_1_1_entity_aafc716dedf60ad507b5b111e68584f4c}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!\_sprite@{\_sprite}}
+\index{\_sprite@{\_sprite}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{\_sprite}{\_sprite}}
+{\footnotesize\ttfamily Sprite Cosmic\+Defender.\+Entity.\+\_\+sprite\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Спрайт 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_drawable_objects_af471d3ea22c6eb2b6fcec190ff29dd48}{Cosmic\+Defender.\+IDrawable\+Objects}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a8f2f67a41c40e64c75b85d6787bf43dd}\label{class_cosmic_defender_1_1_entity_a8f2f67a41c40e64c75b85d6787bf43dd}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Acceleration@{Acceleration}}
+\index{Acceleration@{Acceleration}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Acceleration}{Acceleration}}
+{\footnotesize\ttfamily float Cosmic\+Defender.\+Entity.\+Acceleration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ускорение 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a299e6edecd1a1e8f4b2a4e10e787ab81}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a9863fda92d99b11b28b88d19a38f0cb6}\label{class_cosmic_defender_1_1_entity_a9863fda92d99b11b28b88d19a38f0cb6}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Coords@{Coords}}
+\index{Coords@{Coords}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Coords}{Coords}}
+{\footnotesize\ttfamily Vector2f Cosmic\+Defender.\+Entity.\+Coords\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Координаты 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_afd4409c86114167928ec8e5490bcb517}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a6c79c2ecd4e206be13e69c03292fcc10}\label{class_cosmic_defender_1_1_entity_a6c79c2ecd4e206be13e69c03292fcc10}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Direction@{Direction}}
+\index{Direction@{Direction}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily Vector2f Cosmic\+Defender.\+Entity.\+Direction\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Нормализованный вектор направления 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a808cb589c88c76bdf07a39c0d4a0ce5d}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_aff4f37737f8c21151de7d42291830204}\label{class_cosmic_defender_1_1_entity_aff4f37737f8c21151de7d42291830204}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Dmg@{Dmg}}
+\index{Dmg@{Dmg}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Dmg}{Dmg}}
+{\footnotesize\ttfamily float Cosmic\+Defender.\+Entity.\+Dmg\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Урон 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a6541ddd58e0d0a5daf03353e53b8dc1b}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a929d4e7d6c82c4685b74d3ba62021f28}\label{class_cosmic_defender_1_1_entity_a929d4e7d6c82c4685b74d3ba62021f28}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Health@{Health}}
+\index{Health@{Health}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Health}{Health}}
+{\footnotesize\ttfamily float Cosmic\+Defender.\+Entity.\+Health\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Здоровье 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a1c637f8425c5ddcf4252ae8540910c30}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_af297a7402fea16ca4f8387adcad328cf}\label{class_cosmic_defender_1_1_entity_af297a7402fea16ca4f8387adcad328cf}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{IsActive}{IsActive}}
+{\footnotesize\ttfamily bool Cosmic\+Defender.\+Entity.\+Is\+Active\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Активен ли 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a5b180cfef836e44bd2fa63668ea6565f}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a33bb239fbb1313effaf9bfcc070882c4}\label{class_cosmic_defender_1_1_entity_a33bb239fbb1313effaf9bfcc070882c4}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!MaxSpeed@{MaxSpeed}}
+\index{MaxSpeed@{MaxSpeed}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{MaxSpeed}{MaxSpeed}}
+{\footnotesize\ttfamily float Cosmic\+Defender.\+Entity.\+Max\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Максимальная скорость 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a01e602f25021da83db6e3a3a74c2ff72}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a379654504357d8788de9bc5af5aab202}\label{class_cosmic_defender_1_1_entity_a379654504357d8788de9bc5af5aab202}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Name@{Name}}
+\index{Name@{Name}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily String Cosmic\+Defender.\+Entity.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Название 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a6c020b64d5e9a33902f92eccadc5f1d5}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a05e265233a0645471f78601e22fbb2b4}\label{class_cosmic_defender_1_1_entity_a05e265233a0645471f78601e22fbb2b4}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily Vector2f Cosmic\+Defender.\+Entity.\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Поворот 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a78de4ff298683734448aef856c7dbe1c}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_entity_a06135d48b2e3b48e1c13d3eaaa7f24b4}\label{class_cosmic_defender_1_1_entity_a06135d48b2e3b48e1c13d3eaaa7f24b4}} 
+\index{CosmicDefender.Entity@{CosmicDefender.Entity}!Speed@{Speed}}
+\index{Speed@{Speed}!CosmicDefender.Entity@{CosmicDefender.Entity}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily Vector2f Cosmic\+Defender.\+Entity.\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Скорость 
+
+
+
+Замещает \mbox{\hyperlink{interface_cosmic_defender_1_1_i_entity_stats_a1238349c27caf798233f4d3215e0e45f}{Cosmic\+Defender.\+IEntity\+Stats}}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Entities/\mbox{\hyperlink{_entity_8cs}{Entity.\+cs}}\end{DoxyCompactItemize}

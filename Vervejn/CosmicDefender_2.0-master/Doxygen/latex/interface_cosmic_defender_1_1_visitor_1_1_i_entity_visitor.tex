@@ -1,0 +1,135 @@
+\hypertarget{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor}{}\doxysection{Интерфейс Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor}
+\label{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor}\index{CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}}
+
+
+Интерфейс, который описывает поведение объектов при соприкосновении с другими  
+
+
+
+
+Граф наследования\+:Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_add2806de02d7860b48f85234ad9736d0}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}} bullet)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a4292767dfb0a965e65156b352aeea44a}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} enemy\+Ship)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a77304ef424e55b813b4367663b05167e}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}} player\+Ship)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a2021bce456808abc67302df46b6f0d5c}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}} asteroid)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a363e471c7431e860d2c24ebf243ea2f7}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс, который описывает поведение объектов при соприкосновении с другими 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a2021bce456808abc67302df46b6f0d5c}\label{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a2021bce456808abc67302df46b6f0d5c}} 
+\index{CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}}}]{asteroid }\end{DoxyParamCaption})}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid}{Asteroid}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em asteroid} & Астероид(\+Asteroid)\\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a1a681aca2f106987394cd9305a805e84}{Cosmic\+Defender.\+Entity}} и \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_ad414cd6400ad0c1aec8ec9828a7b974a}{Cosmic\+Defender.\+Player\+Ship}}.
+
+\mbox{\Hypertarget{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_add2806de02d7860b48f85234ad9736d0}\label{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_add2806de02d7860b48f85234ad9736d0}} 
+\index{CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}}}]{bullet }\end{DoxyParamCaption})}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em bullet} & Пуля(\+Bullet)\\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid_a95367dfaff716cc858311a0e3d44d738}{Cosmic\+Defender.\+Asteroid}}, \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_aed14bf591021ae637ce2900348d1a33b}{Cosmic\+Defender.\+Bullet}}, \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a5e687f4f6714f3baed9ed743947b8fe9}{Cosmic\+Defender.\+Entity}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_ac0ab6e332b3f097baf0960639b6ec41a}{Cosmic\+Defender.\+Boss}}, \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a53099e767dfe66c8fead5cfc6b92ef2f}{Cosmic\+Defender.\+Enemy\+Ship}} и \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_a1b4965f9e483a37856b681b09a0ad23b}{Cosmic\+Defender.\+Player\+Ship}}.
+
+\mbox{\Hypertarget{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a4292767dfb0a965e65156b352aeea44a}\label{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a4292767dfb0a965e65156b352aeea44a}} 
+\index{CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}}}]{enemy\+Ship }\end{DoxyParamCaption})}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em enemy\+Ship} & Вражеский Корабль(\+Enemy\+Ship)\\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_cosmic_defender_1_1_bullet_a627c6415c0dd48099af65b1ac6bcd0bf}{Cosmic\+Defender.\+Bullet}}, \mbox{\hyperlink{class_cosmic_defender_1_1_entity_a421666ad2d82874111a27bd20eea6387}{Cosmic\+Defender.\+Entity}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_a5597e5bb7368a7479f585a174cc781dd}{Cosmic\+Defender.\+Boss}}, \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a2114de57e1bdc07bf8ac94dd0e3ebfa8}{Cosmic\+Defender.\+Enemy\+Ship}} и \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship_a61fa8b9823617f3b32130d45525c1e5f}{Cosmic\+Defender.\+Player\+Ship}}.
+
+\mbox{\Hypertarget{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a363e471c7431e860d2c24ebf243ea2f7}\label{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a363e471c7431e860d2c24ebf243ea2f7}} 
+\index{CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_entity}{Entity}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em entity} & Объект(\+Entity)\\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_cosmic_defender_1_1_entity_afb2ede90050a86444ad35ecb2de9637b}{Cosmic\+Defender.\+Entity}}.
+
+\mbox{\Hypertarget{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a77304ef424e55b813b4367663b05167e}\label{interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor_a77304ef424e55b813b4367663b05167e}} 
+\index{CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.Visitor.IEntityVisitor@{CosmicDefender.Visitor.IEntityVisitor}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Cosmic\+Defender.\+Visitor.\+IEntity\+Visitor.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}}}]{player\+Ship }\end{DoxyParamCaption})}
+
+
+
+Метод взаимодействия с объектом \mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em player\+Ship} & Корабль Игрока(\+Player\+Ship)\\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_cosmic_defender_1_1_asteroid_a53b47c29bc0363c981077f201c5e3856}{Cosmic\+Defender.\+Asteroid}}, \mbox{\hyperlink{class_cosmic_defender_1_1_entity_aa38f8f5340396db966c0590d198a558b}{Cosmic\+Defender.\+Entity}}, \mbox{\hyperlink{class_cosmic_defender_1_1_boss_a83a376181fd2939a6d86c1ff67a9252f}{Cosmic\+Defender.\+Boss}} и \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_aa06935cad0303aaa4dfac11f4eb7b8a1}{Cosmic\+Defender.\+Enemy\+Ship}}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Visitor/\mbox{\hyperlink{_i_entity_visitor_8cs}{IEntity\+Visitor.\+cs}}\end{DoxyCompactItemize}

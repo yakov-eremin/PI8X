@@ -1,0 +1,9 @@
+<map id="CosmicDefender.ShipDecorator" name="CosmicDefender.ShipDecorator">
+<area shape="rect" id="node1" title="Абстрактный класс декоратора кораблей" alt="" coords="101,247,304,273"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="109,157,157,184"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_entity.html" title="Абстрактный объект" alt="" coords="143,81,199,108"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="181,157,328,184"/>
+<area shape="rect" id="node4" href="$interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node5" href="$interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="125,5,216,32"/>
+<area shape="rect" id="node6" href="$interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="240,5,363,32"/>
+</map>
