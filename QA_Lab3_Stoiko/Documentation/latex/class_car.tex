@@ -1,0 +1,184 @@
+\hypertarget{class_car}{}\doxysection{Car Class Reference}
+\label{class_car}\index{Car@{Car}}
+Inheritance diagram for Car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_car}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_car_add1a8ad5522c7472dcbf49422f0891f1}{Car}} (int \mbox{\hyperlink{class_car_a41770d157ca40612b50e6845d767701b}{max\+\_\+speed}})
+\item 
+void \mbox{\hyperlink{class_car_a4097f5dc8fc24bf7bbc008e9e194c86d}{beep}} ()
+\begin{DoxyCompactList}\small\item\em Звуковой сигнал. Метод, вызывающий звуковой сигнал автомобиля \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_car_ae50b332cdd1d51cfe33835c63bfbfedf}{get\+\_\+max\+\_\+speed}} () const
+\begin{DoxyCompactList}\small\item\em Максимальная скорость. Получение максимальной скорости автомобиля \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_car_a5d94573fc6b9d5412d8bbc294d119f73}{get\+\_\+speed}} ()
+\begin{DoxyCompactList}\small\item\em Текущая скорость. Получение текущей скорости автомобиля \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_car_aa2957a520072623d9d6f3af0ea67aa4b}{get\+\_\+number\+\_\+of\+\_\+doors}} () const
+\begin{DoxyCompactList}\small\item\em Количество дверей Получение количества дверей автомобиля \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_car_a2f34cb50cf2eb42c1fbd1fa48f356457}{push\+\_\+gas\+\_\+pedal}} ()
+\begin{DoxyCompactList}\small\item\em Ускорение. Метод, вызывающий увеливение скорости движения автомобиля \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_car_afaaff0af01862a3b7365ebddcaa9b57f}{push\+\_\+break\+\_\+pedal}} ()
+\begin{DoxyCompactList}\small\item\em Торможение. Метод, снижающий скорость движения автомобиля \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_car_ac70c61bce8540fc2c3fc9f9722cb999c}{normalize\+\_\+speed}} ()
+\begin{DoxyCompactList}\small\item\em проверка пределов изменения скорости \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_car_a4c6d153ef3b6b34cc4feacb5c6fd9bfb}{speed}} = 0
+\begin{DoxyCompactList}\small\item\em текущая скорость автомобиля \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_car_a41770d157ca40612b50e6845d767701b}{max\+\_\+speed}} = 0
+\begin{DoxyCompactList}\small\item\em максимальная скорость автомобиля \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_car_a02877e820843c893413286e5446ecca2}{number\+\_\+of\+\_\+doors}} = 1
+\begin{DoxyCompactList}\small\item\em количество дверей автомобиля \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс \mbox{\hyperlink{class_car}{Car}} описывает упрощенную модель автомобиля 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_car_add1a8ad5522c7472dcbf49422f0891f1}\label{class_car_add1a8ad5522c7472dcbf49422f0891f1}} 
+\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily Car\+::\+Car (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Конструктор с единственным параметром 
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+speed} & устанавливает максимальную скорость автомобиля \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_car_a4097f5dc8fc24bf7bbc008e9e194c86d}\label{class_car_a4097f5dc8fc24bf7bbc008e9e194c86d}} 
+\index{Car@{Car}!beep@{beep}}
+\index{beep@{beep}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{beep()}{beep()}}
+{\footnotesize\ttfamily void Car\+::beep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Звуковой сигнал. Метод, вызывающий звуковой сигнал автомобиля 
+
+\mbox{\Hypertarget{class_car_ae50b332cdd1d51cfe33835c63bfbfedf}\label{class_car_ae50b332cdd1d51cfe33835c63bfbfedf}} 
+\index{Car@{Car}!get\_max\_speed@{get\_max\_speed}}
+\index{get\_max\_speed@{get\_max\_speed}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{get\_max\_speed()}{get\_max\_speed()}}
+{\footnotesize\ttfamily int Car\+::get\+\_\+max\+\_\+speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Максимальная скорость. Получение максимальной скорости автомобиля 
+
+\begin{DoxyReturn}{Returns}
+максимальная скорость 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_aa2957a520072623d9d6f3af0ea67aa4b}\label{class_car_aa2957a520072623d9d6f3af0ea67aa4b}} 
+\index{Car@{Car}!get\_number\_of\_doors@{get\_number\_of\_doors}}
+\index{get\_number\_of\_doors@{get\_number\_of\_doors}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{get\_number\_of\_doors()}{get\_number\_of\_doors()}}
+{\footnotesize\ttfamily int Car\+::get\+\_\+number\+\_\+of\+\_\+doors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Количество дверей Получение количества дверей автомобиля 
+
+\begin{DoxyReturn}{Returns}
+количество дверей 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a5d94573fc6b9d5412d8bbc294d119f73}\label{class_car_a5d94573fc6b9d5412d8bbc294d119f73}} 
+\index{Car@{Car}!get\_speed@{get\_speed}}
+\index{get\_speed@{get\_speed}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{get\_speed()}{get\_speed()}}
+{\footnotesize\ttfamily int Car\+::get\+\_\+speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Текущая скорость. Получение текущей скорости автомобиля 
+
+\begin{DoxyReturn}{Returns}
+текущая скорость 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_ac70c61bce8540fc2c3fc9f9722cb999c}\label{class_car_ac70c61bce8540fc2c3fc9f9722cb999c}} 
+\index{Car@{Car}!normalize\_speed@{normalize\_speed}}
+\index{normalize\_speed@{normalize\_speed}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{normalize\_speed()}{normalize\_speed()}}
+{\footnotesize\ttfamily void Car\+::normalize\+\_\+speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+проверка пределов изменения скорости 
+
+\mbox{\Hypertarget{class_car_afaaff0af01862a3b7365ebddcaa9b57f}\label{class_car_afaaff0af01862a3b7365ebddcaa9b57f}} 
+\index{Car@{Car}!push\_break\_pedal@{push\_break\_pedal}}
+\index{push\_break\_pedal@{push\_break\_pedal}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{push\_break\_pedal()}{push\_break\_pedal()}}
+{\footnotesize\ttfamily virtual void Car\+::push\+\_\+break\+\_\+pedal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Торможение. Метод, снижающий скорость движения автомобиля 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_volvo_a04cf71bcfe9ac2b1d3eb55fe59c74702}{Volvo}}.
+
+\mbox{\Hypertarget{class_car_a2f34cb50cf2eb42c1fbd1fa48f356457}\label{class_car_a2f34cb50cf2eb42c1fbd1fa48f356457}} 
+\index{Car@{Car}!push\_gas\_pedal@{push\_gas\_pedal}}
+\index{push\_gas\_pedal@{push\_gas\_pedal}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{push\_gas\_pedal()}{push\_gas\_pedal()}}
+{\footnotesize\ttfamily virtual void Car\+::push\+\_\+gas\+\_\+pedal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Ускорение. Метод, вызывающий увеливение скорости движения автомобиля 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_volvo_a198cf55f26c7e6ea21c44a0b5d85ba0c}{Volvo}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_car_a41770d157ca40612b50e6845d767701b}\label{class_car_a41770d157ca40612b50e6845d767701b}} 
+\index{Car@{Car}!max\_speed@{max\_speed}}
+\index{max\_speed@{max\_speed}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{max\_speed}{max\_speed}}
+{\footnotesize\ttfamily int Car\+::max\+\_\+speed = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+максимальная скорость автомобиля 
+
+\mbox{\Hypertarget{class_car_a02877e820843c893413286e5446ecca2}\label{class_car_a02877e820843c893413286e5446ecca2}} 
+\index{Car@{Car}!number\_of\_doors@{number\_of\_doors}}
+\index{number\_of\_doors@{number\_of\_doors}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{number\_of\_doors}{number\_of\_doors}}
+{\footnotesize\ttfamily int Car\+::number\+\_\+of\+\_\+doors = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+количество дверей автомобиля 
+
+\mbox{\Hypertarget{class_car_a4c6d153ef3b6b34cc4feacb5c6fd9bfb}\label{class_car_a4c6d153ef3b6b34cc4feacb5c6fd9bfb}} 
+\index{Car@{Car}!speed@{speed}}
+\index{speed@{speed}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily int Car\+::speed = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+текущая скорость автомобиля 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Test\+Project/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
