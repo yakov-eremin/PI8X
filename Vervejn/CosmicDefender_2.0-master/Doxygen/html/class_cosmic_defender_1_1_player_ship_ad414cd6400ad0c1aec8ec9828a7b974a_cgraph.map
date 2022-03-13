@@ -1,7 +1,4 @@
 <map id="CosmicDefender.PlayerShip.Visit" name="CosmicDefender.PlayerShip.Visit">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,193,112"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_active_objects.html#acd75359eb812a272a1c778b0fcf1ec56" title=" " alt="" coords="241,5,447,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811" title=" " alt="" coords="251,71,437,112"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="251,136,437,177"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="495,136,697,177"/>
+<area shape="rect" id="node1" title="Метод взаимодействия с объектом Asteroid" alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_active_objects.html#acd75359eb812a272a1c778b0fcf1ec56" title="Нанести урон объекту Object" alt="" coords="241,5,447,47"/>
 </map>

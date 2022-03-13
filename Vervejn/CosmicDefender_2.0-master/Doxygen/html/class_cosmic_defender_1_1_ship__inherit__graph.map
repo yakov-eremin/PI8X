@@ -1,8 +1,11 @@
 <map id="CosmicDefender.Ship" name="CosmicDefender.Ship">
-<area shape="rect" id="node1" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="109,81,256,108"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_boss.html" title="Вражеский корабль (босс)" alt="" coords="330,5,481,32"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_enemy_ship.html" title="Вражеский корабль" alt="" coords="311,56,499,83"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока" alt="" coords="313,107,497,133"/>
-<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_ship_decorator.html" title="Абстрактный класс декоратора кораблей" alt="" coords="304,157,507,184"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,81,61,108"/>
+<area shape="rect" id="node1" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="280,81,427,108"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_boss.html" title="Вражеский корабль (босс)" alt="" coords="501,5,651,32"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_enemy_ship.html" title="Вражеский корабль" alt="" coords="482,56,670,83"/>
+<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока" alt="" coords="484,107,668,133"/>
+<area shape="rect" id="node9" href="$class_cosmic_defender_1_1_ship_decorator.html" title="Абстрактный класс декоратора кораблей" alt="" coords="475,157,677,184"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html" title="Абстрактный объект" alt="" coords="176,81,232,108"/>
+<area shape="rect" id="node3" href="$interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="19,31,115,57"/>
+<area shape="rect" id="node4" href="$interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="21,81,112,108"/>
+<area shape="rect" id="node5" href="$interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="5,132,128,159"/>
 </map>

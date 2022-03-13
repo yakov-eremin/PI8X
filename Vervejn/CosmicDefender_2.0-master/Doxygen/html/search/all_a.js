@@ -1,28 +1,5 @@
 var searchData=
 [
-  ['idrawable_0',['IDrawable',['../interface_cosmic_defender_1_1_i_drawable.html',1,'CosmicDefender']]],
-  ['idrawable_2ecs_1',['IDrawable.cs',['../_i_drawable_8cs.html',1,'']]],
-  ['idrawableobjects_2',['IDrawableObjects',['../interface_cosmic_defender_1_1_i_drawable_objects.html',1,'CosmicDefender']]],
-  ['idrawableobjects_2ecs_3',['IDrawableObjects.cs',['../_i_drawable_objects_8cs.html',1,'']]],
-  ['ientitybuilder_4',['IEntityBuilder',['../interface_cosmic_defender_1_1_builders_1_1_interfaces_1_1_i_entity_builder.html',1,'CosmicDefender::Builders::Interfaces']]],
-  ['ientitybuilder_2ecs_5',['IEntityBuilder.cs',['../_i_entity_builder_8cs.html',1,'']]],
-  ['ientitystats_6',['IEntityStats',['../interface_cosmic_defender_1_1_i_entity_stats.html',1,'CosmicDefender']]],
-  ['ientitystats_2ecs_7',['IEntityStats.cs',['../_i_entity_stats_8cs.html',1,'']]],
-  ['ientityvisitor_8',['IEntityVisitor',['../interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html',1,'CosmicDefender::Visitor']]],
-  ['ientityvisitor_2ecs_9',['IEntityVisitor.cs',['../_i_entity_visitor_8cs.html',1,'']]],
-  ['igunshot_10',['IGunShot',['../interface_cosmic_defender_1_1_i_gun_shot.html',1,'CosmicDefender']]],
-  ['igunshot_2ecs_11',['IGunShot.cs',['../_i_gun_shot_8cs.html',1,'']]],
-  ['isactive_12',['IsActive',['../interface_cosmic_defender_1_1_i_entity_stats.html#a5b180cfef836e44bd2fa63668ea6565f',1,'CosmicDefender::IEntityStats']]],
-  ['iscollide_13',['IsCollide',['../class_is_collide.html',1,'IsCollide'],['../class_cosmic_defender_1_1_collider.html#a6dd6b630941e27ef43a409507125f956',1,'CosmicDefender.Collider.IsCollide()'],['../class_is_collide.html#a1fa453c567270b94e579af9868198554',1,'IsCollide.IsCollide()']]],
-  ['iscollide_2ecs_14',['IsCollide.cs',['../_is_collide_8cs.html',1,'']]],
-  ['isend_15',['isEnd',['../class_cosmic_defender_1_1_animation_1_1_animation.html#ad3e13faed0fc45d5131c91b987e585c9',1,'CosmicDefender::Animation::Animation']]],
-  ['ishipbuilder_16',['IShipBuilder',['../interface_cosmic_defender_1_1_builders_1_1_interfaces_1_1_i_ship_builder.html',1,'CosmicDefender::Builders::Interfaces']]],
-  ['ishipbuilder_2ecs_17',['IShipBuilder.cs',['../_i_ship_builder_8cs.html',1,'']]],
-  ['isopen_18',['IsOpen',['../class_cosmic_defender_1_1_menu_1_1_menu.html#ae92c4b57b7b17aa7462ffc8c0f6a5f72',1,'CosmicDefender::Menu::Menu']]],
-  ['ispawn_19',['ISpawn',['../interface_cosmic_defender_1_1_i_spawn.html',1,'CosmicDefender']]],
-  ['ispawn_2ecs_20',['ISpawn.cs',['../_i_spawn_8cs.html',1,'']]],
-  ['ispawner_21',['ISpawner',['../class_cosmic_defender_1_1_i_spawner.html',1,'CosmicDefender']]],
-  ['ispawner_2ecs_22',['ISpawner.cs',['../_i_spawner_8cs.html',1,'']]],
-  ['iteratorentities_23',['IteratorEntities',['../class_cosmic_defender_1_1_iterator_entities.html',1,'CosmicDefender.IteratorEntities&lt; T &gt;'],['../class_cosmic_defender_1_1_iterator_entities.html#a0e2b30db6e4ccd4821dc4dadad98308b',1,'CosmicDefender.IteratorEntities.IteratorEntities()']]],
-  ['iteratorentities_2ecs_24',['IteratorEntities.cs',['../_iterator_entities_8cs.html',1,'']]]
+  ['lengthvector_0',['LengthVector',['../class_cosmic_defender_1_1_entity.html#a2e53677d03c15874333253521d3a8918',1,'CosmicDefender::Entity']]],
+  ['level1factory_1',['Level1Factory',['../class_cosmic_defender_1_1_factory_method_1_1_level1_factory.html',1,'CosmicDefender::FactoryMethod']]]
 ];

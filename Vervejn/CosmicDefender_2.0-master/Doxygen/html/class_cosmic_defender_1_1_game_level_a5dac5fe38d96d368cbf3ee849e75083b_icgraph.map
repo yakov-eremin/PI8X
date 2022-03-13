@@ -1,5 +1,4 @@
 <map id="CosmicDefender.GameLevel.Draw" name="CosmicDefender.GameLevel.Draw">
-<area shape="rect" id="node1" title="Прорисовка объекта" alt="" coords="501,13,720,39"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_game_level.html#a20de6514cb3e83a51b8041eacb5e6e54" title="Обновление объекта" alt="" coords="264,5,453,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_game_manager.html#af460e878dd72b6fdd9df1e9beb622c4a" title=" " alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node1" title="Прорисовка объекта" alt="" coords="243,13,461,39"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_game_level.html#a20de6514cb3e83a51b8041eacb5e6e54" title="Обновление объекта" alt="" coords="5,5,195,47"/>
 </map>

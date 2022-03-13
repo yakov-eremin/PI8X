@@ -34,24 +34,19 @@ var NAVTREE =
       [ "Алфавитный указатель классов", "classes.html", null ],
       [ "Иерархия классов", "hierarchy.html", "hierarchy" ],
       [ "Члены классов", "functions.html", [
-        [ "Указатель", "functions.html", "functions_dup" ],
-        [ "Функции", "functions_func.html", "functions_func" ],
+        [ "Указатель", "functions.html", null ],
+        [ "Функции", "functions_func.html", null ],
         [ "Переменные", "functions_vars.html", null ],
         [ "Свойства", "functions_prop.html", null ]
       ] ]
-    ] ],
-    [ "Файлы", "files.html", [
-      [ "Файлы", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_8_n_e_t_core_app_00_version_0av3_81_8_assembly_attributes_8cs.html",
-"class_cosmic_defender_1_1_content.html#a276244c9f43cc192f584276b68531b7e",
-"class_cosmic_defender_1_1_game_manager.html#ae3203e6cbf76a80fc78eff2c13fd3d74",
-"class_cosmic_defender_1_1_state_1_1_player_state_manager.html#a0f5d8406773f016b08cd02d054e23df7"
+"annotated.html",
+"class_cosmic_defender_1_1_single_shot.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

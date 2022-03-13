@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['direction_0',['Direction',['../interface_cosmic_defender_1_1_i_entity_stats.html#a808cb589c88c76bdf07a39c0d4a0ce5d',1,'CosmicDefender::IEntityStats']]],
-  ['dmg_1',['Dmg',['../interface_cosmic_defender_1_1_i_entity_stats.html#a6541ddd58e0d0a5daf03353e53b8dc1b',1,'CosmicDefender::IEntityStats']]]
+  ['health_0',['Health',['../class_cosmic_defender_1_1_entity.html#a929d4e7d6c82c4685b74d3ba62021f28',1,'CosmicDefender.Entity.Health()'],['../interface_cosmic_defender_1_1_i_entity_stats.html#a1c637f8425c5ddcf4252ae8540910c30',1,'CosmicDefender.IEntityStats.Health()']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['damage_0',['Damage',['../class_cosmic_defender_1_1_adapter_dmg_objects.html#a45292b0eb551b3e1be9113eeb660bd8a',1,'CosmicDefender.AdapterDmgObjects.Damage()'],['../class_cosmic_defender_1_1_active_objects.html#acd75359eb812a272a1c778b0fcf1ec56',1,'CosmicDefender.ActiveObjects.Damage()']]],
-  ['deepcopy_1',['DeepCopy',['../class_cosmic_defender_1_1_bullet.html#a8a376ab4dc10c75970a585d9478e8781',1,'CosmicDefender::Bullet']]],
-  ['deleteentity_2',['DeleteEntity',['../class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811',1,'CosmicDefender::Controllers::ObjectManager']]],
-  ['draw_3',['Draw',['../class_cosmic_defender_1_1_trajectory.html#ab9f6103929b2d61266bd610f2d3936a2',1,'CosmicDefender.Trajectory.Draw()'],['../class_cosmic_defender_1_1_game_level.html#a5dac5fe38d96d368cbf3ee849e75083b',1,'CosmicDefender.GameLevel.Draw()'],['../interface_cosmic_defender_1_1_i_drawable.html#a819c7bb3d3caf0679f0b990024aaf039',1,'CosmicDefender.IDrawable.Draw()'],['../interface_cosmic_defender_1_1_i_drawable_objects.html#a6520bcf9d4ee053e2c2dcff461cd57b8',1,'CosmicDefender.IDrawableObjects.Draw()'],['../class_cosmic_defender_1_1_menu_1_1_menu.html#a1a3e6815a07a5e42372ab9329e1e0586',1,'CosmicDefender.Menu.Menu.Draw()'],['../class_comic_defender_1_1_particle_engine_system.html#ab1fe625e46d116eb6520c95e997c1924',1,'ComicDefender.ParticleEngineSystem.Draw()']]]
+  ['enablecollide_0',['EnableCollide',['../class_cosmic_defender_1_1_entity.html#aa14493e1f9240a817d6ff7f604c16d65',1,'CosmicDefender::Entity']]],
+  ['enemyship_1',['EnemyShip',['../class_cosmic_defender_1_1_enemy_ship.html#ae101bdf563cca32416a9786879a058ab',1,'CosmicDefender::EnemyShip']]],
+  ['entity_2',['Entity',['../class_cosmic_defender_1_1_entity.html#ac82d96ecf7a43cd9acade783880b7412',1,'CosmicDefender.Entity.Entity(Sprite sprite, float maxSpeed, float acceleration, string name, float health)'],['../class_cosmic_defender_1_1_entity.html#a1be4a04bd40556f57221e675b53807f2',1,'CosmicDefender.Entity.Entity()']]]
 ];

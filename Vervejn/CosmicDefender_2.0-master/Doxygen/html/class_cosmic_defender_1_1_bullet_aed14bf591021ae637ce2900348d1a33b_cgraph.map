@@ -1,14 +1,5 @@
 <map id="CosmicDefender.Bullet.Visit" name="CosmicDefender.Bullet.Visit">
-<area shape="rect" id="node1" title=" " alt="" coords="5,137,189,163"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#af2f86557f366f5b4e59210545f44fc5a" title=" " alt="" coords="239,5,426,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811" title=" " alt="" coords="239,71,426,112"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_content.html#ac961f90aa2e22f579e798db6e2b3cddd" title=" " alt="" coords="237,188,428,229"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_content.html#a3a78d0f50ded99d56d94fd92781353b0" title=" " alt="" coords="483,89,671,131"/>
-<area shape="rect" id="node11" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="239,285,426,327"/>
-<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_content.html#ae594597fd69b6e4689bcd9775c3015b0" title=" " alt="" coords="482,155,673,196"/>
-<area shape="rect" id="node9" href="$class_cosmic_defender_1_1_content.html#a5c764138c7a7673c7a44f07efe7e441f" title=" " alt="" coords="482,220,673,261"/>
-<area shape="rect" id="node10" href="$class_cosmic_defender_1_1_content.html#aaf4a69e3b46bbf8bc4a2b9f620cb1ce7" title=" " alt="" coords="482,285,673,327"/>
-<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_content.html#a7313601ee09a3b9ca394ee839528c066" title=" " alt="" coords="727,97,941,123"/>
-<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_content.html#a4508aaa788ee7b67a55279939ecee340" title=" " alt="" coords="989,97,1188,123"/>
-<area shape="rect" id="node12" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="476,351,679,392"/>
+<area shape="rect" id="node1" title="Метод взаимодействия с объектом Bullet" alt="" coords="5,13,189,39"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#a48b4ddcb6b16eefd65e7f1e1460a5c3f" title="Отключить коллизию для объекта" alt="" coords="237,5,440,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_entity.html#a568e186532b30d53e54712c56c236969" title="Проверить коллизию между 2 объектами" alt="" coords="488,13,687,39"/>
 </map>

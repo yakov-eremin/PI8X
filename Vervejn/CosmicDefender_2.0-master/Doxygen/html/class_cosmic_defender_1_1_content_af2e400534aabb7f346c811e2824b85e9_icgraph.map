@@ -1,6 +1,0 @@
-<map id="CosmicDefender.Content.GetShip8" name="CosmicDefender.Content.GetShip8">
-<area shape="rect" id="node1" title=" " alt="" coords="748,35,939,76"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_factory_method_1_1_player_ship_factory.html#ae801d9cfa8a46676aa274d1b373e0e25" title=" " alt="" coords="488,5,700,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_menu_1_1_menu.html#a5e682a54e0655f41110f086f642e7d81" title=" " alt="" coords="247,35,440,76"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_menu_1_1_menu.html#a36990d773fcef98c2cc38018c24ac0dc" title=" " alt="" coords="5,35,199,76"/>
-</map>

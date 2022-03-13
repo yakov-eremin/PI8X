@@ -1,26 +1,4 @@
 var searchData=
 [
-  ['particleengine_0',['ParticleEngine',['../class_comic_defender_1_1_particle_engine.html',1,'ComicDefender']]],
-  ['particleengine_2ecs_1',['ParticleEngine.cs',['../_particle_engine_8cs.html',1,'']]],
-  ['particleenginesystem_2',['ParticleEngineSystem',['../class_comic_defender_1_1_particle_engine_system.html',1,'ComicDefender.ParticleEngineSystem'],['../class_comic_defender_1_1_particle_engine_system.html#a7188d866be7a9e8fdef4f46cdbbdb823',1,'ComicDefender.ParticleEngineSystem.ParticleEngineSystem()']]],
-  ['particleenginesystem_2ecs_3',['ParticleEngineSystem.cs',['../_particle_engine_system_8cs.html',1,'']]],
-  ['playerbasestate_4',['PlayerBaseState',['../class_cosmic_defender_1_1_state_1_1_player_base_state.html',1,'CosmicDefender::State']]],
-  ['playerbasestate_2ecs_5',['PlayerBaseState.cs',['../_player_base_state_8cs.html',1,'']]],
-  ['playerfaststate_6',['PlayerFastState',['../class_cosmic_defender_1_1_state_1_1_player_fast_state.html',1,'CosmicDefender::State']]],
-  ['playerfaststate_2ecs_7',['PlayerFastState.cs',['../_player_fast_state_8cs.html',1,'']]],
-  ['playership_8',['PlayerShip',['../class_cosmic_defender_1_1_player_ship.html',1,'CosmicDefender.PlayerShip'],['../class_cosmic_defender_1_1_game_level.html#a4f2173cd0d35f46e68d43495f1304d33',1,'CosmicDefender.GameLevel.PlayerShip()'],['../class_cosmic_defender_1_1_player_ship.html#a0dffa1516587006f35eae5186b6d50df',1,'CosmicDefender.PlayerShip.PlayerShip()'],['../class_cosmic_defender_1_1_player_ship.html#aaedc922edd434009786fada39e520223',1,'CosmicDefender.PlayerShip.PlayerShip(Sprite sprite, float maxSpeed, float acceleration, string name, float health, Gun weapon, float firingRate)']]],
-  ['playership_2ecs_9',['PlayerShip.cs',['../_player_ship_8cs.html',1,'']]],
-  ['playershipbuilder_10',['PlayerShipBuilder',['../class_cosmic_defender_1_1_builders_1_1_builders_1_1_player_ship_builder.html',1,'CosmicDefender.Builders.Builders.PlayerShipBuilder'],['../class_cosmic_defender_1_1_builders_1_1_builders_1_1_player_ship_builder.html#af1e535b94e4418110032e601bf94cdb4',1,'CosmicDefender.Builders.Builders.PlayerShipBuilder.PlayerShipBuilder()']]],
-  ['playershipbuilder_2ecs_11',['PlayerShipBuilder.cs',['../_player_ship_builder_8cs.html',1,'']]],
-  ['playershipfactory_12',['PlayerShipFactory',['../class_cosmic_defender_1_1_factory_method_1_1_player_ship_factory.html',1,'CosmicDefender::FactoryMethod']]],
-  ['playershipfactory_2ecs_13',['PlayerShipFactory.cs',['../_player_ship_factory_8cs.html',1,'']]],
-  ['playersimplestate_14',['PlayerSimpleState',['../class_cosmic_defender_1_1_state_1_1_player_simple_state.html',1,'CosmicDefender::State']]],
-  ['playersimplestate_2ecs_15',['PlayerSimpleState.cs',['../_player_simple_state_8cs.html',1,'']]],
-  ['playerstatemanager_16',['PlayerStateManager',['../class_cosmic_defender_1_1_state_1_1_player_state_manager.html',1,'CosmicDefender.State.PlayerStateManager'],['../class_cosmic_defender_1_1_state_1_1_player_state_manager.html#ad6e1080d6b84a405ca87b133306f1be1',1,'CosmicDefender.State.PlayerStateManager.PlayerStateManager()']]],
-  ['playerstatemanager_2ecs_17',['PlayerStateManager.cs',['../_player_state_manager_8cs.html',1,'']]],
-  ['playertests_2ecs_18',['PlayerTests.cs',['../_player_tests_8cs.html',1,'']]],
-  ['pool_19',['Pool',['../class_cosmic_defender_1_1_object_pool_1_1_pool.html',1,'CosmicDefender.ObjectPool.Pool&lt; T &gt;'],['../class_cosmic_defender_1_1_object_pool_1_1_pool.html#a851b59c26f380bd92e5df4fecf89c474',1,'CosmicDefender.ObjectPool.Pool.Pool()']]],
-  ['pool_2ecs_20',['Pool.cs',['../_pool_8cs.html',1,'']]],
-  ['program_21',['Program',['../class_cosmic_defender_1_1_program.html',1,'CosmicDefender']]],
-  ['program_2ecs_22',['Program.cs',['../_program_8cs.html',1,'']]]
+  ['rotation_0',['Rotation',['../class_cosmic_defender_1_1_entity.html#a05e265233a0645471f78601e22fbb2b4',1,'CosmicDefender.Entity.Rotation()'],['../interface_cosmic_defender_1_1_i_entity_stats.html#a78de4ff298683734448aef856c7dbe1c',1,'CosmicDefender.IEntityStats.Rotation()']]]
 ];

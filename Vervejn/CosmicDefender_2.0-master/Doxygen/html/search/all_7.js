@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['factory_0',['Factory',['../class_cosmic_defender_1_1_factory_method_1_1_factory.html',1,'CosmicDefender::FactoryMethod']]],
-  ['factory_2ecs_1',['Factory.cs',['../_factory_8cs.html',1,'']]],
-  ['frame_2',['Frame',['../class_cosmic_defender_1_1_animation_1_1_animation.html#a1d8763a61b10cad20add301203767f6a',1,'CosmicDefender::Animation::Animation']]],
-  ['frames_3',['frames',['../class_cosmic_defender_1_1_animation_1_1_animation.html#a9acfd643c5acb014c041f738190def2f',1,'CosmicDefender::Animation::Animation']]]
+  ['gamelevel_0',['GameLevel',['../class_cosmic_defender_1_1_game_level.html',1,'CosmicDefender']]],
+  ['gamemanager_1',['GameManager',['../class_cosmic_defender_1_1_game_manager.html',1,'CosmicDefender']]],
+  ['gun_2',['Gun',['../class_cosmic_defender_1_1_gun.html',1,'CosmicDefender']]],
+  ['gundecorator_3',['GunDecorator',['../class_cosmic_defender_1_1_gun_decorator.html',1,'CosmicDefender']]]
 ];

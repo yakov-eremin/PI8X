@@ -1,4 +1,0 @@
-<map id="CosmicDefender.Entity.Force" name="CosmicDefender.Entity.Force">
-<area shape="rect" id="node1" title="Применить к объету силу(ускорение)" alt="" coords="5,13,197,39"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#a2e53677d03c15874333253521d3a8918" title="Длина вектора" alt="" coords="245,5,444,47"/>
-</map>

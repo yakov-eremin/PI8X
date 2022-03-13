@@ -1,8 +1,0 @@
-<map id="CosmicDefender.SingleShot.Shot" name="CosmicDefender.SingleShot.Shot">
-<area shape="rect" id="node1" title=" " alt="" coords="5,78,220,105"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#af2f86557f366f5b4e59210545f44fc5a" title=" " alt="" coords="269,5,456,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_object_pool_1_1_pool.html#a96ef3523d0c03026e1a11cc0117be515" title=" " alt="" coords="268,71,457,112"/>
-<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="269,136,456,177"/>
-<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_object_pool_1_1_pool.html#af25b527a41adaf374031b39942f0af69" title="Проверка есть ли элемент в pool&#39;е. Возвращаем bool и сам элемент" alt="" coords="512,71,701,112"/>
-<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="505,136,708,177"/>
-</map>

@@ -10,21 +10,6 @@ var hierarchy =
       [ "ComicDefender.ParticleEngineSystem", "class_comic_defender_1_1_particle_engine_system.html", null ]
     ] ],
     [ "NUnitTests.EntitiesTests", "class_n_unit_tests_1_1_entities_tests.html", null ],
-    [ "Entity", null, [
-      [ "CosmicDefender.ActiveObjects", "class_cosmic_defender_1_1_active_objects.html", [
-        [ "CosmicDefender.AdapterDmgObjects", "class_cosmic_defender_1_1_adapter_dmg_objects.html", null ],
-        [ "CosmicDefender.Asteroid", "class_cosmic_defender_1_1_asteroid.html", null ],
-        [ "CosmicDefender.Bullet", "class_cosmic_defender_1_1_bullet.html", null ]
-      ] ],
-      [ "CosmicDefender.Animation.Animation", "class_cosmic_defender_1_1_animation_1_1_animation.html", null ],
-      [ "CosmicDefender.ManagedObjects", "class_cosmic_defender_1_1_managed_objects.html", null ],
-      [ "CosmicDefender.Ship", "class_cosmic_defender_1_1_ship.html", [
-        [ "CosmicDefender.Boss", "class_cosmic_defender_1_1_boss.html", null ],
-        [ "CosmicDefender.EnemyShip", "class_cosmic_defender_1_1_enemy_ship.html", null ],
-        [ "CosmicDefender.PlayerShip", "class_cosmic_defender_1_1_player_ship.html", null ],
-        [ "CosmicDefender.ShipDecorator", "class_cosmic_defender_1_1_ship_decorator.html", null ]
-      ] ]
-    ] ],
     [ "CosmicDefender.FactoryMethod.Factory", "class_cosmic_defender_1_1_factory_method_1_1_factory.html", null ],
     [ "CosmicDefender.Handlers", "interface_cosmic_defender_1_1_handlers.html", [
       [ "CosmicDefender.Collider", "class_cosmic_defender_1_1_collider.html", null ],
@@ -44,6 +29,21 @@ var hierarchy =
       [ "CosmicDefender.Trajectory", "class_cosmic_defender_1_1_trajectory.html", null ]
     ] ],
     [ "CosmicDefender.IDrawableObjects", "interface_cosmic_defender_1_1_i_drawable_objects.html", [
+      [ "CosmicDefender.Entity", "class_cosmic_defender_1_1_entity.html", [
+        [ "CosmicDefender.ActiveObjects", "class_cosmic_defender_1_1_active_objects.html", [
+          [ "CosmicDefender.AdapterDmgObjects", "class_cosmic_defender_1_1_adapter_dmg_objects.html", null ],
+          [ "CosmicDefender.Asteroid", "class_cosmic_defender_1_1_asteroid.html", null ],
+          [ "CosmicDefender.Bullet", "class_cosmic_defender_1_1_bullet.html", null ]
+        ] ],
+        [ "CosmicDefender.Animation.Animation", "class_cosmic_defender_1_1_animation_1_1_animation.html", null ],
+        [ "CosmicDefender.ManagedObjects", "class_cosmic_defender_1_1_managed_objects.html", null ],
+        [ "CosmicDefender.Ship", "class_cosmic_defender_1_1_ship.html", [
+          [ "CosmicDefender.Boss", "class_cosmic_defender_1_1_boss.html", null ],
+          [ "CosmicDefender.EnemyShip", "class_cosmic_defender_1_1_enemy_ship.html", null ],
+          [ "CosmicDefender.PlayerShip", "class_cosmic_defender_1_1_player_ship.html", null ],
+          [ "CosmicDefender.ShipDecorator", "class_cosmic_defender_1_1_ship_decorator.html", null ]
+        ] ]
+      ] ],
       [ "CosmicDefender.GameLevel", "class_cosmic_defender_1_1_game_level.html", null ]
     ] ],
     [ "CosmicDefender.Builders.Interfaces.IEntityBuilder", "interface_cosmic_defender_1_1_builders_1_1_interfaces_1_1_i_entity_builder.html", [
@@ -51,8 +51,12 @@ var hierarchy =
         [ "CosmicDefender.Builders.Builders.PlayerShipBuilder", "class_cosmic_defender_1_1_builders_1_1_builders_1_1_player_ship_builder.html", null ]
       ] ]
     ] ],
-    [ "CosmicDefender.IEntityStats", "interface_cosmic_defender_1_1_i_entity_stats.html", null ],
-    [ "CosmicDefender.Visitor.IEntityVisitor", "interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html", null ],
+    [ "CosmicDefender.IEntityStats", "interface_cosmic_defender_1_1_i_entity_stats.html", [
+      [ "CosmicDefender.Entity", "class_cosmic_defender_1_1_entity.html", null ]
+    ] ],
+    [ "CosmicDefender.Visitor.IEntityVisitor", "interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html", [
+      [ "CosmicDefender.Entity", "class_cosmic_defender_1_1_entity.html", null ]
+    ] ],
     [ "IEnumerable", null, [
       [ "CosmicDefender.IteratorEntities< T >", "class_cosmic_defender_1_1_iterator_entities.html", null ]
     ] ],

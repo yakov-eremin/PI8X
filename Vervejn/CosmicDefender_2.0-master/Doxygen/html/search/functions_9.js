@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['managedobjects_0',['ManagedObjects',['../class_cosmic_defender_1_1_managed_objects.html#af9afb975bd07f1acf30f6ab83cbe176e',1,'CosmicDefender::ManagedObjects']]],
-  ['menu_1',['Menu',['../class_cosmic_defender_1_1_menu_1_1_menu.html#af1266e8a7ab048495deda42a4840b77d',1,'CosmicDefender::Menu::Menu']]],
-  ['menurectbuttons_2',['MenuRectButtons',['../class_cosmic_defender_1_1_menu_1_1_menu_rect_buttons.html#a7ce2b946dfbe7f0d55225caf96991e70',1,'CosmicDefender::Menu::MenuRectButtons']]],
-  ['menurectlevels_3',['MenuRectLevels',['../class_cosmic_defender_1_1_menu_1_1_menu_rect_levels.html#a6c58c950980e98e12bda5869e904e108',1,'CosmicDefender::Menu::MenuRectLevels']]],
-  ['menurectships_4',['MenuRectShips',['../class_cosmic_defender_1_1_menu_1_1_menu_rect_ships.html#a497cc463d69936d320c2b59b60a3014b',1,'CosmicDefender::Menu::MenuRectShips']]],
-  ['moveto_5',['MoveTo',['../class_cosmic_defender_1_1_composite_enemy.html#a9013b6b27fc41920741e82ec75ef2d8e',1,'CosmicDefender::CompositeEnemy']]]
+  ['shallowcopy_0',['ShallowCopy',['../class_cosmic_defender_1_1_entity.html#a5f543ef927512b21debfc695d225b564',1,'CosmicDefender::Entity']]],
+  ['ship_1',['Ship',['../class_cosmic_defender_1_1_ship.html#a76edb0e909ff6f8fc66ed30e718afdd2',1,'CosmicDefender.Ship.Ship(Sprite sprite, float maxSpeed, float acceleration, string name, float health, Gun weapon, float firingRate)'],['../class_cosmic_defender_1_1_ship.html#aba275aa577e1559a724e7abd842fe80b',1,'CosmicDefender.Ship.Ship()']]],
+  ['shipdecorator_2',['ShipDecorator',['../class_cosmic_defender_1_1_ship_decorator.html#ae48da9c0e41425d0034056e413b4ccce',1,'CosmicDefender::ShipDecorator']]]
 ];

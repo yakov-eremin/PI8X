@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['Name',['../interface_cosmic_defender_1_1_i_entity_stats.html#a6c020b64d5e9a33902f92eccadc5f1d5',1,'CosmicDefender.IEntityStats.Name()'],['../class_cosmic_defender_1_1_menu_1_1_menu_rect_buttons.html#ac0baf336c7fbf8c761e446f53d46cfbc',1,'CosmicDefender.Menu.MenuRectButtons.Name()']]]
+  ['weapon_0',['Weapon',['../class_cosmic_defender_1_1_ship.html#a030b7738ed78c650fd782902111e28e4',1,'CosmicDefender::Ship']]]
 ];

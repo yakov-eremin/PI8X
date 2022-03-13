@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['coords_0',['Coords',['../interface_cosmic_defender_1_1_i_entity_stats.html#afd4409c86114167928ec8e5490bcb517',1,'CosmicDefender::IEntityStats']]],
-  ['coordsspawnbullet_1',['CoordsSpawnBullet',['../class_cosmic_defender_1_1_gun.html#a0d86beb237499f18c06055fa15022ac9',1,'CosmicDefender::Gun']]],
-  ['countentitiesonmap_2',['CountEntitiesOnMap',['../class_cosmic_defender_1_1_game_level.html#a77e95791422296a8ecd45f25fbe7f81d',1,'CosmicDefender::GameLevel']]]
+  ['direction_0',['Direction',['../class_cosmic_defender_1_1_entity.html#a6c79c2ecd4e206be13e69c03292fcc10',1,'CosmicDefender.Entity.Direction()'],['../interface_cosmic_defender_1_1_i_entity_stats.html#a808cb589c88c76bdf07a39c0d4a0ce5d',1,'CosmicDefender.IEntityStats.Direction()']]],
+  ['dmg_1',['Dmg',['../class_cosmic_defender_1_1_entity.html#aff4f37737f8c21151de7d42291830204',1,'CosmicDefender.Entity.Dmg()'],['../interface_cosmic_defender_1_1_i_entity_stats.html#a6541ddd58e0d0a5daf03353e53b8dc1b',1,'CosmicDefender.IEntityStats.Dmg()']]]
 ];

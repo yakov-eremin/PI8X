@@ -1,5 +1,0 @@
-<map id="CosmicDefender.ObjectPool.Pool.HasFreeElement" name="CosmicDefender.ObjectPool.Pool.HasFreeElement">
-<area shape="rect" id="node1" title="Проверка есть ли элемент в pool&#39;е. Возвращаем bool и сам элемент" alt="" coords="505,5,695,47"/>
-<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_object_pool_1_1_pool.html#a96ef3523d0c03026e1a11cc0117be515" title=" " alt="" coords="268,5,457,47"/>
-<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_single_shot.html#adf3a044906faed7de31d416ec2fb6001" title=" " alt="" coords="5,13,220,39"/>
-</map>
