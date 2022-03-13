@@ -1,0 +1,13 @@
+<map id="CosmicDefender.Collider.getInstance" name="CosmicDefender.Collider.getInstance">
+<area shape="rect" id="node1" title=" " alt="" coords="519,272,705,313"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#a48b4ddcb6b16eefd65e7f1e1460a5c3f" title="Отключить коллизию для объекта" alt="" coords="268,180,471,221"/>
+<area shape="rect" id="node9" href="$class_cosmic_defender_1_1_entity.html#aa14493e1f9240a817d6ff7f604c16d65" title="Включить коллизию для объекта" alt="" coords="270,363,469,404"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_bullet.html#a56909db17f5243c2a3289aeedd2bdc5e" title="Проверить позицию объекта в области игры" alt="" coords="15,5,210,47"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_asteroid.html#a95367dfaff716cc858311a0e3d44d738" title="Метод взаимодействия с объектом Bullet" alt="" coords="26,71,199,112"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_bullet.html#aed14bf591021ae637ce2900348d1a33b" title="Метод взаимодействия с объектом Bullet" alt="" coords="21,137,205,163"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_boss.html#ac0ab6e332b3f097baf0960639b6ec41a" title="Метод взаимодействия с объектом Bullet" alt="" coords="22,187,203,214"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_enemy_ship.html#a53099e767dfe66c8fead5cfc6b92ef2f" title="Метод взаимодействия с объектом Bullet" alt="" coords="17,239,209,280"/>
+<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_player_ship.html#a1b4965f9e483a37856b681b09a0ad23b" title="Метод взаимодействия с объектом Bullet" alt="" coords="19,304,207,345"/>
+<area shape="rect" id="node10" href="$class_cosmic_defender_1_1_entity.html#ac82d96ecf7a43cd9acade783880b7412" title="Конструктор" alt="" coords="16,370,209,397"/>
+<area shape="rect" id="node11" href="$class_cosmic_defender_1_1_single_shot.html#a0b78ed2167a1ab520922e600506bba28" title=" " alt="" coords="5,421,220,447"/>
+</map>

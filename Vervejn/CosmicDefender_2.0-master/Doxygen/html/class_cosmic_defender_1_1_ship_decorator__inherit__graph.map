@@ -1,0 +1,5 @@
+<map id="CosmicDefender.ShipDecorator" name="CosmicDefender.ShipDecorator">
+<area shape="rect" id="node1" title="Абстрактный класс декоратора кораблей" alt="" coords="5,155,208,181"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="83,80,131,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="79,5,135,32"/>
+</map>

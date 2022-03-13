@@ -1,0 +1,4 @@
+<map id="CosmicDefender.SpawnPlayer" name="CosmicDefender.SpawnPlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,203,107"/>
+<area shape="rect" id="node2" href="$interface_cosmic_defender_1_1_i_spawn.html" title=" " alt="" coords="72,5,136,32"/>
+</map>

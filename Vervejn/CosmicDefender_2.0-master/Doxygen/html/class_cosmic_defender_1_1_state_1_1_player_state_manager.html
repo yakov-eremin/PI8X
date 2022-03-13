@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CosmicDefender: Класс CosmicDefender.State.PlayerStateManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">CosmicDefender
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_cosmic_defender_1_1_state_1_1_player_state_manager.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_cosmic_defender_1_1_state_1_1_player_state_manager-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс CosmicDefender.State.PlayerStateManager</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Граф связей класса CosmicDefender.State.PlayerStateManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_state_1_1_player_state_manager__coll__graph.png" border="0" usemap="#a_cosmic_defender_8_state_8_player_state_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="a_cosmic_defender_8_state_8_player_state_manager_coll__map" id="a_cosmic_defender_8_state_8_player_state_manager_coll__map">
+<area shape="rect" title=" " alt="" coords="83,185,276,227"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_fast_state.html" title=" " alt="" coords="5,81,199,123"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_base_state.html" title=" " alt="" coords="173,5,293,32"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_simple_state.html" title=" " alt="" coords="223,81,416,123"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad6e1080d6b84a405ca87b133306f1be1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_state_manager.html#ad6e1080d6b84a405ca87b133306f1be1">PlayerStateManager</a> (<a class="el" href="class_cosmic_defender_1_1_player_ship.html">PlayerShip</a> player)</td></tr>
+<tr class="separator:ad6e1080d6b84a405ca87b133306f1be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd71937e5fe1c036be1fee31a4ff6b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_state_manager.html#a7fd71937e5fe1c036be1fee31a4ff6b6">Update</a> (float time)</td></tr>
+<tr class="separator:a7fd71937e5fe1c036be1fee31a4ff6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73811f306267e5735f0759d23db7b290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_state_manager.html#a73811f306267e5735f0759d23db7b290">SwitchState</a> (<a class="el" href="class_cosmic_defender_1_1_state_1_1_player_base_state.html">PlayerBaseState</a> state)</td></tr>
+<tr class="separator:a73811f306267e5735f0759d23db7b290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a0f5d8406773f016b08cd02d054e23df7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_fast_state.html">PlayerFastState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_state_manager.html#a0f5d8406773f016b08cd02d054e23df7">_fastState</a> = new <a class="el" href="class_cosmic_defender_1_1_state_1_1_player_fast_state.html">PlayerFastState</a>()</td></tr>
+<tr class="separator:a0f5d8406773f016b08cd02d054e23df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c12b759ef1b962ab5d02d473c4ed9d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_simple_state.html">PlayerSimpleState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_state_manager.html#a8c12b759ef1b962ab5d02d473c4ed9d2">_simpleState</a> = new <a class="el" href="class_cosmic_defender_1_1_state_1_1_player_simple_state.html">PlayerSimpleState</a>()</td></tr>
+<tr class="separator:a8c12b759ef1b962ab5d02d473c4ed9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ad6e1080d6b84a405ca87b133306f1be1" name="ad6e1080d6b84a405ca87b133306f1be1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e1080d6b84a405ca87b133306f1be1">&#9670;&nbsp;</a></span>PlayerStateManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CosmicDefender.State.PlayerStateManager.PlayerStateManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cosmic_defender_1_1_player_ship.html">PlayerShip</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_state_1_1_player_state_manager_ad6e1080d6b84a405ca87b133306f1be1_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_state_1_1_player_state_manager_ad6e1080d6b84a405ca87b133306f1be1_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_ad6e1080d6b84a405ca87b133306f1be1_cgraph" id="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_ad6e1080d6b84a405ca87b133306f1be1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,231,47"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_base_state.html#adbdd9149143734526d2ae5a2011ada33" title=" " alt="" coords="279,5,472,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a73811f306267e5735f0759d23db7b290" name="a73811f306267e5735f0759d23db7b290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73811f306267e5735f0759d23db7b290">&#9670;&nbsp;</a></span>SwitchState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CosmicDefender.State.PlayerStateManager.SwitchState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_base_state.html">PlayerBaseState</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_cgraph" id="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,199,80"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_base_state.html#adbdd9149143734526d2ae5a2011ada33" title=" " alt="" coords="247,5,440,47"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_base_state.html#ae900a3c96a64a201661774b11bf78805" title=" " alt="" coords="247,71,440,112"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_icgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_icgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_icgraph" id="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a73811f306267e5735f0759d23db7b290_icgraph">
+<area shape="rect" title=" " alt="" coords="269,104,463,145"/>
+<area shape="rect" href="class_n_unit_tests_1_1_tests.html#a94fe60d9fa6496b13c1ecfe6b44111af" title=" " alt="" coords="5,5,221,47"/>
+<area shape="rect" href="class_n_unit_tests_1_1_tests.html#ab17a4b288acdf8b58ce85a942ddd3b1a" title=" " alt="" coords="5,71,221,112"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_fast_state.html#a5db5b7e4475438cd5356db13ec3ea7e2" title=" " alt="" coords="17,136,210,177"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_simple_state.html#ae02b2af865295d0ce0432dd1cc4cf79e" title=" " alt="" coords="17,201,210,243"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7fd71937e5fe1c036be1fee31a4ff6b6" name="a7fd71937e5fe1c036be1fee31a4ff6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd71937e5fe1c036be1fee31a4ff6b6">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CosmicDefender.State.PlayerStateManager.Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_cgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_cgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_cgraph" id="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" href="class_cosmic_defender_1_1_state_1_1_player_base_state.html#ae43a14a18dc63a45b7c95977bfc69732" title=" " alt="" coords="247,5,440,47"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_icgraph.png" border="0" usemap="#aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_icgraph" alt=""/></div>
+<map name="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_icgraph" id="aclass_cosmic_defender_1_1_state_1_1_player_state_manager_a7fd71937e5fe1c036be1fee31a4ff6b6_icgraph">
+<area shape="rect" title=" " alt="" coords="241,5,435,47"/>
+<area shape="rect" href="class_cosmic_defender_1_1_player_ship.html#a91d2c86a7c9908941b6e3aefdfda7f34" title=" " alt="" coords="5,5,193,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a0f5d8406773f016b08cd02d054e23df7" name="a0f5d8406773f016b08cd02d054e23df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f5d8406773f016b08cd02d054e23df7">&#9670;&nbsp;</a></span>_fastState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_fast_state.html">PlayerFastState</a> CosmicDefender.State.PlayerStateManager._fastState = new <a class="el" href="class_cosmic_defender_1_1_state_1_1_player_fast_state.html">PlayerFastState</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c12b759ef1b962ab5d02d473c4ed9d2" name="a8c12b759ef1b962ab5d02d473c4ed9d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c12b759ef1b962ab5d02d473c4ed9d2">&#9670;&nbsp;</a></span>_simpleState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_simple_state.html">PlayerSimpleState</a> CosmicDefender.State.PlayerStateManager._simpleState = new <a class="el" href="class_cosmic_defender_1_1_state_1_1_player_simple_state.html">PlayerSimpleState</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>State/<a class="el" href="_player_state_manager_8cs.html">PlayerStateManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_cosmic_defender.html">CosmicDefender</a></li><li class="navelem"><a class="el" href="namespace_cosmic_defender_1_1_state.html">State</a></li><li class="navelem"><a class="el" href="class_cosmic_defender_1_1_state_1_1_player_state_manager.html">PlayerStateManager</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

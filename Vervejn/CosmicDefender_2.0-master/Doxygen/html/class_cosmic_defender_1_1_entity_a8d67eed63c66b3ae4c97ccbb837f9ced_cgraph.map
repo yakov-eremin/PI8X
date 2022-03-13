@@ -1,0 +1,5 @@
+<map id="CosmicDefender.Entity.Update" name="CosmicDefender.Entity.Update">
+<area shape="rect" id="node1" title="Обновление объекта" alt="" coords="5,46,205,73"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#acfbacab6e15051ec293d383cc21354ad" title="Проверить позицию объекта в области игры" alt="" coords="255,5,451,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_entity.html#ac3628480f4b2b300ec23f4bd7d7a68c7" title="Обновить позицию объекта" alt="" coords="253,71,453,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CosmicDefender.Content.GetsShootShip" name="CosmicDefender.Content.GetsShootShip">
+<area shape="rect" id="node1" title=" " alt="" coords="531,5,729,47"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_factory_method_1_1_abstract_factory.html#ac16503292fb2cc3625a5788adf48ac80" title=" " alt="" coords="259,5,483,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_spawn_enemy.html#a25504507a9249b29ddca7204aec823c3" title=" " alt="" coords="5,5,211,47"/>
+</map>

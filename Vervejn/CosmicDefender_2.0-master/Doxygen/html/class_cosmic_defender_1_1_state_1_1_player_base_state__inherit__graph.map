@@ -1,0 +1,5 @@
+<map id="CosmicDefender.State.PlayerBaseState" name="CosmicDefender.State.PlayerBaseState">
+<area shape="rect" id="node1" title=" " alt="" coords="113,5,307,47"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_state_1_1_player_fast_state.html" title=" " alt="" coords="5,95,199,136"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_state_1_1_player_simple_state.html" title=" " alt="" coords="223,95,416,136"/>
+</map>

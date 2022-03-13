@@ -1,0 +1,6 @@
+<map id="CosmicDefender.Menu.MenuRectShips" name="CosmicDefender.Menu.MenuRectShips">
+<area shape="rect" id="node1" title=" " alt="" coords="5,247,195,288"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока" alt="" coords="8,157,192,184"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="76,81,124,108"/>
+<area shape="rect" id="node4" title=" " alt="" coords="72,5,128,32"/>
+</map>

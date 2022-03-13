@@ -1,0 +1,12 @@
+<map id="CosmicDefender.GameManager" name="CosmicDefender.GameManager">
+<area shape="rect" id="node1" title=" " alt="" coords="837,56,1044,83"/>
+<area shape="rect" id="node2" href="$interface_cosmic_defender_1_1_handlers.html" title=" " alt="" coords="277,5,351,32"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_i_spawner.html" title=" " alt="" coords="549,56,724,83"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_game_level.html" title=" " alt="" coords="544,115,729,141"/>
+<area shape="rect" id="node5" href="$interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="253,64,375,91"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_boss.html" title="Вражеский корабль (босс)" alt="" coords="239,115,389,141"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="111,139,159,165"/>
+<area shape="rect" id="node9" href="$class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока" alt="" coords="222,165,406,192"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,139,61,165"/>
+<area shape="rect" id="node10" href="$class_cosmic_defender_1_1_factory_method_1_1_abstract_factory.html" title=" " alt="" coords="208,217,420,258"/>
+</map>

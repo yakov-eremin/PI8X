@@ -1,0 +1,171 @@
+\hypertarget{class_cosmic_defender_1_1_enemy_ship}{}\doxysection{Класс Cosmic\+Defender.\+Enemy\+Ship}
+\label{class_cosmic_defender_1_1_enemy_ship}\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+
+
+Вражеский корабль  
+
+
+
+
+Граф наследования\+:Cosmic\+Defender.\+Enemy\+Ship\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_cosmic_defender_1_1_enemy_ship__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Cosmic\+Defender.\+Enemy\+Ship\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_cosmic_defender_1_1_enemy_ship__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_ae101bdf563cca32416a9786879a058ab}{Enemy\+Ship}} (Sprite sprite, float max\+Speed, float acceleration, string name, float health, \mbox{\hyperlink{class_cosmic_defender_1_1_gun}{Gun}} weapon, float firing\+Rate)
+\begin{DoxyCompactList}\small\item\em Конструктор \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a0e1d76db38cf2a19e1aab1d42ebd26f4}{Update}} (float time)
+\item 
+override void \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_acfe45be1aa31719390ee9e7685654ed2}{Update\+Rotation}} ()
+\begin{DoxyCompactList}\small\item\em Обновить направление корабля \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a2114de57e1bdc07bf8ac94dd0e3ebfa8}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} enemy\+Ship)
+\item 
+override void \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a53099e767dfe66c8fead5cfc6b92ef2f}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}} bullet)
+\item 
+override void \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_aa06935cad0303aaa4dfac11f4eb7b8a1}{Visit}} (\mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}} player\+Ship)
+\item 
+override void \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_ae9c78eced14a43270d8f8a3a0dd85b00}{Collide}} (Entity ent1, Entity ent2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship_a7f76475d3ddf58b02c503ada4a864cba}{Distant\+Shot}} = 500
+\begin{DoxyCompactList}\small\item\em Дистанция, с которой вражеский корабль начинает стрелять \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Вражеский корабль 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_ae101bdf563cca32416a9786879a058ab}\label{class_cosmic_defender_1_1_enemy_ship_ae101bdf563cca32416a9786879a058ab}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!EnemyShip@{EnemyShip}}
+\index{EnemyShip@{EnemyShip}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{EnemyShip()}{EnemyShip()}}
+{\footnotesize\ttfamily Cosmic\+Defender.\+Enemy\+Ship.\+Enemy\+Ship (\begin{DoxyParamCaption}\item[{Sprite}]{sprite,  }\item[{float}]{max\+Speed,  }\item[{float}]{acceleration,  }\item[{string}]{name,  }\item[{float}]{health,  }\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_gun}{Gun}}}]{weapon,  }\item[{float}]{firing\+Rate }\end{DoxyParamCaption})}
+
+
+
+Конструктор \mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sprite} & Спрайт\\
+\hline
+{\em max\+Speed} & Максимальная скорость\\
+\hline
+{\em acceleration} & Ускорение\\
+\hline
+{\em name} & Название\\
+\hline
+{\em health} & Здоровте\\
+\hline
+{\em weapon} & Пушка\\
+\hline
+{\em firing\+Rate} & Скорострельность\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_ae9c78eced14a43270d8f8a3a0dd85b00}\label{class_cosmic_defender_1_1_enemy_ship_ae9c78eced14a43270d8f8a3a0dd85b00}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!Collide@{Collide}}
+\index{Collide@{Collide}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{Collide()}{Collide()}}
+{\footnotesize\ttfamily override void Cosmic\+Defender.\+Enemy\+Ship.\+Collide (\begin{DoxyParamCaption}\item[{Entity}]{ent1,  }\item[{Entity}]{ent2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_a0e1d76db38cf2a19e1aab1d42ebd26f4}\label{class_cosmic_defender_1_1_enemy_ship_a0e1d76db38cf2a19e1aab1d42ebd26f4}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!Update@{Update}}
+\index{Update@{Update}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Cosmic\+Defender.\+Enemy\+Ship.\+Update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_enemy_ship_a0e1d76db38cf2a19e1aab1d42ebd26f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_acfe45be1aa31719390ee9e7685654ed2}\label{class_cosmic_defender_1_1_enemy_ship_acfe45be1aa31719390ee9e7685654ed2}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!UpdateRotation@{UpdateRotation}}
+\index{UpdateRotation@{UpdateRotation}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{UpdateRotation()}{UpdateRotation()}}
+{\footnotesize\ttfamily override void Cosmic\+Defender.\+Enemy\+Ship.\+Update\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Обновить направление корабля 
+
+
+
+Замещает \mbox{\hyperlink{class_cosmic_defender_1_1_ship_a0f8fd57b4b023dcfc48bbc03b5dbbdb5}{Cosmic\+Defender.\+Ship}}.
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_enemy_ship_acfe45be1aa31719390ee9e7685654ed2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_a53099e767dfe66c8fead5cfc6b92ef2f}\label{class_cosmic_defender_1_1_enemy_ship_a53099e767dfe66c8fead5cfc6b92ef2f}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily override void Cosmic\+Defender.\+Enemy\+Ship.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_bullet}{Bullet}}}]{bullet }\end{DoxyParamCaption})}
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cosmic_defender_1_1_enemy_ship_a53099e767dfe66c8fead5cfc6b92ef2f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_a2114de57e1bdc07bf8ac94dd0e3ebfa8}\label{class_cosmic_defender_1_1_enemy_ship_a2114de57e1bdc07bf8ac94dd0e3ebfa8}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily override void Cosmic\+Defender.\+Enemy\+Ship.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_enemy_ship}{Enemy\+Ship}}}]{enemy\+Ship }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_aa06935cad0303aaa4dfac11f4eb7b8a1}\label{class_cosmic_defender_1_1_enemy_ship_aa06935cad0303aaa4dfac11f4eb7b8a1}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!Visit@{Visit}}
+\index{Visit@{Visit}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily override void Cosmic\+Defender.\+Enemy\+Ship.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cosmic_defender_1_1_player_ship}{Player\+Ship}}}]{player\+Ship }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_cosmic_defender_1_1_enemy_ship_a7f76475d3ddf58b02c503ada4a864cba}\label{class_cosmic_defender_1_1_enemy_ship_a7f76475d3ddf58b02c503ada4a864cba}} 
+\index{CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}!DistantShot@{DistantShot}}
+\index{DistantShot@{DistantShot}!CosmicDefender.EnemyShip@{CosmicDefender.EnemyShip}}
+\doxysubsubsection{\texorpdfstring{DistantShot}{DistantShot}}
+{\footnotesize\ttfamily float Cosmic\+Defender.\+Enemy\+Ship.\+Distant\+Shot = 500}
+
+
+
+Дистанция, с которой вражеский корабль начинает стрелять 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Entities/\+Managed\+Objects/\+Ships/\mbox{\hyperlink{_enemy_ship_8cs}{Enemy\+Ship.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+<map id="CosmicDefender.Entity" name="CosmicDefender.Entity">
+<area shape="rect" id="node1" title="Абстрактный объект" alt="" coords="176,159,331,186"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_active_objects.html" title=" " alt="" coords="387,71,589,98"/>
+<area shape="rect" id="node9" href="$class_cosmic_defender_1_1_animation_1_1_animation.html" title=" " alt="" coords="397,123,579,164"/>
+<area shape="rect" id="node10" href="$class_cosmic_defender_1_1_managed_objects.html" title=" " alt="" coords="379,189,597,215"/>
+<area shape="rect" id="node11" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="415,239,561,266"/>
+<area shape="rect" id="node2" href="$interface_cosmic_defender_1_1_visitor_1_1_i_entity_visitor.html" title="Интерфейс, который описывает поведение объектов при соприкосновении с другими" alt="" coords="19,109,115,135"/>
+<area shape="rect" id="node3" href="$interface_cosmic_defender_1_1_i_entity_stats.html" title="Характеристики Объектов(Entity)" alt="" coords="21,159,112,186"/>
+<area shape="rect" id="node4" href="$interface_cosmic_defender_1_1_i_drawable_objects.html" title=" " alt="" coords="5,210,128,237"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_adapter_dmg_objects.html" title=" " alt="" coords="650,5,843,47"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_asteroid.html" title=" " alt="" coords="662,71,831,98"/>
+<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_bullet.html" title=" " alt="" coords="669,122,824,149"/>
+<area shape="rect" id="node12" href="$class_cosmic_defender_1_1_boss.html" title="Вражеский корабль (босс)" alt="" coords="671,181,822,207"/>
+<area shape="rect" id="node13" href="$class_cosmic_defender_1_1_enemy_ship.html" title="Вражеский корабль" alt="" coords="653,231,841,258"/>
+<area shape="rect" id="node14" href="$class_cosmic_defender_1_1_player_ship.html" title="Корабль игрока" alt="" coords="655,282,839,309"/>
+<area shape="rect" id="node15" href="$class_cosmic_defender_1_1_ship_decorator.html" title="Абстрактный класс декоратора кораблей" alt="" coords="645,333,848,359"/>
+</map>

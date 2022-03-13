@@ -1,0 +1,6 @@
+<map id="CosmicDefender.FactoryMethod.AbstractFactory" name="CosmicDefender.FactoryMethod.AbstractFactory">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,217,112"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_factory_method_1_1_boss_factory.html" title=" " alt="" coords="265,5,477,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_factory_method_1_1_level1_factory.html" title=" " alt="" coords="265,71,477,112"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_factory_method_1_1_player_ship_factory.html" title=" " alt="" coords="265,136,477,177"/>
+</map>

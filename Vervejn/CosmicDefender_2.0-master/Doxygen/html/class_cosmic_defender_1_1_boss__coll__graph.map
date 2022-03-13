@@ -1,0 +1,5 @@
+<map id="CosmicDefender.Boss" name="CosmicDefender.Boss">
+<area shape="rect" id="node1" title="Вражеский корабль (босс)" alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_ship.html" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="57,80,105,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="53,5,109,32"/>
+</map>

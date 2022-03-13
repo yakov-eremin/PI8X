@@ -1,0 +1,10 @@
+<map id="CosmicDefender.GameManager.Update" name="CosmicDefender.GameManager.Update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,216,112"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_collider.html#a1cf83abfc6725460238fea7becb81cc3" title=" " alt="" coords="275,5,443,47"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_i_spawner.html#a99f03ce2d6facf3688b34fd43fd63638" title=" " alt="" coords="269,71,448,112"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_game_level.html#a20de6514cb3e83a51b8041eacb5e6e54" title="Обновление объекта" alt="" coords="264,136,453,177"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_collider.html#a6dd6b630941e27ef43a409507125f956" title=" " alt="" coords="527,5,695,47"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_game_level.html#a5dac5fe38d96d368cbf3ee849e75083b" title="Прорисовка объекта" alt="" coords="501,143,720,170"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_window.html#ae38d0d0bf8146d3057c7b2fe6172ce03" title=" " alt="" coords="768,103,957,144"/>
+<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_window.html#a1f51e7afcaccd2419ce9c274a1c34eb2" title=" " alt="" coords="768,168,957,209"/>
+</map>

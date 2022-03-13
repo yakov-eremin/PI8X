@@ -1,0 +1,8 @@
+<map id="CosmicDefender.Content.GetTypeB" name="CosmicDefender.Content.GetTypeB">
+<area shape="rect" id="node1" title=" " alt="" coords="484,89,675,131"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_content.html#ac961f90aa2e22f579e798db6e2b3cddd" title=" " alt="" coords="245,89,436,131"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_asteroid.html#a95367dfaff716cc858311a0e3d44d738" title=" " alt="" coords="15,5,188,47"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_bullet.html#aed14bf591021ae637ce2900348d1a33b" title=" " alt="" coords="9,71,193,98"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_boss.html#ac0ab6e332b3f097baf0960639b6ec41a" title=" " alt="" coords="11,122,192,149"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_enemy_ship.html#a53099e767dfe66c8fead5cfc6b92ef2f" title=" " alt="" coords="5,173,197,215"/>
+</map>

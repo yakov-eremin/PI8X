@@ -1,0 +1,9 @@
+<map id="CosmicDefender.Entity.LengthVector" name="CosmicDefender.Entity.LengthVector">
+<area shape="rect" id="node1" title="Длина вектора" alt="" coords="539,115,737,156"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_entity.html#a37c640a2e971d226229bd4cfda5b5fe4" title="Применить к объету силу(ускорение)" alt="" coords="275,97,467,123"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_entity.html#aa0430b15ebdcc93f4f4e6f06a5ca7ca1" title="Нормализация вектора" alt="" coords="252,147,491,174"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_asteroid.html#acb7fce24f6bb6005c917ebfc29825734" title="Обновление объекта" alt="" coords="18,5,191,47"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_bullet.html#af02b238f672789dc8573c1b677679b61" title="Обновление объекта" alt="" coords="5,71,204,98"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_boss.html#a353c70a299f03fa463ffa6d309f604da" title="Обновление объекта" alt="" coords="7,122,203,149"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_enemy_ship.html#a0e1d76db38cf2a19e1aab1d42ebd26f4" title="Обновление объекта" alt="" coords="9,173,201,215"/>
+</map>

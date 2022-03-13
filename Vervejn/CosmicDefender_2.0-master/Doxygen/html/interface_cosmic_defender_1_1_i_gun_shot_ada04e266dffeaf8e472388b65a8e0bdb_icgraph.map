@@ -1,0 +1,10 @@
+<map id="CosmicDefender.IGunShot.Shot" name="CosmicDefender.IGunShot.Shot">
+<area shape="rect" id="node1" title=" " alt="" coords="509,159,716,185"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_gun.html#ac3107e6f3f14b2ac35a3e0269e10e25d" title=" " alt="" coords="285,159,461,185"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_gun_decorator.html#a69df5b7db0c3f1e3f0d648de542e68b8" title=" " alt="" coords="5,5,237,32"/>
+<area shape="rect" id="node4" href="$class_n_unit_tests_1_1_tests.html#aedf01b50ee15beadac588cefd1fa6b86" title=" " alt="" coords="13,57,229,98"/>
+<area shape="rect" id="node5" href="$class_n_unit_tests_1_1_tests.html#ad0eb33065887cf549b03bcfaf6d49a40" title=" " alt="" coords="46,122,197,163"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_boss.html#a353c70a299f03fa463ffa6d309f604da" title=" " alt="" coords="23,188,219,215"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_enemy_ship.html#a0e1d76db38cf2a19e1aab1d42ebd26f4" title=" " alt="" coords="25,239,217,281"/>
+<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_player_ship.html#a91d2c86a7c9908941b6e3aefdfda7f34" title=" " alt="" coords="27,305,215,346"/>
+</map>

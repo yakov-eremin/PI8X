@@ -1,0 +1,12 @@
+<map id="NUnitTests.EntitiesTests.Test_SpawnEnemy" name="NUnitTests.EntitiesTests.Test_SpawnEnemy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,176,171"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a187328d39790fd44ce49978247eb4c18" title=" " alt="" coords="240,5,427,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#add61fd3e265f9e77716b89e13ddd349b" title=" " alt="" coords="240,71,427,112"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="755,129,942,171"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_game_manager.html#aa7b35482350f4f8eac8d3b90f6aaad3e" title=" " alt="" coords="228,188,439,229"/>
+<area shape="rect" id="node9" href="$class_cosmic_defender_1_1_spawner_entities.html#a562ce2a2987af4d3fbf12523f89ff087" title=" " alt="" coords="224,253,443,295"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="996,129,1199,171"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_game_manager.html#a397da5fe57161561f235ea7ec962818a" title=" " alt="" coords="491,188,701,229"/>
+<area shape="rect" id="node8" href="$class_cosmic_defender_1_1_content.html#a4508aaa788ee7b67a55279939ecee340" title=" " alt="" coords="749,195,948,222"/>
+<area shape="rect" id="node10" href="$interface_cosmic_defender_1_1_i_spawn.html#a925bc97f9c516f24af755b21761dc34b" title=" " alt="" coords="493,261,699,287"/>
+</map>

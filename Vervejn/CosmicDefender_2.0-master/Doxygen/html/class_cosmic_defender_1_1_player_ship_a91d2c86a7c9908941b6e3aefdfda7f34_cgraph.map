@@ -1,0 +1,9 @@
+<map id="CosmicDefender.PlayerShip.Update" name="CosmicDefender.PlayerShip.Update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,89,193,131"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_ship.html#accaeda4a6820983d0bca4bc0287a7b11" title="Проверить, позволяет ли таймер скорострельности выстрелить?" alt="" coords="244,5,432,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_gun.html#ac3107e6f3f14b2ac35a3e0269e10e25d" title=" " alt="" coords="250,71,426,98"/>
+<area shape="rect" id="node5" href="$class_cosmic_defender_1_1_gun.html#a5075bac09dace77b5b5333334589e5a9" title=" " alt="" coords="243,122,433,149"/>
+<area shape="rect" id="node6" href="$class_cosmic_defender_1_1_state_1_1_player_state_manager.html#a7fd71937e5fe1c036be1fee31a4ff6b6" title=" " alt="" coords="241,173,435,215"/>
+<area shape="rect" id="node4" href="$interface_cosmic_defender_1_1_i_gun_shot.html#ada04e266dffeaf8e472388b65a8e0bdb" title=" " alt="" coords="483,71,689,98"/>
+<area shape="rect" id="node7" href="$class_cosmic_defender_1_1_state_1_1_player_base_state.html#ae43a14a18dc63a45b7c95977bfc69732" title=" " alt="" coords="489,173,683,215"/>
+</map>

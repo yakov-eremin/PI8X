@@ -1,0 +1,4 @@
+<map id="CosmicDefender.Ship" name="CosmicDefender.Ship">
+<area shape="rect" id="node1" title="Класс Корабля Корабль &#45; это абстрактный объект который описывает корабль пользователя/ИИ...." alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="51,5,107,32"/>
+</map>

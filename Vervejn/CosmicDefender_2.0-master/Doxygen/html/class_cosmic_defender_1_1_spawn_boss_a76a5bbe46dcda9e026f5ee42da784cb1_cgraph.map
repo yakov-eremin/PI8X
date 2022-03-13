@@ -1,0 +1,5 @@
+<map id="CosmicDefender.SpawnBoss.SpawnPosition" name="CosmicDefender.SpawnBoss.SpawnPosition">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,200,80"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_window.html#ae38d0d0bf8146d3057c7b2fe6172ce03" title=" " alt="" coords="248,5,437,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_window.html#a1f51e7afcaccd2419ce9c274a1c34eb2" title=" " alt="" coords="248,71,437,112"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="CosmicDefender.Bullet.CheckPostitions" name="CosmicDefender.Bullet.CheckPostitions">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,200,80"/>
+<area shape="rect" id="node2" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a057e5d3a9b1e0675373e8499e2563811" title=" " alt="" coords="248,5,435,47"/>
+<area shape="rect" id="node3" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#aa040081af17900185adb379cf9dfc7d1" title=" " alt="" coords="248,71,435,112"/>
+<area shape="rect" id="node4" href="$class_cosmic_defender_1_1_controllers_1_1_object_manager.html#a2473259e63bb9b9aa9ed9eebbc08b07d" title=" " alt="" coords="483,71,685,112"/>
+</map>
