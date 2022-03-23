@@ -16,18 +16,30 @@ namespace FileManager.Models.Services.Executors
 
 		public bool Add(IRule<string> rule)
 		{
-			if (rules.Contains(rule))
-				return false;
+			if (rule == null)
+				throw new ArgumentNullException(nameof(rule));
+            foreach (var item in rules)
+            {
+				if (item.GetType() == rule.GetType())
+					return false;
+            }
 			rules.Add(rule);
 			return true;
 		}
 
 		public bool Remove(IRule<string> rule)
 		{
-			if (!rules.Contains(rule))
-				return false;
-			rules.Remove(rule);
-			return true;
+			if (rule == null)
+				throw new ArgumentNullException(nameof(rule));
+            foreach (var item in rules)
+            {
+				if (item.GetType() == rule.GetType())
+                {
+					rules.Remove(item);
+					return true;
+                }
+            }
+			return false;
 		}
 
 		public string Invoke(string param)

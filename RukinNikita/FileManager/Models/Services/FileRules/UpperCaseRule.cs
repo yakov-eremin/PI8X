@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FileManager.Models.Services.FileRules
 {
-	class UpperCaseRule : FileRule
+	public class UpperCaseRule : FileRule
 	{
 		public override string Apply(string param)
 		{
