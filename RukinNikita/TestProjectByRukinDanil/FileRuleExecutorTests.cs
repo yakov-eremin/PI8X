@@ -100,5 +100,22 @@ namespace TestProjectByRukinDanil
             // assert
             Assert.AreEqual(Path.Combine(directory, fileName.ToUpper() + ext), result);
         }
+
+        [TestMethod]
+        public void Invoke_FileNameWithDots_ShouldRenameOnlyNameOfFile()
+        {
+            // arrange
+            FileRuleExecutor executor = new FileRuleExecutor();
+            UpperCaseRule rule = new UpperCaseRule();
+            executor.Add(rule);
+            string directory = @"D:\test\";
+            string fileName = "fileName.else.if.while.do";
+            string ext = ".txt";
+            string path = Path.Combine(directory, fileName + ext);
+            // act
+            string result = executor.Invoke(path);
+            // assert
+            Assert.AreEqual(Path.Combine(directory, fileName.ToUpper() + ext), result);
+        }
     }
 }
