@@ -10,20 +10,38 @@ using System.Windows.Input;
 
 namespace AstLab3.ViewModels
 {
+	/// <summary>
+	/// Модель представления окна <see cref="Views.Windows.AddWorkWindow"/>
+	/// </summary>
+	/// <inheritdoc/>
 	public class AddWorkWindowViewModel : ClosableViewModel
 	{
 		private ILogger _logger;
 		private NetworkSchedule _networkSchedule;
 
 		private string _worksLength = "";
+		/// <summary>
+		/// Продолжительность работы
+		/// </summary>
 		public string WorksLength { get => _worksLength; set => Set(ref _worksLength, value); }
 
 		private string _startVertexIndex = "";
+		/// <summary>
+		/// Индекс начального события работы
+		/// </summary>
 		public string StartVertexIndex { get => _startVertexIndex; set => Set(ref _startVertexIndex, value); }
 
 		private string _endVertexIndex = "";
+		/// <summary>
+		/// Индекс конечного события работы
+		/// </summary>
 		public string EndVertexIndex { get => _endVertexIndex; set => Set(ref _endVertexIndex, value); }
-
+		/// <summary>
+		/// Создает модель представления <see cref="AddWorkWindowViewModel"/> окна <see cref="Views.Windows.AddWorkWindow"/> <br/>
+		/// для работы над сетевым графиком.
+		/// </summary>
+		/// <param name="networkSchedule">Сетевой график для обработки</param>
+		/// <param name="logger">Логгер для регистрации процесса обработки сетевого графика</param>
 		public AddWorkWindowViewModel(NetworkSchedule networkSchedule, ILogger logger)
 		{
 			_logger = logger;
@@ -32,7 +50,9 @@ namespace AstLab3.ViewModels
 			ApplyCommand = new LambdaCommand(OnApplyCommandExecuted, CanApplyCommandExecute);
 			_logger.LogMessage("Инициализировано окно для добавления новой работы.");
 		}
-
+		/// <summary>
+		/// Команда закрывания окна.
+		/// </summary>
 		public ICommand CancelCommand { get; }
 		private void OnCancelCommandExecuted(object p)
 		{
@@ -40,7 +60,9 @@ namespace AstLab3.ViewModels
 			OnCloseWindow(new UserDialogEventArgs(false));
 		}
 		private bool CanCancelCommandExecute(object p) => true;
-
+		/// <summary>
+		/// Команда применения изменений, произведенных над сетевым графиком.
+		/// </summary>
 		public ICommand ApplyCommand { get; }
 		private void OnApplyCommandExecuted(object p)
 		{

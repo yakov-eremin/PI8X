@@ -10,15 +10,31 @@ using System.Windows.Input;
 
 namespace AstLab3.ViewModels
 {
+	/// <summary>
+	/// Модель представления окна <see cref="Views.Windows.ChangeWorkWindow"/>.
+	/// </summary>
+	/// <inheritdoc/>
 	public class ChangeWorkWindowViewModel : ClosableViewModel
 	{
 		private ILogger _logger;
 		private NetworkSchedule _networkSchedule;
+		/// <summary>
+		/// Текущая выбранная работа
+		/// </summary>
 		public Work SelectedWork { get; set; }
 
 		private string _worksLength = "";
+		/// <summary>
+		/// Продолжительность работы
+		/// </summary>
 		public string WorksLength { get => _worksLength; set => Set(ref _worksLength, value); }
-
+		/// <summary>
+		/// Создает модель представления <see cref="ChangeWorkWindowViewModel"/> окна <see cref="Views.Windows.ChangeWorkWindow"/>
+		/// для работы над сетевым графиком.
+		/// </summary>
+		/// <param name="data">Данные, необходимые для обработки сетевого графика</param>
+		/// <param name="networkSchedule">Сетевой график</param>
+		/// <param name="logger">Логгер для регистрации процесса редактирования сетевого графика</param>
 		public ChangeWorkWindowViewModel(ChangeWorkWindowData data, NetworkSchedule networkSchedule, ILogger logger)
 		{
 			_logger = logger;
@@ -29,7 +45,9 @@ namespace AstLab3.ViewModels
 			ApplyCommand = new LambdaCommand(OnApplyCommandExecuted, CanApplyCommandExecute);
 			_logger.LogMessage("Инициализировано окно для редактирования выбранной работы.");
 		}
-
+		/// <summary>
+		/// Команда закрывания окна пользователем.
+		/// </summary>
 		public ICommand CancelCommand { get; }
 		private void OnCancelCommandExecuted(object p)
 		{
@@ -37,7 +55,9 @@ namespace AstLab3.ViewModels
 			OnCloseWindow(new UserDialogEventArgs(false));
 		}
 		private bool CanCancelCommandExecute(object p) => true;
-
+		/// <summary>
+		/// Команда применения изменений к сетевому графику
+		/// </summary>
 		public ICommand ApplyCommand { get; }
 		private void OnApplyCommandExecuted(object p)
 		{

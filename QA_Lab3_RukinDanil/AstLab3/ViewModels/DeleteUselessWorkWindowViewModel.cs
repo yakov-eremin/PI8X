@@ -9,18 +9,29 @@ using System.Windows.Input;
 
 namespace AstLab3.ViewModels
 {
+	/// <summary>
+	/// Модель представления окна <see cref="Views.Windows.DeleteUselessWorkWindow"/>
+	/// </summary>
+	/// <inheritdoc/>
 	public class DeleteUselessWorkWindowViewModel : ClosableViewModel
 	{
 		private DeleteUselessWorkWindowData _deleteUselessWorkWindowData;
 		private NetworkSchedule _networkSchedule;
 		private ILogger _logger;
-		//
-		// нужен только для дизайнера
-		//
+		/// <summary>
+		/// Создает модель представления <see cref="DeleteUselessWorkWindowViewModel"/>. Нужен только для дизайнера
+		/// </summary>
 		public DeleteUselessWorkWindowViewModel()
 		{
 
 		}
+		/// <summary>
+		/// Создает модель представления <see cref="DeleteUselessWorkWindowViewModel"/> окна <see cref="Views.Windows.DeleteUselessWorkWindow"/>
+		/// для удаления из сетевого графика ненужных работ.
+		/// </summary>
+		/// <param name="deleteUselessWorkWindowData">Данные, необходимые для удаления ненужных работ</param>
+		/// <param name="toEidt">Сетевой график для редактирования</param>
+		/// <param name="logger">Логгер для регистрации процесса редактирования сетевого графика.</param>
 		public DeleteUselessWorkWindowViewModel(DeleteUselessWorkWindowData deleteUselessWorkWindowData, NetworkSchedule toEidt, ILogger logger)
 		{
 			_logger = logger;
@@ -35,17 +46,33 @@ namespace AstLab3.ViewModels
 			_logger.LogMessage("Инициализировано окно для удаления частично повторяющихся работ");
 		}
 		private bool _deleteFirstWorkIsNecessary = false;
+		/// <summary>
+		/// Возвращает или задает необходимость удаления первой работы
+		/// </summary>
 		public bool DeleteFirstWorkIsNecessary { get => _deleteFirstWorkIsNecessary; set => Set(ref _deleteFirstWorkIsNecessary, value); }
 
 		private bool _deleteSecondWorkIsNecessary = false;
+		/// <summary>
+		/// Возвращает или задает необходимость удаления второй работы
+		/// </summary>
 		public bool DeleteSecondWorkIsNecessary { get => _deleteSecondWorkIsNecessary; set => Set(ref _deleteSecondWorkIsNecessary, value); }
 
 		private string _firstWorkToDelete = "";
+		/// <summary>
+		/// Возвращает или задает текст для отображения возле объекта пользовательского интерфейса, предоставляющего возможность выбора
+		/// при удалении первой работы.
+		/// </summary>
 		public string FirstWorkToDelete { get => _firstWorkToDelete; set => Set(ref _firstWorkToDelete, value); }
 
 		private string _secondWorkToDelete = "";
+		/// <summary>
+		/// Возвращает или задает текст для отображения возле объекта пользовательского интерфейса, предоставляющего возможность выбора
+		/// при удалении второй работы.
+		/// </summary>
 		public string SecondWorkToDelete { get => _secondWorkToDelete; set => Set(ref _secondWorkToDelete, value); }
-
+		/// <summary>
+		/// Команда удаления выбранной работы
+		/// </summary>
 		public ICommand DeleteCommand { get; }
 		private void OnDeleteCommandExecuted(object p)
 		{
@@ -81,7 +108,9 @@ namespace AstLab3.ViewModels
 		}
 		private bool CanDeleteCommandExecute(object p) => true;
 
-
+		/// <summary>
+		/// Команда закрывания окна
+		/// </summary>
 		public ICommand CancelCommand { get; }
 		private void OnCancelCommandExecuted(object p)
 		{
@@ -89,7 +118,9 @@ namespace AstLab3.ViewModels
 			OnCloseWindow(new UserDialogEventArgs(false));
 		}
 		private bool CanCancelCommandExecute(object p) => true;
-
+		/// <summary>
+		/// Команда выбора работы для удаления
+		/// </summary>
 		public ICommand SelectWorkToDeleteCommand { get; }
 		private void OnSelectWorkToDeleteCommandExecuted(object p)
 		{

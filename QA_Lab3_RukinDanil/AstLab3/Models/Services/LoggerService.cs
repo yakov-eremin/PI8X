@@ -6,6 +6,7 @@ using System.Text;
 
 namespace AstLab3.Models.Services
 {
+	/// <inheritdoc cref="ILogger"/>
 	public class LoggerService : ILogger
 	{
 		public event EventHandler<LoggerEventArgs> RegisterLogMessage;
