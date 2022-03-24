@@ -9,17 +9,25 @@ using System.Text;
 
 namespace AstLab3.Models.Services
 {
+	/// <summary>
+	/// Диалоговое окно для удаления ненужных работ сетевого графика.
+	/// </summary>
 	public class UserDialogDeleteUselessWorkWindow : IUserDialog<NetworkSchedule>
 	{
 		private ILogger _logger;
 		private DeleteUselessWorkWindowData _deleteUselessWorkWindowData;
-
+		/// <summary>
+		/// Создает диалоговое окно <see cref="UserDialogDeleteUselessWorkWindow"/> с логгером и 
+		/// данными <see cref="Data.DeleteUselessWorkWindowData"/>
+		/// </summary>
+		/// <param name="logger">Логгер для регистрации процесса редактирования сетевого графика</param>
+		/// <param name="deleteUselessWorkWindowData">Данные</param>
 		public UserDialogDeleteUselessWorkWindow(ILogger logger, DeleteUselessWorkWindowData deleteUselessWorkWindowData)
 		{
 			_logger = logger;
 			_deleteUselessWorkWindowData = deleteUselessWorkWindowData;
 		}
-
+		/// <inheritdoc/>
 		public bool Edit(NetworkSchedule toEdit)
 		{
 			DeleteUselessWorkWindow window = new DeleteUselessWorkWindow();

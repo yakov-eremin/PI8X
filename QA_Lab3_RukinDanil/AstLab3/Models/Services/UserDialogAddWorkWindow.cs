@@ -5,15 +5,21 @@ using AstLab3.Models.Services.Interfaces;
 
 namespace AstLab3.Models.Services
 {
+	/// <summary>
+	/// Диалоговое окно для добавления работы в сетевой график.
+	/// </summary>
 	public class UserDialogAddWorkWindow : IUserDialog<NetworkSchedule>
 	{
 		private ILogger _logger;
-
+		/// <summary>
+		/// Создает окно <see cref="UserDialogAddWorkWindow"/> для редактирования сетевого графика <see cref="NetworkSchedule"/>
+		/// </summary>
+		/// <param name="logger">Логгер для отслеживания процесса редактирования</param>
 		public UserDialogAddWorkWindow(ILogger logger)
 		{
 			_logger = logger;
 		}
-
+		/// <inheritdoc/>
 		public bool Edit(NetworkSchedule toEdit)
 		{
 			var window = new AddWorkWindow();

@@ -9,10 +9,14 @@ using System.Text;
 
 namespace AstLab3.Models.Services
 {
+	/// <summary>
+	/// Создает окно <see cref="UserDialogChangeWorkWindow"/> для изменения работ сетевого графика <see cref="NetworkSchedule"/>
+	/// </summary>
 	public class UserDialogChangeWorkWindow : IUserDialog<NetworkSchedule>
 	{
 		private ILogger _logger;
 		private ChangeWorkWindowData _changeWorkWindowData;
+		/// <inheritdoc/>
 		public bool Edit(NetworkSchedule toEdit)
 		{
 			var window = new ChangeWorkWindow();
@@ -27,7 +31,11 @@ namespace AstLab3.Models.Services
 			};
 			return window.ShowDialog() ?? false;
 		}
-
+		/// <summary>
+		/// Создает диалоговое окно <see cref="UserDialogChangeWorkWindow"/> с данными <see cref="Data.ChangeWorkWindowData"/> и логгером
+		/// </summary>
+		/// <param name="data">Данные для редактирования</param>
+		/// <param name="logger">Логгер для регистрация процесса редактирования</param>
 		public UserDialogChangeWorkWindow(ChangeWorkWindowData data, ILogger logger)
 		{
 			_changeWorkWindowData = data;
