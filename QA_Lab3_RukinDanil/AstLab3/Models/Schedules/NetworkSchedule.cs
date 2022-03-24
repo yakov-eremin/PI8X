@@ -7,11 +7,25 @@ using AstLab3.ViewModels;
 
 namespace AstLab3.Models.Schedules
 {
+	/// <summary>
+	/// Представляет сетевой график.
+	/// </summary>
 	public class NetworkSchedule
 	{
+		/// <summary>
+		/// Таблица работ сетевого графика.
+		/// </summary>
+		/// <value>Список работ.</value>
 		public List<Work> Table { get; private set; }
+		/// <summary>
+		/// Коллекция событий сетевого графика.
+		/// </summary>
 		public List<Vertex> Vertices { get => GetVerticesList(Table); }
-
+		/// <summary>
+		/// Получает экземпляр события сетевого графика по id, если таковое существует.
+		/// </summary>
+		/// <param name="id">Уникальный идентификатор требуемого события.</param>
+		/// <returns>Требуемое событие сетевого графика, если таковое не найдено, то вернет</returns>
 		public Vertex GetVertexById(int id)
 		{
 			var vertices = GetVerticesList(Table);
@@ -22,7 +36,10 @@ namespace AstLab3.Models.Schedules
 			}
 			return null;
 		}
-
+		/// <summary>
+		/// Создает экзепляр сетевого графика <see cref="NetworkSchedule"/> со списком работ <paramref name="works"/>.
+		/// </summary>
+		/// <param name="works"></param>
 		public NetworkSchedule(ICollection<Work> works)
 		{
 			Table = new List<Work>();
@@ -31,7 +48,12 @@ namespace AstLab3.Models.Schedules
 				CreateWorkInTable(item.StartVertex.ID, item.EndVertex.ID, item.Length);
 			}
 		}
-
+		/// <summary>
+		/// Создает работу в таблице работ с заданными начальным событием, конечным событием и продолжительсностью.
+		/// </summary>
+		/// <param name="startVertexID">Id начального события</param>
+		/// <param name="endVertexID">Id конечного события</param>
+		/// <param name="length">Продолжительность</param>
 		public void CreateWorkInTable(int startVertexID, int endVertexID, int length)
 		{
 			Vertex startVertex, endVertex;
@@ -355,7 +377,10 @@ namespace AstLab3.Models.Schedules
 				logger?.LogMessage($"Петля {work.StartVertex.ID} → {work.EndVertex.ID} удалена");
 			}
 		}
-
+		/// <summary>
+		/// Частично упорядочивает сетевой график.
+		/// </summary>
+		/// <param name="logger">Логгер для логгирования процесса упорядочивания.</param>
 		public void Streamline(ILogger logger = null)
 		{
 			Vertex startVertex;
@@ -369,7 +394,12 @@ namespace AstLab3.Models.Schedules
 			FindCycles(Table);
 			Table = Streamline(Table, startVertex.ID);
 		}
-
+		/// <summary>
+		/// Находит все полные пути в частично упорядоченном сетевом графике.
+		/// </summary>
+		/// <param name="toDoWithEqualVertices">Делегат, указывающий, что необходимо сделать с одинаковыми событиями</param>
+		/// <param name="currentPath">Текущий путь</param>
+		/// <param name="logger">Логгер для логгирования процесса поиска пути</param>
 		public void FindAllPaths(Action<List<int>, int> toDoWithEqualVertices, List<int> currentPath, ILogger logger = null)
 		{
 			Vertex startVertex;
@@ -386,6 +416,15 @@ namespace AstLab3.Models.Schedules
 		}
 
 		#region CalculateVerticesParameters
+		/// <summary>
+		/// Устанавливает параметры событий сетевого графика.
+		/// </summary>
+		/// <remarks>
+		/// Подсчет происходит в два этапа.<br/>
+		/// Первый - проход от начальной вершины к конечной и установка раннего срока свершения событий.<br/>
+		/// Второй - прход от конечной вершины к начальной и установка позденего срока свершения событий.
+		/// </remarks>
+		/// <exception cref="Exception"></exception>
 		public void CalculateVerticesParameters()
 		{
 			VerticesParametersToDefault();
@@ -484,6 +523,11 @@ namespace AstLab3.Models.Schedules
 		}
 		#endregion
 
+		/// <summary>
+		/// Получает список критических работ, принадлежащих критическому пути.
+		/// </summary>
+		/// <param name="isNetworkScheduleStreamlined">Указывает, упорядочен ли сетевой график</param>
+		/// <returns>Список критических работ, принадлежащих критическому пути или пустой список</returns>
 		public List<Work> GetCritalcWorks(bool isNetworkScheduleStreamlined = true)
 		{
 			List<Work> result = new List<Work>();
