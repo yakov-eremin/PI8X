@@ -19,6 +19,9 @@ namespace AstLab3.Infrastructure.Common
 		{
 			_logMessage = new LogMessage(message);
 		}
+		/// <summary>
+		/// Сообщение для логгирования
+		/// </summary>
 		public string Message { get => _logMessage.Message; set => _logMessage.Message = value; }
 	}
 }
