@@ -12,10 +12,20 @@ using OxyPlot.Series;
 
 namespace AstLab3.ViewModels
 {
+	/// <summary>
+	/// Модель представления для окна <see cref="Views.Windows.UserInformatorGanttChartWindow"/>
+	/// </summary>
+	/// <inheritdoc/>
 	public class UserInformatorGanttChartWindowViewModel : ClosableViewModel
 	{
 		private ILogger _logger;
 		private NetworkSchedule _networkSchedule;
+		/// <summary>
+		/// Создает модель представления <see cref="UserInformatorGanttChartWindowViewModel"/> окна 
+		/// <see cref="Views.Windows.UserInformatorGanttChartWindow"/> для отображения работ сетевого графика в виде диаграммы Ганта
+		/// </summary>
+		/// <param name="logger"></param>
+		/// <param name="toShow"></param>
 		public UserInformatorGanttChartWindowViewModel(ILogger logger, NetworkSchedule toShow)
 		{
 			_networkSchedule = toShow;
@@ -24,8 +34,13 @@ namespace AstLab3.ViewModels
 			logger.LogMessage("Инициализировано окно показа диаграммы Ганта");
 			StartPerformance();
 		}
-
+		/// <summary>
+		/// Модель диаграммы для привязки к объекту интерфейса.
+		/// </summary>
 		public PlotModel PlotModel { get; set; } = new PlotModel();
+		/// <summary>
+		/// Команда закрывания окна пользователем
+		/// </summary>
 		public ICommand CloseCommand { get; }
 		private void OnCloseCommandExecuted(object p)
 		{

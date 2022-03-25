@@ -12,6 +12,10 @@ using AstLab3.Models.Services.Data;
 
 namespace AstLab3.ViewModels
 {
+	/// <summary>
+	/// Модель представления окна <see cref="Views.Windows.EditWindow"/>
+	/// </summary>
+	/// <inheritdoc/>
 	public class EditWindowViewModel : ClosableViewModel
 	{
 		private EditingWindowData _editingWindowData;
@@ -36,12 +40,20 @@ namespace AstLab3.ViewModels
 				return (T)value;
 			return oldValue;
 		}
-
+		/// <summary>
+		/// Режим, в котором будет работать модель и представление.
+		/// </summary>
 		public EditingMode EditingMode { get; set; } = EditingMode.StartVertexMode;
 
 		private ILogger _logger;
 		private NetworkSchedule _networkSchedule;
-
+		/// <summary>
+		/// Создает модель представления <see cref="EditWindowViewModel"/> окна <see cref="Views.Windows.EditWindow"/>
+		/// для редактирования структуры сетевого графика.
+		/// </summary>
+		/// <param name="editingWindowData">Данные, необходимые для редактирования</param>
+		/// <param name="networkSchedule">Сетевой график</param>
+		/// <param name="logger">Логгер для регистрации процесса редактирования</param>
 		public EditWindowViewModel(EditingWindowData editingWindowData, NetworkSchedule networkSchedule, ILogger logger)
 		{
 			_networkSchedule = networkSchedule;
@@ -72,15 +84,27 @@ namespace AstLab3.ViewModels
 		#region Properties
 
 		private string _title = "Редактирование вершин";
+		/// <summary>
+		/// Текст заголовка окна
+		/// </summary>
 		public string Title { get => _title; set => Set(ref _title, value); }
 
 		private string _status = "Редактирование вершин";
+		/// <summary>
+		/// Возвращает или устанавливает текст статус-строки окна
+		/// </summary>
 		public string Status { get => _status; set => Set(ref _status, value); }
 
 		private string _meaningLine = "Редактирование вершин";
+		/// <summary>
+		/// Устанавливает или задает текст, сообщающий о режиме работы окна
+		/// </summary>
 		public string MeaningLine { get => _meaningLine; set => Set(ref _meaningLine, value); }
 
 		private string _fakeVertexIndex;
+		/// <summary>
+		/// Устанавливает или задает индекс искусственного события, которое будет создано в сетевом графике.
+		/// </summary>
 		public string FakeVertexIndex
 		{
 			get => _fakeVertexIndex;
@@ -88,6 +112,9 @@ namespace AstLab3.ViewModels
 		}
 
 		private string _indexesToConnectWithFakeVertex;
+		/// <summary>
+		/// Устанавливает или задает перечисление индексов событий, с которыми следует соединить вновь созданное событие
+		/// </summary>
 		public string IndexesToConnectWithFakeVertex
 		{
 			get => _indexesToConnectWithFakeVertex;
@@ -95,6 +122,9 @@ namespace AstLab3.ViewModels
 		}
 
 		private bool _addingFakeVertexIsNecessary = true;
+		/// <summary>
+		/// Устанавливает или задает необходимость создания искусственного события. Является отображением для интерфейса.
+		/// </summary>
 		public bool AddingFakeVertexIsNecessary
 		{
 			get => _addingFakeVertexIsNecessary;
@@ -103,6 +133,9 @@ namespace AstLab3.ViewModels
 
 		private bool _deletingVerticesIsNecessary = false;
 		private List<Vertex> _deletedVertices = new List<Vertex>();
+		/// <summary>
+		/// Устанавливает или задает необходимость удаления событий из графика. Является отображением для интерфейса.
+		/// </summary>
 		public bool DeletingVerticesIsNecessary
 		{
 			get => _deletingVerticesIsNecessary;
@@ -110,6 +143,9 @@ namespace AstLab3.ViewModels
 		}
 
 		private bool _deletingEdgesIsNecessary = false;
+		/// <summary>
+		/// Устанавливает или задает необходимость удаления работ из графика. Является отображением для интерфейса.
+		/// </summary>
 		public bool DeletingEdgesIsNecessary
 		{
 			get => _deletingEdgesIsNecessary;
@@ -117,11 +153,17 @@ namespace AstLab3.ViewModels
 		}
 
 		private List<Work> _createdWorks = new List<Work>();
-
+		/// <summary>
+		/// Устанавливает или задает коллекцию событий сетевого графики, которые могут быть удалены. 
+		/// Поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>
+		/// </summary>
 		public ObservableCollection<Vertex> VerticesCanBeDeleted { get; set; } =
 			new ObservableCollection<Vertex>();
 
 		private Vertex _selectedVertexToDelete;
+		/// <summary>
+		/// Устанавливает или задает выбранное пользователем событие для удаления из сетевого графика.
+		/// </summary>
 		public Vertex SelectedVertexToDelete
 		{
 			get => _selectedVertexToDelete;
@@ -138,13 +180,22 @@ namespace AstLab3.ViewModels
 				}
 			}
 		}
-
+		/// <summary>
+		/// Устанавливает или задает коллекцию смежных работ сетевого графики, которые будут удалены при удалении выбранной работы
+		/// <see cref="SelectedWorkToDelete"/>. 
+		/// Поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<Work> AdjacencyEdgesWillBeDeleted { get; set; } =
 			new ObservableCollection<Work>();
-
+		/// <summary>
+		/// Устанавливает или задает коллекцию работ, которые могут быть удалены пользователем.
+		/// Поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<Work> WorksThatCanBeDeleted { get; set; } =
 			new ObservableCollection<Work>();
-
+		/// <summary>
+		/// Устанавливает или задает работу, которую пользователь выбрал в интерфейсе для удаления из сетевого графика.
+		/// </summary>
 		public Work SelectedWorkToDelete { get; set; }
 
 		private List<Work> _deletedWorks = new List<Work>();
@@ -154,6 +205,9 @@ namespace AstLab3.ViewModels
 		#region Commands
 
 		#region ChoiceOfActionCommand
+		/// <summary>
+		/// Команда выбора действия, которое пользователь хочет произвести с сетевым графиком.
+		/// </summary>
 		public ICommand ChoiceOfActionCommand { get; }
 		private void OnChoiceOfActionCommandExecuted(object p)
 		{
@@ -171,6 +225,10 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region AddFakeVertexCommand
+		/// <summary>
+		/// Команда добавления искусственной вершины в сетевой график. Тип добавляемой вершины (начальная или конечная)
+		/// зависит от <see cref="EditingMode"/>
+		/// </summary>
 		public ICommand AddFakeVertexCommand { get; }
 		private void OnAddFakeVertexCommandExecuted(object p)
 		{
@@ -202,6 +260,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region DeleteVerticesCommand
+		/// <summary>
+		/// Команда для удаления указанных пользователем событий из сетевого графика.
+		/// </summary>
 		public ICommand DeleteVerticesCommand { get; }
 		private void OnDeleteVerticesCommandExecuted(object p)
 		{
@@ -221,6 +282,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region DeleteEdgesCommand
+		/// <summary>
+		/// Команда для удаления работ, выбранных пользолвателем, из сетевого графика
+		/// </summary>
 		public ICommand DeleteEdgesCommand { get; }
 		private void OnDeleteEdgesCommandExecuted(object p)
 		{
@@ -240,6 +304,10 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region AcceptCommand  
+		/// <summary>
+		/// Команда применения изменений к сетевому графику. То, какие изменения будут применены, зависит от <see cref="AddingFakeVertexIsNecessary"/>,
+		/// <see cref="DeletingEdgesIsNecessary"/> и <see cref="DeletingVerticesIsNecessary"/>.
+		/// </summary>
 		public ICommand AcceptCommand { get; } // будут приняты только те изменения, которые 
 											   // редактируются в данный момент, т.е. на 
 											   // которые указывают флаги
@@ -388,10 +456,18 @@ namespace AstLab3.ViewModels
 		}
 	}
 
-
+	/// <summary>
+	/// Режим редактирования, в котором следует работать окну <see cref="Views.Windows.EditWindow"/>
+	/// </summary>
 	public enum EditingMode
 	{
+		/// <summary>
+		/// Указывает, что следует работать с начальными вершинами сетевого графика.
+		/// </summary>
 		StartVertexMode,
+		/// <summary>
+		/// Указывает, что следует работать с конечными вершинами сетевого графика.
+		/// </summary>
 		EndVertexMode
 	}
 }

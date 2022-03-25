@@ -18,12 +18,22 @@ using AstLab3.Models.Services.Data;
 
 namespace AstLab3.ViewModels
 {
+	/// <summary>
+	/// Главная модель представления приложения. Соответствует главному окну <see cref="MainWindow"/>
+	/// </summary>
+	/// <inheritdoc/>
 	[MarkupExtensionReturnType(typeof(MainWindowViewModel))]
 	public class MainWindowViewModel : ViewModel
 	{
 		private ILogger _logger;
 		private NetworkSchedule _networkSchedule;
-
+		/// <summary>
+		/// Создает модель представления <see cref="MainWindowViewModel"/> главного окна приложения <see cref="MainWindow"/>.
+		/// </summary>
+		/// <remarks>
+		/// Здеьс происходит регистрация всех команд и подписка на событие логгера
+		/// <see cref="Models.Services.Interfaces.ILogger.RegisterLogMessage"/>
+		/// </remarks>
 		public MainWindowViewModel()
 		{
 			_logger = App.Services.GetRequiredService<ILogger>();
@@ -61,37 +71,75 @@ namespace AstLab3.ViewModels
 		}
 
 		#region Properties
+		/// <summary>
+		/// Коллекция строк-сообщений логгера, которые будут выводиться в окно лога. Коллекция поддерживает 
+		/// <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<string> LogBuffer { get; private set; } = new ObservableCollection<string>();
-
+		/// <summary>
+		/// Коллекция работ сетевого графика. Представляет собой неупорядоченную таблицу-источник работ.
+		/// Коллекция поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<Work> SourceTable { get; private set; } = new ObservableCollection<Work>();
-
+		/// <summary>
+		/// Коллекция полных путей в сетевом графике. Каждый путь представляет собой отдельную строку.
+		/// Коллекция поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<string> FullPathsInTheGraph { get; private set; } = new ObservableCollection<string>();
-
+		/// <summary>
+		/// Коллекция работ сетевого графика. Представляет собой упорядоченную таблицу работ.
+		/// Коллекция поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<Work> FinalTable { get; private set; } = new ObservableCollection<Work>();
-
+		/// <summary>
+		/// Коллекция работ, входящих в критический путь.
+		/// Коллекция поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<Work> WorksInCriticalPaths { get; private set; } = new ObservableCollection<Work>();
-
+		/// <summary>
+		/// Коллекция событий сетевого графика.
+		/// Коллекция поддерживает <see cref="System.ComponentModel.INotifyPropertyChanged"/>.
+		/// </summary>
 		public ObservableCollection<Vertex> Vertices { get; private set; } = new ObservableCollection<Vertex>();
-
+		/// <summary>
+		/// Работа сетевого графика, выбранная пользователем через интерфейс.
+		/// </summary>
 		public Work SelectedWork { get; set; }
-
+		/// <summary>
+		/// Работа, предназначенная для удаления или изменения пользователем.
+		/// </summary>
 		public Work WorkToChangeOrRemove { get; set; }
 
 		private string _title = "Title";
+		/// <summary>
+		/// Устанавливает или задает заголовок окна.
+		/// </summary>
 		public string Title { get => _title; set => Set(ref _title, value); }
 
 		private string _status = "Status";
+		/// <summary>
+		/// Устанавливает или задает тектс, который будет отображен в статус-строке окна.
+		/// </summary>
 		public string Status { get => _status; set => Set(ref _status, value); }
 
 		private string _path = "";
+		/// <summary>
+		/// Устанавливает или задает путь до файла с источником данных.
+		/// </summary>
 		public string Path { get => _path; set => Set(ref _path, value); }
 
 		private int _criticalPathLength = 0;
+		/// <summary>
+		/// Устанавливает или задает длину критического пути.
+		/// </summary>
 		public int CriticalPathLength { get => _criticalPathLength; set => Set(ref _criticalPathLength, value); }
 		#endregion
 
 		#region Commands
 		#region BrowseCommand
+		/// <summary>
+		/// Команда открывания окна проводника Windows для выбора файла с данными.
+		/// </summary>
 		public ICommand BrowseCommand { get; }
 		private void OnBrowseCommandExecuted(object p)
 		{
@@ -119,6 +167,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region AddWorkCommand
+		/// <summary>
+		/// Команда добавления новой работы к сетевому графику. Все параметры работы устанавливаются в 0.
+		/// </summary>
 		public ICommand AddWorkCommand { get; }
 		private void OnAddWorkCommandExecuted(object p)
 		{
@@ -138,6 +189,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region RemoveSelectedWorkCommand
+		/// <summary>
+		/// Команда удаления выбранной пользователем работы из таблицы работ.
+		/// </summary>
 		public ICommand RemoveSelectedWorkCommand { get; }
 		private void OnRemoveSelectedWorkCommandExecuted(object p)
 		{
@@ -158,6 +212,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ClearSourceTableCommand
+		/// <summary>
+		/// Команда очистки таблицы-источника работ сетевого графика.
+		/// </summary>
 		public ICommand ClearSourceTableCommand { get; }
 		private void OnClearSourceTableCommandExecuted(object p)
 		{
@@ -177,6 +234,12 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ReloadSourceTableCommand
+		/// <summary>
+		/// Команда перезагрузки данных в таблицу-источник работ сетевого графика.
+		/// </summary>
+		/// <remarks>
+		/// Команду можно выполнить только когда путь к файлу являтеся не пустым.
+		/// </remarks>
 		public ICommand ReloadSourceTableCommand { get; }
 		private void OnReloadSourceTableCommandExecuted(object p)
 		{
@@ -206,6 +269,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ClearFinalTableCommand
+		/// <summary>
+		/// Команда очистки упорядоченной таблицы работ сетевого графика.
+		/// </summary>
 		public ICommand ClearFinalTableCommand { get; }
 		private void OnClearFinalTableCommandExecuted(object p)
 		{
@@ -225,6 +291,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ClearFullPathsInGraphCommand
+		/// <summary>
+		/// Команда очистки списка полных путей сетевого графика.
+		/// </summary>
 		public ICommand ClearFullPathsInGraphCommand { get; }
 		private void OnClearFullPathsInGraphCommandExecuted(object p)
 		{
@@ -244,6 +313,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ClearWorksInCriticalPathsCommand
+		/// <summary>
+		/// Команда очистки списка работ в критическом пути.
+		/// </summary>
 		public ICommand ClearWorksInCriticalPathsCommand { get; }
 		private void OnClearWorksInCriticalPathsCommandExecuted(object p)
 		{
@@ -264,6 +336,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ClearVerticescParamsTableCommand
+		/// <summary>
+		/// Команда очистки таблицы параметров сетевого графика.
+		/// </summary>
 		public ICommand ClearVerticescParamsTableCommand { get; }
 		private void OnClearVerticescParamsTableCommandExecuted(object p)
 		{
@@ -283,6 +358,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region StreamlineCommand
+		/// <summary>
+		/// Команда запускает процесс частичного упорядочивания сетевого графика.
+		/// </summary>
 		public ICommand StreamlineCommand { get; }
 		private void OnStreamlineCommandExecuted(object p)
 		{
@@ -302,6 +380,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region AddWorkToNetworkScheduleCommand
+		/// <summary>
+		/// Команда добавления работы в сетевой график. Вызывает окно <see cref="Views.Windows.AddWorkWindow"/>
+		/// </summary>
 		public ICommand AddWorkToNetworkScheduleCommand { get; }
 		private void OnAddWorkToNetworkScheduleCommandExecuted(object p)
 		{
@@ -321,6 +402,10 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ChangeWorkCommand
+		/// <summary>
+		/// Команда изменения параметров выбранной работы сетевого графика. Вызывает окно <see cref="Views.Windows.ChangeWorkWindow"/>
+		/// и пересчитывает параметры графика с учетом изменений.
+		/// </summary>
 		public ICommand ChangeWorkCommand { get; }
 		private void OnChangeWorkCommandExecuted(object p)
 		{
@@ -347,6 +432,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region RemoveWorkCommand
+		/// <summary>
+		/// Команда удаления работы из сетевого графика.
+		/// </summary>
 		public ICommand RemoveWorkCommand { get; }
 		private void OnRemoveWorkCommandExecuted(object p)
 		{
@@ -372,6 +460,9 @@ namespace AstLab3.ViewModels
 		#endregion
 
 		#region ShowGanttChartCommand
+		/// <summary>
+		/// Команда отображения диаграммы Ганта. Вызывает окно <see cref="Views.Windows.UserInformatorGanttChartWindow"/>.
+		/// </summary>
 		public ICommand ShowGanttChartCommand { get; }
 		private void OnShowGanttChartCommandExecuted(object p)
 		{
