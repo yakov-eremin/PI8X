@@ -1,0 +1,12 @@
+<map id="AstLab3.ViewModels.ClosableViewModel" name="AstLab3.ViewModels.ClosableViewModel">
+<area shape="rect" id="node1" title="Модель представления окна, которое можно закрыть." alt="" coords="345,169,544,211"/>
+<area shape="rect" id="node5" href="$class_ast_lab3_1_1_view_models_1_1_add_work_window_view_model.html" title="Модель представления окна Views.Windows.AddWorkWindow" alt="" coords="607,5,809,47"/>
+<area shape="rect" id="node6" href="$class_ast_lab3_1_1_view_models_1_1_change_work_window_view_model.html" title="Модель представления окна Views.Windows.ChangeWorkWindow." alt="" coords="612,71,804,112"/>
+<area shape="rect" id="node7" href="$class_ast_lab3_1_1_view_models_1_1_delete_useless_work_window_view_model.html" title="Модель представления окна Views.Windows.DeleteUselessWorkWindow" alt="" coords="603,136,813,177"/>
+<area shape="rect" id="node8" href="$class_ast_lab3_1_1_view_models_1_1_delete_works_in_cycle_window_view_model.html" title="Модель представления окна Views.Windows.DeleteUselessWorkWindow" alt="" coords="602,201,814,243"/>
+<area shape="rect" id="node9" href="$class_ast_lab3_1_1_view_models_1_1_edit_window_view_model.html" title="Модель представления окна Views.Windows.EditWindow" alt="" coords="599,267,817,308"/>
+<area shape="rect" id="node10" href="$class_ast_lab3_1_1_view_models_1_1_user_informator_gantt_chart_window_view_model.html" title="Модель представления для окна Views.Windows.UserInformatorGanttChartWindow" alt="" coords="592,332,824,373"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_view_models_1_1_base_1_1_view_model.html" title="Базовый класс модели представления. Реализует базовую функциоанальность модели представления для осущ..." alt="" coords="212,177,297,203"/>
+<area shape="rect" id="node3" title=" " alt="" coords="23,151,146,178"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,202,164,229"/>
+</map>

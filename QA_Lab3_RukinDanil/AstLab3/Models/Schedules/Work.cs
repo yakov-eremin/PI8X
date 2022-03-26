@@ -6,7 +6,7 @@ using System.Text;
 namespace AstLab3.Models.Schedules
 {
 	/// <summary>
-	/// Работа сетевого графика.
+	/// Работа сетевого графика. <img src="D:\cloned_repos\PI8X\QA_Lab3_RukinDanil\user_icon.png" width="75" height="75" />
 	/// </summary>
 	public class Work : IEquatable<Work>
 	{
@@ -41,6 +41,12 @@ namespace AstLab3.Models.Schedules
 		/// <summary>
 		/// Полный резерв времени работы
 		/// </summary>
+		/// <remarks>
+		/// Полный резерв времени работы вычисляется по формуле \f$x_l - y_e - length\f$,
+		/// где \f$x_l\f$ - поздний срок сверешния конечного события,
+		/// \f$y_e\f$ - ранний срок сверешния начального события,
+		/// \f$length\f$ - продолжительность работы.
+		/// </remarks>
 		public int FullTimeReserve => EndVertex.LateCompletionDate - StartVertex.EarlyCompletionDate - Length;
 		/// <summary>
 		/// Частный резерв времени работы

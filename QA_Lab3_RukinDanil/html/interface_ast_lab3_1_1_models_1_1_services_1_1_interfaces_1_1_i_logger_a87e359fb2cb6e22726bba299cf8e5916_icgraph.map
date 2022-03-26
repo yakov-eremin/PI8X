@@ -1,0 +1,8 @@
+<map id="AstLab3.Models.Services.Interfaces.ILogger.LogMessage" name="AstLab3.Models.Services.Interfaces.ILogger.LogMessage">
+<area shape="rect" id="node1" title="Позволяет логгировать события путем передачи сообщения." alt="" coords="352,159,555,200"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_view_models_1_1_add_work_window_view_model.html#a86bfa1b15fc2f834f9a7beae7a2df1c3" title="Создает модель представления AddWorkWindowViewModel окна Views.Windows.AddWorkWindow &#160;&#160;для работы над..." alt="" coords="5,5,304,47"/>
+<area shape="rect" id="node3" href="$class_ast_lab3_1_1_view_models_1_1_change_work_window_view_model.html#a50683899c9cbc3a2c12a6b3a588f4dd1" title="Создает модель представления ChangeWorkWindowViewModel окна Views.Windows.ChangeWorkWindow для работы..." alt="" coords="34,71,275,127"/>
+<area shape="rect" id="node4" href="$class_ast_lab3_1_1_view_models_1_1_delete_useless_work_window_view_model.html#a47db1baa0e9b2626a315aee3774af912" title="Создает модель представления DeleteUselessWorkWindowViewModel окна Views.Windows.DeleteUselessWorkWin..." alt="" coords="29,151,280,207"/>
+<area shape="rect" id="node5" href="$class_ast_lab3_1_1_view_models_1_1_delete_works_in_cycle_window_view_model.html#a9a0845ac8473956b85072135d85f46f5" title="Создает модель представления DeleteUselessWorkWindowViewModel окна Views.Windows.DeleteUselessWorkWin..." alt="" coords="28,231,281,287"/>
+<area shape="rect" id="node6" href="$class_ast_lab3_1_1_view_models_1_1_user_informator_gantt_chart_window_view_model.html#af5da25185c0617725bf7826469ff7668" title="Создает модель представления UserInformatorGanttChartWindowViewModel окна Views.Windows...." alt="" coords="13,311,296,367"/>
+</map>

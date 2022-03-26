@@ -1,0 +1,4 @@
+<map id="AstLab3.Models.Schedules.Exceptions.SeveralVerticesFoundException" name="AstLab3.Models.Schedules.Exceptions.SeveralVerticesFoundException">
+<area shape="rect" id="node1" title="Представляет ошибку, которая происходит, если в сетевом графике найдены несколько начальных или конеч..." alt="" coords="5,80,223,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="74,5,154,32"/>
+</map>

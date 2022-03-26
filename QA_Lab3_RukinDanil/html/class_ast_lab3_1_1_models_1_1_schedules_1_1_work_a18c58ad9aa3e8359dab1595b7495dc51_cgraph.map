@@ -1,0 +1,5 @@
+<map id="AstLab3.Models.Schedules.Work.Equals" name="AstLab3.Models.Schedules.Work.Equals">
+<area shape="rect" id="node1" title="Сравнивает текущий объект работы с other" alt="" coords="5,39,191,80"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_models_1_1_schedules_1_1_work.html#aaac02ac38c6f34b36ad998ac2fa14d2c" title="Сравнивает текущий объект работы с other" alt="" coords="239,5,424,47"/>
+<area shape="rect" id="node3" href="$class_ast_lab3_1_1_models_1_1_schedules_1_1_work.html#af4e472f67cf012a69c310a277a2266bc" title="Создает экземпляр работы сетевого графика Work с указанной начальным, конечным событиями и продолжите..." alt="" coords="239,71,424,112"/>
+</map>

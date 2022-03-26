@@ -1,0 +1,15 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" title=" " alt="" coords="5,199,164,226"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_view_models_1_1_base_1_1_view_model.html" title="Базовый класс модели представления. Реализует базовую функциоанальность модели представления для осущ..." alt="" coords="230,201,413,243"/>
+<area shape="rect" id="node3" href="$class_ast_lab3_1_1_view_models_1_1_closable_view_model.html" title="Модель представления окна, которое можно закрыть." alt="" coords="491,169,689,211"/>
+<area shape="rect" id="node10" href="$class_ast_lab3_1_1_view_models_1_1_main_window_view_model.html" title="Главная модель представления приложения. Соответствует главному окну MainWindow" alt="" coords="479,235,701,276"/>
+<area shape="rect" id="node4" href="$class_ast_lab3_1_1_view_models_1_1_add_work_window_view_model.html" title="Модель представления окна Views.Windows.AddWorkWindow" alt="" coords="764,5,967,47"/>
+<area shape="rect" id="node5" href="$class_ast_lab3_1_1_view_models_1_1_change_work_window_view_model.html" title="Модель представления окна Views.Windows.ChangeWorkWindow." alt="" coords="769,71,961,112"/>
+<area shape="rect" id="node6" href="$class_ast_lab3_1_1_view_models_1_1_delete_useless_work_window_view_model.html" title="Модель представления окна Views.Windows.DeleteUselessWorkWindow" alt="" coords="761,136,970,177"/>
+<area shape="rect" id="node7" href="$class_ast_lab3_1_1_view_models_1_1_delete_works_in_cycle_window_view_model.html" title="Модель представления окна Views.Windows.DeleteUselessWorkWindow" alt="" coords="759,201,971,243"/>
+<area shape="rect" id="node8" href="$class_ast_lab3_1_1_view_models_1_1_edit_window_view_model.html" title="Модель представления окна Views.Windows.EditWindow" alt="" coords="757,267,974,308"/>
+<area shape="rect" id="node9" href="$class_ast_lab3_1_1_view_models_1_1_user_informator_gantt_chart_window_view_model.html" title="Модель представления для окна Views.Windows.UserInformatorGanttChartWindow" alt="" coords="749,332,981,373"/>
+<area shape="rect" id="node11" title=" " alt="" coords="29,301,141,327"/>
+<area shape="rect" id="node12" href="$class_ast_lab3_1_1_infrastructure_1_1_converters_1_1_base_1_1_converter.html" title="Базовый класс&#45;конвертер. Релизует интерфейс IValueConverter. Абстрактный класс." alt="" coords="212,276,431,317"/>
+<area shape="rect" id="node13" title=" " alt="" coords="23,250,146,277"/>
+</map>

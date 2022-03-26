@@ -1,0 +1,8 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$interface_ast_lab3_1_1_models_1_1_services_1_1_interfaces_1_1_i_user_dialog.html" title=" " alt="" coords="5,129,179,185"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_models_1_1_services_1_1_user_dialog_add_work_window.html" title="Диалоговое окно для добавления работы в сетевой график." alt="" coords="257,5,443,47"/>
+<area shape="rect" id="node3" href="$class_ast_lab3_1_1_models_1_1_services_1_1_user_dialog_change_work_window.html" title="Создает окно UserDialogChangeWorkWindow для изменения работ сетевого графика NetworkSchedule" alt="" coords="247,71,453,112"/>
+<area shape="rect" id="node4" href="$class_ast_lab3_1_1_models_1_1_services_1_1_user_dialog_delete_useless_work_window.html" title="Диалоговое окно для удаления ненужных работ сетевого графика." alt="" coords="227,136,473,177"/>
+<area shape="rect" id="node5" href="$class_ast_lab3_1_1_models_1_1_services_1_1_user_dialog_delete_works_in_cycle_window.html" title="Диалоговое окно для удаления работ в обнаруженном цикле." alt="" coords="249,202,451,258"/>
+<area shape="rect" id="node6" href="$class_ast_lab3_1_1_models_1_1_services_1_1_user_dialog_editing_window.html" title="Диалоговое окно для редактирования сетевого графика." alt="" coords="263,283,437,324"/>
+</map>

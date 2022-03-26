@@ -1,0 +1,13 @@
+<map id="AstLab3.ViewModels.Base.ViewModel" name="AstLab3.ViewModels.Base.ViewModel">
+<area shape="rect" id="node1" title="Базовый класс модели представления. Реализует базовую функциоанальность модели представления для осущ..." alt="" coords="212,203,395,244"/>
+<area shape="rect" id="node4" href="$class_ast_lab3_1_1_view_models_1_1_closable_view_model.html" title="Модель представления окна, которое можно закрыть." alt="" coords="455,169,653,211"/>
+<area shape="rect" id="node11" href="$class_ast_lab3_1_1_view_models_1_1_main_window_view_model.html" title="Главная модель представления приложения. Соответствует главному окну MainWindow" alt="" coords="443,235,665,276"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,185,146,211"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,235,164,262"/>
+<area shape="rect" id="node5" href="$class_ast_lab3_1_1_view_models_1_1_add_work_window_view_model.html" title="Модель представления окна Views.Windows.AddWorkWindow" alt="" coords="728,5,931,47"/>
+<area shape="rect" id="node6" href="$class_ast_lab3_1_1_view_models_1_1_change_work_window_view_model.html" title="Модель представления окна Views.Windows.ChangeWorkWindow." alt="" coords="733,71,925,112"/>
+<area shape="rect" id="node7" href="$class_ast_lab3_1_1_view_models_1_1_delete_useless_work_window_view_model.html" title="Модель представления окна Views.Windows.DeleteUselessWorkWindow" alt="" coords="725,136,934,177"/>
+<area shape="rect" id="node8" href="$class_ast_lab3_1_1_view_models_1_1_delete_works_in_cycle_window_view_model.html" title="Модель представления окна Views.Windows.DeleteUselessWorkWindow" alt="" coords="723,201,935,243"/>
+<area shape="rect" id="node9" href="$class_ast_lab3_1_1_view_models_1_1_edit_window_view_model.html" title="Модель представления окна Views.Windows.EditWindow" alt="" coords="721,267,938,308"/>
+<area shape="rect" id="node10" href="$class_ast_lab3_1_1_view_models_1_1_user_informator_gantt_chart_window_view_model.html" title="Модель представления для окна Views.Windows.UserInformatorGanttChartWindow" alt="" coords="713,332,945,373"/>
+</map>

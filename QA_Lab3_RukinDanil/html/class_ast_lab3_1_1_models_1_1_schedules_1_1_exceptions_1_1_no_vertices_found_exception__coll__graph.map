@@ -1,0 +1,4 @@
+<map id="AstLab3.Models.Schedules.Exceptions.NoVerticesFoundException" name="AstLab3.Models.Schedules.Exceptions.NoVerticesFoundException">
+<area shape="rect" id="node1" title="Представляет ошибку, которая происоходит, если в сетевом графике не найдена или начальная,..." alt="" coords="5,80,255,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="90,5,170,32"/>
+</map>

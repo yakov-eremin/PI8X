@@ -1,0 +1,4 @@
+<map id="AstLab3.Models.Schedules.NetworkSchedule.CreateWorkInTable" name="AstLab3.Models.Schedules.NetworkSchedule.CreateWorkInTable">
+<area shape="rect" id="node1" title="Создает работу в таблице работ с заданными начальным событием, конечным событием и продолжительсность..." alt="" coords="5,5,243,47"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_models_1_1_schedules_1_1_network_schedule.html#a89cb9a94b1c9d1ef57f914ce9bd037b8" title="Получает экземпляр события сетевого графика по id, если таковое существует." alt="" coords="291,5,503,47"/>
+</map>

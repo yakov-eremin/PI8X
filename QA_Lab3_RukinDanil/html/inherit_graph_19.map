@@ -1,0 +1,11 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" title=" " alt="" coords="5,172,249,213"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_main_window.html" title="MainWindow" alt="" coords="331,398,479,425"/>
+<area shape="rect" id="node3" href="$class_ast_lab3_1_1_views_1_1_windows_1_1_add_work_window.html" title="AddWorkWindow" alt="" coords="308,5,501,47"/>
+<area shape="rect" id="node4" href="$class_ast_lab3_1_1_views_1_1_windows_1_1_change_work_window.html" title="ChangeWorkWindow" alt="" coords="297,71,512,112"/>
+<area shape="rect" id="node5" href="$class_ast_lab3_1_1_views_1_1_windows_1_1_delete_useless_work_window.html" title="DeleteUselessWorkWindow" alt="" coords="301,136,508,177"/>
+<area shape="rect" id="node6" href="$class_ast_lab3_1_1_views_1_1_windows_1_1_delete_works_in_cycle_window.html" title="DeleteWorksInCycleWindow" alt="" coords="301,201,508,243"/>
+<area shape="rect" id="node7" href="$class_ast_lab3_1_1_views_1_1_windows_1_1_edit_window.html" title="EditWindow" alt="" coords="308,267,501,308"/>
+<area shape="rect" id="node8" href="$class_ast_lab3_1_1_views_1_1_windows_1_1_user_informator_gantt_chart_window.html" title="UserInformatorGanttChartWindow" alt="" coords="306,332,503,373"/>
+<area shape="rect" id="node9" title=" " alt="" coords="40,238,215,265"/>
+</map>

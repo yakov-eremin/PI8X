@@ -1,0 +1,4 @@
+<map id="AstLab3.ViewModels.DeleteWorksInCycleWindowViewModel.DeleteWorksInCycleWindowViewModel" name="AstLab3.ViewModels.DeleteWorksInCycleWindowViewModel.DeleteWorksInCycleWindowViewModel">
+<area shape="rect" id="node1" title="Создает модель представления DeleteUselessWorkWindowViewModel окна Views.Windows.DeleteUselessWorkWin..." alt="" coords="5,5,259,61"/>
+<area shape="rect" id="node2" href="$interface_ast_lab3_1_1_models_1_1_services_1_1_interfaces_1_1_i_logger.html#a87e359fb2cb6e22726bba299cf8e5916" title="Позволяет логгировать события путем передачи сообщения." alt="" coords="307,13,509,54"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="AstLab3.ViewModels.ChangeWorkWindowViewModel" name="AstLab3.ViewModels.ChangeWorkWindowViewModel">
+<area shape="rect" id="node1" title="Модель представления окна Views.Windows.ChangeWorkWindow." alt="" coords="53,229,245,271"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_view_models_1_1_closable_view_model.html" title="Модель представления окна, которое можно закрыть." alt="" coords="82,155,217,181"/>
+<area shape="rect" id="node3" href="$class_ast_lab3_1_1_view_models_1_1_base_1_1_view_model.html" title="Базовый класс модели представления. Реализует базовую функциоанальность модели представления для осущ..." alt="" coords="107,80,192,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="153,5,311,32"/>
+</map>

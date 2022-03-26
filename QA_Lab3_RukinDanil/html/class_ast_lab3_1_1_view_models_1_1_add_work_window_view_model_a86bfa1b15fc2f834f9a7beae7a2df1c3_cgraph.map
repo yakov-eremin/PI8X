@@ -1,0 +1,4 @@
+<map id="AstLab3.ViewModels.AddWorkWindowViewModel.AddWorkWindowViewModel" name="AstLab3.ViewModels.AddWorkWindowViewModel.AddWorkWindowViewModel">
+<area shape="rect" id="node1" title="Создает модель представления AddWorkWindowViewModel окна Views.Windows.AddWorkWindow &#160;&#160;для работы над..." alt="" coords="5,5,304,47"/>
+<area shape="rect" id="node2" href="$interface_ast_lab3_1_1_models_1_1_services_1_1_interfaces_1_1_i_logger.html#a87e359fb2cb6e22726bba299cf8e5916" title="Позволяет логгировать события путем передачи сообщения." alt="" coords="352,5,555,47"/>
+</map>

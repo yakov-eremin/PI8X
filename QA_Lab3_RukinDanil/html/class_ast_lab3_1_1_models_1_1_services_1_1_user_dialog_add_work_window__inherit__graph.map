@@ -1,0 +1,4 @@
+<map id="AstLab3.Models.Services.UserDialogAddWorkWindow" name="AstLab3.Models.Services.UserDialogAddWorkWindow">
+<area shape="rect" id="node1" title="Диалоговое окно для добавления работы в сетевой график." alt="" coords="19,80,205,121"/>
+<area shape="rect" id="node2" href="$interface_ast_lab3_1_1_models_1_1_services_1_1_interfaces_1_1_i_user_dialog.html" title=" " alt="" coords="5,5,219,32"/>
+</map>

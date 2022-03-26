@@ -1,0 +1,5 @@
+<map id="AstLab3.Models.Schedules.NetworkSchedule.GetVertexById" name="AstLab3.Models.Schedules.NetworkSchedule.GetVertexById">
+<area shape="rect" id="node1" title="Получает экземпляр события сетевого графика по id, если таковое существует." alt="" coords="567,5,779,47"/>
+<area shape="rect" id="node2" href="$class_ast_lab3_1_1_models_1_1_schedules_1_1_network_schedule.html#afa9ca18efe342123fbabae0a5b36ecf4" title="Создает работу в таблице работ с заданными начальным событием, конечным событием и продолжительсность..." alt="" coords="281,5,519,47"/>
+<area shape="rect" id="node3" href="$class_ast_lab3_1_1_models_1_1_schedules_1_1_network_schedule.html#a5e405c92f5dd7dd27167004396c640e0" title="Создает экзепляр сетевого графика NetworkSchedule со списком работ works ." alt="" coords="5,5,233,47"/>
+</map>
