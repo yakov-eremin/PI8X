@@ -53,7 +53,7 @@ namespace PasswordManager.Tests
                 new EncryptionAlgorithm(),
             };
             // act
-            List<IEnumerable<string>> collections = new List<IEnumerable<string>>();
+            List<ICollection<string>> collections = new List<ICollection<string>>();
             foreach (var item in entities)
             {
                 collections.Add(provider.GetProperties(item));
@@ -66,7 +66,7 @@ namespace PasswordManager.Tests
             }
         }
 
-        private IEnumerable<string> GetProperties(IEntity entity)
+        private ICollection<string> GetProperties(IEntity entity)
         {
             List<string> result = new List<string>();
             Type type = entity.GetType();
@@ -101,7 +101,6 @@ namespace PasswordManager.Tests
         }
 
 
-
         [TestMethod]
         public void CheckDbTableNameAttrubute_ContainsAttribute_ReturnTrue()
         {
@@ -128,6 +127,26 @@ namespace PasswordManager.Tests
 
             // assert
             Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void GetPropertiesValuesOfEntity_ReturnCollectionOfPropertiesValuesInRightOrder()
+        {
+            // arrange
+            IEntity entity = new DbEntry();
+            PropertiesDbProvider provider = new PropertiesDbProvider();
+
+            // act
+            ICollection<string> result = provider.GetPropertiesValuesOfEntityInRightOrder(entity, provider.GetProperties(entity));
+
+            // assert
+            CollectionAssert.AreEqual((List<string>)result, (List<string>)GetPropertiesValuesInRighrOrder(entity, GetProperties(entity)));
+
+        }
+
+        private ICollection<string> GetPropertiesValuesInRighrOrder(IEntity entity, ICollection<string> propertiesNames)
+        {
+
         }
     }
 

@@ -14,7 +14,7 @@ namespace PasswordManager.DAL.Repositories
     /// </summary>
     public class PropertiesDbProvider
     {
-        public IEnumerable<string> GetProperties(IEntity entity)
+        public ICollection<string> GetProperties(IEntity entity)
         {
             List<string> result = new List<string>();
             if (CheckDbTableNameAttribute(entity))
@@ -53,6 +53,15 @@ namespace PasswordManager.DAL.Repositories
                 }
             }
             return contains;
+        }
+
+        public ICollection<string> GetPropertiesValuesOfEntityInRightOrder(IEntity entity, ICollection<string> collection)
+        {
+            Type type = entity.GetType();
+            List<string> result = new List<string>();
+            var properties = type.GetProperties();
+
+            return result;
         }
     }
 }
