@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace PasswordManager.DAL.Entities
 {
+    /// <summary>
+    /// Представляет способо доступа к базе паролей
+    /// </summary>
+    /// <inheritdoc/>
     [DbTableName("db_access_way")]
     public class DbAccessWay : IEntity
     {
@@ -14,6 +18,9 @@ namespace PasswordManager.DAL.Entities
         [DbAttributeName("id_db_access_way")]
         public int Id { get => _id; set => _id = value; }
 
+        /// <summary>
+        /// Имя способа доступа
+        /// </summary>
         [DbAttributeName("name")]
         public string Name { get; set; } = nameof(Name);
     }
