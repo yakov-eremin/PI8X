@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PasswordManager.DAL.Entities;
 using PasswordManager.DAL.Repositories;
+using System;
 
 namespace PasswordManager.Tests
 {
@@ -24,6 +25,20 @@ namespace PasswordManager.Tests
         private string GetPropertiesWithoutProperty(IEntity entity, string propertyName)
         {
             return null;
+        }
+
+        [TestMethod]
+        public void GetPropertiesWithoutProperty_EntityDoesNotContainsDbTableNameAttrubute_ThrowArgumentException()
+        {
+            // arrange
+            IEntity entity = new WithoutAttribute();
+            PropertiesDbProvider provider = new PropertiesDbProvider();
+
+            // act
+            ArgumentException result = Assert.ThrowsException<ArgumentException>(() => provider.GetPropertiesWithoutProperty(entity, ""));
+
+            // assert
+            Assert.AreEqual(typeof(ArgumentException), result.GetType());
         }
 
         [TestMethod]
