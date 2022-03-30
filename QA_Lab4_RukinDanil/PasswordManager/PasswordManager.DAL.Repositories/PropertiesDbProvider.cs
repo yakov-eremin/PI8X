@@ -9,7 +9,7 @@ namespace PasswordManager.DAL.Repositories
     /// <summary>
     /// Генератор простейших sql-команд
     /// </summary>
-    public class SqlGenerator
+    public class PropertiesDbProvider
     {
 
     }
