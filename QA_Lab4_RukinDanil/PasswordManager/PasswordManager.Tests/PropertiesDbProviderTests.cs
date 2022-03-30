@@ -27,7 +27,7 @@ namespace PasswordManager.Tests
         }
 
         [TestMethod]
-        private void CheckDbTableNameAttrubute_ContainsAttribute_ReturnTrue()
+        public void CheckDbTableNameAttrubute_ContainsAttribute_ReturnTrue()
         {
             // arrange
             IEntity entity = new DbEntry();

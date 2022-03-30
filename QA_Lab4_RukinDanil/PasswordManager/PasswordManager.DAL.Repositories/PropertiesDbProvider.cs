@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using PasswordManager.DAL.Entities.Attributes;
 
 namespace PasswordManager.DAL.Repositories
 {
@@ -24,6 +25,22 @@ namespace PasswordManager.DAL.Repositories
             }
 
             return null;
+        }
+
+        public bool CheckDbTableNameAttribute(IEntity entity)
+        {
+            Type type = entity.GetType();
+            var typeAttributes = type.GetCustomAttributes();
+            bool contains = false;
+            foreach (var attribute in typeAttributes)
+            {
+                if (attribute is DbTableNameAttribute)
+                {
+                    contains = true;
+                    break;
+                }
+            }
+            return contains;
         }
     }
 }
