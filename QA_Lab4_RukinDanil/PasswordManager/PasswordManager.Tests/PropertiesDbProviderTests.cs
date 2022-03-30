@@ -3,6 +3,7 @@ using PasswordManager.DAL.Entities;
 using PasswordManager.DAL.Entities.Attributes;
 using PasswordManager.DAL.Repositories;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace PasswordManager.Tests
@@ -38,9 +39,51 @@ namespace PasswordManager.Tests
             Assert.AreNotEqual(0, result.Count());
         }
 
-        private string GetProperties(IEntity entity)
+        [TestMethod]
+        public void GetProperties_AllDbEntities_ReturnEqualPropertiesCollectionForEachEntity()
         {
-            return null;
+            // arrange
+            PropertiesDbProvider provider = new PropertiesDbProvider();
+            List<IEntity> entities = new List<IEntity>()
+            {
+                new DbAccessWay(),
+                new DbEntry(),
+                new DbGroup(),
+                new PasswordDb(),
+                new EncryptionAlgorithm(),
+            };
+            // act
+            List<IEnumerable<string>> collections = new List<IEnumerable<string>>();
+            foreach (var item in entities)
+            {
+                collections.Add(provider.GetProperties(item));
+            }
+
+            // assert
+            for (int i = 0; i < entities.Count; i++)
+            {
+                CollectionAssert.AreEqual((List<string>)collections[i], (List<string>)GetProperties(entities[i]));
+            }
+        }
+
+        private IEnumerable<string> GetProperties(IEntity entity)
+        {
+            List<string> result = new List<string>();
+            Type type = entity.GetType();
+            var properties = type.GetProperties();
+            object[] attributes;
+            foreach (var item in properties)
+            {
+                attributes = item.GetCustomAttributes(false);
+                foreach (Attribute attribute in attributes)
+                {
+                    if (attribute is DbAttributeNameAttribute nameAttribute)
+                    {
+                        result.Add(nameAttribute.AttributeName);
+                    }
+                }
+            }
+            return result;
         }
 
         [TestMethod]
