@@ -24,6 +24,20 @@ namespace PasswordManager.Tests
             Assert.AreEqual(0, result.Count());
         }
 
+        [TestMethod]
+        public void GetProperties_EntityContainsNesessaryProperties_ReturnNotEmptyCollection()
+        {
+            // arrange
+            IEntity entry = new DbEntry();
+            PropertiesDbProvider provider = new PropertiesDbProvider();
+
+            // act
+            var result = provider.GetProperties(entry);
+
+            // assert
+            Assert.AreNotEqual(0, result.Count());
+        }
+
         private string GetProperties(IEntity entity)
         {
             return null;
