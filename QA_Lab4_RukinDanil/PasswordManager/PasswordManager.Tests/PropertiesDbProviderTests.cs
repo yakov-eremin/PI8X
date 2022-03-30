@@ -1,7 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PasswordManager.DAL.Entities;
+using PasswordManager.DAL.Entities.Attributes;
 using PasswordManager.DAL.Repositories;
 using System;
+using System.Linq;
 
 namespace PasswordManager.Tests
 {
@@ -9,37 +11,39 @@ namespace PasswordManager.Tests
     public class PropertiesDbProviderTests
     {
         [TestMethod]
-        public void GetPropertiesWithoutProperty_DbEntryDbAttributeName_ReturnValidPropertiesNames()
+        public void GetProperties_NoPropertiesWithDbAttributeNameAttribute_ReturnEmptyCollection()
         {
             // arrange
-            DbEntry entry = new DbEntry();
+            IEntity entry = new WithoutDbAttributeNameAttribute();
             PropertiesDbProvider provider = new PropertiesDbProvider();
 
             // act
-            string result = provider.GetPropertiesWithoutProperty(entry, nameof(entry.Id));
+            var result = provider.GetProperties(entry);
 
             // assert
-            Assert.AreEqual(GetPropertiesWithoutProperty(entry, nameof(entry.Id)), result);
+            Assert.AreEqual(0, result.Count());
         }
 
-        private string GetPropertiesWithoutProperty(IEntity entity, string propertyName)
+        private string GetProperties(IEntity entity)
         {
             return null;
         }
 
         [TestMethod]
-        public void GetPropertiesWithoutProperty_EntityDoesNotContainsDbTableNameAttrubute_ThrowArgumentException()
+        public void GetProperties_EntityDoesNotContainsDbTableNameAttrubute_ThrowArgumentException()
         {
             // arrange
-            IEntity entity = new WithoutAttribute();
+            IEntity entity = new WithoutDbTableNameAttribute();
             PropertiesDbProvider provider = new PropertiesDbProvider();
 
             // act
-            ArgumentException result = Assert.ThrowsException<ArgumentException>(() => provider.GetPropertiesWithoutProperty(entity, ""));
+            ArgumentException result = Assert.ThrowsException<ArgumentException>(() => provider.GetProperties(entity));
 
             // assert
             Assert.AreEqual(typeof(ArgumentException), result.GetType());
         }
+
+
 
         [TestMethod]
         public void CheckDbTableNameAttrubute_ContainsAttribute_ReturnTrue()
@@ -59,7 +63,7 @@ namespace PasswordManager.Tests
         public void CheckTableNameAttribute_NoAttribute_ReturnFalse()
         {
             // arrange
-            IEntity entity = new WithoutAttribute();
+            IEntity entity = new WithoutDbTableNameAttribute();
             PropertiesDbProvider provider = new PropertiesDbProvider();
 
             // act
@@ -70,8 +74,13 @@ namespace PasswordManager.Tests
         }
     }
 
-    public class WithoutAttribute : IEntity
+    public class WithoutDbTableNameAttribute : IEntity
     {
         public int Id { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+    }
+    [DbTableName("")]
+    public class WithoutDbAttributeNameAttribute : IEntity
+    {
+        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

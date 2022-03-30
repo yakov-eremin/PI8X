@@ -14,16 +14,29 @@ namespace PasswordManager.DAL.Repositories
     /// </summary>
     public class PropertiesDbProvider
     {
-        public string GetPropertiesWithoutProperty(IEntity entity, string propertyName)
+        public IEnumerable<string> GetProperties(IEntity entity)
         {
+            List<string> result = new List<string>();
             if (CheckDbTableNameAttribute(entity))
             {
-
+                Type type = entity.GetType();
+                var properties = type.GetProperties();
+                object[] attributes;
+                foreach (var item in properties)
+                {
+                    attributes = item.GetCustomAttributes(false);
+                    foreach (Attribute attribute in attributes)
+                    {
+                        if (attribute is DbAttributeNameAttribute nameAttribute)
+                        {
+                            result.Add(nameAttribute.AttributeName);
+                        }
+                    }
+                }
             }
             else
                 throw new ArgumentException($"{nameof(entity)} does not contains {nameof(DbTableNameAttribute)}.");
-
-            return null;
+            return result;
         }
 
         public bool CheckDbTableNameAttribute(IEntity entity)
