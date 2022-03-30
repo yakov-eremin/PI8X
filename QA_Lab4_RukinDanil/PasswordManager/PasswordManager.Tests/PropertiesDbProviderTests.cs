@@ -39,5 +39,24 @@ namespace PasswordManager.Tests
             // assert
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void CheckTableNameAttribute_NoAttribute_ReturnFalse()
+        {
+            // arrange
+            IEntity entity = new WithoutAttribute();
+            PropertiesDbProvider provider = new PropertiesDbProvider();
+
+            // act
+            bool result = provider.CheckDbTableNameAttribute(entity);
+
+            // assert
+            Assert.IsFalse(result);
+        }
+    }
+
+    public class WithoutAttribute : IEntity
+    {
+        public int Id { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     }
 }
