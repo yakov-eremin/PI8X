@@ -21,9 +21,23 @@ namespace PasswordManager.Tests
             Assert.AreEqual(GetPropertiesWithoutProperty(entry, nameof(entry.Id)), result);
         }
 
-        protected string GetPropertiesWithoutProperty(IEntity entity, string propertyName)
+        private string GetPropertiesWithoutProperty(IEntity entity, string propertyName)
         {
             return null;
+        }
+
+        [TestMethod]
+        private void CheckDbTableNameAttrubute_ContainsAttribute_ReturnTrue()
+        {
+            // arrange
+            IEntity entity = new DbEntry();
+            PropertiesDbProvider provider = new PropertiesDbProvider();
+
+            // act
+            bool result = provider.CheckDbTableNameAttribute(entity);
+
+            // assert
+            Assert.IsTrue(result);
         }
     }
 }
