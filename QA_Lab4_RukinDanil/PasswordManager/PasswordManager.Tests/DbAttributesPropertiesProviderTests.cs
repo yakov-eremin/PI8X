@@ -9,14 +9,14 @@ using System.Linq;
 namespace PasswordManager.Tests
 {
     [TestClass]
-    public class PropertiesDbProviderTests
+    public class DbAttributesPropertiesProviderTests
     {
         [TestMethod]
         public void GetProperties_NoPropertiesWithDbAttributeNameAttribute_ReturnEmptyCollection()
         {
             // arrange
             IEntity entry = new WithoutDbAttributeNameAttribute();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
 
             // act
             var result = provider.GetProperties(entry);
@@ -30,7 +30,7 @@ namespace PasswordManager.Tests
         {
             // arrange
             IEntity entry = new DbEntry();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
 
             // act
             var result = provider.GetProperties(entry);
@@ -43,7 +43,7 @@ namespace PasswordManager.Tests
         public void GetProperties_AllDbEntities_ReturnEqualPropertiesCollectionForEachEntity()
         {
             // arrange
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
             List<IEntity> entities = new List<IEntity>()
             {
                 new DbAccessWay(),
@@ -91,7 +91,7 @@ namespace PasswordManager.Tests
         {
             // arrange
             IEntity entity = new WithoutDbTableNameAttribute();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
 
             // act
             ArgumentException result = Assert.ThrowsException<ArgumentException>(() => provider.GetProperties(entity));
@@ -106,7 +106,7 @@ namespace PasswordManager.Tests
         {
             // arrange
             IEntity entity = new DbEntry();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
 
             // act
             bool result = provider.CheckDbTableNameAttribute(entity);
@@ -120,7 +120,7 @@ namespace PasswordManager.Tests
         {
             // arrange
             IEntity entity = new WithoutDbTableNameAttribute();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
 
             // act
             bool result = provider.CheckDbTableNameAttribute(entity);
@@ -130,26 +130,11 @@ namespace PasswordManager.Tests
         }
 
         [TestMethod]
-        public void GetPropertiesValuesOfEntity_ReturnCollectionOfPropertiesValuesInRightOrder()
-        {
-            // arrange
-            IEntity entity = new DbEntry();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
-
-            // act
-            ICollection<string> result = provider.GetPropertiesValuesOfEntityInRightOrder(entity, provider.GetProperties(entity));
-
-            // assert
-            //CollectionAssert.AreEqual((List<string>)result, (List<string>)GetPropertiesValuesInRighrOrder(entity, GetProperties(entity)));
-
-        }
-
-        [TestMethod]
         public void GetPropertiesValues_ReturnDictionaryOfPropertiesAndValues()
         {
             // arrange
             IEntity entity = new DbEntry();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
 
             // act
             IDictionary<string, object> pairs = provider.GetPropertiesValues(entity);
@@ -185,7 +170,7 @@ namespace PasswordManager.Tests
             // arrange
             IEntity entity = new DbEntry();
             IEntity bad = new BadDbAttributeNameAttribute();
-            PropertiesDbProvider provider = new PropertiesDbProvider();
+            DbAttributesPropertiesProvider provider = new DbAttributesPropertiesProvider();
 
             // act
             var result = Assert.ThrowsException<KeyNotFoundException>(() =>

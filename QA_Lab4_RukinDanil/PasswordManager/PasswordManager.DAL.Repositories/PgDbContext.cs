@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using System.Data;
 
 namespace PasswordManager.DAL.Repositories
 {
@@ -25,6 +26,8 @@ namespace PasswordManager.DAL.Repositories
             _connectionString = connectionString;
         }
         protected NpgsqlConnection _connection;
-        public DbConnection Connection => _connection ??= new NpgsqlConnection(_connectionString);
+        public IDbConnection Connection => _connection ??= new NpgsqlConnection(_connectionString);
+
+        public IDbCommandBuilder CommandGenerator => throw new NotImplementedException();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,11 @@ namespace PasswordManager.DAL.Repositories.Interfaces
         /// <summary>
         /// Предоставляет подключение к базе данных
         /// </summary>
-        DbConnection Connection { get; }
+        IDbConnection Connection { get; }
+
+        /// <summary>
+        /// Предоставляет генератор простейших sql-команд
+        /// </summary>
+        IDbCommandBuilder CommandGenerator { get; }
     }
 }
