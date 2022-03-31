@@ -63,5 +63,30 @@ namespace PasswordManager.DAL.Repositories
 
             return result;
         }
+
+        public IDictionary<string, object> GetPropertiesValues(IEntity entity)
+        {
+            IDictionary<string, object> result = new Dictionary<string, object>();
+            if (CheckDbTableNameAttribute(entity))
+            {
+                Type type = entity.GetType();
+                var properties = type.GetProperties();
+                object[] attributes;
+                foreach (var item in properties)
+                {
+                    attributes = item.GetCustomAttributes(false);
+                    foreach (Attribute attribute in attributes)
+                    {
+                        if (attribute is DbAttributeNameAttribute nameAttribute)
+                        {
+                            result.Add(nameAttribute.AttributeName, item.GetValue(entity));
+                        }
+                    }
+                }
+                return result;
+            }
+            else
+                throw new ArgumentException($"{nameof(entity)} does not contains {nameof(DbTableNameAttribute)}.");
+        }
     }
 }

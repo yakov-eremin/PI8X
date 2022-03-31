@@ -140,13 +140,43 @@ namespace PasswordManager.Tests
             ICollection<string> result = provider.GetPropertiesValuesOfEntityInRightOrder(entity, provider.GetProperties(entity));
 
             // assert
-            CollectionAssert.AreEqual((List<string>)result, (List<string>)GetPropertiesValuesInRighrOrder(entity, GetProperties(entity)));
+            //CollectionAssert.AreEqual((List<string>)result, (List<string>)GetPropertiesValuesInRighrOrder(entity, GetProperties(entity)));
 
         }
 
-        private ICollection<string> GetPropertiesValuesInRighrOrder(IEntity entity, ICollection<string> propertiesNames)
+        [TestMethod]
+        public void GetPropertiesValues_ReturnDictionaryOfPropertiesAndValues()
         {
+            // arrange
+            IEntity entity = new DbEntry();
+            PropertiesDbProvider provider = new PropertiesDbProvider();
 
+            // act
+            IDictionary<string, object> pairs = provider.GetPropertiesValues(entity);
+            var result = GetPropertiesValuesTestRealization(entity);
+            // assert
+            CollectionAssert.AreEqual((Dictionary<string, object>)pairs,
+                (Dictionary<string, object>)GetPropertiesValuesTestRealization(entity));
+        }
+
+        private IDictionary<string, object> GetPropertiesValuesTestRealization(IEntity entity)
+        {
+            Dictionary<string, object> result = new Dictionary<string, object>();
+            Type type = entity.GetType();
+            var properties = type.GetProperties();
+            object[] attributes;
+            foreach (var item in properties)
+            {
+                attributes = item.GetCustomAttributes(false);
+                foreach (Attribute attribute in attributes)
+                {
+                    if (attribute is DbAttributeNameAttribute nameAttribute)
+                    {
+                        result.Add(nameAttribute.AttributeName, item.GetValue(entity));
+                    }
+                }
+            }
+            return result;
         }
     }
 
