@@ -27,6 +27,14 @@ namespace PasswordManager.DAL.Repositories
     public class DefaultRepository<T> : IRepository<T> where T : IEntity, new()
     {
         protected IDbContext _dbContext;
+        /// <summary>
+        /// Создает дефолтный репозиторий
+        /// </summary>
+        /// <param name="dbContext"></param>
+        public DefaultRepository(IDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
 
         public void Create(T entity)
         {
