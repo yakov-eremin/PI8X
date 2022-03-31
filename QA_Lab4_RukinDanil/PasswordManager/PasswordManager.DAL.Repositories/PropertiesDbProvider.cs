@@ -88,5 +88,30 @@ namespace PasswordManager.DAL.Repositories
             else
                 throw new ArgumentException($"{nameof(entity)} does not contains {nameof(DbTableNameAttribute)}.");
         }
+
+        public void SetPropertiesValues(IEntity entity, IDictionary<string, object> propertiesAndValues)
+        {
+            if (CheckDbTableNameAttribute(entity))
+            {
+                Type type = entity.GetType();
+                var properties = type.GetProperties();
+                object[] attributes;
+                foreach (var item in properties)
+                {
+                    attributes = item.GetCustomAttributes(false);
+                    foreach (Attribute attribute in attributes)
+                    {
+                        if (attribute is DbAttributeNameAttribute nameAttribute)
+                        {
+                            if (propertiesAndValues.TryGetValue(nameAttribute.AttributeName, out object value))
+                                item.SetValue(entity, value);
+                            else throw new KeyNotFoundException(nameAttribute.AttributeName);
+                        }
+                    }
+                }
+            }
+            else
+                throw new ArgumentException($"{nameof(entity)} does not contains {nameof(DbTableNameAttribute)}.");
+        }
     }
 }

@@ -156,7 +156,7 @@ namespace PasswordManager.Tests
             var result = GetPropertiesValuesTestRealization(entity);
             // assert
             CollectionAssert.AreEqual((Dictionary<string, object>)pairs,
-                (Dictionary<string, object>)GetPropertiesValuesTestRealization(entity));
+                (Dictionary<string, object>)result);
         }
 
         private IDictionary<string, object> GetPropertiesValuesTestRealization(IEntity entity)
@@ -178,6 +178,22 @@ namespace PasswordManager.Tests
             }
             return result;
         }
+
+        [TestMethod]
+        public void SetPropertiesValues_EntityHasNoSuchProperties_ThrowKeyNotFoundExecption()
+        {
+            // arrange
+            IEntity entity = new DbEntry();
+            IEntity bad = new BadDbAttributeNameAttribute();
+            PropertiesDbProvider provider = new PropertiesDbProvider();
+
+            // act
+            var result = Assert.ThrowsException<KeyNotFoundException>(() =>
+            provider.SetPropertiesValues(bad, provider.GetPropertiesValues(entity)));
+
+            // assert
+            Assert.AreEqual(result.GetType(), typeof(KeyNotFoundException));
+        }
     }
 
     public class WithoutDbTableNameAttribute : IEntity
@@ -187,6 +203,12 @@ namespace PasswordManager.Tests
     [DbTableName("")]
     public class WithoutDbAttributeNameAttribute : IEntity
     {
+        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    }
+    [DbTableName("")]
+    public class BadDbAttributeNameAttribute : IEntity
+    {
+        [DbAttributeName("bad")]
         public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }
