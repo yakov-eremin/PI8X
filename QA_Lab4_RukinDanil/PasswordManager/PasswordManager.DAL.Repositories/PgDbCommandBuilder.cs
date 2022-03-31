@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PasswordManager.DAL.Repositories
 {
     /// <summary>
-    /// Генератор команд для баз данных Postgres
+    /// Строитель команд sql для Postgres
     /// </summary>
     /// <inheritdoc/>
     public class PgDbCommandBuilder : IDbCommandBuilder

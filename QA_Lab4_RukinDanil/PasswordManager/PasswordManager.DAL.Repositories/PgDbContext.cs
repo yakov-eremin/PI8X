@@ -28,6 +28,6 @@ namespace PasswordManager.DAL.Repositories
         protected NpgsqlConnection _connection;
         public IDbConnection Connection => _connection ??= new NpgsqlConnection(_connectionString);
 
-        public IDbCommandBuilder CommandGenerator => throw new NotImplementedException();
+        public IDbCommandBuilder CommandBuilder => throw new NotImplementedException();
     }
 }

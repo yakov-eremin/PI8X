@@ -19,8 +19,12 @@ namespace PasswordManager.DAL.Repositories.Interfaces
         IDbConnection Connection { get; }
 
         /// <summary>
+        /// Предоставляет строитель команд
+        /// </summary>
+        IDbCommandBuilder CommandBuilder { get; }
+        /// <summary>
         /// Предоставляет генератор простейших sql-команд
         /// </summary>
-        IDbCommandBuilder CommandGenerator { get; }
+        //ICrudCommandsGenerator CommandGenerator { get; }
     }
 }
