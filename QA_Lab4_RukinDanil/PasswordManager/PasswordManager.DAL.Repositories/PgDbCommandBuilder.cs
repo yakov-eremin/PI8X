@@ -30,11 +30,11 @@ namespace PasswordManager.DAL.Repositories
         public IDbCommandBuilder From(string tableName, bool shouldReset = false)
         {
             if (shouldReset) ResetBuilder();
-            _builder.Append($"{tableName} ");
+            _builder.Append($"from {tableName} ");
             return this;
         }
 
-        public string GetCommand() => _builder.Append(";").ToString();
+        public string GetCommand() => _builder.ToString().TrimEnd() + ";";
 
         public IDbCommandBuilder Insert(bool shouldReset = false)
         {

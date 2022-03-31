@@ -17,6 +17,9 @@ namespace PasswordManager.DAL.Repositories
     public class PgDbContext : IDbContext
     {
         protected string _connectionString;
+        protected NpgsqlConnection _connection;
+        protected IDbCommandBuilder _commandBuilder;
+        protected ICrudCommandsGenerator _commandGenerator;
         /// <summary>
         /// Создает контекст базы данных <see cref="PgDbContext"/> для СУБД Postgres
         /// </summary>
@@ -25,9 +28,14 @@ namespace PasswordManager.DAL.Repositories
         {
             _connectionString = connectionString;
         }
-        protected NpgsqlConnection _connection;
-        public IDbConnection Connection => _connection ??= new NpgsqlConnection(_connectionString);
+        
+        public IDbConnection Connection => /*_connection ??= */new NpgsqlConnection(_connectionString);
 
-        public IDbCommandBuilder CommandBuilder => throw new NotImplementedException();
+        public IDbCommandBuilder CommandBuilder => /*_commandBuilder ??=*/ new PgDbCommandBuilder();
+
+        public ICrudCommandsGenerator CommandGenerator => /*_commandGenerator ??=*/ 
+            new PgCrudCommandsGenerator(CommandBuilder, new DbAttributesPropertiesProvider());
+
+        public DbAttributesPropertiesProvider Provider => new DbAttributesPropertiesProvider();
     }
 }

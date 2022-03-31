@@ -128,5 +128,59 @@ namespace PasswordManager.DAL.Repositories
             else
                 throw new ArgumentException($"{nameof(entity)} does not contains {nameof(DbTableNameAttribute)}.");
         }
+        /// <summary>
+        /// Получает имя таблицы для сущности <see cref="IEntity"/>
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public string GetTableName(IEntity entity)
+        {
+            Type type = entity.GetType();
+            var typeAttributes = type.GetCustomAttributes();
+            string name = "";
+            foreach (var attribute in typeAttributes)
+            {
+                if (attribute is DbTableNameAttribute dbTableNameAttribute)
+                {
+                    name = dbTableNameAttribute.TableName;
+                    break;
+                }
+            }
+            return name;
+        }
+        /// <summary>
+        /// Получает имя свойтсва в базе данных. Свойство должно быть помечено атрибутом <see cref="DbAttributeNameAttribute"/>.
+        /// </summary>
+        /// <param name="entity">Сущность, свойства которой необходимо просмотреть</param>
+        /// <param name="propertyName">Имя искомого свойства</param>
+        /// <returns>Имя в таблице базы данных, указанное в атрибуте <see cref="DbAttributeNameAttribute"/></returns>
+        /// <exception cref="ArgumentException"></exception>
+        public string GetPropertyNameInDatabase(IEntity entity, string propertyName)
+        {
+            if (CheckDbTableNameAttribute(entity))
+            {
+                string name = propertyName;
+                Type type = entity.GetType();
+                var properties = type.GetProperties();
+                object[] attributes;
+                foreach (var item in properties)
+                {
+                    if (item.Name == propertyName)
+                    {
+                        attributes = item.GetCustomAttributes(false);
+                        foreach (Attribute attribute in attributes)
+                        {
+                            if (attribute is DbAttributeNameAttribute nameAttribute)
+                            {
+                                return nameAttribute.AttributeName;
+                            }
+                        }
+                    }                   
+                }
+                return name;
+            }
+            else
+                throw new ArgumentException($"{nameof(entity)} does not contains {nameof(DbTableNameAttribute)}.");
+        }
     }
 }

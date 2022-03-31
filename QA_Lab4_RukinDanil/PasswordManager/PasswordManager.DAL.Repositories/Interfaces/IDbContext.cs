@@ -25,6 +25,10 @@ namespace PasswordManager.DAL.Repositories.Interfaces
         /// <summary>
         /// Предоставляет генератор простейших sql-команд
         /// </summary>
-        //ICrudCommandsGenerator CommandGenerator { get; }
+        ICrudCommandsGenerator CommandGenerator { get; }
+        /// <summary>
+        /// Провайдер данных между таблицами и сущностями
+        /// </summary>
+        DbAttributesPropertiesProvider Provider { get; }
     }
 }
