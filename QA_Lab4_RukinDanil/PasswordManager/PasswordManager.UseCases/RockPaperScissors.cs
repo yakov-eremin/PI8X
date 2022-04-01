@@ -13,6 +13,13 @@ namespace PasswordManager.UseCases
     /// <inheritdoc/>
     public class RockPaperScissors : Game
     {
+        ChoiceVariant[,] matrix = new ChoiceVariant[,]
+            {
+                { ChoiceVariant.Stone, ChoiceVariant.Stone, ChoiceVariant.Paper},
+                { ChoiceVariant.Stone, ChoiceVariant.Scissors, ChoiceVariant.Scissors},
+                { ChoiceVariant.Paper, ChoiceVariant.Scissors, ChoiceVariant.Paper }
+            };
+
         public override Guid GetAccessToken()
         {
             throw new NotImplementedException();
@@ -20,16 +27,14 @@ namespace PasswordManager.UseCases
 
         public ChoiceVariant GetWinningVariant(ChoiceVariant firstVariant, ChoiceVariant secondVariant)
         {
-            if (firstVariant == secondVariant)
-                return firstVariant;
-            return ChoiceVariant.Paper;
+            return matrix[(int)firstVariant, (int)secondVariant];
         }
     }
 
     /// <summary>
     /// Вариант выбора в игре 'Камень ножницы бумага'
     /// </summary>
-    public enum ChoiceVariant
+    public enum ChoiceVariant : int
     {
         /// <summary>
         /// Камень
