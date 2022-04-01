@@ -47,6 +47,20 @@ namespace PasswordManager.Tests
             Assert.AreEqual(paper, result);
         }
 
+        [TestMethod]
+        public void GetWinningVariant_StoneVsScissors_ReturnStone()
+        {
+            // arrange
+            RockPaperScissors game = new RockPaperScissors();
+            ChoiceVariant stone = ChoiceVariant.Stone;
+            ChoiceVariant scissors = ChoiceVariant.Scissors;
 
+            // act
+            ChoiceVariant result = game.GetWinningVariant(stone, scissors);
+
+            // assert
+
+            Assert.AreEqual(stone, result);
+        }
     }
 }
