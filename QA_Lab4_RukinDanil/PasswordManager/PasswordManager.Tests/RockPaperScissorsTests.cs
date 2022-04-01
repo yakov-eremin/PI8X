@@ -41,10 +41,12 @@ namespace PasswordManager.Tests
 
             // act
             ChoiceVariant result = game.GetWinningVariant(stone, paper);
+            ChoiceVariant resultRevers = game.GetWinningVariant(paper, stone);
 
             // assert
 
             Assert.AreEqual(paper, result);
+            Assert.AreEqual(paper, resultRevers);
         }
 
         [TestMethod]
@@ -57,10 +59,30 @@ namespace PasswordManager.Tests
 
             // act
             ChoiceVariant result = game.GetWinningVariant(stone, scissors);
+            ChoiceVariant resultReverse = game.GetWinningVariant(scissors, stone);
 
             // assert
 
             Assert.AreEqual(stone, result);
+            Assert.AreEqual(stone, resultReverse);
+        }
+
+        [TestMethod]
+        public void GetWinningVariant_PaperVsScissors_ReturnScissors()
+        {
+            // arrange
+            RockPaperScissors game = new RockPaperScissors();
+            ChoiceVariant paper = ChoiceVariant.Paper;
+            ChoiceVariant scissors = ChoiceVariant.Scissors;
+
+            // act
+            ChoiceVariant result = game.GetWinningVariant(paper, scissors);
+            ChoiceVariant resultReverse = game.GetWinningVariant(scissors, paper);
+
+            // assert
+
+            Assert.AreEqual(scissors, result);
+            Assert.AreEqual(scissors, resultReverse);
         }
     }
 }
