@@ -11,23 +11,32 @@ namespace PasswordManager.UseCases
     /// Игра 'Камень ножницы бумага'
     /// </summary>
     /// <inheritdoc/>
-    public class RockPaperScissors : Game
+    public abstract class RockPaperScissors : Game
     {
-        ChoiceVariant[,] matrix = new ChoiceVariant[,]
+        protected ChoiceVariant[,] _matrix = new ChoiceVariant[,]
             {
                 { ChoiceVariant.Stone, ChoiceVariant.Stone, ChoiceVariant.Paper},
                 { ChoiceVariant.Stone, ChoiceVariant.Scissors, ChoiceVariant.Scissors},
                 { ChoiceVariant.Paper, ChoiceVariant.Scissors, ChoiceVariant.Paper }
             };
 
-        public override Guid GetAccessToken()
+        public ChoiceVariant UserChoice { get; set; }
+        protected int _roundsCount;
+        public int RoundsCount
         {
-            throw new NotImplementedException();
+            get => _roundsCount;
+            set => _roundsCount = (value / 2 == 0 ? value + 1 : value);
+        }
+
+        public RockPaperScissors()
+        {
+            UserChoice = ChoiceVariant.Paper;
+            RoundsCount = 1;
         }
 
         public ChoiceVariant GetWinningVariant(ChoiceVariant firstVariant, ChoiceVariant secondVariant)
         {
-            return matrix[(int)firstVariant, (int)secondVariant];
+            return _matrix[(int)firstVariant, (int)secondVariant];
         }
     }
 

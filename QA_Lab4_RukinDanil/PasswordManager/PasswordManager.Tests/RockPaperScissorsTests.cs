@@ -18,7 +18,7 @@ namespace PasswordManager.Tests
         public void GetWinningVariant_EqualVariants_ReturnReceivedVariant()
         {
             // arrange
-            RockPaperScissors game = new RockPaperScissors();
+            RockPaperScissors game = new SimpleRockPaperScissorsGameRealization();
             ChoiceVariant firstVariant = ChoiceVariant.Stone;
             ChoiceVariant secondVariant = ChoiceVariant.Stone;
 
@@ -35,7 +35,7 @@ namespace PasswordManager.Tests
         public void GetWinningVariant_StoneVsPaper_ReturnPaper()
         {
             // arrange
-            RockPaperScissors game = new RockPaperScissors();
+            RockPaperScissors game = new SimpleRockPaperScissorsGameRealization();
             ChoiceVariant stone = ChoiceVariant.Stone;
             ChoiceVariant paper = ChoiceVariant.Paper;
 
@@ -53,7 +53,7 @@ namespace PasswordManager.Tests
         public void GetWinningVariant_StoneVsScissors_ReturnStone()
         {
             // arrange
-            RockPaperScissors game = new RockPaperScissors();
+            RockPaperScissors game = new SimpleRockPaperScissorsGameRealization();
             ChoiceVariant stone = ChoiceVariant.Stone;
             ChoiceVariant scissors = ChoiceVariant.Scissors;
 
@@ -71,7 +71,7 @@ namespace PasswordManager.Tests
         public void GetWinningVariant_PaperVsScissors_ReturnScissors()
         {
             // arrange
-            RockPaperScissors game = new RockPaperScissors();
+            RockPaperScissors game = new SimpleRockPaperScissorsGameRealization();
             ChoiceVariant paper = ChoiceVariant.Paper;
             ChoiceVariant scissors = ChoiceVariant.Scissors;
 
@@ -83,6 +83,16 @@ namespace PasswordManager.Tests
 
             Assert.AreEqual(scissors, result);
             Assert.AreEqual(scissors, resultReverse);
+        }
+    }
+    /// <summary>
+    /// Заглушка для тестирования методов проверки
+    /// </summary>
+    public class SimpleRockPaperScissorsGameRealization : RockPaperScissors
+    {
+        public override Guid GetAccessToken()
+        {
+            return Guid.Empty;
         }
     }
 }
