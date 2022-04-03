@@ -1,0 +1,13 @@
+<map id="RPG/Player.h" name="RPG/Player.h">
+<area shape="rect" id="node1" title="Класс персонажа игрока, наследуется от базового класса персонажа" alt="" coords="112,5,215,32"/>
+<area shape="rect" id="node2" href="$_menu_8h.html" title="Класс главного меню" alt="" coords="79,229,176,256"/>
+<area shape="rect" id="node5" href="$_player_8cpp_source.html" title=" " alt="" coords="40,80,156,107"/>
+<area shape="rect" id="node6" href="$_player__builder_8h_source.html" title=" " alt="" coords="310,80,457,107"/>
+<area shape="rect" id="node10" href="$_world_8h_source.html" title=" " alt="" coords="181,80,279,107"/>
+<area shape="rect" id="node3" href="$_menu_8cpp_source.html" title=" " alt="" coords="5,304,116,331"/>
+<area shape="rect" id="node4" href="$main_8cpp_source.html" title=" " alt="" coords="141,304,247,331"/>
+<area shape="rect" id="node7" href="$_player__builder_8cpp_source.html" title=" " alt="" coords="303,155,464,181"/>
+<area shape="rect" id="node8" href="$_player__director_8h_source.html" title=" " alt="" coords="489,155,641,181"/>
+<area shape="rect" id="node9" href="$_player__director_8cpp_source.html" title=" " alt="" coords="481,229,648,256"/>
+<area shape="rect" id="node11" href="$_world_8cpp_source.html" title=" " alt="" coords="165,155,279,181"/>
+</map>

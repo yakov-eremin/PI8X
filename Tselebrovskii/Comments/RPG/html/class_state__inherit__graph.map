@@ -1,0 +1,5 @@
+<map id="State" name="State">
+<area shape="rect" id="node1" title=" " alt="" coords="41,5,94,32"/>
+<area shape="rect" id="node2" href="$class_alive.html" title=" " alt="" coords="5,80,55,107"/>
+<area shape="rect" id="node3" href="$class_dead.html" title=" " alt="" coords="79,80,131,107"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Class_ability" name="Class_ability">
+<area shape="rect" id="node1" title=" " alt="" coords="146,5,242,32"/>
+<area shape="rect" id="node2" href="$class_damage__ability.html" title=" " alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$class_healing__ability.html" title=" " alt="" coords="141,80,247,107"/>
+<area shape="rect" id="node4" href="$class_status__ability.html" title=" " alt="" coords="271,80,373,107"/>
+</map>
