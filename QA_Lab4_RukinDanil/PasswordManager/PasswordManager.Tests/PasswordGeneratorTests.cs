@@ -55,9 +55,23 @@ namespace PasswordManager.Tests
             Assert.AreEqual(typeof(InvalidOperationException), result.GetType());
         }
 
-        public void ConfigureParameters_PasswordLengthLessThanOne_ThrowArgumentException()
+        [TestMethod]
+        public void Generate_PasswordLengthInOptinsIsMoreThanOtherOptionsParametersCount_GeneratedPasswordLengthShouldBeEqualToOptionsLength()
         {
+            IPasswordGenerator generator = new PasswordGenerator();
+            GenerationOptions options = new GenerationOptions();
+            options.UpperCaseSymbolsCount = 5;
+            options.LowerCaseSymbolsCount = 5;
+            options.SpecialSymbols = new List<char>() { '@', '!', '#' };
+            options.DigitsCount = 7;
+            options.Length = 24;
+            generator.ConfigureParameters(options);
 
+            // act
+            string password = generator.Generate();
+
+            // assert
+            Assert.AreEqual(options.Length, password.Length);
         }
     }
 }
