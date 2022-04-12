@@ -73,5 +73,30 @@ namespace PasswordManager.Tests
             // assert
             Assert.AreEqual(options.Length, password.Length);
         }
+
+        [TestMethod]
+        public void Generate_ContainsNesessaryAmountOfDigit()
+        {
+            // arrange
+            IPasswordGenerator generator = new PasswordGenerator();
+            GenerationOptions options = new GenerationOptions();
+            int digitsCount = 10;
+            options.DigitsCount = digitsCount;
+            options.UpperCaseSymbolsCount = 2;
+            options.Length = 12;
+            generator.ConfigureParameters(options);
+
+            // act
+            string password = generator.Generate();
+
+            // assert
+            int amount = 0;
+            foreach (char symbol in password)
+            {
+                if (symbol >= '0' && symbol <= '9')
+                    amount++;
+            }
+            Assert.AreEqual(digitsCount, amount);
+        }
     }
 }
