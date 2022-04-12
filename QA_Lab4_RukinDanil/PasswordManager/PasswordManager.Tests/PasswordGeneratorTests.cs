@@ -98,5 +98,27 @@ namespace PasswordManager.Tests
             }
             Assert.AreEqual(digitsCount, amount);
         }
+
+        [TestMethod]
+        public void Generate_OptionsLengthIsEqualToMinimalPossibleLength_GeneratedPasswordsLengthShouldBeEqulaToOptionsLength()
+        {
+            // arrange
+            IPasswordGenerator generator = new PasswordGenerator();
+            GenerationOptions options = new GenerationOptions();
+            options.UpperCaseSymbolsCount = 5;
+            options.LowerCaseSymbolsCount = 5;
+            options.SpecialSymbols = new List<char>() { '@', '!', '#' };
+            options.DigitsCount = 7;
+            options.Length = options.UpperCaseSymbolsCount + options.LowerCaseSymbolsCount + options.DigitsCount
+                + options.SpecialSymbols.Count;
+            generator.ConfigureParameters(options);
+
+            // act
+            string password = generator.Generate();
+
+            // assert
+            Assert.AreEqual(options.Length, password.Length);
+
+        }
     }
 }
