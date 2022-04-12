@@ -20,34 +20,31 @@ namespace PasswordManager.Core.Services
         /// <summary>
         /// Конфигурирует параметр пароля
         /// </summary>
-        /// <param name="parameter">параметр пароля</param>
-        /// <param name="value">значение параметра</param>
-        void ConfigureParameter(Parameter parameter, object value);
+        /// <param name="options">параметры пароля</param>
+        void ConfigureParameters(GenerationOptions options);
     }
-    /// <summary>
-    /// Параметр для генератора паролей
-    /// </summary>
-    public enum Parameter
+
+    public class GenerationOptions
     {
-        /// <summary>
-        /// Наличие специальных символов
-        /// </summary>
-        SpecialSymbols,
-        /// <summary>
-        /// Длина пароля
-        /// </summary>
-        Length,
-        /// <summary>
-        /// Количество цифр в пароле
-        /// </summary>
-        DigitsCount,
-        /// <summary>
-        /// Количество символов верхнего регистра
-        /// </summary>
-        UpperCaseSymbolsCount,
-        /// <summary>
-        /// Наличие символов нижнего регистра
-        /// </summary>
-        LowerCaseSymbolsCount,
+        protected int _length = 8;
+        public int Length
+        {
+            get => _length;
+            set => _length = value < 1 ? 1 : value;
+        }
+
+        public int DigitsCount { get; set; } = 0;
+        public int UpperCaseSymbolsCount { get; set; } = 0;
+        public int LowerCaseSymbolsCount { get; set; } = 0;
+        public List<char> SpecialSymbols { get; set; } = new List<char>();
+
+        public virtual void SetDefaults()
+        {
+            SpecialSymbols = new List<char>();
+            Length = 8;
+            UpperCaseSymbolsCount = 0;
+            LowerCaseSymbolsCount = 0;
+            DigitsCount = 0;
+        }
     }
 }

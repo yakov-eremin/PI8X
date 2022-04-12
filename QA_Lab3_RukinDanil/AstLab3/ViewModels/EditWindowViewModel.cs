@@ -362,7 +362,7 @@ namespace AstLab3.ViewModels
 				}
 				_logger.LogMessage(logMessage);
 				_logger.LogMessage("Изменения применены.");
-				App.ActivedWindow.Close();
+				App.ActivedWindow?.Close();
 			}
 			catch (Exception e)
 			{
