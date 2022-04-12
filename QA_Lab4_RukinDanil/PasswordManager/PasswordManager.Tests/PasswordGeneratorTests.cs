@@ -146,5 +146,33 @@ namespace PasswordManager.Tests
             }
             Assert.IsTrue(isContains);
         }
+
+        [TestMethod]
+        public void Generate_PasswordContainsNesassryAmountOfLowerCaseSymbols()
+        {
+            // arrange
+            IPasswordGenerator generator = new PasswordGenerator();
+            GenerationOptions options = new GenerationOptions();
+            options.UpperCaseSymbolsCount = 5;
+            int lowerCaseCount = 5;
+            options.LowerCaseSymbolsCount = lowerCaseCount;
+            options.SpecialSymbols = new List<char>() { '@', '!', '#' };
+            options.DigitsCount = 7;
+            options.Length = options.UpperCaseSymbolsCount + options.LowerCaseSymbolsCount + options.DigitsCount
+                + options.SpecialSymbols.Count;
+            generator.ConfigureParameters(options);
+
+            // act
+            string password = generator.Generate();
+
+            // assert
+            int amount = 0;
+            foreach (char symbol in password)
+            {
+                if (char.IsLower(symbol))
+                    amount++;
+            }
+            Assert.AreEqual(lowerCaseCount, amount);
+        }
     }
 }
