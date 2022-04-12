@@ -35,5 +35,29 @@ namespace PasswordManager.Tests
             }
             Assert.AreEqual(upperCaseSymbolsCount, amount);
         }
+
+        [TestMethod]
+        public void ConfigureParameters_PasswordLengthLessThanMinimalPossibleLength_ThrowInvalidOperationException()
+        {
+            // arrange
+            IPasswordGenerator generator = new PasswordGenerator();
+            GenerationOptions options = new GenerationOptions();
+            options.UpperCaseSymbolsCount = 5;
+            options.LowerCaseSymbolsCount = 5;
+            options.SpecialSymbols = new List<char>() { '@', '!', '#'};
+            options.DigitsCount = 7;
+            options.Length = 12;            
+
+            // act
+            var result = Assert.ThrowsException<InvalidOperationException>(() => generator.ConfigureParameters(options));
+
+            // assert
+            Assert.AreEqual(typeof(InvalidOperationException), result.GetType());
+        }
+
+        public void ConfigureParameters_PasswordLengthLessThanOne_ThrowArgumentException()
+        {
+
+        }
     }
 }
