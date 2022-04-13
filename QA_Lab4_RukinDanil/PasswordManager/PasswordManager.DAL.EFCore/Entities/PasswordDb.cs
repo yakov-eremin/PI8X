@@ -39,5 +39,11 @@ namespace PasswordManager.DAL.EFCore.Entities
         public ICollection<Group> Groups { get; set; }
 
         public ICollection<Entry> EntriesWithoutGroup { get; set; }
+
+        [Required]
+        public EncryptionAlgorithm EncryptionAlgorithm { get; set; }
+
+        [Required]
+        public DbAccessWay DbAccessWay { get; set; }
     }
 }

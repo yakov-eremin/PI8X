@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using PasswordManager.DAL.EFCore;
@@ -9,9 +10,10 @@ using PasswordManager.DAL.EFCore;
 namespace PasswordManager.DAL.EFCore.Migrations
 {
     [DbContext(typeof(PasswordManagerDbContext))]
-    partial class PasswordManagerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220413061341_full_db")]
+    partial class full_db
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

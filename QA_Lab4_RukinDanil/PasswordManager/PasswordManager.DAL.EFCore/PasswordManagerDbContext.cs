@@ -15,8 +15,17 @@ namespace PasswordManager.DAL.EFCore
         public DbSet<PasswordDb> PasswordDb { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5433;Database=usersdb;" +
-                "Username=postgres;Password=здесь_указывается_пароль_от_postgres");
+            optionsBuilder.UseNpgsql("Host=192.168.1.133;Port=5432;Database=password_manager;" +
+                "Username=postgres;Password=qwerty123@");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<PasswordDb>()
+                .Property(p => p.DbAccessWay)
+                .HasConversion<string>();
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
