@@ -4,8 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordManager.Presentation.WPF"
+        xmlns:fa1="http://schemas.fontawesome.com/icons/"
         mc:Ignorable="d"
-        Title="{Binding Title}" Height="450" Width="800"
+        Title="{Binding Title}" Height="625" Width="1110"
+        FontSize="14"
         DataContext="{Binding MainWindowModel, Source={StaticResource Locator}}">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
@@ -17,8 +19,189 @@
         <StatusBar DockPanel.Dock="Bottom">
             <StatusBarItem Content="{Binding Status}"/>
         </StatusBar>
-        <Grid>
-            
-        </Grid>
+        <DockPanel>
+            <Grid DockPanel.Dock="Top" Height="115">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <GridSplitter Grid.Column="1" VerticalAlignment="Stretch" Width="2" HorizontalAlignment="Center"/>
+                <GridSplitter Grid.Column="3" VerticalAlignment="Stretch" Width="2" HorizontalAlignment="Center"/>
+                <GridSplitter Grid.Column="5" VerticalAlignment="Stretch" Width="2" HorizontalAlignment="Center"/>
+                <GridSplitter Grid.Row="1" Grid.ColumnSpan="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="2"/>
+                <DockPanel Grid.Column="0" HorizontalAlignment="Center">
+                    <TextBlock DockPanel.Dock="Bottom" Text="Группы" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Button>
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_Plus" Foreground="Black"/>
+                        </Button>
+                        <Button Margin="5, 0">
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_PencilAlt" Foreground="Black"/>
+                        </Button>
+                        <Button>
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_TrashAlt" Foreground="Black"/>
+                        </Button>
+                    </StackPanel>
+                </DockPanel>
+
+                <DockPanel Grid.Column="2" HorizontalAlignment="Center">
+                    <TextBlock DockPanel.Dock="Bottom" Text="Записи" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Button>
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_Plus" Foreground="Black"/>
+                        </Button>
+                        <Button Margin="5, 0">
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_PencilAlt" Foreground="Black"/>
+                        </Button>
+                        <Button>
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_TrashAlt" Foreground="Black"/>
+                        </Button>
+                    </StackPanel>
+                </DockPanel>
+
+                <DockPanel Grid.Column="4" HorizontalAlignment="Center">
+                    <TextBlock DockPanel.Dock="Bottom" Text="Базы паролей" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Button>
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_Plus" Foreground="Black"/>
+                        </Button>
+                        <Button Margin="5, 0">
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_PencilAlt" Foreground="Black"/>
+                        </Button>
+                        <Button>
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa1:ImageAwesome Height="40" Width="40" Icon="Solid_TrashAlt" Foreground="Black"/>
+                        </Button>
+                    </StackPanel>
+                </DockPanel>
+
+                <DockPanel Grid.Column="6" Margin="5. 0">
+                    <TextBlock DockPanel.Dock="Bottom" HorizontalAlignment="Center" Text="Прочее"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Row="0" Grid.Column="0" Content="Генератор" Width="120" VerticalAlignment="Center"
+                                HorizontalAlignment="Left"/>
+                        <Button Grid.Row="1" Grid.Column="0" Content="Мини-игра" Width="120" VerticalAlignment="Center"
+                                HorizontalAlignment="Left"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
+                    </Grid>
+                </DockPanel>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <GridSplitter Grid.Column="1" VerticalAlignment="Stretch" Width="2" HorizontalAlignment="Center"/>
+                <GridSplitter Grid.Column="3" VerticalAlignment="Stretch" Width="2" HorizontalAlignment="Center"/>
+                <ListBox Grid.Column="0"/>
+                <ListBox Grid.Column="2"/>
+                <Grid Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="Margin" Value="10, 5"/>
+                                <Style.Triggers>
+                                    <Trigger Property="Grid.Column" Value="0">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    </Trigger>
+                                    <Trigger Property="Grid.Column" Value="1">
+                                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Grid.Resources>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                                    VerticalAlignment="Center" HorizontalAlignment="Center" Margin="00, 5">
+                            <Image Width="70" Height="70"/>
+                            <TextBlock Text="Название записи" Margin="0, 5"/>
+                        </StackPanel>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Группа"/>
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Адрес ресурса"/>
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Имя пользователя"/>
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Пароль"/>
+                        <TextBlock Grid.Row="5" Grid.Column="0" Text="Дата создания"/>
+                        <TextBlock Grid.Row="6" Grid.Column="0" Text="Дата последнего доступа"/>
+                        <TextBlock Grid.Row="7" Grid.Column="0" Text="Дата последнего изменения"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="Группа"/>
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="Адрес ресурса"/>
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="Имя пользователя"/>
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="Пароль"/>
+                        <TextBlock Grid.Row="5" Grid.Column="1" Text="Дата создания"/>
+                        <TextBlock Grid.Row="6" Grid.Column="1" Text="Дата последнего доступа"/>
+                        <TextBlock Grid.Row="7" Grid.Column="1" Text="Дата последнего изменения"/>
+                    </Grid>
+                    <DockPanel Grid.Row="1" Margin="5">
+                        <TextBlock DockPanel.Dock="Top" Text="Описание"/>
+                        <TextBox TextWrapping="Wrap" AcceptsReturn="True"/>
+                    </DockPanel>
+                </Grid>
+            </Grid>
+        </DockPanel>
     </DockPanel>
 </Window>
