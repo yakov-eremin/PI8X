@@ -15,5 +15,11 @@ namespace Lab_4
         {
             Console.WriteLine("Это пустой тест");
         }
+
+        [Fact]
+        void reminderClassCreationTest()
+        {
+            Reminder reminder = new Reminder();
+        }
     }
 }
