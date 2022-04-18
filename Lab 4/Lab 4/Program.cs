@@ -28,5 +28,12 @@ namespace Lab_4
             Reminder reminder = new Reminder();
             reminder.Add(new Friend());
         }
+
+        [Fact]
+        void reminderAddFriendWithNameAndDateTest()
+        {
+            Reminder reminder = new Reminder();
+            reminder.Add(new Friend("Kolya", "11.01.2001"));
+        }
     }
 }
