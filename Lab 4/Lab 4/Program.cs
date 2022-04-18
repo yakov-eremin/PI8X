@@ -21,5 +21,12 @@ namespace Lab_4
         {
             Reminder reminder = new Reminder();
         }
+
+        [Fact]
+        void reminderAddFriendTest()
+        {
+            Reminder reminder = new Reminder();
+            reminder.Add(new Friend());
+        }
     }
 }
