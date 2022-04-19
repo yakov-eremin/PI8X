@@ -9,6 +9,21 @@ namespace Lab_4
         static void Main(string[] args)
         {
             Console.WriteLine("Добро пожаловать в напоминалку");
+            Reminder reminder = new Reminder();
+            int choice;
+            do
+            {
+                Console.WriteLine();
+                Console.WriteLine("\t1 - Добавить друга");
+                Console.WriteLine("\t2 - Вывести список друзей");
+                Console.WriteLine("\t3 - Удалить друга");
+                Console.WriteLine("\t4 - У кого сегодня день рождения?");
+                Console.WriteLine("\t5 - У кого день рождения в течение месяца?");
+                Console.WriteLine("\tЛюбой другой символ - выход из программы");
+
+                choice = Convert.ToInt32(Console.ReadLine());
+
+            } while (reminder.DoSomething(choice));
         }
 
         [Fact]

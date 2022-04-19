@@ -30,5 +30,9 @@ namespace Lab_4
             return name;
         }
 
+        public void Display()
+        {
+            Console.WriteLine(name);
+        }
     }
 }

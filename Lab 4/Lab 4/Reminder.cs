@@ -56,6 +56,54 @@ namespace Lab_4
             return result;
         }
 
+        public bool DoSomething(int choice)
+        {
+            // 1 - Добавить друга");
+            // 2 - Вывести список друзей");
+            // 3 - Удалить друга");
+            // 4 - У кого сегодня день рождения?");
+            // 5 - У кого день рождения в течение месяца?");
+            // Любой другой символ - выход из программы");
+
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("\t\tВведите имя: ");
+                    string? name = Console.ReadLine();
+                    Console.WriteLine("\t\tВведите дату (dd.mm.yyyy): ");
+                    string? date = Console.ReadLine();
+                    Add(new Friend(name, date));
+                    break;
+
+                case 2:
+                    Console.WriteLine("\t\tВы дружите с:");
+                    foreach (var f in friends)
+                    {
+                        Console.Write("\t\t\t");
+                        f.Display();
+                    }
+                    break;
+
+                case 3:
+                    //todo
+                    break;
+
+                case 4:
+                    foreach (var f in friends)
+                    {
+                        Console.Write("\t\t\t" + GetStatus(f, DateTime.Today));
+                    }
+                    break;
+
+                case 5:
+                    //todo
+                    break;
+                default:
+                    return false;
+            }
+            return true;
+        }
+
         [Fact]
         void reminderGetStatusTest1()
         {
