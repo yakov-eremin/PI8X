@@ -56,14 +56,7 @@ namespace Lab_4
             Assert.Empty(reminder.GetFriends());
         }
 
-        [Fact]
-        void reminderCompareDateTest()
-        {
-            Reminder reminder = new Reminder();
-            Friend f = new Friend("Ilya", "01.12.1999");
-            reminder.Add(f);
-            Assert.True(reminder.CompareDate("01.12.1999", new DateTime(1999, 12, 01)));
-        }
+        
 
     }
 }

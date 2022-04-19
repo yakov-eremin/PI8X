@@ -20,5 +20,15 @@ namespace Lab_4
             this.date = date;
         }
 
+        public string GetDate()
+        {
+            return date;
+        }
+
+        public string GetName()
+        {
+            return name;
+        }
+
     }
 }
