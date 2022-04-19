@@ -46,5 +46,24 @@ namespace Lab_4
             reminder.Add(new Friend("Anya", "26.12.2002"));
         }
 
+        [Fact]
+        void reminderDeleteFriendTest()
+        {
+            Reminder reminder = new Reminder();
+            Friend f = new Friend("Ilya", "01.12.1999");
+            reminder.Add(f);
+            reminder.Delete(f);
+            Assert.Empty(reminder.GetFriends());
+        }
+
+        [Fact]
+        void reminderCompareDateTest()
+        {
+            Reminder reminder = new Reminder();
+            Friend f = new Friend("Ilya", "01.12.1999");
+            reminder.Add(f);
+            Assert.True(reminder.CompareDate("01.12.1999", new DateTime(1999, 12, 01)));
+        }
+
     }
 }

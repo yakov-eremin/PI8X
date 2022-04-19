@@ -28,3 +28,4 @@ hs_err_pid*
 *.cache
 *.editorconfig
 Lab 4/Lab 4/obj/Debug/netcoreapp3.1/Lab 4.csproj.FileListAbsolute.txt
+*.testlog
