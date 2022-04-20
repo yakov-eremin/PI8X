@@ -89,7 +89,7 @@
                 <DockPanel Grid.Column="4" HorizontalAlignment="Center">
                     <TextBlock DockPanel.Dock="Bottom" Text="Базы паролей" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                        <Button>
+                        <Button Command="{Binding CreatePasswordDbCommand}">
                             <Button.Background>
                                 <SolidColorBrush Opacity="0"/>
                             </Button.Background>

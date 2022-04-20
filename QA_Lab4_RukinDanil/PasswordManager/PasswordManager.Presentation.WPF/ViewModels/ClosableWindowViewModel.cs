@@ -9,7 +9,16 @@ namespace PasswordManager.Presentation.WPF.ViewModels
 {
     public class ClosableWindowViewModel : ViewModel
     {
-        public event EventHandler CloseWindow;
-        protected virtual void OnCloseWindow() => CloseWindow?.Invoke(this, EventArgs.Empty);
+        public event EventHandler<CloseWindowEventArgs> CloseWindow;
+        protected virtual void OnCloseWindow(CloseWindowEventArgs eventArgs) => CloseWindow?.Invoke(this, eventArgs);
+    }
+
+    public class CloseWindowEventArgs : EventArgs
+    {
+        public CloseWindowEventArgs(bool dialogResult)
+        {
+            DialogResult = dialogResult;
+        }
+        public bool DialogResult { get; set; }
     }
 }

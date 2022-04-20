@@ -15,35 +15,35 @@ namespace PasswordManager.DAL.EFCore.Entities
 
         [MaxLength(100)]
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
 
         [MaxLength(1000)]
         [Required]
-        public string Description { get; set; }
+        public string Description { get; set; } = "";
 
         [MaxLength(200)]
-        public string PathToIcon { get; set; }
+        public string PathToIcon { get; set; } = "";
 
         [MaxLength(100)]
-        public string MasterPassword { get; set; }
+        public string MasterPassword { get; set; } = "";
 
         [Required]
-        public DateTime CreationDate { get; set; }
+        public DateTime CreationDate { get; set; } = DateTime.Now;
 
         [Required]
-        public DateTime LastAccessDate { get; set; }
+        public DateTime LastAccessDate { get; set; } = DateTime.Now;
 
         [Required]
-        public DateTime LastChangeDate { get; set; }
+        public DateTime LastChangeDate { get; set; } = DateTime.Now;
 
-        public ICollection<Group> Groups { get; set; }
+        public ICollection<Group> Groups { get; set; } = new HashSet<Group>();
 
-        public ICollection<Entry> EntriesWithoutGroup { get; set; }
-
-        [Required]
-        public EncryptionAlgorithm EncryptionAlgorithm { get; set; }
+        public ICollection<Entry> EntriesWithoutGroup { get; set; } = new HashSet<Entry>();
 
         [Required]
-        public DbAccessWay DbAccessWay { get; set; }
+        public EncryptionAlgorithm EncryptionAlgorithm { get; set; } 
+
+        [Required]
+        public DbAccessWay DbAccessWay { get; set; } = DbAccessWay.Game;
     }
 }

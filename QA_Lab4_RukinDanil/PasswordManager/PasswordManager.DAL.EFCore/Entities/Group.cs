@@ -15,25 +15,25 @@ namespace PasswordManager.DAL.EFCore.Entities
 
         [MaxLength(100)]
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
 
         [MaxLength(1000)]
         [Required]
-        public string Description { get; set; }
+        public string Description { get; set; } = "";
 
         [MaxLength(200)]
-        public string PathToIcon { get; set; }
+        public string PathToIcon { get; set; } = "";
 
         [Required]
-        public DateTime CreationDate { get; set; }
+        public DateTime CreationDate { get; set; } = DateTime.Now;
 
         [Required]
-        public DateTime LastAccessDate { get; set; }
+        public DateTime LastAccessDate { get; set; } = DateTime.Now;
 
         [Required]
-        public DateTime LastChangeDate { get; set; }
+        public DateTime LastChangeDate { get; set; } = DateTime.Now;
 
-        public ICollection<Entry> Entries { get; set; }
+        public ICollection<Entry> Entries { get; set; } = new HashSet<Entry>();
 
         [Required]
         public PasswordDb PasswordDb { get; set; }

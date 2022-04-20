@@ -15,14 +15,14 @@ namespace PasswordManager.DAL.EFCore.Entities
 
         [Required]
         [MaxLength(64)]
-        public string CodeName { get; set; }
+        public string CodeName { get; set; } = "";
 
         [Required]
         [MaxLength(128)]
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
 
         [MaxLength(1024)]
-        public string Description { get; set; }
+        public string Description { get; set; } = "";
 
         public ICollection<PasswordDb> PasswordDbs { get; set; }
     }

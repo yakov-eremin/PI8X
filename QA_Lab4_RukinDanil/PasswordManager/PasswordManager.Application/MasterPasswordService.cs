@@ -9,6 +9,6 @@ namespace PasswordManager.Application
 {
     public abstract class MasterPasswordService : IAuthorizer
     {
-        public abstract void Authorize();
+        public abstract Guid Authorize();
     }
 }

@@ -5,7 +5,9 @@ using PasswordManager.DAL.EFCore;
 using PasswordManager.DAL.EFCore.Entities;
 using PasswordManager.Presentation.WPF.Infrastructure.Commands;
 using PasswordManager.Presentation.WPF.Models.Services;
+using PasswordManager.Presentation.WPF.Models.Services.Interfaces;
 using PasswordManager.Presentation.WPF.ViewModels.Base;
+using PasswordManager.Presentation.WPF.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -74,7 +76,13 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                     return;
                 }
                 IAuthorizer authorizer = App.Services.GetRequiredService<RockPaperScissorsAuthorizer>();
-                authorizer.Authorize();
+                Guid accessToken = authorizer.Authorize();
+                if(accessToken == Guid.Empty)
+                {
+                    Status = "Вы не прошли авторизацию";
+                    return;
+                }
+                OnCloseWindow(new CloseWindowEventArgs(true));
             }
             catch (Exception ex)
             {
@@ -104,7 +112,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                     Status = $"Неверный пароль";
                     return;
                 }
-                OnCloseWindow();
+                OnCloseWindow(new CloseWindowEventArgs(true));
             }
             catch (Exception ex)
             {
@@ -125,9 +133,10 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         public ICommand CreatePasswordDbCommand { get; }
         private void OnCreatePasswordDbCommandExecuted(object p)
         {
+            IUserDialog userDialog = App.Services.GetRequiredService<UserDialog<PasswordDbWindow, PasswordDbWindowViewModel>>();
 
         }
-        private bool CanCreatePasswordDbCommandExecute(object p) => false;
+        private bool CanCreatePasswordDbCommandExecute(object p) => true;
         #endregion
 
         #endregion

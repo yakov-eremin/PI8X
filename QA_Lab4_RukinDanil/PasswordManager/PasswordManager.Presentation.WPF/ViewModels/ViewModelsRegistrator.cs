@@ -8,7 +8,8 @@ namespace PasswordManager.Presentation.WPF.ViewModels
     public static class ViewModelsRegistrator
     {
         public static IServiceCollection AddViewModels(this IServiceCollection services) => services
-           .AddSingleton<MainWindowViewModel>()
+            .AddSingleton<MainWindowViewModel>()
+            .AddTransient<PasswordDbWindowViewModel>()
             .AddTransient<AuthorizationWindowViewModel>()
         ;
     }

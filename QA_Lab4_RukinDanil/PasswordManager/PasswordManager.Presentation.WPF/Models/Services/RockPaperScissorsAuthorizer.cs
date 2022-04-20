@@ -10,7 +10,7 @@ namespace PasswordManager.Presentation.WPF.Models.Services
 {
     public class RockPaperScissorsAuthorizer : RockPaperScissors, IAuthorizer
     {
-        public override void Authorize()
+        public override Guid Authorize()
         {
             throw new NotImplementedException();
         }
