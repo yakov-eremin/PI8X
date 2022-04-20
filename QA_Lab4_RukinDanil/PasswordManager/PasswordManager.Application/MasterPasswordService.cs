@@ -7,11 +7,8 @@ using PasswordManager.Application.Interfaces;
 
 namespace PasswordManager.Application
 {
-    public class MasterPasswordService : IAuthorizer
+    public abstract class MasterPasswordService : IAuthorizer
     {
-        public Guid GetAccessToken()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Authorize();
     }
 }

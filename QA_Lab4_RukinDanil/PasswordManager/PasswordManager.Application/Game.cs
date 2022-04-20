@@ -9,6 +9,6 @@ namespace PasswordManager.Application
 {
     public abstract class Game : IAuthorizer
     {
-        public abstract Guid GetAccessToken();
+        public abstract void Authorize();
     }
 }

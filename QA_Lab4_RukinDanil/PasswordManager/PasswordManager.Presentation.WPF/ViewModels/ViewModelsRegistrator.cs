@@ -9,6 +9,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
     {
         public static IServiceCollection AddViewModels(this IServiceCollection services) => services
            .AddSingleton<MainWindowViewModel>()
+            .AddTransient<AuthorizationWindowViewModel>()
         ;
     }
 }

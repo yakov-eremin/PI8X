@@ -14,7 +14,6 @@ namespace PasswordManager.Application.Interfaces
         /// <summary>
         /// Предоставляет ключ доступа к базе паролей. Пользователь должен использовать этот ключ для доступа к базе.
         /// </summary>
-        /// <returns></returns>
-        Guid GetAccessToken();
+        void Authorize();
     }
 }
