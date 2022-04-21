@@ -66,6 +66,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                 if (group != null)
                 {
                     Status = $"Группа с именем '{GoupName}' уже существует";
+                    return;
                 }
                 group = new Group()
                 {

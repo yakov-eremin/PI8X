@@ -27,6 +27,9 @@ namespace PasswordManager.Presentation.WPF.ViewModels
             _dbContext = dbContext;
             _applicationContext = applicationContext;
             AddDefaultDatabase(); // обманка
+
+            UpdateGroupsAndEntries();
+
             CreatePasswordDbCommand = new LambdaCommand(OnCreatePasswordDbCommandExecuted, 
                 CanCreatePasswordDbCommandExecute);
             CallGeneratePasswordWindowCommand = new LambdaCommand(OnCallGeneratePasswordWindowCommandExecuted,
@@ -42,11 +45,21 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         private string _status = "Status";
         public string Status { get => _status; set => Set(ref _status, value); }
 
-        public ObservableCollection<Group> Groups { get; set; }
-        public Group SelectedGroup { get; set; }
+        public ObservableCollection<Group> Groups { get; set; } = new ObservableCollection<Group>();
+        private Group _selectedGroup;
+        public Group SelectedGroup 
+        { 
+            get => _selectedGroup;
+            set
+            {
+                Set(ref _selectedGroup, value);
+                UpdateEntries();
+            }
+        }
 
-        public ObservableCollection<Entry> Entries { get; set; }
-        public Entry SelectedEntry { get; set; }
+        public ObservableCollection<Entry> Entries { get; set; } = new ObservableCollection<Entry>();
+        private Entry _selectedEntry;
+        public Entry SelectedEntry { get => _selectedEntry; set => Set(ref _selectedEntry, value); }
         #endregion
 
         #region Commands
@@ -57,6 +70,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         {
             try
             {
+                Status = "";
                 IUserDialog dialog = App.Services.GetRequiredService<UserDialog<PasswordDbWindow, PasswordDbWindowViewModel>>();
                 bool result = dialog.Show();
             }
@@ -72,8 +86,16 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         public ICommand CallGeneratePasswordWindowCommand { get; }
         private void OnCallGeneratePasswordWindowCommandExecuted(object p)
         {
-            IUserDialog dialog = App.Services.GetRequiredService<UserDialog<PasswordGeneratorWindow, PasswordGeneratorViewModel>>();
-            dialog.Show();
+            try
+            {
+                Status = "";
+                IUserDialog dialog = App.Services.GetRequiredService<UserDialog<PasswordGeneratorWindow, PasswordGeneratorViewModel>>();
+                dialog.Show();
+            }
+            catch (Exception e)
+            {
+                Status = e.Message;
+            }
         }
         private bool CanCallGeneratePasswordWindowCommandExecute(object p) => true;
         #endregion
@@ -82,8 +104,19 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         public ICommand CreateEntryCommand { get; }
         private void OnCreateEntryCommandExecuted(object p)
         {
-            IUserDialog dialog = App.Services.GetRequiredService<UserDialog<EntryWindow, CreateEntryWindowViewModel>>();
-            dialog.Show();
+            try
+            {
+                Status = "";
+                IUserDialog dialog = App.Services.GetRequiredService<UserDialog<EntryWindow, CreateEntryWindowViewModel>>();
+                if (dialog.Show())
+                {
+                    UpdateGroupsAndEntries();
+                }
+            }
+            catch (Exception e)
+            {
+                Status = e.Message;
+            }
         }
         private bool CanCreateEntryCommandExecute(object p) => true;
         #endregion
@@ -92,8 +125,19 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         public ICommand CreateGroupCommand { get; }
         private void OnCreateGroupCommandExecuted(object p)
         {
-            IUserDialog dialog = App.Services.GetRequiredService<UserDialog<GroupWindow, CreateGroupWindowViewModel>>();
-            dialog.Show();
+            try
+            {
+                Status = "";
+                IUserDialog dialog = App.Services.GetRequiredService<UserDialog<GroupWindow, CreateGroupWindowViewModel>>();
+                if (dialog.Show())
+                {
+                    UpdateGroupsAndEntries();
+                }
+            }
+            catch (Exception e)
+            {
+                Status = e.Message;
+            }           
         }
         private bool CanCreateGroupCommandExecute(object p) => true; 
         #endregion
@@ -105,10 +149,10 @@ namespace PasswordManager.Presentation.WPF.ViewModels
             if (string.IsNullOrWhiteSpace(_applicationContext.CurrentPasswordDbName))
             {
                 var db = _dbContext.PasswordDb
-                    .FirstOrDefault(b => b.Name == _applicationContext.CurrentPasswordDbName);
+                    .FirstOrDefault(b => b.Name == "Default");
                 if (db == null)
                 {
-                    db = new DAL.EFCore.Entities.PasswordDb()
+                    db = new PasswordDb()
                     {
                         Name = "Default",
                         Description = "Default database description",
@@ -119,6 +163,45 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                 }
                 _applicationContext.CurrentPasswordDbName = db.Name;
             }
+        }
+
+        private void UpdateGroups()
+        {
+            Groups.Clear();
+            PasswordDb passwordDb = _dbContext.PasswordDb
+                .FirstOrDefault(p => p.Name == _applicationContext.CurrentPasswordDbName);
+            if (passwordDb == null)
+                return;
+            var groups = passwordDb.Groups;
+            foreach (var item in groups)
+            {
+                Groups.Add(item);
+            }
+            return;
+        }
+
+        private void UpdateEntries()
+        {
+            Entries.Clear();
+            if (SelectedGroup == null)
+                return;
+            var group = _dbContext.Groups.FirstOrDefault(g => g.Name == SelectedGroup.Name);
+            if (group == null)
+                return;
+            var entries = group.Entries;
+            foreach (var entry in entries)
+            {
+                Entries.Add(entry);
+            }
+            return;
+        }
+
+        private void UpdateGroupsAndEntries()
+        {
+            UpdateGroups();
+            SelectedGroup = Groups.FirstOrDefault();
+            UpdateEntries();
+            SelectedEntry = Entries.FirstOrDefault();
         }
     }
 }

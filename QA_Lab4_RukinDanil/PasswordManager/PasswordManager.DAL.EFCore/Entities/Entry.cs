@@ -29,6 +29,9 @@ namespace PasswordManager.DAL.EFCore.Entities
         [Required]
         public string Url { get; set; } = "";
 
+        [MaxLength(1024)]
+        public string Description { get; set; } = nameof(Description);
+
         [Required]
         public DateTime CreationDate { get; set; } = DateTime.Now;
 

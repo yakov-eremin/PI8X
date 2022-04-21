@@ -112,7 +112,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                         UserPassword = Password,
                         Url = Url,
                         UserLogin = UserName,
-                        
+                        Description = Description,
                         Group = group,
                     };
                     _dbContext.Entries.Add(entry);
