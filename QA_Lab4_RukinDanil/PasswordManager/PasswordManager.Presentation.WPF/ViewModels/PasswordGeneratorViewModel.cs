@@ -109,6 +109,8 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         private bool CanCloseCommandExecute(object p) => true;
         #endregion
 
+
+
         #endregion
     }
 }

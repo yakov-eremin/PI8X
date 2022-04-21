@@ -19,6 +19,7 @@ namespace PasswordManager.Presentation.WPF.Models.Services
             .AddTransient<RockPaperScissorsAuthorizer>()
             .AddTransient<UserDialog<PasswordDbWindow, PasswordDbWindowViewModel>>()
             .AddTransient<UserDialog<PasswordGeneratorWindow, PasswordGeneratorViewModel>>()
+            .AddTransient<UserDialog<EntryWindow, CreateEntryWindowViewModel>>()
             // Register your services here
         ;
     }

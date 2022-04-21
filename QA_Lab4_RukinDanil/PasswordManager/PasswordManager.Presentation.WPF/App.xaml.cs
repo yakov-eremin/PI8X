@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PasswordManager.Presentation.WPF.Models;
 using PasswordManager.Presentation.WPF.Models.Services;
 using PasswordManager.Presentation.WPF.ViewModels;
 using System;
@@ -28,6 +29,7 @@ namespace PasswordManager.Presentation.WPF
         public static IServiceProvider Services => Host.Services;
 
         public static void ConfigureServices(HostBuilderContext host, IServiceCollection services) => services
+           .AddSingleton<ApplicationContext>()
            .AddServices()
            .AddViewModels()
         ;

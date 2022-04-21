@@ -19,9 +19,10 @@ namespace PasswordManager.Presentation.WPF.Models.Services
             TWindow window = new TWindow();
             TWindowViewModel model = App.Services.GetRequiredService<TWindowViewModel>();
             window.DataContext = model;
+            window.Owner = App.Current.MainWindow;
+            window.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             model.CloseWindow += (_, e) => {
-                window.Owner = App.Current.MainWindow;
-                window.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                
                 window.DialogResult = e.DialogResult;
                 window.Close();
             };
