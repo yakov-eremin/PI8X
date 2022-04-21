@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PasswordManager.DAL.EFCore;
+using PasswordManager.DAL.EFCore.Entities;
 using PasswordManager.Presentation.WPF.Infrastructure.Commands;
 using PasswordManager.Presentation.WPF.Models;
 using PasswordManager.Presentation.WPF.Models.Services;
@@ -8,6 +9,7 @@ using PasswordManager.Presentation.WPF.ViewModels.Base;
 using PasswordManager.Presentation.WPF.Views.Windows;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Windows.Input;
@@ -39,6 +41,12 @@ namespace PasswordManager.Presentation.WPF.ViewModels
 
         private string _status = "Status";
         public string Status { get => _status; set => Set(ref _status, value); }
+
+        public ObservableCollection<Group> Groups { get; set; }
+        public Group SelectedGroup { get; set; }
+
+        public ObservableCollection<Entry> Entries { get; set; }
+        public Entry SelectedEntry { get; set; }
         #endregion
 
         #region Commands

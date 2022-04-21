@@ -37,5 +37,7 @@ namespace PasswordManager.DAL.EFCore.Entities
 
         [Required]
         public PasswordDb PasswordDb { get; set; }
+
+        public override string ToString() => Name;
     }
 }

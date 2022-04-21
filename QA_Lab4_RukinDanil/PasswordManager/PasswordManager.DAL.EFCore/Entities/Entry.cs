@@ -41,5 +41,7 @@ namespace PasswordManager.DAL.EFCore.Entities
         public Group Group { get; set; }
 
         public PasswordDb PasswordDb { get; set; }
+
+        public override string ToString() => Name;
     }
 }

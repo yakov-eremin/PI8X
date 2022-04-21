@@ -139,8 +139,8 @@
                 </Grid.ColumnDefinitions>
                 <GridSplitter Grid.Column="1" VerticalAlignment="Stretch" Width="2" HorizontalAlignment="Center"/>
                 <GridSplitter Grid.Column="3" VerticalAlignment="Stretch" Width="2" HorizontalAlignment="Center"/>
-                <ListBox Grid.Column="0"/>
-                <ListBox Grid.Column="2"/>
+                <ListBox Grid.Column="0" ItemsSource="{Binding Groups}" SelectedItem="{Binding SelectedGroup}"/>
+                <ListBox Grid.Column="2" ItemsSource="{Binding Entries}" SelectedItem="{Binding SelectedEntry}"/>
                 <Grid Grid.Column="4">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
@@ -178,7 +178,7 @@
                         <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
                                     VerticalAlignment="Center" HorizontalAlignment="Center" Margin="00, 5">
                             <Image Width="70" Height="70"/>
-                            <TextBlock Text="Название записи" Margin="0, 5"/>
+                            <TextBlock Text="{Binding SelectedEntry.Name}" Margin="0, 5"/>
                         </StackPanel>
                         <TextBlock Grid.Row="1" Grid.Column="0" Text="Группа"/>
                         <TextBlock Grid.Row="2" Grid.Column="0" Text="Адрес ресурса"/>
@@ -188,17 +188,17 @@
                         <TextBlock Grid.Row="6" Grid.Column="0" Text="Дата последнего доступа"/>
                         <TextBlock Grid.Row="7" Grid.Column="0" Text="Дата последнего изменения"/>
 
-                        <TextBlock Grid.Row="1" Grid.Column="1" Text="Группа"/>
-                        <TextBlock Grid.Row="2" Grid.Column="1" Text="Адрес ресурса"/>
-                        <TextBlock Grid.Row="3" Grid.Column="1" Text="Имя пользователя"/>
-                        <TextBlock Grid.Row="4" Grid.Column="1" Text="Пароль"/>
-                        <TextBlock Grid.Row="5" Grid.Column="1" Text="Дата создания"/>
-                        <TextBlock Grid.Row="6" Grid.Column="1" Text="Дата последнего доступа"/>
-                        <TextBlock Grid.Row="7" Grid.Column="1" Text="Дата последнего изменения"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding SelectedGroup.Name}"/>
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding SelectedEntry.Url}"/>
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding SelectedEntry.UserLogin}"/>
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding SelectedEntry.UserPassword}"/>
+                        <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding SelectedEntry.CreationDate}"/>
+                        <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding SelectedEntry.LastAccessDate}"/>
+                        <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding SelectedEntry.LastChangeDate}"/>
                     </Grid>
                     <DockPanel Grid.Row="1" Margin="5">
                         <TextBlock DockPanel.Dock="Top" Text="Описание"/>
-                        <TextBox TextWrapping="Wrap" AcceptsReturn="True"/>
+                        <TextBox TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding SelectedGroup.Description}"/>
                     </DockPanel>
                 </Grid>
             </Grid>
