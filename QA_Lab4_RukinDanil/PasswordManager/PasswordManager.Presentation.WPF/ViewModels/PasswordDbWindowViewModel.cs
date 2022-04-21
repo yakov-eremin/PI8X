@@ -1,6 +1,7 @@
 ﻿using PasswordManager.DAL.EFCore;
 using PasswordManager.DAL.EFCore.Entities;
 using PasswordManager.Presentation.WPF.Infrastructure.Commands;
+using PasswordManager.UseCases;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,13 +19,15 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         public PasswordDbWindowViewModel(PasswordManagerDbContext dbContext) : base()
         {
             _dbContext = dbContext;
+            EncryptAlgorithmsNames = GetEncryptionAlgorithmsNames();
+            MiniGamaVariants.Add(SelectedMiniGameVariant);
             AcceptCommand = new LambdaCommand(OnAcceptCommandExecuted, CanAcceptCommandExecute);
             CancelCommand = new LambdaCommand(OnCancelCommandExecuted, CanCancelCommandExecute);
         }
 
         #region Properties
 
-        private string _userName = "";
+        private string _userName = Environment.UserName;
         public string UserName { get => _userName; set => Set(ref _userName, value); }
 
         private string _passwordFromDb = "";
@@ -43,10 +46,23 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         public string Status { get => _status; set => Set(ref _status, value); }
 
         public IEnumerable<DbAccessWay> DbAccessWays => Enum.GetValues(typeof(DbAccessWay)).Cast<DbAccessWay>();
-        public ObservableCollection<string> EncryptAlgorithmsNames { get; set; } = new ObservableCollection<string>();
 
         private DbAccessWay _selectedAccessWay = DbAccessWay.Game;
         public DbAccessWay SelectedAccessWay { get => _selectedAccessWay; set => Set(ref _selectedAccessWay, value); }
+
+        public ObservableCollection<string> EncryptAlgorithmsNames { get; set; }
+        private string _selectedAlgorithmName = "";
+        public string SelectedAlgorithmName { get => _selectedAlgorithmName; 
+            set => Set(ref _selectedAlgorithmName, value); }
+
+
+        public ObservableCollection<string> MiniGamaVariants { get; set; } = new ObservableCollection<string>();
+        private string _selectedMiniGameVariant = nameof(RockPaperScissors);
+        public string SelectedMiniGameVariant
+        {
+            get => _selectedMiniGameVariant;
+            set => Set(ref _selectedMiniGameVariant, value);
+        }
 
         #endregion
 
@@ -58,15 +74,30 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         {
             try
             {
-                DbAccessWay dbAccessWay = SelectedAccessWay;
                 var database = _dbContext.PasswordDb.Where(pdb => pdb.Name == DatabaseName).FirstOrDefault();
-                if (database == default(PasswordDb))
+                if (database != default(PasswordDb))
                 {
                     Status = $"База с именем {DatabaseName} уже существует";
+                    return;
                 }
                 else
                 {
-                    _dbContext.PasswordDb.Add(new PasswordDb());
+                    EncryptionAlgorithm algorithm = _dbContext.Algorithms.FirstOrDefault(alg => alg.CodeName == SelectedAlgorithmName);
+                    if (algorithm == null)
+                    {
+                        Status = $"Алгортима с кодовым именем {SelectedAlgorithmName} нет в базе";
+                        return;
+                    }
+                    PasswordDb passwordDb = new PasswordDb()
+                    {
+                        Name = DatabaseName,
+                        Description = DatabaseDescription,
+                        DbAccessWay = SelectedAccessWay,
+                        EncryptionAlgorithm = algorithm,
+                        MasterPassword = PasswordFromDb
+                    };
+                    _dbContext.PasswordDb.Add(passwordDb);
+                    _dbContext.SaveChanges();
                 }
                 OnCloseWindow(new CloseWindowEventArgs(true));
             }
@@ -77,7 +108,11 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         }
         private bool CanAcceptCommandExecute(object p)
         {
-            return true;
+            return !string.IsNullOrWhiteSpace(DatabaseName)
+                && !string.IsNullOrWhiteSpace(SelectedMiniGameVariant)
+                && !string.IsNullOrWhiteSpace(UserName)
+                && !string.IsNullOrWhiteSpace(SelectedAlgorithmName)
+                && !string.IsNullOrWhiteSpace(DatabaseDescription);
         }
         #endregion
 
@@ -88,5 +123,16 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         #endregion
 
         #endregion
+
+        private ObservableCollection<string> GetEncryptionAlgorithmsNames()
+        {
+            var algorithms = _dbContext.Algorithms;
+            ObservableCollection<string> names = new ObservableCollection<string>();
+            foreach (var algorithm in algorithms)
+            {
+                names.Add(algorithm.CodeName);
+            }
+            return names;
+        }
     }
 }
