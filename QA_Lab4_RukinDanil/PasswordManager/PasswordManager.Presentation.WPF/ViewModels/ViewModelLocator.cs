@@ -8,5 +8,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
     public class ViewModelLocator
     {
         public MainWindowViewModel MainWindowModel => App.Services.GetRequiredService<MainWindowViewModel>();
+        public AuthorizationWindowViewModel AuthorizationWindowViewModel =>
+            App.Services.GetRequiredService<AuthorizationWindowViewModel>();
     }
 }

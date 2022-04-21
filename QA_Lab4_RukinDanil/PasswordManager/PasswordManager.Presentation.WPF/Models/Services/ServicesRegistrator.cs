@@ -17,6 +17,7 @@ namespace PasswordManager.Presentation.WPF.Models.Services
             .AddDbContext<PasswordManagerDbContext>()
             .AddSingleton<IPasswordGenerator, PasswordGenerator>()
             .AddTransient<RockPaperScissorsAuthorizer>()
+            .AddTransient<RockPaperScissors, RockPaperScissorsAuthorizer>()            
             .AddTransient<UserDialog<PasswordDbWindow, PasswordDbWindowViewModel>>()
             .AddTransient<UserDialog<PasswordGeneratorWindow, PasswordGeneratorViewModel>>()
             .AddTransient<UserDialog<EntryWindow, CreateEntryWindowViewModel>>()

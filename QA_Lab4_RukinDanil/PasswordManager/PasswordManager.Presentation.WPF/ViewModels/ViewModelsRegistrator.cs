@@ -14,6 +14,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
             .AddTransient<PasswordGeneratorViewModel>()
             .AddTransient<CreateEntryWindowViewModel>()
             .AddTransient<CreateGroupWindowViewModel>()
+            .AddTransient<RockPaperScissorsWindowViewModel>()
         ;
     }
 }

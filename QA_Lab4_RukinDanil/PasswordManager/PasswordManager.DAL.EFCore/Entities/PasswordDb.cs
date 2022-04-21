@@ -45,5 +45,7 @@ namespace PasswordManager.DAL.EFCore.Entities
 
         [Required]
         public DbAccessWay DbAccessWay { get; set; } = DbAccessWay.Game;
+
+        public override string ToString() => Name;
     }
 }

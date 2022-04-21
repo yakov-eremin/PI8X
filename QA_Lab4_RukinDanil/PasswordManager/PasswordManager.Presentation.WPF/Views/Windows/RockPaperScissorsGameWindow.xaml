@@ -7,65 +7,74 @@
         xmlns:fa="http://schemas.fontawesome.com/icons/"
         mc:Ignorable="d"
         Title="RockPaperScissorsGameWindow" Height="445" Width="460"
-        FontSize="14">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Text="Камень ножницы бумага" FontSize="16" HorizontalAlignment="Center"
+        FontSize="14"
+        xmlns:viewmodels="clr-namespace:PasswordManager.Presentation.WPF.ViewModels"
+        d:DataContext="{d:DesignInstance viewmodels:RockPaperScissorsWindowViewModel, IsDesignTimeCreatable=True}"
+        >
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="{Binding Status}"/>
+        </StatusBar>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Камень ножницы бумага" FontSize="16" HorizontalAlignment="Center"
                    Margin="0, 20"/>
-        <DockPanel Grid.Row="1" Margin="5, 0">
-            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
-                <TextBlock Text="Число раундов"/>
-                <TextBlock Text="10" Margin="5, 0"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="0, 5">
-                <Button Content="Отменить" Width="120" Margin="5, 0"/>
-                <Button Content="Дальше" Width="120"/>
-            </StackPanel>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" Margin="0, 10">
-                    <TextBlock Text="Раунд:"/>
-                    <TextBlock Text="2" Margin="5, 0"/>
+            <DockPanel Grid.Row="1" Margin="5, 0">
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                    <TextBlock Text="Число раундов"/>
+                    <TextBlock Margin="5, 0" Text="{Binding RoundsCount}"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0, 5">
-                    <TextBlock Text="Компьютер:"/>
-                    <TextBlock Text="1" Margin="5, 0"/>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="0, 5">
+                    <Button Content="Отменить" Width="120" Margin="5, 0" Command="{Binding CloseCommand}"/>
+                    <Button Content="Обнулить" Width="120" Margin="5, 0" Command="{Binding TryElseCommand}"/>
+                    <Button Content="Дальше" Width="120" Command="{Binding GetAccessTokenCommand}"/>
                 </StackPanel>
-                <fa:ImageAwesome Grid.Row="2" Icon="Solid_Question" Height="40" Width="40"/>
-                <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="0, 5">
-                    <TextBlock Text="Вы:"/>
-                    <TextBlock Text="0" Margin="5, 0"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button>
-                        <Button.Background>
-                            <SolidColorBrush Opacity="0"/>
-                        </Button.Background>
-                        <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandRock"/>
-                    </Button>
-                    <Button Margin="15, 0">
-                        <Button.Background>
-                            <SolidColorBrush Opacity="0"/>
-                        </Button.Background>
-                        <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandScissors"/>
-                    </Button>
-                    <Button>
-                        <Button.Background>
-                            <SolidColorBrush Opacity="0"/>
-                        </Button.Background>
-                        <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandPaper"/>
-                    </Button>
-                </StackPanel>
-            </Grid>
-        </DockPanel>
-    </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" Margin="0, 10">
+                        <TextBlock Text="Раунд:"/>
+                        <TextBlock Text="{Binding CurrentRound}" Margin="5, 0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0, 5">
+                        <TextBlock Text="Компьютер:"/>
+                        <TextBlock Text="{Binding ComputerScores}" Margin="5, 0"/>
+                    </StackPanel>
+                    <fa:ImageAwesome Grid.Row="2" Icon="{Binding ComputerVariantIcon}" Height="40" Width="40"/>
+                    <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="0, 5">
+                        <TextBlock Text="Вы:"/>
+                        <TextBlock Text="{Binding UserScores}" Margin="5, 0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Command="{Binding RoundCommand, ConverterParameter='Solid_HandRock'}">
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandRock"/>
+                        </Button>
+                        <Button Margin="15, 0" Command="{Binding RoundCommand, ConverterParameter='Solid_HandScissors'}">
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandScissors"/>
+                        </Button>
+                        <Button Command="{Binding RoundCommand, ConverterParameter='Solid_HandScissors'}">
+                            <Button.Background>
+                                <SolidColorBrush Opacity="0"/>
+                            </Button.Background>
+                            <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandPaper"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </DockPanel>
+        </Grid>
+    </DockPanel>
 </Window>
