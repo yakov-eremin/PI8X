@@ -115,6 +115,9 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                         
                         Group = group,
                     };
+                    _dbContext.Entries.Add(entry);
+                    _dbContext.SaveChanges();
+                    OnCloseWindow(new CloseWindowEventArgs(true));
                 }
             }
             catch (Exception ex)

@@ -13,6 +13,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
             .AddTransient<AuthorizationWindowViewModel>()
             .AddTransient<PasswordGeneratorViewModel>()
             .AddTransient<CreateEntryWindowViewModel>()
+            .AddTransient<CreateGroupWindowViewModel>()
         ;
     }
 }

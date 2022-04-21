@@ -82,7 +82,7 @@
             </DockPanel>
             <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="3" HorizontalAlignment="Right">
                 <Button Content="Отменить" Width="120" Margin="5, 0" Command="{Binding CloseCommand}"/>
-                <Button Content="Применить" Width="120"/>
+                <Button Content="Применить" Width="120" Command="{Binding AcceptCommand}"/>
             </StackPanel>
         </Grid>
     </DockPanel>

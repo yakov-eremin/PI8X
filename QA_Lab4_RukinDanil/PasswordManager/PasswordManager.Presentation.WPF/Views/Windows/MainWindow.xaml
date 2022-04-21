@@ -41,7 +41,7 @@
                 <DockPanel Grid.Column="0" HorizontalAlignment="Center">
                     <TextBlock DockPanel.Dock="Bottom" Text="Группы" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                        <Button>
+                        <Button Command="{Binding CreateGroupCommand}">
                             <Button.Background>
                                 <SolidColorBrush Opacity="0"/>
                             </Button.Background>

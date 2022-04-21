@@ -20,6 +20,7 @@ namespace PasswordManager.Presentation.WPF.Models.Services
             .AddTransient<UserDialog<PasswordDbWindow, PasswordDbWindowViewModel>>()
             .AddTransient<UserDialog<PasswordGeneratorWindow, PasswordGeneratorViewModel>>()
             .AddTransient<UserDialog<EntryWindow, CreateEntryWindowViewModel>>()
+            .AddTransient<UserDialog<GroupWindow, CreateGroupWindowViewModel>>()
             // Register your services here
         ;
     }

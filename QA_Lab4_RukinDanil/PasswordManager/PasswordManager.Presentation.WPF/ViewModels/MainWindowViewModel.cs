@@ -24,13 +24,13 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         {
             _dbContext = dbContext;
             _applicationContext = applicationContext;
-            if (string.IsNullOrWhiteSpace(_applicationContext.CurrentPasswordDbName))
-                applicationContext.CurrentPasswordDbName = _dbContext.PasswordDb.First().Name;  // обманка
+            AddDefaultDatabase(); // обманка
             CreatePasswordDbCommand = new LambdaCommand(OnCreatePasswordDbCommandExecuted, 
                 CanCreatePasswordDbCommandExecute);
             CallGeneratePasswordWindowCommand = new LambdaCommand(OnCallGeneratePasswordWindowCommandExecuted,
                 CanCallGeneratePasswordWindowCommandExecute);
             CreateEntryCommand = new LambdaCommand(OnCreateEntryCommandExecuted, CanCreateEntryCommandExecute);
+            CreateGroupCommand = new LambdaCommand(OnCreateGroupCommandExecuted, CanCreateGroupCommandExecute);
         }
 
         #region Properties
@@ -80,6 +80,37 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         private bool CanCreateEntryCommandExecute(object p) => true;
         #endregion
 
+        #region CreateGroupCommand
+        public ICommand CreateGroupCommand { get; }
+        private void OnCreateGroupCommandExecuted(object p)
+        {
+            IUserDialog dialog = App.Services.GetRequiredService<UserDialog<GroupWindow, CreateGroupWindowViewModel>>();
+            dialog.Show();
+        }
+        private bool CanCreateGroupCommandExecute(object p) => true; 
         #endregion
+
+        #endregion
+
+        private void AddDefaultDatabase()
+        {
+            if (string.IsNullOrWhiteSpace(_applicationContext.CurrentPasswordDbName))
+            {
+                var db = _dbContext.PasswordDb
+                    .FirstOrDefault(b => b.Name == _applicationContext.CurrentPasswordDbName);
+                if (db == null)
+                {
+                    db = new DAL.EFCore.Entities.PasswordDb()
+                    {
+                        Name = "Default",
+                        Description = "Default database description",
+                        EncryptionAlgorithm = _dbContext.Algorithms.First()
+                    };
+                    _dbContext.PasswordDb.Add(db);
+                    _dbContext.SaveChanges();
+                }
+                _applicationContext.CurrentPasswordDbName = db.Name;
+            }
+        }
     }
 }

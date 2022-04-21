@@ -40,7 +40,6 @@ namespace PasswordManager.DAL.EFCore.Entities
 
         public Group Group { get; set; }
 
-        [Required]
         public PasswordDb PasswordDb { get; set; }
     }
 }
