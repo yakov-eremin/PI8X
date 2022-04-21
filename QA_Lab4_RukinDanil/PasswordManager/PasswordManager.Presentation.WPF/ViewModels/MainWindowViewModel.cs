@@ -19,6 +19,8 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         {
             CreatePasswordDbCommand = new LambdaCommand(OnCreatePasswordDbCommandExecuted, 
                 CanCreatePasswordDbCommandExecute);
+            CallGeneratePasswordWindowCommand = new LambdaCommand(OnCallGeneratePasswordWindowCommandExecuted,
+                CanCallGeneratePasswordWindowCommandExecute);
         }
 
         #region Properties
@@ -45,7 +47,17 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                 Status = ex.Message;
             }           
         }
-        private bool CanCreatePasswordDbCommandExecute(object p) => true; 
+        private bool CanCreatePasswordDbCommandExecute(object p) => true;
+        #endregion
+
+        #region CallGeneratePasswordWindowCommand
+        public ICommand CallGeneratePasswordWindowCommand { get; }
+        private void OnCallGeneratePasswordWindowCommandExecuted(object p)
+        {
+            IUserDialog dialog = App.Services.GetRequiredService<UserDialog<PasswordGeneratorWindow, PasswordGeneratorViewModel>>();
+            dialog.Show();
+        }
+        private bool CanCallGeneratePasswordWindowCommandExecute(object p) => true;
         #endregion
 
         #endregion
