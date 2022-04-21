@@ -42,11 +42,11 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         private string _status = "Status";
         public string Status { get => _status; set => Set(ref _status, value); }
 
-        public ObservableCollection<string> DbAccessWays { get; set; } = new ObservableCollection<string>();
+        public IEnumerable<DbAccessWay> DbAccessWays => Enum.GetValues(typeof(DbAccessWay)).Cast<DbAccessWay>();
         public ObservableCollection<string> EncryptAlgorithmsNames { get; set; } = new ObservableCollection<string>();
 
-        private DbAccessWay _dbAccessWay = DbAccessWay.Game;
-        public DbAccessWay DbAccessWay { get => _dbAccessWay; set => Set(ref _dbAccessWay, value); }
+        private DbAccessWay _selectedAccessWay = DbAccessWay.Game;
+        public DbAccessWay SelectedAccessWay { get => _selectedAccessWay; set => Set(ref _selectedAccessWay, value); }
 
         #endregion
 
@@ -58,6 +58,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         {
             try
             {
+                DbAccessWay dbAccessWay = SelectedAccessWay;
                 var database = _dbContext.PasswordDb.Where(pdb => pdb.Name == DatabaseName).FirstOrDefault();
                 if (database == default(PasswordDb))
                 {
