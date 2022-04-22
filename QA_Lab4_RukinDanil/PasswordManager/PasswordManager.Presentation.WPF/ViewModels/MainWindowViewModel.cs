@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using PasswordManager.DAL.EFCore;
 using PasswordManager.DAL.EFCore.Entities;
 using PasswordManager.Presentation.WPF.Infrastructure.Commands;
@@ -168,7 +169,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         private void UpdateGroups()
         {
             Groups.Clear();
-            PasswordDb passwordDb = _dbContext.PasswordDb
+            PasswordDb passwordDb = _dbContext.PasswordDb.Include(db => db.Groups)
                 .FirstOrDefault(p => p.Name == _applicationContext.CurrentPasswordDbName);
             if (passwordDb == null)
                 return;
@@ -185,7 +186,8 @@ namespace PasswordManager.Presentation.WPF.ViewModels
             Entries.Clear();
             if (SelectedGroup == null)
                 return;
-            var group = _dbContext.Groups.FirstOrDefault(g => g.Name == SelectedGroup.Name);
+            var group = _dbContext.Groups.Include(g => g.Entries)
+                .FirstOrDefault(g => g.Name == SelectedGroup.Name && g.PasswordDb.Name == _applicationContext.CurrentPasswordDbName);
             if (group == null)
                 return;
             var entries = group.Entries;

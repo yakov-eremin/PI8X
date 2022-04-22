@@ -120,8 +120,10 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                     return;
                 }
                 _applicationContext.CurrentPasswordDbName = passwordDb.Name;
+                var window = App.Current.MainWindow;
                 App.Current.MainWindow = new MainWindow();
-                OnCloseWindow(new CloseWindowEventArgs(true));
+                window.Close();
+                App.Current.MainWindow.Show();
             }
             catch (Exception ex)
             {

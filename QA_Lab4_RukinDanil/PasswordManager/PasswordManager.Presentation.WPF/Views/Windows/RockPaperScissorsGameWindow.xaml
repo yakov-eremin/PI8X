@@ -54,19 +54,19 @@
                         <TextBlock Text="{Binding UserScores}" Margin="5, 0"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Command="{Binding RoundCommand, ConverterParameter='Solid_HandRock'}">
+                        <Button Command="{Binding RoundCommand}" CommandParameter="Solid_HandRock">
                             <Button.Background>
                                 <SolidColorBrush Opacity="0"/>
                             </Button.Background>
                             <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandRock"/>
                         </Button>
-                        <Button Margin="15, 0" Command="{Binding RoundCommand, ConverterParameter='Solid_HandScissors'}">
+                        <Button Margin="15, 0" Command="{Binding RoundCommand}" CommandParameter="Solid_HandScissors">
                             <Button.Background>
                                 <SolidColorBrush Opacity="0"/>
                             </Button.Background>
                             <fa:ImageAwesome Height="40" Width="40" Icon="Solid_HandScissors"/>
                         </Button>
-                        <Button Command="{Binding RoundCommand, ConverterParameter='Solid_HandScissors'}">
+                        <Button Command="{Binding RoundCommand}" CommandParameter="Solid_HandPaper">
                             <Button.Background>
                                 <SolidColorBrush Opacity="0"/>
                             </Button.Background>

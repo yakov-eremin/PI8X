@@ -80,18 +80,19 @@ namespace PasswordManager.Presentation.WPF.ViewModels
                     ComputerVariantIcon = IconFromChoice(computerChoice);
                     if (winner == computerChoice)
                     {
-                        Status = "компьютер выиграл этот раунд";
+                        Status = $"компьютер выиграл этот раунд: {winner} vs {userChoice}";
                         ComputerScores++;
                     }
                     else
                     {
-                        Status = "Вы выиграли этот раунд";
+                        Status = $"Вы выиграли этот раунд: {winner} vs {computerChoice}";
                         UserScores++;
                     }
                     CurrentRound++;
                 }
                 else
                 {
+                    ComputerVariantIcon = IconFromChoice(computerChoice);
                     Status = "Вы выбрали тот же вариант, что и компьютер, попробуйте еще раз";
                     return;
                 }
@@ -142,7 +143,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
         private ChoiceVariant ChoiceFromIconName(string eFontAwesomeIcon) => eFontAwesomeIcon switch
         {
             "Solid_HandRock" => ChoiceVariant.Stone,
-            "olid_HandScissors" => ChoiceVariant.Scissors,
+            "Solid_HandScissors" => ChoiceVariant.Scissors,
             "Solid_HandPaper" => ChoiceVariant.Paper,
             _ => ChoiceVariant.Stone,
         };
@@ -152,7 +153,7 @@ namespace PasswordManager.Presentation.WPF.ViewModels
             ChoiceVariant.Stone => EFontAwesomeIcon.Solid_HandRock,
             ChoiceVariant.Scissors => EFontAwesomeIcon.Solid_HandScissors,
             ChoiceVariant.Paper => EFontAwesomeIcon.Solid_HandPaper,
-            _ => EFontAwesomeIcon.Solid_HandRock
+            _ => EFontAwesomeIcon.Solid_Question
         };
     }
 }
