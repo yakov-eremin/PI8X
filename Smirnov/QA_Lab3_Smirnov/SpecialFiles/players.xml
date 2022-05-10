@@ -1,0 +1,18 @@
+<list amount="16">
+ <player id="1" name="Маруся" gender="female" age="24" eloquence="3" incredulity="8" aggression="2" determination="1"/>
+ <player id="2" name="Макар" gender="male" age="23" eloquence="9" incredulity="4" aggression="3" determination="7"/>
+ <player id="3" name="Владимир" gender="male" age="20" eloquence="9" incredulity="0" aggression="1" determination="6"/>
+ <player id="4" name="Алина" gender="female" age="16" eloquence="1" incredulity="5" aggression="2" determination="4"/>
+ <player id="5" name="Валентина" gender="female" age="17" eloquence="5" incredulity="6" aggression="7" determination="9"/>
+ <player id="6" name="Юлия" gender="female" age="19" eloquence="1" incredulity="2" aggression="2" determination="1"/>
+ <player id="7" name="Юрий" gender="male" age="22" eloquence="1" incredulity="6" aggression="6" determination="2"/>
+ <player id="8" name="Валерий" gender="male" age="23" eloquence="6" incredulity="3" aggression="6" determination="9"/>
+ <player id="9" name="Евгения" gender="female" age="25" eloquence="8" incredulity="3" aggression="9" determination="3"/>
+ <player id="10" name="Евгений" gender="male" age="23" eloquence="7" incredulity="5" aggression="4" determination="9"/>
+ <player id="11" name="Никита" gender="male" age="16" eloquence="0" incredulity="3" aggression="9" determination="7"/>
+ <player id="12" name="Алла" gender="female" age="24" eloquence="5" incredulity="9" aggression="3" determination="6"/>
+ <player id="13" name="Ольга" gender="female" age="21" eloquence="4" incredulity="7" aggression="1" determination="9"/>
+ <player id="14" name="Галина" gender="female" age="21" eloquence="0" incredulity="2" aggression="7" determination="5"/>
+ <player id="15" name="Петр" gender="male" age="19" eloquence="7" incredulity="3" aggression="7" determination="0"/>
+ <player id="16" name="Семен" gender="male" age="21" eloquence="6" incredulity="2" aggression="4" determination="0"/>
+</list>

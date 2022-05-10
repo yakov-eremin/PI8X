@@ -1,0 +1,3 @@
+<map id="player" name="player">
+<area shape="rect" id="node1" title="Абстрактный класс, предназнасенный для описания игровых персонажей" alt="" coords="5,5,145,420"/>
+</map>

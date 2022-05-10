@@ -1,0 +1,6 @@
+<map id="player" name="player">
+<area shape="rect" id="node1" title="Абстрактный класс, предназнасенный для описания игровых персонажей" alt="" coords="119,5,259,420"/>
+<area shape="rect" id="node2" href="$classdoctor.html" title="Дочерний класс от класса Player." alt="" coords="5,475,112,626"/>
+<area shape="rect" id="node3" href="$classinhabitant.html" title="Дочерний класс от класса Player." alt="" coords="136,475,243,626"/>
+<area shape="rect" id="node4" href="$classmafia.html" title="Дочерний класс от класса Player." alt="" coords="267,468,373,633"/>
+</map>

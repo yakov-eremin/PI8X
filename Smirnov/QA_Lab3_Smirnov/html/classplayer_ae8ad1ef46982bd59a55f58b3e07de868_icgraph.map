@@ -1,0 +1,10 @@
+<map id="player::accident" name="player::accident">
+<area shape="rect" id="node1" title=" " alt="" coords="204,157,319,184"/>
+<area shape="rect" id="node2" href="$classmafia.html#a2cbf3a9fe86a2e7814735c25f4994ca3" title=" " alt="" coords="31,5,130,32"/>
+<area shape="rect" id="node3" href="$classdoctor.html#ac0b6043dbe0103e499a7a1341daba1c8" title=" " alt="" coords="15,56,146,83"/>
+<area shape="rect" id="node4" href="$classinhabitant.html#ae485a394014aa81f2ff8d8dc7625fcfb" title=" " alt="" coords="5,107,156,133"/>
+<area shape="rect" id="node5" href="$classmafia.html#adc84133ec7df2a93fdb5a94626a08c9e" title=" " alt="" coords="18,157,143,184"/>
+<area shape="rect" id="node6" href="$classdoctor.html#a6bf6adc5ba83b3d732ac0e7f4359017b" title=" " alt="" coords="30,208,131,235"/>
+<area shape="rect" id="node7" href="$classinhabitant.html#a94942d6496aabe5be172ef019677ca3f" title=" " alt="" coords="20,259,141,285"/>
+<area shape="rect" id="node8" href="$classplayer.html#abe4db57191b3aaf424466c5a477628dc" title=" " alt="" coords="37,309,125,336"/>
+</map>

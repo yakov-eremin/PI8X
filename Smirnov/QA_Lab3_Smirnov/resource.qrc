@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/resource">
+        <file>img/death.png</file>
+        <file>img/female.jpg</file>
+        <file>img/male.jpg</file>
+        <file>img/doctor.png</file>
+        <file>img/mafia.png</file>
+        <file>img/unknown.png</file>
+        <file>img/inhabitant.png</file>
+        <file>img/inhabitant_.png</file>
+    </qresource>
+</RCC>
