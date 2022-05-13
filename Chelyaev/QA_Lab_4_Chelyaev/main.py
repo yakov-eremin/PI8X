@@ -1,3 +1,16 @@
+#Выбор знака
+def choice_sign():
+    print("За кого будете играть? (х или о)")
+    right = False
+    while not right:
+        player_sign = input()
+        if ((player_sign != "x") and (player_sign != "o")):
+            print("Такими знаками в эту игру не играют, выберете корректный (х или о)!!!")
+        else:
+            right = True
+    return player_sign
+
+
 #Класс игрового поля
 class GameField(object):
    def __init__(self, field):
