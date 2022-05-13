@@ -41,6 +41,15 @@ class GameField(object):
            print("|", "*", "|", "*", "|", "*", "|")
            print("-------------")
 
+    #Метод определения победителя
+   def who_win(self, field):
+        win_comb = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
+        for each in win_comb:
+            if field[each[0]] == field[each[1]] == field[each[2]]:
+                return field[each[0]]
+        return False
+
+
 if __name__ == '__main__':
 
     field = range(1, 10)
