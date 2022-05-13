@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/backgroundMusic">
+        <file>assets/menuBackground.mp3</file>
+    </qresource>
+    <qresource prefix="/textures">
+        <file>assets/empty_ground.png</file>
+        <file>assets/grass_ground.png</file>
+        <file>assets/flower.png</file>
+        <file>assets/tree.png</file>
+        <file>assets/commonBackground.png</file>
+        <file>assets/shrubTransparent.png</file>
+    </qresource>
+</RCC>
