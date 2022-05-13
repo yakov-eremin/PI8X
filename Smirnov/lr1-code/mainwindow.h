@@ -14,6 +14,7 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    int getBrightness(QRgb);
     ~MainWindow();
 
 private slots:
@@ -40,7 +41,6 @@ private:
 
     QImage original, copy;
     int AveRed, AveGreen, AveBlue;
-    int getBrightness(QRgb);
     QImage Filter(Matrix F);
 };
 #endif // MAINWINDOW_H

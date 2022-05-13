@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui testlib
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    matrix.cpp
+    matrix.cpp \
+    testmainwindow.cpp
 
 HEADERS += \
     mainwindow.h \
-    matrix.h
+    matrix.h \
+    testmainwindow.h
 
 FORMS += \
     mainwindow.ui

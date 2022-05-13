@@ -62,7 +62,6 @@ void MainWindow::on_download_clicked() // Загрузить
 }
 
 int MainWindow::getBrightness(QRgb rgb) { //Расчитать яркость
-
     return 0.299*qRed(rgb) + 0.5876*qGreen(rgb) + 0.114*qBlue(rgb);
 }
 
