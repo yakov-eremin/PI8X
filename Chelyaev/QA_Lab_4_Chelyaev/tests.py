@@ -17,6 +17,12 @@ class MyTests(unittest.TestCase):
         self.assertIs(main.input_sign(player_choice='X'), True)
         self.assertIs(main.input_sign(player_choice='O'), True)
 
+    #Тест на проверку победителя 
+    def choice_winner_test(self):
+        self.assertIsNot(main.GameField.who_win(self, field=range(1,10)), False)
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
