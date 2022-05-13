@@ -16,6 +16,7 @@ public:
 signals:
 
 private slots:
+	void getBrightness_data();
     void getBrightness();
 };
 
