@@ -1,4 +1,5 @@
 #include "game.h"
+#include "QTime"
 
 Game::Game(QWidget *parent)
     : QWidget(parent)
@@ -14,10 +15,12 @@ Game::Game(QWidget *parent)
             push->setProperty("number", i*4 + j + 1);
             push->setFixedSize(100,100);
             push->setIconSize(QSize(100,100));
+            connect(push, SIGNAL(clicked()), this, SLOT(move()));
             grid->addWidget(push, i, j);
         }
     }
     setLayout(grid);
+    mix();
 }
 
 Game::~Game()
@@ -44,5 +47,28 @@ bool Game::checkGameOver() {
         }
     }
     return true;
+}
+
+void Game::mix(){
+    QTime midnight(0,0,0);
+    qsrand(midnight.secsTo(QTime::currentTime()));
+    for (int i = 0; i < 20; i++) {
+        int x1,x2,y1,y2;
+        do {
+            x1 = qrand() % 4;
+            y1 = qrand() % 4;
+            x2 = qrand() % 4;
+            y2 = qrand() % 4;
+        } while (x1 == x2 && y1 == y2);
+        QWidget *A = grid->itemAtPosition(x1,y1)->widget(), *B = grid->itemAtPosition(x2,y2)->widget();
+        grid->takeAt(grid->indexOf(A));
+        grid->takeAt(grid->indexOf(B));
+
+        grid->addWidget(B, x1, y1);
+        grid->addWidget(A, x2, y2);
+        repaint();
+    }
+
+
 }
 
