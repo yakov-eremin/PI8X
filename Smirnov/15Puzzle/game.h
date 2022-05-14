@@ -11,7 +11,7 @@ class Game : public QWidget
 {
     Q_OBJECT
 private:
-    QGridLayout grid;
+    QGridLayout* grid;
     QList<QPushButton> buttons;
     void createGrid();
     void mix();
