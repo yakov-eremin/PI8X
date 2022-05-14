@@ -33,4 +33,8 @@ void TestGame::checkGameOver_test() {
     }
     g.grid.removeWidget(g.grid.itemAtPosition(3,3)->widget());
     QCOMPARE(g.checkGameOver(), 1);
+    QPushButton *push = new QPushButton((QPushButton*)g.grid.itemAtPosition(1,3)->widget());
+    g.grid.removeWidget(g.grid.itemAtPosition(1,3)->widget());
+    g.grid.addWidget(push, 3,3);
+    QVERIFY(!g.checkGameOver());
 }
