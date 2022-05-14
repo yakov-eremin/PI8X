@@ -15,5 +15,7 @@ uint Game::move() {
 
 uint Game::direction(uint x, uint y) {
     if (!grid.itemAtPosition(x+1,y)) return 3;
+    if (!grid.itemAtPosition(x,y-1)) return 2;
+
 }
 
