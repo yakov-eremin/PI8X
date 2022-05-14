@@ -14,4 +14,5 @@ void TestGame::direction_test() {
     }
     g.grid.removeWidget(g.grid.itemAtPosition(1,2)->widget());
     QCOMPARE(g.direction(0,2), 3);
+    QCOMPARE(g.direction(1,3), 2);
 }
