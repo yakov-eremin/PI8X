@@ -12,6 +12,7 @@ public:
     explicit TestGame(QObject *parent = nullptr);
 
 private slots:
+    void direction_test();
 
 signals:
 

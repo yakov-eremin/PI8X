@@ -13,3 +13,7 @@ uint Game::move() {
 
 }
 
+uint Game::direction(uint x, uint y) {
+
+}
+
