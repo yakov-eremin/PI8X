@@ -24,7 +24,7 @@ uint Game::direction(uint x, uint y) {
 bool Game::checkGameOver() {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            if (i*4 + j + 1 == 16) continue;
+            if (grid.itemAtPosition(i,j) == nullptr) continue;
             if (grid.itemAtPosition(i,j)->widget()->property("number") != i*4 + j + 1) return false;
         }
     }
