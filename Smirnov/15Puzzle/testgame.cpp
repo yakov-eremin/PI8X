@@ -19,4 +19,5 @@ void TestGame::direction_test() {
     QCOMPARE(g.direction(1,1), 4);
     QCOMPARE(g.direction(2,1), 0);
     QCOMPARE(g.direction(3,3), 0);
+    QCOMPARE(g.direction(10,10), 0);
 }
