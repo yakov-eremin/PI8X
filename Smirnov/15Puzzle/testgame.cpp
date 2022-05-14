@@ -21,3 +21,16 @@ void TestGame::direction_test() {
     QCOMPARE(g.direction(3,3), 0);
     QCOMPARE(g.direction(10,10), 0);
 }
+
+void TestGame::checkGameOver_test() {
+    Game g;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            QPushButton *push = new QPushButton();
+            push->setProperty("number", i*4 + j + 1);
+            g.grid.addWidget(push, i, j);
+        }
+    }
+    g.grid.removeWidget(g.grid.itemAtPosition(3,3)->widget());
+    QCOMPARE(g.checkGameOver(), 1);
+}

@@ -21,3 +21,7 @@ uint Game::direction(uint x, uint y) {
     return 0;
 }
 
+bool Game::checkGameOver() {
+
+}
+

@@ -13,6 +13,7 @@ public:
 
 private slots:
     void direction_test();
+    void checkGameOver_test();
 
 signals:
 
