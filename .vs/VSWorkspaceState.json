@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\code",
-    "\\code\\src",
-    "\\specification"
+    "\\Unit-tests"
   ],
-  "SelectedNode": "\\code\\src\\Main.cpp",
+  "SelectedNode": "\\Unit-tests\\Source.cpp",
   "PreviewInSolutionExplorer": false
 }
