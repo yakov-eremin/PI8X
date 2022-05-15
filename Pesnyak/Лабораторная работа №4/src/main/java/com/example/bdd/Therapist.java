@@ -13,17 +13,22 @@ public class Therapist {
     }
 
     public Answer ask(){
+
         if((symptoms.contains("сухой кашель") || symptoms.contains("мокрый кашель")) && symptoms.contains("высокая температура")){
-            if(!symptoms.contains("гиперлейкоцитоз")){
-                currentQuestion = questionAboutLeukocytes;
-                return new Answer(false, questionAboutLeukocytes);
-            }
-            else{
+            if(symptoms.contains("гиперлейкоцитоз")){
                 if(symptoms.contains("мокрый кашель"))
                     return new Answer(true, "ОРЗ, Лечение: антибиотики широкого спектра и АЦЦ");
                 else
                     return new Answer(true, "ОРЗ, Лечение: антибиотики широкого спектра");
             }
+            else if(symptoms.contains("лейкоциты в норме")){
+                return new Answer(true, "ОРВИ, Лечение: лекраства не требуются, пить больше воды");
+            }
+            else {
+                currentQuestion = questionAboutLeukocytes;
+                return new Answer(false, questionAboutLeukocytes);
+            }
+
         }
 
         return null;
