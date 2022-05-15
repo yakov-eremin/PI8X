@@ -13,15 +13,19 @@ public class Therapist {
     }
 
     public Answer ask(){
-        if(symptoms.contains("сухой кашель") && symptoms.contains("высокая температура")){
+        if((symptoms.contains("сухой кашель") || symptoms.contains("мокрый кашель")) && symptoms.contains("высокая температура")){
             if(!symptoms.contains("гиперлейкоцитоз")){
                 currentQuestion = questionAboutLeukocytes;
                 return new Answer(false, questionAboutLeukocytes);
             }
             else{
-                return new Answer(true, "ОРЗ, Лечение: антибиотики широкого спектра");
+                if(symptoms.contains("мокрый кашель"))
+                    return new Answer(true, "ОРЗ, Лечение: антибиотики широкого спектра и АЦЦ");
+                else
+                    return new Answer(true, "ОРЗ, Лечение: антибиотики широкого спектра");
             }
         }
+
         return null;
     }
 

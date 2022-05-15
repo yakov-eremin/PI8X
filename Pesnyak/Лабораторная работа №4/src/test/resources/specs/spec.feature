@@ -45,7 +45,7 @@ Feature: Therapist
 
   Scenario:
     Given I have my virtual computer therapist
-    When I entered "кашель" as first symptom
+    When I entered "сухой кашель" as first symptom
     And I entered "одышка" as second symptom
     And Therapist's question should be "Курите?"
     And I entered "да" as answer
