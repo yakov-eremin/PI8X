@@ -1,5 +1,6 @@
 package steps;
 
+import com.example.bdd.Answer;
 import com.example.bdd.Therapist;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
@@ -19,32 +20,30 @@ public class MyStepdefs {
 
     @When("^I entered \"([^\"]*)\" as first symptom$")
     public void iEnteredAsFirstSymptom(String arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        therapist.tellTherapistAboutSymptom(arg0);
     }
 
     @And("^I entered \"([^\"]*)\" as second symptom$")
     public void iEnteredAsSecondSymptom(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        therapist.tellTherapistAboutSymptom(arg0);
     }
 
     @And("^I entered \"([^\"]*)\" as answer$")
     public void iEnteredAsAnswer(String arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        therapist.answerToTherapist(arg0);
     }
 
     @And("^Therapist's question should be \"([^\"]*)\"$")
     public void therapistSQuestionShouldBe(String arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        Assert.assertEquals(arg0, therapist.ask().getAnswer());
     }
 
     @Then("^Therapist's diagnosis should be \"([^\"]*)\"$")
     public void therapistSDiagnosisShouldBe(String diagnosis) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        Answer answer = therapist.ask();
+        Assert.assertTrue(answer.isDiagnosis());
+        Assert.assertEquals(diagnosis, answer.getAnswer());
     }
 
 
