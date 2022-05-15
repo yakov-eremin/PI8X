@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\source\repos\colonization_game\colonization_game\</FILEPATH>
+      <FILENAME>buildings.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Building::MaxHealth' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Building::{ctor}</FUNCTION>
+    <DECORATED>??0Building@@QAE@MMPAVResource@@0@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\source\repos\colonization_game\colonization_game\</FILEPATH>
+      <FILENAME>buildings.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Building::MaxWorkers' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Building::{ctor}</FUNCTION>
+    <DECORATED>??0Building@@QAE@MMPAVResource@@0@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\source\repos\colonization_game\colonization_game\</FILEPATH>
+      <FILENAME>buildings.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Building::width' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Building::{ctor}</FUNCTION>
+    <DECORATED>??0Building@@QAE@MMPAVResource@@0@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\source\repos\colonization_game\colonization_game\</FILEPATH>
+      <FILENAME>buildings.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Building::height' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Building::{ctor}</FUNCTION>
+    <DECORATED>??0Building@@QAE@MMPAVResource@@0@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\source\repos\colonization_game\colonization_game\</FILEPATH>
+      <FILENAME>hud.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HUD::ConstructionIsProgress' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HUD::{ctor}</FUNCTION>
+    <DECORATED>??0HUD@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0PAVMap@@PAV?$list@PAVBuilding@@V?$allocator@PAVBuilding@@@std@@@2@PAV?$list@PAVResource@@V?$allocator@PAVResource@@@std@@@2@PAVRenderWindow@sf@@@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
