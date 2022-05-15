@@ -21,8 +21,8 @@ class Timer {
 		targetDate.setHours(h, m, s);
 
 		this.#timeoutId = setTimeout(() => {
-			callback();
 			this.#triggered = true;
+			callback();
 			}, Math.abs(currDate - targetDate));
 	}
 
