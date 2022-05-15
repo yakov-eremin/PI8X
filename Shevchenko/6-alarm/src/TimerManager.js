@@ -11,7 +11,8 @@ class TimerManager {
 
 	addTimer(timerName, soundIndex, h, m, s) {
 		const index = this.#timers.length
-		this.#timers.push(new Timer(timerName, soundIndex, () => this.#updateCallback(index), h, m, s))
+		this.#timers.push(new Timer(timerName, soundIndex, () => this.#updateCallback(index), h, m, s));
+		this.#updateCallback(-1)
 	}
 	getTimersData() {
 		return this.#timers.map(timer => timer.getDisplayInfo())
