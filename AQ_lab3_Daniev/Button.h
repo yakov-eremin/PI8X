@@ -5,13 +5,23 @@
 using namespace std;
 using namespace sf;
 
-//Класс кнопка.
+/*!
+	\brief Класс кнопка
+	\details Класс содержит методы размера кнопки, проверки нажатия, отрисовки, наведения, изменения
+*/
 class Button : public Drawable, public Transformable
 {
 public:
 	//NameFont и NameTexture указываются с форматами, SizeText указывается в пикселях.
 	Button(wstring _text, string NameFont, int _SizeText, string NameTexture, float _x, float _y, RenderWindow *window);
+	/*!
+		\brief метод проверяет нажатие на кнопку
+	*/
+
 	bool isButtonPressed(); //Проверяет нажатие на кнопку.
+	/*!
+		\brief метод получает размер кнопки
+	*/
 	Vector2f getSizeButton(); //Получает размер кнопки.
 	void SetXY(float _x, float _y);
 private:
@@ -35,6 +45,10 @@ private:
 	VertexArray VerticesButton; //Вершины кнопки.
 	
 	FloatRect BoundingBox; //Ограничительная коробка.
+
+	/*!
+		\brief метод отрисовка кнопки на экране
+	*/
 	
 	virtual void draw(RenderTarget &target, RenderStates states) const; //Отрисовка кнопки на экране.
 	

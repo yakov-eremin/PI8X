@@ -6,6 +6,11 @@
 #include "Construction.h"
 #include "SelectedObject.h"
 
+/*!
+	\brief Класс HUD
+	\details Интерфейс игры.
+*/
+
 class HUD : public Drawable
 {
 public:
@@ -27,6 +32,10 @@ private:
 	list<Resource*> *Resources;//Указатель на список ресурсов.
 	Construction *ConstructionTab;
 	SelectedObject *SelectedTab;
+
+	/*!
+		\brief метод отричовки
+	*/
 
 	virtual void draw(RenderTarget &target, RenderStates states) const; //Отрисовывает HUD.
 };

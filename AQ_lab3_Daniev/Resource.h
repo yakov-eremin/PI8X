@@ -8,6 +8,11 @@
 using namespace sf;
 using namespace std;
 
+/*!
+	\brief Класс ресурса
+	\details управляет ресурсом игры
+*/
+
 class Resource : public Drawable
 {
 public:
@@ -30,5 +35,9 @@ private:
 	Text NumberResource; 
 	Texture TextureResource;//Текстура ресурса.
 	VertexArray VerticesResource; //вершины для текстурки.
+	/*!
+		\brief метод отричовки
+	*/
+
 	virtual void draw(RenderTarget &target, RenderStates states) const; //Отрисовывает текстуру ресурса.
 };

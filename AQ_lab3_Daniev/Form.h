@@ -3,6 +3,11 @@
 
 using namespace sf;
 
+/*!
+	\brief Класс формв
+	\details Абстрактный класс формы.
+*/
+
 //Абстрактный класс формы.
 class Form : public Drawable
 {
@@ -28,11 +33,25 @@ protected:
 	Texture TextureForm; //Текстура формы.
 	
 	VertexArray VerticesForm; //Вершины формы.
+
+	/*!
+		\brief метод проверки состояния формы
+	*/
 	
 	virtual int checkStatus(); //Проверяет состояние формы.
 	
+	/*!
+		\brief метод отрисовки
+	*/
+
 	virtual void draw(RenderTarget &target, RenderStates states) const; //Отрисовка формы на экране.
 };
+
+/*!
+	\brief Класс выхода из формы
+	
+*/
+
 
 //Форма для выхода из окна.
 class ExitForm : public Form
@@ -40,8 +59,17 @@ class ExitForm : public Form
 public:
 	ExitForm(string NameTexture, float _x, float _y, float _width, float _height, RenderWindow *window);
 	~ExitForm();
+	/*!
+		\brief метод обработки формы
+	*/
+
 	virtual int update(); //обработка формы.
 };
+
+/*!
+	\brief Класс стартого меню для игры
+	\details/Форма стартого меню для игры.
+*/
 
 //Форма стартого меню для игры.
 class StartMenuForm : public Form
@@ -52,5 +80,10 @@ public:
 	virtual int update(); //обработка стартого меню.
 private:
 	ExitForm *exitForm;
+	
+	/*!
+		\brief метод отричовки
+	*/
+
 	virtual void draw(RenderTarget &target, RenderStates states) const; //Отрисовка формы на экране.
 };

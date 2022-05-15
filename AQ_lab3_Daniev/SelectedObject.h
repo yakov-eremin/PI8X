@@ -9,6 +9,11 @@
 using namespace std;
 using namespace sf;
 
+/*!
+	\brief Класс выбор объекта
+	\details класс для помощи ориентации по игре
+*/
+
 class SelectedObject : public Drawable
 {
 public:
@@ -34,6 +39,10 @@ private:
 	Text NumberTab2;
 	Texture TextureSelected;
 	VertexArray VerticesSeelcted;
+	/*!
+		\brief метод отричовки
+	*/
+
 	virtual void draw(RenderTarget &target, RenderStates states) const;
 
 	RenderWindow *WorkWindow;

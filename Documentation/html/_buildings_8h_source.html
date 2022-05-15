@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Исходный файл C:/Users/Stark/source/repos/PI8X2/AQ_lab3_Daniev/Buildings.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project<span id="projectnumber">&#160;0.001</span>
+   </div>
+   <div id="projectbrief">Education-Light</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_4e634ba2369eed20ed68f195c66e547f.html">Stark</a></li><li class="navelem"><a class="el" href="dir_50828d9a6a0945d5a180af072a1da10b.html">source</a></li><li class="navelem"><a class="el" href="dir_45022155f5cb14237f3f9d16cdfde9bf.html">repos</a></li><li class="navelem"><a class="el" href="dir_95a8425e494406a578c4e554ef887296.html">PI8X2</a></li><li class="navelem"><a class="el" href="dir_6eff8bb788674a6035752d76ccf64c9b.html">AQ_lab3_Daniev</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Buildings.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;SFML/Graphics.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Resource.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using namespace </span>sf;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_building.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_building.html">Building</a> : <span class="keyword">public</span> Drawable </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="class_building.html#a57ab664af5f27fec5adf99d414a50d4a">Building</a>(<span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <a class="code hl_class" href="class_resource.html">Resource</a> *Res, <a class="code hl_class" href="class_resource.html">Resource</a> *Cons);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_building.html#ac38f9215656806e61dd0bb27995a5eda">getX</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">float</span> getY();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    FloatRect <a class="code hl_function" href="class_building.html#a5f33fd5fa4ce4f0e3d76081a5c03689b">Square</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    wstring <a class="code hl_function" href="class_building.html#a9f7aa8fa99d0d9a47786c99d9a7ff175">GetName</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_building.html#abe0a85eed4538bd993302ae8a1209d85">update</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_building.html#a200b03edc1a2b5beb39b56e365aa4f9c">IsMaxWorkers</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_building.html#af682181655c8f27c106cb8490d362eb9">IsNoWorkers</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_building.html#a2ca1fd1e6406044e4aef69cd21fc3347">Destroy</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_building.html#aa607563ba4df9168af0980c66e08f04b">AddWorkers</a>(<span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_building.html#a21160d465ed98e81f2c6fd809074d04f">GetWorkers</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_building.html#a75a595cf45911297a22543c7b79588f8">GetMaxWorkers</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_building.html#aa2cd99521350f5cb5714915dcc9f7238">   68</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_building.html#aa2cd99521350f5cb5714915dcc9f7238">GetSpecial</a>() = 0;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Production() = 0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">int</span> State; <span class="comment">//Содержит состояние постройки, 0 - здание строиться, 1 - здание построено и работает.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">//Характеристики.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    wstring Name;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">int</span> Health;<span class="comment">//Прочность постройки.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">int</span> MaxHealth;<span class="comment">//Максимальная прочность постройки.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> workers;<span class="comment">//Количество работников в текущий момент.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span> MaxWorkers;<span class="comment">//Максимальное количество работников.</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_class" href="class_resource.html">Resource</a> *WorkResource; <span class="comment">//Указатель на ресурс, который производит здание.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_class" href="class_resource.html">Resource</a> *ConsumedResource;<span class="comment">//Указатель на ресурс, который здание потребляет при работе.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_building.html#a53e07d567cec252e2f9f9341e281726e">   85</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_building.html#a53e07d567cec252e2f9f9341e281726e">Working</a>() = 0; <span class="comment">//Чисто виртуальная функция, описывающая работу типа постройки.</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_building.html#af98bf98c5bb5f58553aed174f42accfe">build</a>();<span class="comment">//Режим постройки или починки здания.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">//Для отрисовки.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">float</span> x;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">float</span> y;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">float</span> width;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">float</span> height;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    Texture DestroyTexture;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    Texture BuildTexture;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    Texture TextureIsBuild;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    VertexArray VerticesBuild;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_building.html#aad1bd836197accc71170e42f98ae648f">draw</a>(RenderTarget &amp;target, RenderStates states) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_base_building.html">  111</a></span><span class="keyword">class </span><a class="code hl_class" href="class_base_building.html">BaseBuilding</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_building.html">Building</a></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">public</span>: </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_base_building.html#ab8d8ec152d26c3b6c46f0db2bc0f7990">Production</a>();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_base_building.html#afda2ebb5f46dd2170c2bfb29345ba9e0">Destroy</a>();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_base_building.html#adf0e3736ef5d49e0b47a1972edb4e6b4">GetSpecial</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_function" href="class_base_building.html#a03341a30b9aa5e0c3270397d01df0418">BaseBuilding</a>(<span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <a class="code hl_class" href="class_resource.html">Resource</a> *Res, <a class="code hl_class" href="class_resource.html">Resource</a> *Cons);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_function" href="class_base_building.html#a03341a30b9aa5e0c3270397d01df0418">BaseBuilding</a>(<span class="keywordtype">int</span> _x, <span class="keywordtype">int</span> _y, <a class="code hl_class" href="class_resource.html">Resource</a> *Res, <a class="code hl_class" href="class_resource.html">Resource</a> *Cons);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_base_building.html#a903b25e3e4306955014c8508a290e227">GetColonyLevel</a>();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Working();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">int</span> ColonyLevel;<span class="comment">//Уровень колонии.</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="class_small_house.html">  144</a></span><span class="keyword">class </span><a class="code hl_class" href="class_small_house.html">SmallHouse</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_building.html">Building</a></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_small_house.html#a3e6feb89876f870900ffd4d6ded8077f">Production</a>();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_small_house.html#adec77ce5d2d264434410afad52015334">Destroy</a>();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_small_house.html#a162b2bd10397042814d18ab9c1957619">GetSpecial</a>();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <a class="code hl_function" href="class_small_house.html#a0a913c9b8bd98ee030ffd1a5b7e259b2">SmallHouse</a>(<span class="keywordtype">int</span> _x, <span class="keywordtype">int</span> _y, <a class="code hl_class" href="class_resource.html">Resource</a> *Res, <a class="code hl_class" href="class_resource.html">Resource</a> *Cons);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Working();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordtype">int</span> CountOfWorkers;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>};</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_iron_ore_miner.html">  174</a></span><span class="keyword">class </span><a class="code hl_class" href="class_iron_ore_miner.html">IronOreMiner</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_building.html">Building</a></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>{</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_iron_ore_miner.html#ab40f43658fe2dd7af3cdcda34d1749ec">Production</a>();</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_iron_ore_miner.html#a0283e34b255443f008bb47ed7a299d7c">GetSpecial</a>();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <a class="code hl_function" href="class_iron_ore_miner.html#a8d0c0994f6221a6dd01ea780fcd91a0d">IronOreMiner</a>(<span class="keywordtype">int</span> _x, <span class="keywordtype">int</span> _y, <a class="code hl_class" href="class_resource.html">Resource</a> *Res, <a class="code hl_class" href="class_resource.html">Resource</a> *Cons);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Working();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">int</span> OreAmount;<span class="comment">//Количество руды в данном источнике.</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>};</div>
+<div class="ttc" id="aclass_base_building_html"><div class="ttname"><a href="class_base_building.html">BaseBuilding</a></div><div class="ttdoc">Класс главного здания</div><div class="ttdef"><b>Definition:</b> Buildings.h:112</div></div>
+<div class="ttc" id="aclass_base_building_html_a03341a30b9aa5e0c3270397d01df0418"><div class="ttname"><a href="class_base_building.html#a03341a30b9aa5e0c3270397d01df0418">BaseBuilding::BaseBuilding</a></div><div class="ttdeci">BaseBuilding(float _x, float _y, Resource *Res, Resource *Cons)</div><div class="ttdoc">метод расположения</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:119</div></div>
+<div class="ttc" id="aclass_base_building_html_a903b25e3e4306955014c8508a290e227"><div class="ttname"><a href="class_base_building.html#a903b25e3e4306955014c8508a290e227">BaseBuilding::GetColonyLevel</a></div><div class="ttdeci">int GetColonyLevel()</div><div class="ttdoc">метод уровня</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:199</div></div>
+<div class="ttc" id="aclass_base_building_html_ab8d8ec152d26c3b6c46f0db2bc0f7990"><div class="ttname"><a href="class_base_building.html#ab8d8ec152d26c3b6c46f0db2bc0f7990">BaseBuilding::Production</a></div><div class="ttdeci">virtual void Production()</div><div class="ttdoc">метод продукции</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:177</div></div>
+<div class="ttc" id="aclass_base_building_html_adf0e3736ef5d49e0b47a1972edb4e6b4"><div class="ttname"><a href="class_base_building.html#adf0e3736ef5d49e0b47a1972edb4e6b4">BaseBuilding::GetSpecial</a></div><div class="ttdeci">virtual int GetSpecial()</div><div class="ttdoc">методы ресурсов</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:212</div></div>
+<div class="ttc" id="aclass_base_building_html_afda2ebb5f46dd2170c2bfb29345ba9e0"><div class="ttname"><a href="class_base_building.html#afda2ebb5f46dd2170c2bfb29345ba9e0">BaseBuilding::Destroy</a></div><div class="ttdeci">virtual bool Destroy()</div><div class="ttdoc">метод разрушения</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:167</div></div>
+<div class="ttc" id="aclass_building_html"><div class="ttname"><a href="class_building.html">Building</a></div><div class="ttdoc">Класс здания</div><div class="ttdef"><b>Definition:</b> Buildings.h:15</div></div>
+<div class="ttc" id="aclass_building_html_a200b03edc1a2b5beb39b56e365aa4f9c"><div class="ttname"><a href="class_building.html#a200b03edc1a2b5beb39b56e365aa4f9c">Building::IsMaxWorkers</a></div><div class="ttdeci">bool IsMaxWorkers()</div><div class="ttdoc">метод максимального количества работников</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:35</div></div>
+<div class="ttc" id="aclass_building_html_a21160d465ed98e81f2c6fd809074d04f"><div class="ttname"><a href="class_building.html#a21160d465ed98e81f2c6fd809074d04f">Building::GetWorkers</a></div><div class="ttdeci">int GetWorkers()</div><div class="ttdoc">метод получения работников</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:96</div></div>
+<div class="ttc" id="aclass_building_html_a2ca1fd1e6406044e4aef69cd21fc3347"><div class="ttname"><a href="class_building.html#a2ca1fd1e6406044e4aef69cd21fc3347">Building::Destroy</a></div><div class="ttdeci">virtual bool Destroy()</div><div class="ttdoc">метод изношенности</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:56</div></div>
+<div class="ttc" id="aclass_building_html_a53e07d567cec252e2f9f9341e281726e"><div class="ttname"><a href="class_building.html#a53e07d567cec252e2f9f9341e281726e">Building::Working</a></div><div class="ttdeci">virtual void Working()=0</div><div class="ttdoc">метод работы</div></div>
+<div class="ttc" id="aclass_building_html_a57ab664af5f27fec5adf99d414a50d4a"><div class="ttname"><a href="class_building.html#a57ab664af5f27fec5adf99d414a50d4a">Building::Building</a></div><div class="ttdeci">Building(float _x, float _y, Resource *Res, Resource *Cons)</div><div class="ttdoc">метод постройки здания по координатам</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:3</div></div>
+<div class="ttc" id="aclass_building_html_a5f33fd5fa4ce4f0e3d76081a5c03689b"><div class="ttname"><a href="class_building.html#a5f33fd5fa4ce4f0e3d76081a5c03689b">Building::Square</a></div><div class="ttdeci">FloatRect Square()</div><div class="ttdoc">метод площади</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:86</div></div>
+<div class="ttc" id="aclass_building_html_a75a595cf45911297a22543c7b79588f8"><div class="ttname"><a href="class_building.html#a75a595cf45911297a22543c7b79588f8">Building::GetMaxWorkers</a></div><div class="ttdeci">int GetMaxWorkers()</div><div class="ttdoc">метод увеличения максисума работников</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:101</div></div>
+<div class="ttc" id="aclass_building_html_a9f7aa8fa99d0d9a47786c99d9a7ff175"><div class="ttname"><a href="class_building.html#a9f7aa8fa99d0d9a47786c99d9a7ff175">Building::GetName</a></div><div class="ttdeci">wstring GetName()</div><div class="ttdoc">метод названия</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:91</div></div>
+<div class="ttc" id="aclass_building_html_aa2cd99521350f5cb5714915dcc9f7238"><div class="ttname"><a href="class_building.html#aa2cd99521350f5cb5714915dcc9f7238">Building::GetSpecial</a></div><div class="ttdeci">virtual int GetSpecial()=0</div><div class="ttdoc">методы ресурсов</div></div>
+<div class="ttc" id="aclass_building_html_aa607563ba4df9168af0980c66e08f04b"><div class="ttname"><a href="class_building.html#aa607563ba4df9168af0980c66e08f04b">Building::AddWorkers</a></div><div class="ttdeci">void AddWorkers(int count)</div><div class="ttdoc">метод добавления работников</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:51</div></div>
+<div class="ttc" id="aclass_building_html_aad1bd836197accc71170e42f98ae648f"><div class="ttname"><a href="class_building.html#aad1bd836197accc71170e42f98ae648f">Building::draw</a></div><div class="ttdeci">virtual void draw(RenderTarget &amp;target, RenderStates states) const</div><div class="ttdoc">метод отрисовки</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:106</div></div>
+<div class="ttc" id="aclass_building_html_abe0a85eed4538bd993302ae8a1209d85"><div class="ttname"><a href="class_building.html#abe0a85eed4538bd993302ae8a1209d85">Building::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">метод метод усовершенствования</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:22</div></div>
+<div class="ttc" id="aclass_building_html_ac38f9215656806e61dd0bb27995a5eda"><div class="ttname"><a href="class_building.html#ac38f9215656806e61dd0bb27995a5eda">Building::getX</a></div><div class="ttdeci">float getX()</div><div class="ttdoc">метод координаты X и Y</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:76</div></div>
+<div class="ttc" id="aclass_building_html_af682181655c8f27c106cb8490d362eb9"><div class="ttname"><a href="class_building.html#af682181655c8f27c106cb8490d362eb9">Building::IsNoWorkers</a></div><div class="ttdeci">bool IsNoWorkers()</div><div class="ttdoc">метод отсутствия работников</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:43</div></div>
+<div class="ttc" id="aclass_building_html_af98bf98c5bb5f58553aed174f42accfe"><div class="ttname"><a href="class_building.html#af98bf98c5bb5f58553aed174f42accfe">Building::build</a></div><div class="ttdeci">void build()</div><div class="ttdoc">метод постройки или починки</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:65</div></div>
+<div class="ttc" id="aclass_iron_ore_miner_html"><div class="ttname"><a href="class_iron_ore_miner.html">IronOreMiner</a></div><div class="ttdoc">Класс главного здания</div><div class="ttdef"><b>Definition:</b> Buildings.h:175</div></div>
+<div class="ttc" id="aclass_iron_ore_miner_html_a0283e34b255443f008bb47ed7a299d7c"><div class="ttname"><a href="class_iron_ore_miner.html#a0283e34b255443f008bb47ed7a299d7c">IronOreMiner::GetSpecial</a></div><div class="ttdeci">virtual int GetSpecial()</div><div class="ttdoc">методы ресурсов</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:322</div></div>
+<div class="ttc" id="aclass_iron_ore_miner_html_a8d0c0994f6221a6dd01ea780fcd91a0d"><div class="ttname"><a href="class_iron_ore_miner.html#a8d0c0994f6221a6dd01ea780fcd91a0d">IronOreMiner::IronOreMiner</a></div><div class="ttdeci">IronOreMiner(int _x, int _y, Resource *Res, Resource *Cons)</div><div class="ttdoc">метод расположения</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:279</div></div>
+<div class="ttc" id="aclass_iron_ore_miner_html_ab40f43658fe2dd7af3cdcda34d1749ec"><div class="ttname"><a href="class_iron_ore_miner.html#ab40f43658fe2dd7af3cdcda34d1749ec">IronOreMiner::Production</a></div><div class="ttdeci">virtual void Production()</div><div class="ttdoc">метод продукции</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:303</div></div>
+<div class="ttc" id="aclass_resource_html"><div class="ttname"><a href="class_resource.html">Resource</a></div><div class="ttdoc">Класс ресурса</div><div class="ttdef"><b>Definition:</b> Resource.h:17</div></div>
+<div class="ttc" id="aclass_small_house_html"><div class="ttname"><a href="class_small_house.html">SmallHouse</a></div><div class="ttdoc">Класс малого здания</div><div class="ttdef"><b>Definition:</b> Buildings.h:145</div></div>
+<div class="ttc" id="aclass_small_house_html_a0a913c9b8bd98ee030ffd1a5b7e259b2"><div class="ttname"><a href="class_small_house.html#a0a913c9b8bd98ee030ffd1a5b7e259b2">SmallHouse::SmallHouse</a></div><div class="ttdeci">SmallHouse(int _x, int _y, Resource *Res, Resource *Cons)</div><div class="ttdoc">метод расположения</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:217</div></div>
+<div class="ttc" id="aclass_small_house_html_a162b2bd10397042814d18ab9c1957619"><div class="ttname"><a href="class_small_house.html#a162b2bd10397042814d18ab9c1957619">SmallHouse::GetSpecial</a></div><div class="ttdeci">virtual int GetSpecial()</div><div class="ttdoc">методы ресурсов</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:274</div></div>
+<div class="ttc" id="aclass_small_house_html_a3e6feb89876f870900ffd4d6ded8077f"><div class="ttname"><a href="class_small_house.html#a3e6feb89876f870900ffd4d6ded8077f">SmallHouse::Production</a></div><div class="ttdeci">virtual void Production()</div><div class="ttdoc">метод продукции</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:256</div></div>
+<div class="ttc" id="aclass_small_house_html_adec77ce5d2d264434410afad52015334"><div class="ttname"><a href="class_small_house.html#adec77ce5d2d264434410afad52015334">SmallHouse::Destroy</a></div><div class="ttdeci">virtual bool Destroy()</div><div class="ttdoc">метод разрушения</div><div class="ttdef"><b>Definition:</b> Buildings.cpp:241</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

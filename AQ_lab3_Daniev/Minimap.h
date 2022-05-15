@@ -4,6 +4,11 @@
 using namespace sf;
 using namespace std;
 
+/*!
+	\brief Класс миникарты
+	\details класс создаёт миникарты для игры
+*/
+
 class Minimap : public Drawable
 {
 public:
@@ -20,6 +25,10 @@ private:
 
 	VertexArray VerticesMinimap;//Вершины миникарты.
 	Map *map; //Указатель на карту которую отображает миникарта.
+
+	/*!
+		\brief метод отричовки
+	*/
 
 	virtual void draw(RenderTarget &target, RenderStates states) const; //Отрисовка миникарты на экране.
 };

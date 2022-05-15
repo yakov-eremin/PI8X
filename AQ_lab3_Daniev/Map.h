@@ -6,6 +6,11 @@
 using namespace std;
 using namespace sf;
 
+/*!
+	\brief Класс карты
+	\details класс для прогрузки мира.
+*/
+
 class Map : public Drawable
 {
 public:
@@ -38,6 +43,10 @@ private:
 	Texture TextureMap; //Текстура карты.
 	VertexArray VerticesMap; //Вершины квадратов карты.
 	
+	/*!
+		\brief метод отричовки
+	*/
+
 	virtual void draw(RenderTarget &target, RenderStates states) const; //Отрисовка карты на экране.
 	
 	FloatRect BoundingBox; //Ограничительная коробка.

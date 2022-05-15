@@ -4,6 +4,11 @@
 #include <list>
 #include "Map.h"
 
+/*!
+	\brief Класс конструкии
+	\details Класс который отображает в HUD вкладку строительство.
+*/
+
 //Класс, который отображает в HUD вкладку строительство.
 class Construction : public Drawable
 {
@@ -27,6 +32,10 @@ private:
 	Text NameTab;
 	Texture ConstructionTexture;
 	VertexArray VerticesConstruction;
+
+	/*!
+		\brief отрисовка
+	*/
 	virtual void draw(RenderTarget &target, RenderStates states) const;
 
 	//Кнокпи, которые будут отображать пять текущих для постройки здания.

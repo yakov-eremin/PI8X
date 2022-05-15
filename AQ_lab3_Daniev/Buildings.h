@@ -5,21 +5,66 @@
 using namespace sf;
 using namespace std;
 
+/*!
+	\brief  ласс здани€
+	\details  ласс содержит методы координат здани€, площади, названием, усовершенствование, колиечечтва работников, уничтожени€, добавдени€ работников, продукции
+
+*/
+
 class Building : public Drawable 
 {
 public:
+	/*!
+		\brief метод постройки здани€ по координатам
+	*/
+
 	Building(float _x, float _y, Resource *Res, Resource *Cons);
+	/*!
+		\brief метод координаты X и Y
+	*/
+
 	float getX();
 	float getY();
+
+	/*!
+		\brief метод площади
+	*/
 	FloatRect Square();
+	/*!
+		\brief метод названи€
+	*/
 	wstring GetName();
+	/*!
+		\brief метод метод усовершенствовани€
+	*/
 	void update();
+	/*!
+		\brief метод максимального количества работников
+	*/
 	bool IsMaxWorkers();
+	/*!
+		\brief метод отсутстви€ работников
+	*/
 	bool IsNoWorkers();
+	/*!
+		\brief метод изношенности
+	*/
 	virtual bool Destroy();
+	/*!
+		\brief метод добавлени€ работников
+	*/
 	void AddWorkers(int count);
+	/*!
+		\brief метод получени€ работников
+	*/
 	int GetWorkers();
+	/*!
+		\brief метод увеличени€ максисума работников
+	*/
 	int GetMaxWorkers();
+	/*!
+		\brief методы ресурсов
+	*/
 	virtual int GetSpecial() = 0;
 	virtual void Production() = 0;
 protected:
@@ -34,8 +79,13 @@ protected:
 	Resource *WorkResource; //”казатель на ресурс, который производит здание.
 	Resource *ConsumedResource;//”казатель на ресурс, который здание потребл€ет при работе.
 
-	//ћетоды работы.
+	/*!
+		\brief метод работы
+	*/
 	virtual void Working() = 0; //„исто виртуальна€ функци€, описывающа€ работу типа постройки.
+	/*!
+		\brief метод постройки или починки
+	*/
 	void build();//–ежим постройки или починки здани€.
 
 	//ƒл€ отрисовки.
@@ -47,44 +97,96 @@ protected:
 	Texture BuildTexture;
 	Texture TextureIsBuild;
 	VertexArray VerticesBuild;
+	/*!
+		\brief метод отрисовки
+	*/
 	virtual void draw(RenderTarget &target, RenderStates states) const;
 };
 
-//Ќовый тип зданий наследуетс€ от общего класса.
-// ласс главного здани€.
+/*!
+	\brief  ласс главного здани€
+	\details  ласс содержит методы продукции, разрушаемости, расположени€, уровн€, работы
+
+*/
 class BaseBuilding : public Building
 {
 public:	
+	/*!
+		\brief метод продукции
+	*/
 	virtual void Production();
+	/*!
+		\brief метод разрушени€
+	*/
 	virtual bool Destroy();
+	
 	virtual int GetSpecial();
+	/*!
+		\brief метод расположени€
+	*/
 	BaseBuilding(float _x, float _y, Resource *Res, Resource *Cons);
 	BaseBuilding(int _x, int _y, Resource *Res, Resource *Cons);
+	/*!
+		\brief метод уровн€
+	*/
 	int GetColonyLevel();
 private:
 	virtual void Working();
 	int ColonyLevel;//”ровень колонии.
 };
 
+/*!
+	\brief  ласс малого здани€
+	\details  ласс содержит методы продукции, разрушаемости, расположени€, работы
+
+*/
+
 class SmallHouse : public Building
 {
 public:
+	/*!
+		\brief метод продукции
+	*/
 	virtual void Production();
+	/*!
+		\brief метод разрушени€
+	*/
 	virtual bool Destroy();
 	virtual int GetSpecial();
+	/*!
+		\brief метод расположени€
+	*/
 	SmallHouse(int _x, int _y, Resource *Res, Resource *Cons);
 private:
+	/*!
+		\brief метод уровн€
+	*/
 	virtual void Working();
 	int CountOfWorkers;
 };
 
+/*!
+	\brief  ласс главного здани€
+	\details  ласс содержит методы продукции, расположени€, работы
+
+*/
+
 class IronOreMiner : public Building
 {
 public:
+	/*!
+		\brief метод продукции
+	*/
 	virtual void Production();
 	virtual int GetSpecial();
+	/*!
+		\brief метод расположени€
+	*/
 	IronOreMiner(int _x, int _y, Resource *Res, Resource *Cons);
 private:
+	/*!
+		\brief метод уровн€
+	*/
 	virtual void Working();
 	int OreAmount;// оличество руды в данном источнике.
 };

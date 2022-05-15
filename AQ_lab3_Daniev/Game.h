@@ -6,6 +6,11 @@
 using namespace std;
 using namespace sf;
 
+/*!
+	\brief Класс игры
+	\details основной класс игры.
+*/
+
 class Game 
 {
 public:
@@ -17,6 +22,10 @@ private:
 	void FinishGame(); //Закончить игру и выйти в главное меню.
 	
 	void update(Time time); //Проферяет все элементы игры и логика игры.
+
+	/*!
+		\brief метод отричовки
+	*/
 	void drawwindow(); //Отрисовывает все элементы игры.
 	
 	RenderWindow *window; //Окно игры.
