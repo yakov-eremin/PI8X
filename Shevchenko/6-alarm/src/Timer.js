@@ -5,6 +5,7 @@ class Timer {
 	#hours;
 	#minutes;
 	#seconds;
+	#timeoutId;
 
 	constructor(name, soundIndex, callback, h, m, s) {
 		this.#name = name;
@@ -19,7 +20,7 @@ class Timer {
 		const targetDate = new Date();
 		targetDate.setHours(h, m, s);
 
-		setTimeout(() => {
+		this.#timeoutId = setTimeout(() => {
 			callback();
 			this.#triggered = true;
 			}, Math.abs(currDate - targetDate));
@@ -34,6 +35,10 @@ class Timer {
 			m: this.#minutes,
 			s: this.#seconds,
 		})
+	}
+
+	clearTimer() {
+		clearTimeout(this.#timeoutId);
 	}
 }
 
