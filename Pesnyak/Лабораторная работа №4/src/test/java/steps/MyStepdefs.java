@@ -1,13 +1,20 @@
+package steps;
+
+import com.example.bdd.Therapist;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
 public class MyStepdefs {
+    Therapist therapist;
+
     @Given("^I have my virtual computer therapist$")
     public void iHaveMyVirtualComputerTherapist() {
-        
+        therapist = new Therapist();
+        Assert.assertNotNull(therapist);
     }
 
     @When("^I entered \"([^\"]*)\" as first symptom$")

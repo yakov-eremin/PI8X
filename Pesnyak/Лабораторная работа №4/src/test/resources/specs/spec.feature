@@ -4,7 +4,7 @@ Feature: Therapist
     When I entered "сухой кашель" as first symptom
     And I entered "высокая температура" as second symptom
     And Therapist's question should be "Количество лейкоцитов в ОАК?"
-    And I entered 200 as amount of leukocytes
+    And I entered "200" as answer
     Then Therapist's diagnosis should be "ОРЗ, Лечение: антибиотики широкого спектра"
 
   Scenario:
@@ -12,7 +12,7 @@ Feature: Therapist
     When I entered "мокрый кашель" as first symptom
     And I entered "высокая температура" as second symptom
     And Therapist's question should be "Количество лейкоцитов в ОАК?"
-    And I entered 200 as amount of leukocytes
+    And I entered "200" as answer
     Then Therapist's diagnosis should be "ОРЗ, Лечение: антибиотики широкого спектра и АЦЦ"
 
   Scenario:
@@ -50,3 +50,5 @@ Feature: Therapist
     And Therapist's question should be "Курите?"
     And I entered "да" as answer
     Then Therapist's diagnosis should be "Не курите."
+
+
