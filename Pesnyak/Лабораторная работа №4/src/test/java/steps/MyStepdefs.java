@@ -3,6 +3,7 @@ package steps;
 import com.example.bdd.Answer;
 import com.example.bdd.Therapist;
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -44,6 +45,11 @@ public class MyStepdefs {
         Answer answer = therapist.ask();
         Assert.assertTrue(answer.isDiagnosis());
         Assert.assertEquals(diagnosis, answer.getAnswer());
+    }
+
+    @After
+    public void clearSymptoms(){
+        therapist.restart();
     }
 
 
