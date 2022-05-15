@@ -6,6 +6,7 @@ import java.util.Set;
 public class Therapist {
     private final String questionAboutLeukocytes = "Количество лейкоцитов в ОАК?";
     private final String questionAboutThroat = "Горло в волдырях?";
+    private final String questionAboutSmoking = "Курите?";
     Set<String> symptoms = new HashSet<>();
     String currentQuestion;
 
@@ -50,6 +51,15 @@ public class Therapist {
                 }
             }
         }
+        else if(symptoms.contains("одышка")){
+            if(symptoms.contains("курильщик")){
+                return  new Answer(true, "Не курите.");
+            }
+            else{
+                currentQuestion =  questionAboutSmoking;
+                return new Answer(false, questionAboutSmoking);
+            }
+        }
 
         return null;
     }
@@ -64,12 +74,15 @@ public class Therapist {
                 symptoms.add("лейкоциты в норме");
             }
         }
-        if(currentQuestion.equals(questionAboutThroat)){
+        else if(currentQuestion.equals(questionAboutThroat)){
             if(answer.equals("да"))
                 symptoms.add("волыдри на горле");
             else{
                 symptoms.add("стенки горла чистые");
             }
+        } else if(currentQuestion.equals(questionAboutSmoking)){
+            if(answer.equals("да"))
+                symptoms.add("курильщик");
         }
     }
 
