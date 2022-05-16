@@ -1,0 +1,12 @@
+<map id="project.patterngenerator.patterns.IPattern" name="project.patterngenerator.patterns.IPattern">
+<area shape="rect" id="node1" title=" " alt="" coords="5,235,248,276"/>
+<area shape="rect" id="node2" href="$classproject_1_1patterngenerator_1_1patterns_1_1Pattern.html" title=" " alt="" coords="296,235,539,276"/>
+<area shape="rect" id="node3" href="$classproject_1_1patterngenerator_1_1patterns_1_1behavioral_1_1Observer.html" title=" " alt="" coords="587,5,901,47"/>
+<area shape="rect" id="node4" href="$classproject_1_1patterngenerator_1_1patterns_1_1behavioral_1_1Visitor.html" title=" " alt="" coords="587,71,901,112"/>
+<area shape="rect" id="node5" href="$classproject_1_1patterngenerator_1_1patterns_1_1creational_1_1FactoryMethod.html" title=" " alt="" coords="589,136,899,177"/>
+<area shape="rect" id="node6" href="$classproject_1_1patterngenerator_1_1patterns_1_1creational_1_1ObjectPool.html" title=" " alt="" coords="589,201,899,243"/>
+<area shape="rect" id="node7" href="$classproject_1_1patterngenerator_1_1patterns_1_1creational_1_1Singleton.html" title=" " alt="" coords="589,267,899,308"/>
+<area shape="rect" id="node8" href="$classproject_1_1patterngenerator_1_1patterns_1_1structural_1_1Adapter.html" title=" " alt="" coords="590,332,898,373"/>
+<area shape="rect" id="node9" href="$classproject_1_1patterngenerator_1_1patterns_1_1structural_1_1Decorator.html" title=" " alt="" coords="590,397,898,439"/>
+<area shape="rect" id="node10" href="$classproject_1_1patterngenerator_1_1patterns_1_1structural_1_1Flyweight.html" title=" " alt="" coords="590,463,898,504"/>
+</map>
