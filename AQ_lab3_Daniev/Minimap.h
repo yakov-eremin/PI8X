@@ -12,6 +12,7 @@ using namespace std;
 class Minimap : public Drawable
 {
 public:
+
 	Minimap(string NameTexture, Map *_map);
 	FloatRect getBoundingBox();//¬озвращает область действи€ миникарты.
 private:

@@ -20,7 +20,17 @@ public:
 	void SetXY(float _x, float _y);
 	float GetWidth();
 	string GetName();
+
+	/*!
+		\brief метод использовани€ ресурсов
+	*/
+
 	bool IsCanSpendResource(float count);//ѕровер€еть можно ли использовать определЄнное количество ресурса.
+
+	/*!
+		\brief метод изменени€ ресурсов
+	*/
+
 	void AddResource(float count);//ѕрибавл€ет или уменьшает количества ресурса.
 private:
 	string NameResource; //Ќазвание ресурса.
