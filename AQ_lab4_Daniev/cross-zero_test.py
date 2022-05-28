@@ -6,7 +6,7 @@ import main
 class GameTests(unittest.TestCase):
 
     # Проверка, заполняется ли игровое поле
-    def test_Create_Cross_Zero_Field(self):
+    def test_Create_Cross_Zero_Fieldd(self):
         main.CrossZeroField.draw_game_board(self, gameBoard=range(1, 10))
         self.assertIsNotNone(sys.stdout)
 
