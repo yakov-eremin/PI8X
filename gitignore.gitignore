@@ -1,0 +1,15 @@
+*.obj
+
+*.vs/
+*.stash
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.pro.user
+*.filters
+*.h.cpp
+*.pdb
+
+/Logistic/*/debug
+/Logistic/.vs
+

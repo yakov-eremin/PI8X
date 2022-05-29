@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AddCounteragent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Counteragents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreateTreatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditCounteragent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OrderExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReferenceBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TreatieEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TreatieExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TreatieRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Treaties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
