@@ -1,0 +1,1 @@
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\Logistic\.vs\Logistic\v16\lut\0\i\Logistic\Debug\net5.0-windows\Logistic.csproj.AssemblyReference.cache
