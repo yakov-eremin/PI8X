@@ -1,0 +1,55 @@
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\bin\Release\screensaver.exe.config
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\bin\Release\screensaver.exe
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\bin\Release\screensaver.pdb
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.frmMain.resources
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.FormConfigure.resources
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.Properties.Resources.resources
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.csproj.GenerateResource.cache
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.csproj.CoreCompileInputs.cache
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.exe
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.pdb
+D:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver\screensaver\obj\Release\screensaver.csprojAssemblyReference.cache
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe.config
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\bin\Release\screensaver.pdb
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.csprojAssemblyReference.cache
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.frmMain.resources
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.FormConfigure.resources
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.Properties.Resources.resources
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.GenerateResource.cache
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.CoreCompileInputs.cache
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.exe
+d:\моё\университетское\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.pdb
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe.config
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\bin\Release\screensaver.pdb
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.csprojAssemblyReference.cache
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.frmMain.resources
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.FormConfigure.resources
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.Properties.Resources.resources
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.GenerateResource.cache
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.CoreCompileInputs.cache
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.exe
+e:\университетское\готово\4-1 (7) семестр\компьютерная графика\курсач\screensaver jumping bezier\screensaver\obj\Release\screensaver.pdb
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe.config
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\bin\Release\screensaver.pdb
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.AssemblyReference.cache
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.frmMain.resources
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.FormConfigure.resources
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.Properties.Resources.resources
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.GenerateResource.cache
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.CoreCompileInputs.cache
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.exe
+C:\Users\maksi\Desktop\screensaver jumping bezier\screensaver\obj\Release\screensaver.pdb
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe.config
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\bin\Release\screensaver.exe
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\bin\Release\screensaver.pdb
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.AssemblyReference.cache
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.frmMain.resources
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.FormConfigure.resources
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.Properties.Resources.resources
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.GenerateResource.cache
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.csproj.CoreCompileInputs.cache
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.exe
+C:\Users\maksi\Documents\GitHub\Logistic\PI8X\QA_3_Documentation\KursKG\screensaver jumping bezier\screensaver\obj\Release\screensaver.pdb

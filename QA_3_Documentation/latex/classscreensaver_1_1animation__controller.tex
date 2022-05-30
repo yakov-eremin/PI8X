@@ -1,0 +1,134 @@
+\hypertarget{classscreensaver_1_1animation__controller}{}\doxysection{screensaver.\+animation\+\_\+controller Class Reference}
+\label{classscreensaver_1_1animation__controller}\index{screensaver.animation\_controller@{screensaver.animation\_controller}}
+
+
+Класс отрисовки анимации.  
+
+
+
+
+Collaboration diagram for screensaver.\+animation\+\_\+controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classscreensaver_1_1animation__controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} $>$ \mbox{\hyperlink{classscreensaver_1_1animation__controller_a5243ea9ceb558e70a498f461e8607f46}{get\+Dots}} ()
+\begin{DoxyCompactList}\small\item\em Получаем точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classscreensaver_1_1animation__controller_ae47612693f7db82f308f74bc881d0279}{glue\+To\+Next}} (\mbox{\hyperlink{classscreensaver_1_1animation__controller}{animation\+\_\+controller}} nextn)
+\item 
+\mbox{\hyperlink{classscreensaver_1_1animation__controller_ac963dfef3d0e688b7503c387e236a954}{animation\+\_\+controller}} (Picture\+Box pbn, List$<$ \mbox{\hyperlink{classscreensaver_1_1clr}{clr}} $>$ clrs)
+\item 
+void \mbox{\hyperlink{classscreensaver_1_1animation__controller_ae41ebf2517f13086dbaacdd6d2a7d2e3}{glue\+To\+Tail}} ()
+\item 
+void \mbox{\hyperlink{classscreensaver_1_1animation__controller_a605021cceebae1dfef22585cc28d7516}{add\+Dot}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classscreensaver_1_1animation__controller_af90b878f25fed9b4921949593c54d425}{move}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classscreensaver_1_1animation__controller_a4597e7218b28117a0fd9bc4e2a9856d4}{pb\+\_\+\+Paint}} (object sender, Paint\+Event\+Args e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Picture\+Box \mbox{\hyperlink{classscreensaver_1_1animation__controller_ac4115a182b6f137ac89da43eecc1c6e2}{pb}}
+\item 
+\mbox{\hyperlink{classscreensaver_1_1curve__controller}{curve\+\_\+controller}} \mbox{\hyperlink{classscreensaver_1_1animation__controller_a05b174268c18443db086b14e719e05d4}{cc}}
+\item 
+List$<$ \mbox{\hyperlink{classscreensaver_1_1clr}{clr}} $>$ \mbox{\hyperlink{classscreensaver_1_1animation__controller_abfd34f7835607f851d70c230bcac6bab}{colors}}
+\item 
+\mbox{\hyperlink{classscreensaver_1_1animation__controller}{animation\+\_\+controller}} \mbox{\hyperlink{classscreensaver_1_1animation__controller_ac84c45a235cd2e4e145bff2926cbb7dd}{next}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс отрисовки анимации. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_ac963dfef3d0e688b7503c387e236a954}\label{classscreensaver_1_1animation__controller_ac963dfef3d0e688b7503c387e236a954}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!animation\_controller@{animation\_controller}}
+\index{animation\_controller@{animation\_controller}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{animation\_controller()}{animation\_controller()}}
+{\footnotesize\ttfamily screensaver.\+animation\+\_\+controller.\+animation\+\_\+controller (\begin{DoxyParamCaption}\item[{Picture\+Box}]{pbn,  }\item[{List$<$ \mbox{\hyperlink{classscreensaver_1_1clr}{clr}} $>$}]{clrs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_a605021cceebae1dfef22585cc28d7516}\label{classscreensaver_1_1animation__controller_a605021cceebae1dfef22585cc28d7516}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!addDot@{addDot}}
+\index{addDot@{addDot}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{addDot()}{addDot()}}
+{\footnotesize\ttfamily void screensaver.\+animation\+\_\+controller.\+add\+Dot (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_a5243ea9ceb558e70a498f461e8607f46}\label{classscreensaver_1_1animation__controller_a5243ea9ceb558e70a498f461e8607f46}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!getDots@{getDots}}
+\index{getDots@{getDots}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{getDots()}{getDots()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} $>$ screensaver.\+animation\+\_\+controller.\+get\+Dots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получаем точки. 
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_ae47612693f7db82f308f74bc881d0279}\label{classscreensaver_1_1animation__controller_ae47612693f7db82f308f74bc881d0279}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!glueToNext@{glueToNext}}
+\index{glueToNext@{glueToNext}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{glueToNext()}{glueToNext()}}
+{\footnotesize\ttfamily void screensaver.\+animation\+\_\+controller.\+glue\+To\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classscreensaver_1_1animation__controller}{animation\+\_\+controller}}}]{nextn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_ae41ebf2517f13086dbaacdd6d2a7d2e3}\label{classscreensaver_1_1animation__controller_ae41ebf2517f13086dbaacdd6d2a7d2e3}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!glueToTail@{glueToTail}}
+\index{glueToTail@{glueToTail}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{glueToTail()}{glueToTail()}}
+{\footnotesize\ttfamily void screensaver.\+animation\+\_\+controller.\+glue\+To\+Tail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_af90b878f25fed9b4921949593c54d425}\label{classscreensaver_1_1animation__controller_af90b878f25fed9b4921949593c54d425}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!move@{move}}
+\index{move@{move}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void screensaver.\+animation\+\_\+controller.\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_a4597e7218b28117a0fd9bc4e2a9856d4}\label{classscreensaver_1_1animation__controller_a4597e7218b28117a0fd9bc4e2a9856d4}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!pb\_Paint@{pb\_Paint}}
+\index{pb\_Paint@{pb\_Paint}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{pb\_Paint()}{pb\_Paint()}}
+{\footnotesize\ttfamily void screensaver.\+animation\+\_\+controller.\+pb\+\_\+\+Paint (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Paint\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_a05b174268c18443db086b14e719e05d4}\label{classscreensaver_1_1animation__controller_a05b174268c18443db086b14e719e05d4}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!cc@{cc}}
+\index{cc@{cc}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{cc}{cc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classscreensaver_1_1curve__controller}{curve\+\_\+controller}} screensaver.\+animation\+\_\+controller.\+cc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_abfd34f7835607f851d70c230bcac6bab}\label{classscreensaver_1_1animation__controller_abfd34f7835607f851d70c230bcac6bab}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!colors@{colors}}
+\index{colors@{colors}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classscreensaver_1_1clr}{clr}}$>$ screensaver.\+animation\+\_\+controller.\+colors\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_ac84c45a235cd2e4e145bff2926cbb7dd}\label{classscreensaver_1_1animation__controller_ac84c45a235cd2e4e145bff2926cbb7dd}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!next@{next}}
+\index{next@{next}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classscreensaver_1_1animation__controller}{animation\+\_\+controller}} screensaver.\+animation\+\_\+controller.\+next\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classscreensaver_1_1animation__controller_ac4115a182b6f137ac89da43eecc1c6e2}\label{classscreensaver_1_1animation__controller_ac4115a182b6f137ac89da43eecc1c6e2}} 
+\index{screensaver.animation\_controller@{screensaver.animation\_controller}!pb@{pb}}
+\index{pb@{pb}!screensaver.animation\_controller@{screensaver.animation\_controller}}
+\doxysubsubsection{\texorpdfstring{pb}{pb}}
+{\footnotesize\ttfamily Picture\+Box screensaver.\+animation\+\_\+controller.\+pb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Kurs\+KG/screensaver jumping bezier/screensaver/\mbox{\hyperlink{animation__controller_8cs}{animation\+\_\+controller.\+cs}}\end{DoxyCompactItemize}

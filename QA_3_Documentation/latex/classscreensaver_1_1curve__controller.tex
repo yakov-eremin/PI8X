@@ -1,0 +1,99 @@
+\hypertarget{classscreensaver_1_1curve__controller}{}\doxysection{screensaver.\+curve\+\_\+controller Class Reference}
+\label{classscreensaver_1_1curve__controller}\index{screensaver.curve\_controller@{screensaver.curve\_controller}}
+
+
+Класс контроллера вращений  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} $>$ \mbox{\hyperlink{classscreensaver_1_1curve__controller_a450475cca35ad30521edf56fe80148ec}{get\+Dots}} ()
+\item 
+\mbox{\hyperlink{classscreensaver_1_1curve__controller_ac08205b82d0e57f4ad653df89cb31459}{curve\+\_\+controller}} ()
+\item 
+\mbox{\hyperlink{classscreensaver_1_1curve__controller_a40924ba9a9530a880b880c646e8a8948}{curve\+\_\+controller}} (List$<$ \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} $>$ dots)
+\item 
+void \mbox{\hyperlink{classscreensaver_1_1curve__controller_a16bf87dd4c69dffb66b178a4f3a8c552}{add\+Dot}} (\mbox{\hyperlink{classscreensaver_1_1dot}{dot}} a)
+\item 
+\mbox{\hyperlink{classscreensaver_1_1line}{line}} \mbox{\hyperlink{classscreensaver_1_1curve__controller_adc6a503b19f29f4e2f3d1e041a13191c}{middleline}} (\mbox{\hyperlink{classscreensaver_1_1line}{line}} ab, \mbox{\hyperlink{classscreensaver_1_1line}{line}} bc, float t)
+\item 
+\mbox{\hyperlink{classscreensaver_1_1dot}{dot}} \mbox{\hyperlink{classscreensaver_1_1curve__controller_a830ee5561dc7dcc32590daa8f4420fa5}{tdot}} (float t)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classscreensaver_1_1dot}{dot}} \mbox{\hyperlink{classscreensaver_1_1curve__controller_ad79dd11fb57f0b77284e7e3f531c15e8}{recursive\+\_\+processing}} (float t, List$<$ \mbox{\hyperlink{classscreensaver_1_1line}{line}} $>$ line\+Array)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} $>$ \mbox{\hyperlink{classscreensaver_1_1curve__controller_ad46c2350a9827e6b7a11ba68b94d1bdd}{dots\+Array}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс контроллера вращений 
+
+Здесь точки объединяются в массив и полуают координаты центра, чтобы вокруг него уже и происходилоо вращение.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_ac08205b82d0e57f4ad653df89cb31459}\label{classscreensaver_1_1curve__controller_ac08205b82d0e57f4ad653df89cb31459}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!curve\_controller@{curve\_controller}}
+\index{curve\_controller@{curve\_controller}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{curve\_controller()}{curve\_controller()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily screensaver.\+curve\+\_\+controller.\+curve\+\_\+controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_a40924ba9a9530a880b880c646e8a8948}\label{classscreensaver_1_1curve__controller_a40924ba9a9530a880b880c646e8a8948}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!curve\_controller@{curve\_controller}}
+\index{curve\_controller@{curve\_controller}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{curve\_controller()}{curve\_controller()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily screensaver.\+curve\+\_\+controller.\+curve\+\_\+controller (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} $>$}]{dots }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_a16bf87dd4c69dffb66b178a4f3a8c552}\label{classscreensaver_1_1curve__controller_a16bf87dd4c69dffb66b178a4f3a8c552}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!addDot@{addDot}}
+\index{addDot@{addDot}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{addDot()}{addDot()}}
+{\footnotesize\ttfamily void screensaver.\+curve\+\_\+controller.\+add\+Dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classscreensaver_1_1dot}{dot}}}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_a450475cca35ad30521edf56fe80148ec}\label{classscreensaver_1_1curve__controller_a450475cca35ad30521edf56fe80148ec}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!getDots@{getDots}}
+\index{getDots@{getDots}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{getDots()}{getDots()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} $>$ screensaver.\+curve\+\_\+controller.\+get\+Dots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_adc6a503b19f29f4e2f3d1e041a13191c}\label{classscreensaver_1_1curve__controller_adc6a503b19f29f4e2f3d1e041a13191c}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!middleline@{middleline}}
+\index{middleline@{middleline}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{middleline()}{middleline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classscreensaver_1_1line}{line}} screensaver.\+curve\+\_\+controller.\+middleline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classscreensaver_1_1line}{line}}}]{ab,  }\item[{\mbox{\hyperlink{classscreensaver_1_1line}{line}}}]{bc,  }\item[{float}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_ad79dd11fb57f0b77284e7e3f531c15e8}\label{classscreensaver_1_1curve__controller_ad79dd11fb57f0b77284e7e3f531c15e8}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!recursive\_processing@{recursive\_processing}}
+\index{recursive\_processing@{recursive\_processing}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{recursive\_processing()}{recursive\_processing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} screensaver.\+curve\+\_\+controller.\+recursive\+\_\+processing (\begin{DoxyParamCaption}\item[{float}]{t,  }\item[{List$<$ \mbox{\hyperlink{classscreensaver_1_1line}{line}} $>$}]{line\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_a830ee5561dc7dcc32590daa8f4420fa5}\label{classscreensaver_1_1curve__controller_a830ee5561dc7dcc32590daa8f4420fa5}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!tdot@{tdot}}
+\index{tdot@{tdot}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{tdot()}{tdot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classscreensaver_1_1dot}{dot}} screensaver.\+curve\+\_\+controller.\+tdot (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classscreensaver_1_1curve__controller_ad46c2350a9827e6b7a11ba68b94d1bdd}\label{classscreensaver_1_1curve__controller_ad46c2350a9827e6b7a11ba68b94d1bdd}} 
+\index{screensaver.curve\_controller@{screensaver.curve\_controller}!dotsArray@{dotsArray}}
+\index{dotsArray@{dotsArray}!screensaver.curve\_controller@{screensaver.curve\_controller}}
+\doxysubsubsection{\texorpdfstring{dotsArray}{dotsArray}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classscreensaver_1_1dot}{dot}}$>$ screensaver.\+curve\+\_\+controller.\+dots\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Kurs\+KG/screensaver jumping bezier/screensaver/\mbox{\hyperlink{curve__controller_8cs}{curve\+\_\+controller.\+cs}}\end{DoxyCompactItemize}
